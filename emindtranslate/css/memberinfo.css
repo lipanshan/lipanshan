@@ -1,0 +1,240 @@
+
+#memberinfo h1,h2,h3,h4,h5,
+#memberinfo input,
+#memberinfo p,
+#memberinfo ul,
+#memberinfo dd,
+#memberinfo dt,
+#memberinfo th,
+#memberinfo td,
+#memberinfo form {
+	margin: 0;
+	padding: 0;
+}
+body {
+	background-color: #f2f2f2;
+	margin: 0;
+	padding: 0;
+	/*font-family: "微软雅黑","宋体";*/
+}
+#memberinfo {
+	background-color: #fff;
+}
+#memberinfo table {
+	border-collapse: collapse;
+	border-spacing: 0;
+	width: 100%;
+}
+#memberinfo th,
+#memberinfo td {
+	text-align: center;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+}
+#memberinfo input {
+	-webkit-border-radius: 8px;
+	-ms-border-radius: 8px;
+	-moz-border-radius: 8px;
+	border-radius: 8px;
+}
+#memberinfo a {
+	text-decoration: none;
+}
+.wrap {
+	padding-left: 30px;
+	border-top: 1px solid #ccccce;
+}
+#memberinfo .lborder1 {
+	border: 1px solid #ccccce;
+}
+#memberinfo .ltitle {
+	padding-left: 46px;
+	font-size: 14px;
+	line-height: 60px;
+	color: #414246;
+	position: relative;
+	text-align: left;
+	height: 60px;
+	background-color: #f3f6fb;
+}
+#memberinfo .ldot {
+	position: absolute;
+	left: 27px;
+	top: 26px;
+	width: 10px;
+	height: 10px;
+	background-color: #005bc0;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-ms-border-radius: 10px;
+	border-radius: 10px;
+}
+#memberinfo .lh4 {
+	display: inline-block;
+}
+
+#memberinfo .ltextl {
+	text-align: left;
+	width: 466px;
+	position: relative;
+}
+#memberinfo .ltextr {
+	text-align: right;
+	font-size: 14px;
+	line-height: 36px;
+	width: 124px;
+	color: #5e5e5e;
+}
+#memberinfo .linput {
+	margin-left: 12px;
+	width: 344px;
+	background-color: #fff;
+	-webkit-border-radius: 0px;
+	-moz-border-radius: 0px;
+	-ms-border-radius: 0px;
+	border-radius: 0px;
+	font-size: 14px;
+	line-height: 14px;
+	padding: 11px 11px 12px;
+}
+#memberinfo .linput2 {
+	width: 25px;
+	background-color: #fff;
+	-webkit-border-radius: 0px;
+	-moz-border-radius: 0px;
+	-ms-border-radius: 0px;
+	border-radius: 0px;
+}
+#memberinfo .llabel {
+	margin: 0;
+	padding: 0;
+	display: inline-block;
+	font-size: 14px;
+	line-height: 36px;
+	color: #333;
+}
+#memberinfo .lrequired {
+	display: inline-block;
+	font-size: 14px;
+	line-height: 36px;
+	color: #ff4242;
+	padding-left: 10px;
+}
+#memberinfo .lwidth368 {
+	width: 368px;
+}
+#memberinfo .lshow {
+	width: 60px;
+	height: 41px;
+	position: absolute;
+	right: 87px;
+	top: 9px;
+	background: url(../image/selectico.jpg)
+	no-repeat 28px 15px #fff;
+
+}
+#memberinfo .lheadimg {
+	width: 148px;
+	height: 148px;
+	margin-top: 30px;
+}
+#memberinfo .leditbtn {
+	width: 80px;
+	height: 34px;
+	background-color: #f5f5f5;
+	font-size: 14px;
+	line-height: 34px;
+	text-align: center;
+	color: #404040;
+	margin-top: 5px;
+}
+#memberinfo .lwidth421 {
+	width: 421px;
+	vertical-align: top;
+}
+#memberinfo .lheight120 {
+	height: 120px;
+}
+#memberinfo .lbgfff {
+	background-color: #fff;
+}
+#memberinfo .lheight22 {
+	height: 22px;
+}
+#memberinfo .lheight87 {
+	height: 87px;
+}
+#memberinfo .headportrait {
+	width: 322px;
+}
+#memberinfo .headportrait img {
+	width: 180px;
+	height: 180px;
+}
+#memberinfo .headportrait input{
+	width: 78px;
+	font-size: 14px;
+	line-height: 34px;
+	height: 34px;
+	background-color: #f5f5f5;
+	text-align: center;
+	margin-top: 68px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-ms-border-radius: 5px;
+	border-radius: 5px;
+}
+#memberinfo .lbtnn input {
+	width: 78px;
+	font-size: 14px;
+	line-height: 34px;
+	height: 34px;
+	background-color: #f5f5f5;
+	text-align: center;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-ms-border-radius: 5px;
+	border-radius: 5px;
+
+}
+#memberinfo .lhover:hover {
+	background-color: #005bc4;
+	border-color: #005bc4;
+	color: #fff;
+}
+#memberinfo .lheight28 {
+	height: 28px;
+}
+#memberinfo .lbtnn {
+	width: 80px;
+}
+#memberinfo .lheight36 td{
+	height: 36px;
+}
+#memberinfo .lbordert {
+	border-top: 1px solid #ccc;
+}
+#memberinfo .lmarginl9 {
+	margin-left: 9px;
+}
+#memberinfo .lheight30 {
+	height: 30px;
+}
+#memberinfo .lheight70 {
+	height: 70px;
+}
+
+#memberinfo .lheight56 {
+	height: 56px;
+	font-size: 14px;
+	line-height: 36px;
+	color: #5e5e5e;
+}
+#memberinfo .lheight21 {
+	height: 21px;
+}
+#memberinfo .lheight56 td {
+	padding-top: 8px;
+	padding-bottom: 9px;
+}

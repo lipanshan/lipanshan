@@ -1,0 +1,72 @@
+.lliactive {
+	background-color: #2974da;
+}
+.lselecttype-wrap {
+	width: 1000px;
+	margin: 0 auto;
+	min-height: 860px;
+	background-color: #fff;
+}
+.lxzle-wrap {
+	width: 100%;
+	padding-top: 73px;
+}
+.lxzle-wrap h3 {
+	font-size: 30px;
+	line-height: 30px;
+	color: #17120f;
+	text-align: center;
+}
+.lxzle-textwrap {
+	padding-top: 90px;
+	padding-left: 39px;
+	padding-right: 39px;
+
+}
+.lxzle-grkfz, .lxzle-qykfz{
+	float: left;
+	padding: 0 100px 0;
+}
+.lxzle-box {
+	width: 220px;
+	padding: 14px 0 13px 41px;
+	background-color: #3285ff;
+}
+.lgrkfz-ico , .lqykfz-ico{
+	float: left;
+	display: block;
+	width: 34px;
+	height: 32px;
+	background: 
+	url(../images/web-index-ico/sprite1.png)
+	no-repeat -95px -41px;
+
+}
+.lqykfz-ico {
+	background-position: -127px -1px;
+}
+.lxzle-box h4 {
+	float: left;
+	width: 166px;
+	font-size: 22px;
+	line-height: 30px;
+	padding-bottom: 2px;
+	padding-left: 20px;
+	font-weight: normal;
+}
+.lxzle-box h4 a {
+	display: block;
+	color: #fff;
+}
+.lxzle-box {
+	cursor: pointer;
+}
+
+.lxzlx-xq {
+	width: 213px;
+	padding: 13px 32px 0 16px;
+	font-size: 14px;
+	line-height: 25px;
+	color: #17120f;
+}
+

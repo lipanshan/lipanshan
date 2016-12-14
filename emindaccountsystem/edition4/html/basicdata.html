@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>账户信息-基本资料</title>
+	<link rel="stylesheet" href="../css/public.css">
+	<link rel="stylesheet" href="../css/basicdata.css">
+	<script src="../js/jquery.js"></script>
+	<script src="../js/checked.js"></script>
+	<script src="../js/headaccount.js"></script>
+</head>
+<body>
+	<header class="lhead">
+		<div class="lwrap clearfix">
+			<h1 class="lh1 lfloatl">
+				<a class="lh1href" href="index.html">
+				<img class="lfloatl" src="../image/emindlogo.png" alt="">
+				<span class="lborder lfloatl"></span>
+				<span class="lfloatl lh1text">一铭账户系统</span>
+				</a>
+			</h1>
+			<div class="lsignwrap">
+				<div class="lindexpage">
+					<a class="lpaddingr" target="_block" href="index.html">Emind&nbsp;首页&gt;&gt;</a>
+				</div>
+				<div  class="laccountname">
+					<a id="accountName" href="javascript:;" class="laccountn lfloatl">欢迎您,小桥流水</a>
+					<span id="accountNameIco" class="ljt lfloatl"></span>
+					<ul id="accountlist" class="laccountnamelist">
+						<li class="laccountnameli"><a index="ac" href="javascript:;">账户信息</a></li>
+						<li class="laccountnameli"><a index="ac" href="javascript:;">推出</a></li>
+					</ul>
+				</div>
+				<a href="javascript:;"  class="lheadico2"></a>
+			</div>
+		</div>
+	</header>
+	<div class="lmainmenu-wrap">
+		<div class="lwrap">
+			<nav class="lmainmenu clearfix">
+				<a href="index.html" class="lfloatl">首页</a>
+				<a href="myhead.html" class="lfloatl menuactive">账户信息</a>
+				<a href="backstagemanage.html" class="lfloatl ">管理控制台</a>
+				<a href="accountproblem.html" class="lfloatl ">帮助中心</a>
+			</nav>
+		</div>
+	</div>
+	<div class="lwrap clearfix">
+		<ul class="lsidemenu lfloatl">
+			<li class="lsideli lsidel1 ">
+				<h2><a href="myhead.html">我的头像</a></h2>
+			</li>
+			<li class="lsideli lsidel2 lsideliactive">
+				<h2><a href="basicdata.html">基本资料</a></h2>
+			</li>
+			<li class="lsideli ">
+				<h2><a href="detailedinfo.html">详细信息</a></h2>
+			</li>
+			<li class="lsideli">
+				<h2><a href="javascript:;">修改密码</a></h2>
+			</li>
+			<li class="lsideli ">
+				<h2><a href="accountsystem.html">登录邮箱</a></h2>
+			</li>
+			<li class="lsideli">
+				<h2><a href="boundphone.html">绑定手机</a></h2>
+			</li>
+			<li class="lsideli">
+				<h2><a href="loginrecord.html">登陆记录</a></h2>
+			</li>
+		</ul>
+		<div class="lfloatl lemailland">
+			<h2 class="lh2title">基本资料</h2>
+			<form action="">
+				<div class="lrow clearfix">
+					<p class="llbalelp lfloatl">性别:</p>
+					<ul class="lfloatl lgenderlist">
+						<li class="lfloatl">
+							<input class="lfloatl lgenderm lgenderinput" type="radio" name="gender" id="man">
+							<label class="lfloatl lgenderl " for="man">男</label>
+							<span class="lcheckb"></span>
+						</li>
+						<li class="lfloatl">
+							<input class="lfloatl lgenderinput lgenderw" type="radio" name="gender" id="woman">
+							<label class="lfloatl lgenderl2" for="woman">女</label>
+							<span class="lcheckb"></span>
+						</li>
+						<li class="lfloatl">
+							<input class="lfloatl lgenderinput lgenderw" type="radio" name="gender" id="baomi">
+							<label class="lfloatl lgenderl2" for="baomi">保密</label>
+							<span class="lcheckb"></span>
+						</li>
+					</ul>
+				</div>
+				<div class="lrow clearfix">
+					<p class="llbalelp lfloatl">姓名:</p>
+					<input class="lselect0 lfloatl lfonts" type="text">
+				</div>
+				<div class="lrow clearfix">
+					<p class="llbalelp lfloatl">昵称:</p>
+					<input class="lselect0 lfloatl lfonts" type="text">
+				</div>
+				<div class="lrow clearfix">
+					<p class="llbalelp lfloatl">生日:</p>
+					<div class="lselect0 lfloatl">
+						<select name="" class="lselect01 lfloatl" id="year"></select>
+						<div class="lselect01">
+							<input type="hidden" name="" class="linputval">
+							<p class="lselectshow">年</p>
+							<ul class="lselectlist">
+								<li value="123">2000</li>
+								<li value="12">2001</li>
+								<li value="1">2002</li>
+								<li value="1">2003</li>
+								<li value="1">2004</li>
+								<li value="1">2005</li>
+								<li value="1">2006</li>
+								<li value="1">2007</li>
+							</ul>
+						</div>
+						<div class="lselect-ico"></div>
+					</div>
+					<div class="lselect0 lfloatl">
+						<select name="" class="lselect01 lfloatl" id="month"></select>
+						<div class="lselect01">
+							<input type="hidden" name="" class="linputval">
+							<p class="lselectshow">月</p>
+							<ul class="lselectlist">
+								<li value="123">1</li>
+								<li value="12">2</li>
+								<li value="1">3</li>
+								<li value="1">4</li>
+								<li value="1">5</li>
+								<li value="1">6</li>
+								<li value="1">7</li>
+								<li value="1">8</li>
+								<li value="1">9</li>
+								<li value="1">10</li>
+								<li value="1">11</li>
+								<li value="1">12</li>
+							</ul>
+						</div>
+						<div class="lselect-ico"></div>
+					</div>
+				</div>
+				<div class="lrow clearfix">
+					<p class="llbalelp lfloatl">血型:</p>
+					<div class="lselect0 lfloatl">
+						<select name="" class="lselect01 lfloatl" id="bloodtype"></select>
+						<div class="lselect01">
+							<input type="hidden" name="" class="linputval">
+							<p class="lselectshow">未知</p>
+							<ul class="lselectlist">
+								<li value="123">O</li>
+								<li value="12">A</li>
+								<li value="12">AB</li>
+								<li value="12">B</li>
+							</ul>
+						</div>
+						<div class="lselect-ico"></div>
+					</div>
+				</div>
+				<div class="lrow clearfix">
+					<p class="llbalelp lfloatl">出生地:</p>
+					<div class="lselect0 lfloatl">
+						<select name="" class="lselect01 lfloatl" id="birthadress1"></select>
+						<div class="lselect01">
+							<input type="hidden" name="" class="linputval">
+							<p class="lselectshow">请选择</p>
+							<ul class="lselectlist">
+								<li value="123">北京</li>
+								<li value="12">上海</li>
+								<li value="12">广州</li>
+								<li value="12">深圳</li>
+							</ul>
+						</div>
+						<div class="lselect-ico"></div>
+					</div>
+					<div class="lselect0 lfloatl">
+						<select name="" class="lselect01 lfloatl" id="birthadress2"></select>
+						<div class="lselect01">
+							<input type="hidden" name="" class="linputval">
+							<p class="lselectshow">请选择</p>
+							<ul class="lselectlist">
+								<li value="123">北京</li>
+								<li value="12">上海</li>
+								<li value="12">广州</li>
+								<li value="12">深圳</li>
+							</ul>
+						</div>
+						<div class="lselect-ico"></div>
+					</div>
+				</div>
+				<div class="lrow clearfix">
+					<p class="llbalelp lfloatl">居住地:</p>
+					<div class="lselect0 lfloatl">
+						<select name="" class="lselect01 lfloatl" id="liveaddress1"></select>
+						<div class="lselect01">
+							<input type="hidden" name="" class="linputval">
+							<p class="lselectshow">请选择</p>
+							<ul class="lselectlist">
+								<li value="123">北京</li>
+								<li value="12">上海</li>
+								<li value="12">广州</li>
+								<li value="12">深圳</li>
+							</ul>
+						</div>
+						<div class="lselect-ico"></div>
+					</div>
+					<div class="lselect0 lfloatl">
+						<select name="" class="lselect01 lfloatl" id="liveaddress2"></select>
+						<div class="lselect01">
+							<input type="hidden" name="" class="linputval">
+							<p class="lselectshow">请选择</p>
+							<ul class="lselectlist">
+								<li value="123">北京</li>
+								<li value="12">上海</li>
+								<li value="12">广州</li>
+								<li value="12">深圳</li>
+							</ul>
+						</div>
+						<div class="lselect-ico"></div>
+					</div>
+				</div>
+				<div class="lrow clearfix">
+					<p class="llbalelp lfloatl">个人简介:</p>
+					<textarea  name="" id="" class="lfloatl lpersonalprofile"></textarea>
+				</div>
+				<p class="lfalsewrap clearfix"><span class="lfloatl lfalseicoz"></span><span class="lfloatl lfalsetext">请控制在150个字内！</span></p>
+				<div class="lrowbtn">
+					<a id="submitbd" class="lbc" href="javascript:;">保存</a>
+				</div>
+			</form>
+		</div>
+	</div>
+	<footer class="lfooter lmargint19">
+		<p class="lfootertext"><span class="l2016">2016</span><a class="lemind" href="javascript:;">&copy;emind</a></p>
+	</footer>
+		<!-- 背景遮罩 -->
+	<div id="lshadow"></div>
+		<!-- 基本资料保存成功提示 -->
+	<div id="basicdatesuccess" class="lbasicdatesuccess">
+		<div class="clearfix lhead2">
+			<h3 class="lunbinding-title lfloatl">详细信息</h3>
+			<span id="closebtnsuccess" class="lclosebtn"></span>
+		</div>
+		<div class="lsuccess-wrap">
+			<div class="ltext1 clearfix">
+				<span class="lsuccess-logo lfloatl"></span>
+				<p class="lsuccess-text lfloatl">详细信息保存成功</p>
+			</div>
+			<p class="ltext2">如果还需要修改信息，可以继续操作！</p>
+		</div>
+	</div>
+</body>
+</html>

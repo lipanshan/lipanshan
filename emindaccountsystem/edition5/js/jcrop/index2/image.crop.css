@@ -1,0 +1,86 @@
+/*页面主体*/
+body {
+	text-align: center;
+	margin: 0px;
+}
+/*列布局容器*/
+.image-crop-container {
+	display: inline-block;
+}
+/*区域*/
+.image-crop-fieldset{
+	border: 1px solid #dedede;
+	float: left;
+	display: inline-block;
+}
+/*区域标题*/
+.image-crop-fieldset legend {
+	font-size: 13px;
+}
+/*原图区域容器*/
+.image-crop-org-container{
+	width: 600px;
+	overflow: hidden;
+	margin: 5px;
+}
+/*原图预览DIV*/
+.image-crop-org-div{
+	width: 100%;
+	float: left;
+	display: inline-block;
+}
+/*原图预览IMG*/
+.image-crop-org-img{
+	width: 600px;
+	float: left;
+	display: inline-block;
+}
+/*截图预览区域容器*/
+.image-crop-preview-container{
+	float: left;
+	display: inline-block;
+	overflow: hidden;
+	margin: 5px;
+	width: 300px;/*由此决定宽高比*/
+	height: 200px;/*由此决定宽高比*/
+}
+/*截图预览DIV*/
+#image_crop_preview_div{
+	width: 100%;
+	float: left;
+	display: none;/*开始不显示*/
+}
+/*截图预览IMG*/
+#image_crop_preview_img{
+	width: 100%;
+	float: left;
+	display: none;/*开始不显示*/
+}
+
+
+/*普通DIV*/
+.simple-div {
+	display: block;
+	float: none;
+}
+/*文件选择*/
+#image_crop_file_chooser{
+	margin: 5px;
+}
+/*按钮容器*/
+.buttonS {
+	margin: 5px;
+}
+/*按钮*/
+.buttonS input {
+	width: 80px;
+	padding: 5px;
+	border: 1px solid #efefef;
+	background-color: #efefef;
+	cursor: pointer;
+}
+/*按钮聚焦*/
+.buttonS input:HOVER {
+	border: 1px solid #bdbdbd;
+	background-color: #bdbdbd;
+}

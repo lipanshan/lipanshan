@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>table1</title>
+	<link rel="stylesheet" href="../css/table1.css">
+	<script src="../js/jquery/jquery-1.9.1.min.js"></script>
+</head>
+<body>
+	<form >
+		<div id="lformwrap" >
+			<table class="lforms">
+				<tr class="lbordern ">
+					<th class="lbordern" colspan="8"><h2 class="lh2">软件正版化工作领导小组成员信息表</h2></th>
+				</tr>
+				<tr class="lbordern lrow1">
+					<th class="lbordern lright">单位名称：</th>
+					<th class="lbordern"><input class="lbottom" type="text"></th>
+					<th class="lbordern lright">填表人：</th>
+					<th class="lbordern"><input class="lbottom" type="text"></th>
+					<th class="lbordern lright">联系电话:</th>
+					<th class="lbordern"><input class="lbottom" type="text"></th>
+					<th class="lbordern" colspan="2">填表日期:<input class="lwidth28 lcenter lbottom" type="text">年<input class="lwidth28 lcenter lbottom" type="text">月<input class="lwidth28 lcenter lbottom" type="text">日</th>
+				</tr>
+				<tbody id="lb1tody1">
+					<tr>
+						<th>序号</th>
+						<th>分工</th>
+						<th>姓名</th>
+						<th>部门</th>
+						<th>职务</th>
+						<th>联系电话</th>
+						<th>传真</th>
+						<th>备注</th>
+					</tr>
+					<tr>
+						<td>1</td>
+						<td>组长</td>
+						<td><input type="text"></td>
+						<td><input type="text"></td>
+						<td><input type="text"></td>
+						<td><input type="text"></td>
+						<td><input type="text"></td>
+						<td><input type="text"></td>
+					</tr>
+					<tr>
+						<td>2</td>
+						<td>副组长</td>
+						<td><input type="text"></td>
+						<td><input type="text"></td>
+						<td><input type="text"></td>
+						<td><input type="text"></td>
+						<td><input type="text"></td>
+						<td><input type="text"></td>
+					</tr>
+					<tr>
+						<td>3</td>
+						<td id="lfirstTeamMember" rowspan="4">组员</td>
+						<td><input type="text"></td>
+						<td><input type="text"></td>
+						<td><input type="text"></td>
+						<td><input type="text"></td>
+						<td><input type="text"></td>
+						<td><input type="text"></td>
+					</tr>
+					<tr>
+						<td>4</td>
+						<td><input type="text"></td>
+						<td><input type="text"></td>
+						<td><input type="text"></td>
+						<td><input type="text"></td>
+						<td><input type="text"></td>
+						<td><input type="text"></td>
+					</tr>
+					<tr>
+						<td>5</td>
+						<td><input type="text"></td>
+						<td><input type="text"></td>
+						<td><input type="text"></td>
+						<td><input type="text"></td>
+						<td><input type="text"></td>
+						<td><input type="text"></td>
+					</tr>
+					<tr>
+						<td>6</td>
+						<td><input type="text"></td>
+						<td><input type="text"></td>
+						<td><input type="text"></td>
+						<td><input type="text"></td>
+						<td><input type="text"></td>
+						<td><input type="text"></td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</form>
+<script>
+	$(function (){
+		//向elem内插入组员，序号lineNum
+		function creatTeamMember(elem,lineNum){
+			var str = '';
+			str+='<tr>'
+				str+='<td>'+lineNum+'</td>'
+				str+='<td><input type="text"></td>'
+				str+='<td><input type="text"></td>'
+				str+='<td><input type="text"></td>'
+				str+='<td><input type="text"></td>'
+				str+='<td><input type="text"></td>'
+				str+='<td><input type="text"></td>'
+			str+='</tr>'
+			elem.append(str);
+			$('#lfirstTeamMember').attr('rowspan',$('#lb1tody1').children().size()-2);
+		}
+
+	})
+</script>
+</body>
+</html>

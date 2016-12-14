@@ -1,0 +1,49 @@
+.nick,
+.num,
+.email ,
+.realName,
+.qq,
+.telephone,
+.mobile,
+.financeEmail,
+.financeMobile,
+.financeName,
+.taxNum,
+.bankNum,
+.payName,
+.openedBankName,
+.licenseNum,
+.id,
+.lmanage-num,
+.realName,
+.openedBankName {
+	background: url(../images/web-index-ico/rbg.jpg)
+	no-repeat 0 0;
+}
+.nick:hover,
+.num:hover,
+.email:hover ,
+.realName:hover,
+.qq:hover,
+.telephone:hover,
+.mobile:hover,
+.financeEmail:hover,
+.financeMobile:hover,
+.financeName:hover,
+.taxNum:hover,
+.bankNum:hover,
+.payName:hover,
+.openedBankName:hover,
+.licenseNum:hover,
+.id:hover,
+.lmanage-num:hover,
+.realName:hover,
+.openedBankName:hover,
+.lselect-txt:hover {
+	background-position: 0 -80px;
+};
+.lselect-txt {
+	background: url(../images/web-index-ico/selectbg)
+	no-repeat 0 0 !important;
+}
+

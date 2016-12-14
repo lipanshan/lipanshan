@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>认证管理详情</title>
+	<link rel="stylesheet" href="../css/certificationdetails.css">
+	<script src="../js/jquery/jquery-1.9.1.min.js"></script>
+</head>
+<body>
+	<div id="certifcationdetails" class="wrap">
+		<form action="">
+			<table>
+				<thead>
+					<tr id="titletag" class="lheight60 lborder1">
+						<th class="lwidth127"><a class="ltitlebtn lborder1 lmagingl" href="javascript:;">个人信息</a></th>
+						<th class="lwidth110"><a class="ltitlebtn lborder1 lmagingl2" href="javascript:;">认证资料</a></th>
+						<th class="lwidth110"><a class="ltitlebtn lborder1 lmagingl2" href="javascript:;">认证记录</a></th>
+						<th></th>
+					</tr>
+				</thead>
+			</table>
+			<div id="contbox">
+				<div class="contentbocdy">
+						<table>
+							<tr class="lheight56">
+								<td class="ltextr">编号:</td>
+								<td class=" ltextl"><input class="linput lborder1" type="text" value="8484848484"></td>
+								<td class=" ltextr">创建时间:</td>
+								<td class="linputw ltextl"><input class="linput lborder1" type="text" value="请输入姓名"></td>
+								<td></td>
+							</tr>
+							<tr>
+								<td class="ltextr">姓名:</td>
+								<td class=" ltextl"><input class="linput lborder1" type="text" value="请输入身份证号码"><span class="lrequired">*</span></td>
+								<td class=" ltextr">性别:</td>
+								<td class="linputw ltextl"><input id="raidoman" class="linput2 lborder1" type="radio" name="gender"><label class="llabel" for="raidoman">男</label><input type="radio" id="raidowoman" name="gender" class="linput2 lborder1" ><label class="llabel" for="raidowoman">女</label></td>
+								<td></td>
+							</tr>
+							<tr class="lheight56">
+								<td class="ltextr">身份证:</td>
+								<td class=" ltextl"><input class="linput lborder1" type="text" value="请输入手机号"><span class="lrequired">*</span></td>
+								<td class=" ltextr">手机号:</td>
+								<td class="linputw ltextl"><input class="linput lborder1" type="text" value="请输入邮箱"><span class="lrequired">*</span></td>
+								<td></td>
+							</tr>
+							<tr class="lheight56">
+								<td class="ltextr">学校:</td>
+								<td class=" ltextl"><input class="linput lborder1" type="text" value="请输入学校名称"></td>
+								<td class=" ltextr ">学历:</td>
+								<td class="linputw ltextl"><input class="linput lborder1" type="text" value="本科"></td>
+								<td></td>
+							</tr>
+							<tr class="lheight56">
+								<td class="ltextr ">邮箱:</td>
+								<td class=" ltextl"><input class="linput lborder1" type="text" value="请输入微信号"></td>
+								<td class=" ltextr ">QQ:</td>
+								<td class="linputw ltextl"><input class="linput lborder1" type="text" value="请输入QQ账号"></td>
+								<td></td>
+							</tr>
+							<tr class="lheight56">
+								<td class="ltextr ">微信:</td>
+								<td class=" ltextl"><input class="linput lborder1" type="text" value="请输入微信号"></td>
+								<td class=" ltextr ">翻译类型:</td>
+								<td class="linputw ltextl"><input class="linput lborder1" type="text" value="请输入QQ账号"></td>
+								<td></td>
+							</tr>
+							<tr class="lheight56">
+								<td class="ltextr ">状态:</td>
+								<td class=" ltextl"><input type="radio" class="lstate" name="type" id="notconfirmed"><label class="lbalels1" for="notconfirmed">未确认</label><input class="lstate" name="type" type="radio" id="confirmby"><label class="lbalels2" for="confirmby">确认通过</label><input name="type" class="lstate" type="radio" id="confirmreject"><label class="lbalels3" for="confirmreject">认证拒绝</label></td>
+								<td colspan="3"></td>
+							</tr>
+						</table>
+						<table class="lbgfff">
+							<tbody>
+								<tr><th colspan="9" class="lheight272"></th></tr>
+								<tr class="lheight36">
+									<td colspan="3"></td>
+									<td  class="lbtnn"><input class="lborder1 lhover" type="button" value="保存"></td>
+									<td  class="lbtnn"><input class="lborder1 lhover lmarginl9" type="button" value="取消"></td>
+									<td colspan="3"></td>
+								</tr>
+								<tr>
+									<th class="lheight30" colspan="9"></th>
+								</tr>
+							</tbody>
+						</table>
+				</div>
+				<div class="contentbody2">
+					<div class="lpadding">
+						<table>
+							<thead>
+								<tr class="lheight602 lborder1">
+									<th class="lborder1 lcol1">认证页</th>
+									<th class="lborder1 lcol2">内容</th>
+									<th class="lborder1 lcol3">原图</th>
+									<th class="lborder1 lcol4">更新时间</th>
+									<th class="lborder1 lcol1">更新</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr class="lheight114 lborder1">
+									<td class="lborder1">身份证正面</td>
+									<td class="lborder1"><img class="idcard" src="../image/img3.jpg" alt="身份证正面"></td>
+									<td class="lborder1"><input class="lview" type="button" value="查看"></td>
+									<td class="lborder1">2016-08-12-20:32</td>
+									<td class="lborder1"><input class="lview"  type="button" value="上传"></td>
+								</tr>
+								<tr class="lheight114 lborder1">
+									<td class="lborder1">身份证正面</td>
+									<td class="lborder1"><img class="idcard" src="../image/img3.jpg" alt="身份证正面"></td>
+									<td class="lborder1"><input class="lview lviewactive" type="button" value="查看"></td>
+									<td class="lborder1">2016-08-12-20:32</td>
+									<td class="lborder1"><input class="lview lviewactive"  type="button" value="上传"></td>
+								</tr>
+								<tr class="lheight114 lborder1">
+									<td class="lborder1">身份证正面</td>
+									<td class="lborder1"><img class="idcard" src="../image/img3.jpg" alt="身份证正面"></td>
+									<td class="lborder1"><input class="lview" type="button" value="查看"></td>
+									<td class="lborder1">2016-08-12-20:32</td>
+									<td class="lborder1"><input class="lview"  type="button" value="上传"></td>
+								</tr>
+								<tr class="lheight114 lborder1">
+									<td class="lborder1">身份证正面</td>
+									<td class="lborder1"><img class="idcard" src="../image/img3.jpg" alt="身份证正面"></td>
+									<td class="lborder1"><input class="lview" type="button" value="查看"></td>
+									<td class="lborder1">2016-08-12-20:32</td>
+									<td class="lborder1"><input class="lview"  type="button" value="上传"></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+				<div class="contentbody3">
+					<div class="lpadding">
+						<table>
+							<thead>
+								<tr class="lheight602 lborder1">
+									<th class="lborder1 lcols1">序号</th>
+									<th class="lborder1 lcols2">操作员ID</th>
+									<th class="lborder1 lcols3">操作员</th>
+									<th class="lborder1 lcols4">状态</th>
+									<th class="lborder1 lcols1">更新时间</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr class="lheight71">
+									<td class="lborder1">1</td>
+									<td class="lborder1">456</td>
+									<td class="lborder1">说翻就翻</td>
+									<td class="lborder1"><input class="lthrough" type="button" value="认证通过"></td>
+									<td class="lborder1">2016-05-21-09:32</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+		</form>
+	</div>
+<script>
+	$('#titletag').children().click(function (){
+		$(this).children().addClass('lactivebtn');
+		$(this).siblings().children().removeClass('lactivebtn');
+		$('#contbox').children().hide(0);
+		$('#contbox').children().eq($(this).index()).show(0);
+	});
+	$('#titletag').children().eq(0).trigger('click');
+</script>
+</body>
+</html>

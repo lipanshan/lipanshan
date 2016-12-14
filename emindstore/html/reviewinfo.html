@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>审核开发者信息</title>
+	<link rel="stylesheet" href="../css/header.css">
+	<link rel="stylesheet" href="../css/reviewinfo.css">
+	<link rel="icon" href="../favicon.ico">
+	<script src="../js/jquery/jquery.js"></script>
+	<script src="../js/reviewinfo.js"></script>
+    <script src="../js/publiclogin.js"></script>
+    <script src="../js/html5shiv.min.js"></script>
+
+	
+</head>
+<body>
+	<header class="lheader">
+		<div class="lwrap clearfix">
+			<h1 class="floatl lh1">
+				<a href="index.html">
+					<img src="../images/web-index-ico/h1.png" alt="一名软件">
+				</a>
+			</h1>
+			<ul class="lmainmenu floatl">
+				<li class="lliactive">
+					<a class="lmenu-cnt" href="index.html">
+						首页
+					</a>
+					<span class="lbtm-line"></span>
+				</li>
+				<li>
+					<a id="lsy-menu-glgzt" class="lmenu-cnt" href="javascript:;">
+						管理控制台
+					</a>
+				</li>
+				<li>
+					<a class="lmenu-cnt" href="javascript:;">
+						服务
+					</a>
+				</li>
+				<li>
+					<a class="lmenu-cnt" href="javascript:;">
+						文档
+					</a>
+				</li>
+				<li>
+					<a class="lmenu-cnt" href="javascript:;">
+						论坛
+					</a>
+				</li>
+			</ul>
+			<div class="ldl-regtister">
+				<a id="ldlzc-dlbtn" class="floatl ldl" href="javascript:;">登陆</a>
+				<a id="ldlzc-zcbtn" class="floatl lzc" href="javascript:;">注册</a>
+			</div>
+			<div class="ldenglu" id="ldenglu2">
+				<p class="llanding-name floatl">北京一名</p><span class="lsj floatl"></span>
+				<ul class="llonding-list" id="llonding-li">
+					<li class="ldl-ist" >
+						<a class="la1" id="lxgtu-xgbtn" href="javascript:;">密钥中心</a>
+					</li>
+					<li class="ldl-ist">
+						<a class="la2" id="tuchu" href="javascript:;">退出</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</header>
+	<!-- 个人开发者信息审核 -->
+	<div id="lgrkfxx2" class="lgrkfxx">
+		<div class="div">
+		    <div class="login1 clearfix" >
+		        <h3 class="floatl">基本信息</h3>
+		        <p class="reasonname">item101</p>
+			</div>
+	    <form id="lgrform" name="form1">
+		        <label for="lpaccount" class="col-xs-4" ><span>已注册账号：</span>
+		            <input id="lperaccount" type="text" name="account" placeholder="18091701563"class="num">
+		        </label>
+		        <label for="" class="col-xs-4" ><span>开发者姓名：</span>
+		            <input id="lpername" type="text" name="realname" placeholder="与身份证信息保持一致"
+		                   class="realName" >
+		           
+		        </label>
+		        <label for="" class="col-xs-4" ><span>团队昵称：</span>
+		            <input id="lperteamn" type="text" name="teamname" placeholder="会出现在应用介绍信息"
+		                   class="nick">
+		        </label>
+		     	 <label id="lvoxzjz" for="" class="col-xs-4">
+		           <span>上传证件照：</span>
+		            <a id="file_upload" href="javascript:;">添加文件</a>
+		            <input  type="hidden" id="imagepath" name="imagepath">
+		            <img id="lperimagepath" class="luploadperimg" src="../images/web-index-ico/bt-3.png" alt="">
+		           
+		        </label>
+		        <label for="" class="col-xs-4"><span>身份证号码：</span>
+		            <input id="lpercardid" type="text" name="cardid" placeholder="输入18位身份证号码"
+		                   class="id" >
+		            
+		        </label>
+		        	<div class="lpaddingt22">
+					   <div class="login1 lmargint22 clearfix" >
+					         <h3 class="floatl">联系方式</h3>
+					         <p class="reasonname">item102</p>
+					  </div>
+					 </div>
+			        <label for="" class="col-xs-4"><span>*联系人地址：</span>
+			            <select  class="num1" name="selectp"  >
+			                <option id="lperselectp" value="0" selected = "selected"></option>
+			            </select>
+			            <select  class="num1" name="selectc">
+			                <option id="lperselecct"  value="0" selected = "selected"></option>
+			            </select>
+			        </label>
+			        <label for="" class="col-xs-4" ><span>详细地址：</span>
+			            <input id="lperaddress" type="text" name="address" placeholder="详细联系地址"
+			                   class="num">
+			        </label>
+			        <label for="" class="col-xs-4" ><span>电子邮箱地址：</span>
+			            <input id="lperemail" type="text" name="email" placeholder="用于接收审核通知信息"
+			                   class="email" >
+			            
+			        </label>
+			        <label for="" class="col-xs-4" ><span>手机号码：</span>
+			            <input id="lpermobile" type="text" name="mobile" placeholder="用于第一时间通知您重要信息"
+			                   class="mobile" >
+			           
+			        </label>
+			        <label for="" class="col-xs-4" ><span>座机号码：</span>
+			            <input id="lpertelephone" type="text" name="landline" placeholder="例如：010-9876543"
+			                   class="telephone" >
+			        </label>
+			        <label for="" class="col-xs-4" ><span>QQ号码：</span>
+			            <input id="lperqqnum" type="text" name="qqnum" placeholder="便于客服人员与您及时沟通"
+			                   class="qq" >
+			            
+			        </label>
+			        <label for="" class="col-xs-4" ><span>开发者网站地址:</span>
+			            <input id="lperwebsite" type="text" name="website" placeholder="填写网地址"
+			                   class="num">
+			        </label>
+
+			       <div class="lpersubmit">
+                        <a id="lpersubmit" href="javascript:;">审核确认通过</a>
+                        <a id="lpersub" href="javascript:;">审核有问题</a>
+                    </div>
+			        <input type="hidden" name="proId" id="lproId">
+			        <input type="hidden" name="proType" id="lproType">
+	    </form>
+    	</div>
+	</div>
+	<!-- 企业开发者信息审核 -->
+	<div id="lqykazxx2" class="lqykazxx">
+		<div class="lyegrbtn">
+			<ul class="lbtn-list clearfix">
+				<li id="lkfzxxsh" class="lkfzxx">
+					<a href="javascript:;">
+						开发者信息
+					</a>
+				</li>
+				<li id="lcwxxsh" class="lkfzxx">
+					<a href="javascript:;">
+						财务信息
+					</a>
+				</li>
+			</ul>
+		</div>
+		<!-- 注册开发者信息个人、企业都有这一项，企业多一个财务信息 -->
+		<div class="div" id="lkfzxxsh-cnt">
+		    <div class="login1 clearfix">
+		        <h3 class="floatl">基本信息</h3>
+		        <p class="reasonname">item201</p>
+		    </div>
+		    <form id="lqyform" name="form2">
+		        <label class="col-xs-4" ><span>已注册账号：</span>
+		            <input id="lcpaccount" type="text" name="account" placeholder="xiausuhdhu@emindsoft.com.cn"
+		                   class="num">
+		        </label>
+		        <label class="col-xs-4" ><span>企业名称：</span>
+		            <input id="lcpcpname" type="text" name="companyName" placeholder="与企业执照保持一致"
+		                   class="realName" >
+		            
+		   
+		        </label>
+		        <label class="col-xs-4" ><span>出品人：</span>
+		            <input id="lcppublisher" type="text" name="publisher" placeholder="不超过20个字符"
+		                   class="nick">
+		        </label>
+		        <label  id="lvoxyyzz" class="col-xs-4">
+		            <span>营业执照：</span>
+		          <!--   <a id="lfile_upload-a" href="javascript:;"></a> -->
+		            <input type="hidden"  name="licensePath">
+		            <img id="imagepath1" class="luploadperimg" src="../images/web-index-ico/bt-3.png" alt="">
+
+		        </label>
+		        <!-- 上传营业执照 -->
+		        <label class="col-xs-4" style="font-size: small">请上传营业执照扫描件，jpg、png格式的图片（不超过1M）&nbsp&nbsp
+		        <a href="javascript:;" title = "点击查看示例" style="text-decoration: none;color: #3385ff">查看示例</a>
+
+		        </label>
+		        <label class="col-xs-4" ><span>营业执照号：</span>
+		            <input id="lcplicenseNum" type="text" name="licenseNum"
+		                   class="licenseNum"  placeholder="输入15位营业执照号">
+		            
+		         
+		        </label>
+		        <label class="col-xs-4"><span>注册地址：</span>
+		            <select  class="num1" name="registPro"  >
+		                <option id="lcpregistPro" value="0" selected = "selected">选择省份</option>
+		            </select>
+		            <select  class="num1" name="registCity">
+		                <option id="lcpregistCity" value="0" selected = "selected">选择城市</option>
+		            </select>
+		        </label>
+		        <label class="col-xs-4" style="color: white"><span>详细地址：</span>
+		            <input id="lcpregaddress" type="text" name="registedAddress" placeholder="详细联系地址"
+		                   class="num">
+		        </label>
+		        <div class="login1 lmargint22 clearfix">
+		           	<h3 class="floatl">联系方式</h3>
+		        	<p class="reasonname">item202</p>
+		        </div>
+		        <label class="col-xs-4"><span>联系人地址：</span>
+		            <select  class="num1" name="contactsPro" >
+		                <option id="lcpshenfen" value="0" selected = "selected">选择省份</option>
+		            </select>
+		            <select  class="num1" name="contactsCity">
+		                <option id="lcpcity"  value="0" selected = "selected">选择城市</option>
+		            </select>
+		        </label>
+		        <label class="col-xs-4" style="color: white"><span>详细地址：</span>
+		            <input id="lcpcontactsAddress" type="text" name="contactsAddress" placeholder="详细联系地址"
+		                   class="num">
+		        </label>
+		        <label class="col-xs-4" ><span>电子邮箱地址：</span>
+		            <input id="lcpemail" type="text" name="email" placeholder="用于接收审核通知信息"
+		                   class="email" >
+		            
+		          
+		        </label>
+		        <label class="col-xs-4" ><span>手机号码：</span>
+		            <input id="lcpcontactmobile" type="text" name="contactMobile" placeholder="用于第一时间通知您重要信息"
+		                   class="mobile" >
+		            
+		        </label>
+		        <label class="col-xs-4" ><span>座机号码：</span>
+		            <input id="lcplandline" type="text" name="landline" placeholder="例如：010-9876543"
+		                   class="telephone" >
+		        </label>
+		        <label class="col-xs-4" ><span>QQ号码：</span>
+		            <input id="lcpqqnum" type="text" name="qqnum" placeholder="便于客服人员与您及时沟通" class="qq">
+		            
+		           
+		        </label>
+		        <label ><span class="lnowrap">开发者网站地址：</span>
+		            <input id="lcpwebsite" type="text" name="website" placeholder="填写网地址"
+		                   class="num">
+		        </label>
+
+		        <div>
+		            <label class="col-xs-4" style="margin-top: 22px;font-size: 0px;padding-bottom: 41px;text-align: center">
+		                    <a class="agree" id="onregist" href="javascript:;">审核通过</a>
+		                    <a class="agree" id="lcpsub" href="javascript:;">审核有问题</a>
+		            </label>
+		        </div>
+		    </form>
+		</div>
+		<!-- 注册企业开发者信息中财务信息 -->
+		<div class="div2" id="lcwxxsh-cnt" >
+		    <div class="login1 clearfix">
+		        <h3 class="floatl">财务信息</h3>
+				<p class="reasonname">item203</p>
+		    </div>
+		    <form id="formtwo" name="form3">
+		        <label class="col-xs-4" ><span>收款方户名：</span>
+		            <input id="lcppayeename" type="text" name="payeeName" placeholder="公司开户名"
+		                   class="payName" >
+		    
+		        </label>
+		        <label class="col-xs-4" ><span>银行名称：</span>
+		            <input id="lcpbankName" type="text" name="bankName"
+		                   class="realName" >
+		        </label>
+		        <label class="col-xs-4"><span>开户行地区：</span>
+		            <select  class="num1" name="openedBankPro" >
+		                <option id="lcpopenedBankPro" value="0" selected = "selected">选择省份</option>
+		            </select>
+		            <select  class="num1" name="openedBankCity">
+		                <option id="lcpopenedBankCity" value="0" selected = "selected">选择城市</option>
+		            </select>
+		        </label>
+		        <label class="col-xs-4" ><span>开户行全称：</span>
+		            <input id="lcpopenedBank" type="text" name="openedBankFullName"
+		                   class="openedBankName" >
+		            
+		        </label>
+
+		        <label class="col-xs-4" ><span>银行账号：</span>
+		            <input id="lcpbankAccount" type="text" name="bankAccount" placeholder="请填写企业的银行账户，用于财务结算"
+		                   class="bankNum" >
+		            
+		        </label>
+		        <label id="lvoxswdjz" class="col-xs-4" style="text-align: left">
+		            <span class="lnowrap">上传税务登记证：</span>
+		            <input type="hidden"  name="taxRegistLicensePath">
+					<img id="limagepath2" class="luploadperimg" src="../images/web-index-ico/bt-3.png" alt="">
+
+
+
+
+		        </label>
+		        <label class="col-xs-4" style="font-size: small">请上传税务登记证扫描件，jpg、png格式的图片（不超过1M）&nbsp&nbsp
+		            <a href="javascript:;" title = "查看示例" style="text-decoration: none;color: #3385ff">查看示例</a>
+		        </label>
+		        <label class="col-xs-4"><span>税务登记证号：</span>
+		            <input id="lcptaxNum" type="text" name="taxNum" class="taxNum" >
+		            
+		         
+		        </label>
+		        <label style="text-align: left"><span class="lnowrap lwidth220">是否开具增值税专用发票：</span>
+		            <input id="lcpisSpecialInvoicet" class="lradios lmiddle" type="radio" checked="checked" name="isSpecialInvoice" value="1"/><span class="lwidth28">是</span>
+		            <input id="lcpisSpecialInvoicef" class="lradios lmiddle" type="radio" value="0" name="isSpecialInvoice"/><span class="lwidth28">否</span>
+		        </label>
+		        <div class="login1 clearfix">
+		            <h3 class="floatl">财务联系方式</h3>
+		            <p class="reasonname">item204</p>
+		        </div>
+		        <label class="col-xs-4" ><span>财务联信息人：</span>
+		            <input id="lcpfinanceContacts" type="text" name="financeContacts" placeholder="请填写对应的财务负责人姓名"
+		                   class="financeName" >
+		        </label>
+		        <label  class="col-xs-4" ><span>财务邮箱：</span>
+		            <input id="lcpfinanceEmail" type="text" name="financeEmail" placeholder="256735675375@qq.com"
+		                   class="financeEmail" >
+		        </label>
+		        <label class="col-xs-4" ><span>财务手机号：</span>
+		            <input id="lcpfinanceMobile" type="text" name="financeMobile" placeholder="请填写财务负责人手机联系方式，方便及时联系"
+		                   class="financeMobile" >
+		        </label>
+		    </form>
+		</div>
+	</div>
+
+	<!-- 遮罩层 -->
+	<div class="lshade">
+    </div>
+    <!-- 修改密码 -->
+    <div id="lxgma-onoff" class="banxin" style="display:none">
+        <div class="login">
+            <div class="login-wd">修改密码</div>
+            <div class="login-ct ">
+				<!-- 修改密码表单 -->
+                <form action="" class="lxgmmform" id="xgmmformdata">
+                   	<div class="form-wrap">
+                   		<!-- 旧密码输入框 -->
+                   		<div class="row1 clearfix ">
+                   			<label for="">旧密码</label>
+                   			<input id="loldPassword" type="password" name="password" placeholder="请输入您的旧密码" autocomplete="off">
+                   			<span class="lduigou"></span>
+                   		</div>
+                         <div class="row2 clearfix">
+                   			<label for="">新密码</label>
+                   			<input id="lnewPassword" type="password" name="newPass" placeholder="请输入您的新密码" autocomplete="off">
+                   			<span class="lduigou"></span>
+                   		</div>
+                   		<div class="row2 clearfix">
+                   			<label for="">新密码</label>
+                   			<input id="lnewPassword2" type="password" name="newPass" placeholder="请再次输入您的新密码" autocomplete="off">
+                   			<span class="lduigou"></span>
+                   		</div>
+                   		<div id="lxgmmsubmit" class="row3 ">
+                        <a class="row3Btn" href="javascript:;">确定</a>
+                        <!-- 调试时需要用户名咱是先写一个以后在本地存储中去取 -->
+                        <input type="hidden" id="lxgmm-account" name="account">
+                        <!-- 用来存储验证码 -->
+                        <input type="hidden" name="vcode" id="vcode">
+                        <!-- 修改密码在后台分为两种update(正常修改) forget(忘记密码修改) -->
+                         <input type="hidden" name="type" value="update" id="ltype">
+                   		</div>
+                   	</div>
+                </form>
+            </div>
+        </div>
+        <div class="lx-btn"></div>
+    </div>
+    <!-- 登陆、注册、修改密码成功后提示 -->
+    <div class="lsuccess">
+    	<div class="lh4-box">
+    		<h4 id="lsuccess-tsxx">注册成功</h4>
+    	</div>
+    	<div class="lsuce-text clearfix">
+    		
+	        <div class="lsuccess-ico">
+	            
+	        </div>
+	        <p id="lsuccess-tsxx2">
+	             恭喜你，密码修改成功！
+	        </p> 
+        </div>
+        <div class="lx-btn"></div>
+    </div>
+    <!-- 审核提交成功后弹窗 -->
+    <div class="ltjqr">
+    	<div class="lx clearfix">
+    		<span id="lxbtn2" class="lx-btn"></span>
+    	</div>
+    	<div class="lx-cnt">
+    		<p class="lx-text">您确认进行审核通过么？确认将进行提交！</p>
+    		<p class="clearfix lx-qxqr">
+    			<a id="lcancel" href="javascript:;">取消</a>
+    			<a id="lsure" href="javascript:;">确认</a>
+    		</p>
+    	</div>
+    </div>
+    <!-- 审核提交后有问题弹窗 -->
+    <div  class="lshywt">
+    	<form id="lshenheform">
+    		<h2>您的审核有问题,请选择问题编号！</h2>
+    		<div id="lreason-list">
+    			
+	    	<!-- 	<div class="litem-wrap clearfix">
+	    			<input name="reason" value="item001" class="floatl litem" id="litem1" type="checkbox" name="" >
+	    			<label class="floatl" for="litem1">
+	    				<span class="llabel-span floatl">item</span>
+	    				<span class="llabel-span floatl">001</span>
+	    			</label>
+	    		</div>
+	    		
+	    		<div class="litem-wrap clearfix">
+	    			<input name="reason" value="item002" class="floatl litem" id="litem2" type="checkbox" name="" >
+	    			<label class="floatl" for="litem2">
+	    				<span class="llabel-span floatl">item</span>
+	    				<span class="llabel-span floatl">002</span>
+	    			</label>
+	    		</div>
+	    		<div class="litem-wrap clearfix">
+	    			<input  name="reason" value="item003" class="floatl litem" id="litem3" type="checkbox" name="" >
+	    			<label class="floatl" for="litem3">
+	    				<span class="llabel-span floatl">item</span>
+	    				<span class="llabel-span floatl">003</span>
+	    			</label>
+	    		</div> -->
+			</div>
+    		<p class="clearfix lx-qxqr lcenter">
+    			<a id="lcancel2" class="lcolorqx" href="javascript:;">取消</a>
+    			<a id="lsure2" class="lcolorsr" href="javascript:;">确认</a>
+    		</p>
+    	</form>
+    	<div id="lxbtn3" class='lxbtns'>
+    		
+    	</div>
+    </div>
+	<footer class="lfooter">
+		<div class="lwrap">
+			<p class="lfoot-text">
+				<span>
+					Copyright&nbsp;&copy;&nbsp;2016-2025&nbsp;Downjoy.&nbsp;Allrights&nbsp;Reserved.
+				</span>
+				<a href="#">&nbsp;一铭软件股份有限公司 版权所有</a>
+			</p>
+		</div>
+	</footer>
+</body>
+</html>

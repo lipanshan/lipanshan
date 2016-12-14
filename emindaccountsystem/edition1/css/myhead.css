@@ -1,0 +1,169 @@
+
+
+.lsidemenu {
+	border: 1px solid #e5e5e5;
+	margin-top: 20px;
+	width: 250px;
+	margin-right: 20px;
+	min-height: 678px;
+	background-color: #fbfbfb;
+}
+.lsideli {
+	border-bottom: 1px solid #e5e5e5;
+}
+.lsideli h2 {
+	padding-left: 80px;
+	overflow: hidden;
+	width: 170px;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	font-size: 14px;
+	line-height: 49px;
+	font-weight: normal;
+}
+.lsideli a {
+	display: block;
+	color: #3e3e3e;
+}
+.lsidel1 {
+	padding-top: 3px;
+}
+.lsidel1 h2 {
+	line-height: 48px;
+}
+.lsidel2 {
+	padding-top: 1px;
+}
+.lsideli:hover ,
+.lsideliactive {
+ 	background-color: #005bc4;
+ }
+.lsideli:hover a ,
+.lsideliactive a {
+	color: #fff;
+}
+.lemailland {
+	margin-top: 20px;
+	border: 1px solid #e5e5e5;
+	width: 726px;
+	min-height: 678px;
+}
+.lh2title {
+	font-size: 24px;
+	line-height: 64px;
+	color: #3f3f3f;
+	overflow: hidden;
+	margin-left: 39px;
+}
+.lrowbtn-wrap {
+	position: relative;
+	width: 100%;
+	height: 40px;
+	margin-top: 11px;
+}
+.lrowbtn {
+	font-size: 0;
+	text-align: center;
+}
+.lrowbtn2 {
+	position: absolute;
+	left:0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+}
+.lrowbtn2 input ,
+.lrowbtn2 button {
+	opacity: 0 !important;
+	filter: alpha(opacity=0);
+}
+.lbc {
+	display: inline-block;
+	width: 109px;
+	height: 39px;
+	background-color: #ff9700 ;
+	color: #fff ;
+	font-size: 16px;
+	line-height: 38px;
+	padding-top: 1px;
+	-webkit-border-radius: 3px;
+	-ms-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+/*	margin-left: 318px;*/
+	margin-right: 20px;
+	text-align: center;
+}
+/***************上传插件样式start**********************/
+.modal-body,
+.modalbtn-body {
+	display: inline-block;
+}
+#cutimg {
+    width: 375px;
+    height: 300px;
+}
+#cutimg {
+    display: none;
+}
+.preview-container {
+    overflow: hidden;
+}
+.lpositionr {
+    position: relative;
+}
+#cutimg {
+    width: 375px !important;
+    height: 300px !important;
+}
+.lbctx ,
+.lcxxz {
+	display: none;
+}
+
+/***************上传插件样式end**********************/
+.lmyheadimg {
+	width: 100%;
+	margin-top: 14px;
+	text-align: center;
+	font-size: 0;
+    position: relative;
+}
+.mrimg,
+.preview-container {
+	width: 156px ;
+	height: 156px ;
+}
+
+.limgtip {
+	font-size: 12px;
+	line-height: 40px;
+	color: #3f3f3f;
+	width: 420px;
+	padding-left: 176px;
+}
+#preview-pane {
+    display: none;
+    overflow: hidden;
+}
+/**************上传图片格式错误提示*******************/
+.lfalsebox {
+	margin-top: 22px;
+	padding-left: 298px;
+	height: 0;
+	overflow: hidden;
+}
+.lfalseico {
+	width: 17px;
+	height: 17px;
+	background: url(../image/sprite1.png)
+	no-repeat 0 -183px;
+	margin-top: 12px;
+}
+.lfalsetext {
+	font-size: 12px;
+	line-height: 18px;
+	color: #3f3f3f;
+	padding-left: 5px;
+	margin-top: 12px;
+}

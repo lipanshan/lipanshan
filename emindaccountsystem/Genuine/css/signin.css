@@ -1,0 +1,500 @@
+@charset "utf-8";
+/*=========================Reset_start==========================*/
+body,h1,h2,h3,h4,h5,h6,div,p,dl,dt,dd,ol,ul,li,form,table,th,td,a,img,span,strong,var,em,input,textarea,select,option{margin: 0; padding: 0;}
+html,body{font-family:"微软雅黑","宋体",Arail,Tabhoma; font-size: 12px; text-align: left;}
+ul,ol{list-style: none;}
+img{border: 0;}
+input,select,textarea{outline:0;}
+textarea{resize:none; overflow: auto;}
+table{border-collapse: collapse; border-spacing: 0;}
+th,strong,var,em{font-weight: normal; font-style: normal;}
+a{text-decoration: none;}
+a:link,a:visited,a:hover,a:active{text-decoration:none;} 
+
+.jwrap {
+	width: 100%;
+	height: 100%;
+	background: #fbfbfb;
+}
+
+.jhead {
+	width: 100%;
+	height: 74px;
+	border-bottom: 1px solid #e5e5e5;
+	background: #fff;
+}
+
+.jlogo {
+	width: 1000px;
+	height: 74px;
+	overflow: hidden;
+	line-height: 74px;
+	margin: 0 auto;
+}
+
+.jlogo .jlogol {
+	width: 215px;
+	height: 42px;
+	float: left;
+	background: url(../image/logo.png)0 0 no-repeat;
+	margin-top: 20px;
+}
+.jlogol a {
+	display: block;
+	height: 100%;
+}
+.jlogo .jlogor {
+	width: 155px;
+	height: 42px;
+	float: right;
+	text-align: right;
+	line-height: 42px;
+	color: #343434;
+	font-size: 14px;
+	margin-top: 20px;
+}
+
+.jlogo .jlogor a {
+	text-decoration: none;
+	color: #727272;
+}
+
+.jform {
+	width: 1000px;
+	margin: 0 auto;
+}
+
+.jnar {
+	width: 100%;
+	height: 440px;
+	margin: 0 auto;
+	background: url(../image/signin.png);
+	overflow: hidden;
+}
+
+.jnar .jsignin {
+	width: 323px;
+	border: 1px solid #e5e5e5;
+	background: #fff;
+	float: right;
+	margin-top: 37px;
+	overflow: hidden;
+}
+
+.jdltop {
+	width: 323px;
+	height: 52px;
+	font-size: 18px;
+	color: #adadad;
+	overflow: hidden;
+	background: #fbfbfb;
+	text-align: center;
+}
+
+.jzhdl {
+	width: 160px;
+	height: 52px;
+	line-height: 52px;
+	font-size: 18px;
+	color: #3f3f3f;
+	background: #fbfbfb;
+	float: left;
+	cursor: pointer;
+	font-weight: bold;
+}
+
+.jcenter {
+	width: 3px;
+	height: 52px;
+	line-height: 52px;
+	font-size: 18px;
+	color: #3f3f3f;
+	background: #fbfbfb;
+	float: left;
+	text-align: center;
+	color: #e5e5e5;
+}
+
+.jkjdl {
+	width: 160px;
+	height: 52px;
+	line-height: 52px;
+	font-size: 18px;
+	color: #ababab;
+	background: #fbfbfb;
+	float: left;
+	cursor: pointer;
+}
+
+.tishi0 {
+	width: 250px;
+	height: 12px;
+	border: none;
+	font-size: 12px;
+	color: #fd9800;
+	margin: 0 auto;
+	padding-top: 7px;
+	padding-bottom: 7px;
+}
+
+.tishi4 {
+	width: 250px;
+	height: 12px;
+	border: none;
+	font-size: 12px;
+	color: #3f3f3f;
+	margin: 0 auto;
+	padding-top: 7px;
+	padding-bottom: 7px;
+	display: none;
+}
+
+.tishi4 a {
+	text-decoration: none;
+	font-size: 12px;
+	color: #FD9800;
+}
+
+.jdlfs {
+	width: 646px;
+	overflow: hidden;
+}
+
+.jleftdl {
+	width: 323px;
+	float: left;
+}
+
+.jrightdl {
+	width: 323px;
+	float: left;
+	display: none;position: relative;
+}
+
+.jyhm,
+.jmm {
+	width: 264px;
+	height: 32px;
+	line-height: 32px;
+	border-radius: 3px;
+	border: 1px solid #E5E5E5;
+	margin: 0 auto;
+	overflow: hidden;
+	background: #fbfbfb;
+}
+
+.jyhm li {
+	float: left;
+	background: #fbfbfb;
+}
+
+.jshr {
+	position: relative;
+}
+
+.jyhm .jtoux {
+	width: 16px;
+	height: 16px;
+	margin: 8px 10px;
+	background: url(../image/admin.png);
+}
+.jyhm1{
+	width: 264px;
+	height: 32px;
+	line-height: 32px;
+	border-radius: 3px;
+	border: 1px solid #E5E5E5;
+	margin: 0 auto;
+	overflow: hidden;
+	background: #fbfbfb;
+}
+.jyhm1 li {
+	float: left;
+	background: #fbfbfb;
+}
+.jyhm1 .jsj {
+	width: 16px;
+	height: 16px;
+	margin: 8px 10px;
+	background:url(../image/phone.png);
+}
+
+.jshrn {
+	width: 210px;
+	height: 30px;
+	border: none;
+	margin-left: 5px;
+	outline: none;
+	padding-left: 10px;
+	color: #3f3f3f;
+	background: #fbfbfb;
+}
+
+.x {
+	width: 14px;
+	height: 14px;
+	background: url(../image/x.png);
+	position: absolute;
+	left: 200px;
+	top: 10px;
+	cursor: pointer;
+}
+.jmm li {
+	float: left;
+	background: #fbfbfb;
+}
+
+.jmm .jtoux {
+	width: 16px;
+	height: 16px;
+	margin: 8px 10px;
+	background: url(../image/password.png);
+}
+
+.jmm {
+	margin-top: 10px;
+}
+.jmm1{
+	width: 168px;
+	height: 32px;
+	line-height: 32px;
+	border-radius: 3px;
+	overflow: hidden;
+	background: #fbfbfb;
+	border: 1px solid #e5e5e5;
+	margin-top: 10px;
+	margin-left: 28px;
+}
+.jmm1 li {
+	float:left;
+	background: #fbfbfb;
+}
+.jmm1 .jtoux {
+	width: 16px;
+	height: 16px;
+	margin: 8px 10px;
+	background: url(../image/password.png);
+}
+.jshrn1 {
+	width: 110px;
+	height: 30px;
+	border: none;
+	margin-left: 5px;
+	outline: none;
+	padding-left: 10px;
+	color: #3f3f3f;
+	background: #fbfbfb;
+}
+.jhqyzm{width: 86px;height: 34px;position: absolute;left: 210px;top: 45px;cursor: pointer;}
+.jhqyzm1{width:84px;height:32px;font-size:12px;color:#fff;background:#005bc4;border-radius:3px;border: 1px solid #e5e5e5;}
+.jbutton1{margin-top: 24px;}
+.jzhmmdl{width: 100px;height: 12px;margin-left: 220px;margin-top: 10px;font-size: 12px; color:#4078cb;cursor: pointer;}
+
+.jqitali1:hover{
+	background: url(../image/qq1.png);
+}
+.jqitali2:hover{
+	background: url(../image/wb1.png);
+}
+.jqitali3:hover{
+	background: url(../image/wx1.png);
+}
+.jbutton:hover{
+	background: #0150ab;
+}
+.jhqyzm1:hover{
+	background: #0150ab;
+}
+
+.jrememberpassword {
+	width: 264px;
+	height: 32px;
+	line-height: 32px;
+	margin: 4px auto;
+	overflow: hidden;
+	color: #3f3f3f;
+	font-size: 12px;
+}
+
+.jrememberpassword .jzddl {
+	width: 80px;
+	height: 32px;
+	line-height: 32px;
+	float: left;
+	font-size: 12px;
+	display: inline;
+}
+
+.jcheck {
+	float: left;
+	width: 12px;
+	height: 12px;
+	margin-top: 10px;
+}
+
+.jzddl label {
+	float: left;
+	font-size: 12px;
+	line-height: 12px;
+	margin-top: 10px;
+	margin-left: 7px;
+	color: #3F3F3F;
+}
+
+.jrememberpassword .jforget {
+	width: 80px;
+	height: 32px;
+	float: right;
+}
+
+.jforget a {
+	text-decoration: none;
+	font-size: 12px;
+	color: #3f3f3f;
+}
+
+
+/*验证码*/
+
+.jyzm0 {
+	width: 266px;
+	height: 32px;
+	overflow: hidden;
+	margin: 0 auto;
+	margin-top: 10px;
+	display: none;
+}
+
+.jyzm {
+	width: 118px;
+	height: 32px;
+	border: none;
+	list-style: none;
+	float: left;
+}
+
+.jyzm input {
+	width: 116px;
+	height: 30px;
+	border: 1px solid #005BC4;
+	border-radius: 3px;
+	text-align: center;
+}
+
+.jyzm1 {
+	width: 58px;
+	height: 32px;
+	float: left;
+}
+
+.jyzm1 input {
+	width: 58px;
+	height: 32px;
+	border: none;
+}
+
+.jhyz {
+	height: 32px;
+	font-size: 12px;
+	width: 90px;
+	float: left;
+	line-height: 32px;
+	text-align: center;
+	color: #3f3f3f;
+}
+
+.jhyz a {
+	font-size: 12px;
+	text-decoration: none;
+	color: #ff9600;
+}
+
+.jbutton {
+	width: 264px;
+	height: 39px;
+	background: #005bc4;
+	color: #fff;
+	border-radius:3px;
+	margin-left: 30px;
+	outline: none;
+	border: none;
+	cursor: pointer;
+}
+
+.jqita {
+	width: 260px;
+	height: 30px;
+	line-height: 30px;
+	margin: 0 auto;
+	overflow: hidden;
+	margin-top: 20px;
+}
+
+.jqita li {
+	float: left;
+}
+
+.jqita1 {
+	width: 76px;
+	height: 1px;
+	border: none;
+	background: #e5e5e5;
+	margin-top: 15px;
+}
+
+.jqita2 {
+	width: 108px;
+	height: 30px;
+	border: none;
+	color: #b6b6b6;
+	text-align: center;
+	line-height: 30px;
+	font-size: 13px;
+}
+
+.jqita3 {
+	width: 115px;
+	height: 25px;
+	margin: 0 auto;
+	overflow: hidden;
+	margin-top: 5px;
+	margin-bottom: 15px;
+}
+
+.jqita3 li {
+	float: left;
+	cursor: pointer;
+}
+
+.jqitali1 {
+	width: 26px;
+	height: 25px;
+	background: url(../image/qq.png);
+}
+
+.jqitali2 {
+	width: 26px;
+	height: 25px;
+	margin-left: 18px;
+	background: url(../image/weibo.png);
+}
+
+.jqitali3 {
+	width: 26px;
+	height: 25px;
+	margin-left: 18px;
+	background: url(../image/wexin.png);
+}
+
+.fool {
+	width: 100%;
+	height: 60px;
+	border-top: 1px solid #e5e5e5;
+	font-size: 10px;
+	background: #fbfbfb;
+	text-align: center;
+	line-height: 60px;
+	position: fixed;
+	bottom: 0;
+	color: #3f3f3f;
+}

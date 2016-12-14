@@ -1,0 +1,392 @@
+
+.lsidemenu {
+	border: 1px solid #e5e5e5;
+	margin-top: 20px;
+	width: 250px;
+	margin-right: 20px;
+	min-height: 678px;
+	background-color: #fbfbfb;
+}
+.lsideli {
+	border-bottom: 1px solid #e5e5e5;
+}
+.lsideli h2 {
+	padding-left: 80px;
+	overflow: hidden;
+	width: 170px;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	font-size: 14px;
+	line-height: 49px;
+	font-weight: normal;
+}
+.lsideli a {
+	display: block;
+	color: #3e3e3e;
+}
+.lsidel1 {
+	padding-top: 3px;
+}
+.lsidel1 h2 {
+	line-height: 48px;
+}
+.lsidel2 {
+	padding-top: 1px;
+}
+.lsideli:hover ,
+.lsideliactive {
+ 	background-color: #005bc4;
+ }
+.lsideli:hover a ,
+.lsideliactive a {
+	color: #fff;
+}
+
+
+
+.lemailland {
+	margin-top: 20px;
+	border: 1px solid #e5e5e5;
+	padding-left: 37px;
+	width: 689px;
+	min-height: 678px;
+}
+.lh2title {
+	font-size: 24px;
+	line-height: 64px;
+	color: #3f3f3f;
+	text-indent: 2px;
+	overflow: hidden;
+}
+.lalerady {
+	/*display: none;*/
+}
+.lnoemail {
+	display: none;
+}
+.lemailhref {
+	font-size: 16px;
+	line-height: 48px;
+	margin-right: 38px;
+	color: #005cc3;
+	font-weight: bold;
+}
+.lmodify {
+	font-size: 14px;
+	line-height: 14px;
+	margin-top: 18px;
+	color: #005bc2;
+	padding-right: 8px;
+}
+.lunbinding {
+	font-size: 14px;
+	line-height: 14px;
+	margin-top: 18px;
+	color: #005bc2;
+	padding-left: 8px;
+	border-left: 2px solid #688fd4;
+}
+.lemail-tip {
+	font-size: 12px;
+	line-height: 18px;
+	color: #3f3f3f;
+}
+.lmargint19 {
+	margin-top: 19px;
+}
+/******************解绑邮箱**********************/
+.lunbindingemail,
+.lmodifyemail,
+.lsetloginemail {
+	display: none;
+	width: 462px;
+	height: 271px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin-left: -231px;
+	margin-top: -135px;
+	z-index: 240;
+	background-color: #fff;
+	border: 1px solid #e6e6e6;
+}
+.lhead2 {
+	background-color: #fbfbfb;
+	border-bottom: 1px solid #e5e5e5 ;
+}
+.lunbinding-title {
+	width: 220px;
+	font-size: 14px;
+	line-height: 34px;
+	color: #3f3f3f;
+	padding-left: 34px;
+	padding-top: 2px;
+}
+.lclosebtn {
+	float: right;
+	width: 16px;
+	height: 16px;
+	margin-top: 10px;
+	background: url(../image/sprite1.png)
+	no-repeat -184px 0;
+	padding-right: 9px;
+	cursor: pointer;
+}
+.lformunbind-email {
+
+}
+.lrow1 {
+	padding-top: 31px;
+	font-size: 12px;
+	line-height: 12px;
+	text-align: center;
+	color: #c1c1c1;
+}
+.lrow2 ,
+.lrow3 {
+	padding-top: 14px;
+}
+.llabel {
+	width: 91px;
+	font-size: 14px;
+	line-height: 26px;
+	color: #3f3f3f;
+	text-align: right;
+	padding-right: 12px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.lverification-mode {
+	width: 264px;
+	height: 32px;
+	border: 1px solid #e4e4e4;
+	background-color: #fbfbfb;
+	font-size: 14px;
+	line-height: 30px;
+	padding-left: 10px;
+	color: #bfbfbf;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	-ms-border-radius: 3px;
+	border-radius: 3px;
+}
+.linput {
+	width: 129px;
+	height: 14px;
+	border: 1px solid #e4e4e4;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	-ms-border-radius: 3px;
+	border-radius: 3px;
+	font-size: 14px;
+	line-height: 14px;
+	padding: 8px 12px 8px 10px;
+	color: #bfbfbf;
+}
+.lverification-num {
+	width: 127px;
+	height: 30px;
+	background-color: #005bc4;
+	color: #fff !important;
+	font-size: 14px;
+	line-height: 14px;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	text-align: center;
+	border: none;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	-ms-border-radius: 3px;
+	border-radius: 3px;
+	margin-left: 10px;
+	cursor: pointer;
+}
+.ltip {
+	font-size: 12px;
+	text-align: right;
+	line-height: 28px;
+	padding-right: 94px;
+	overflow: hidden;
+}
+.ltip a {
+	float: right;
+	color: #005bc4;
+}
+.lrow5 {
+	margin-top: 1px;
+}
+.lsubmitbtn {
+	width: 263px;
+	height: 39px;
+	background-color: #005bc4;
+	font-size: 16px;
+	line-height: 39px;
+	color: #fff;
+	text-align: center;
+	margin-left: 106px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	-ms-border-radius: 3px;
+	border-radius: 3px;
+}
+.lunbinding-emails,
+.lmodifyemails,
+.lsetloginemail2,
+.lsetloginemail3 {
+	display: none;
+	width: 462px;
+	height: 241px;
+	border: 1px solid #e5e5e5;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin-left: -231px;
+	margin-top: -120px;
+	background-color: #fff;
+	z-index: 260;
+}
+.lsetloginemail3 {
+	height: 210px;
+	margin-top: -105px;
+}
+.lsuccess-wrap {
+	padding-left: 81px;
+	padding-right: 80px;
+	padding-top: 10px;
+}
+.ltext1 {
+	margin-top: 24px;
+}
+.lsuccess-logo {
+	width: 44px;
+	height: 44px;
+	margin-left: 46px;
+	background: url(../image/sprite1.png)
+	no-repeat 0 -20px;
+}
+.lsuccess-text {
+	font-size: 18px;
+	line-height: 44px;
+	color: #3f3f3f;
+	margin-left: 24px;
+}
+.ltext2 {
+	margin-top: 24px;
+	font-size: 12px;
+	line-height: 22px;
+	color: #3f3f3f;
+	width: 100%;
+	text-align: center;
+}
+.lback {
+	display: block;
+	margin-top: 19px;
+	font-size: 0;
+	text-align: center;
+}
+.lback a {
+	display: inline-block;
+	color: #005bc4;
+	font-size: 12px;
+	line-height: 22px;
+}
+.ltextp {
+	font-size: 12px;
+	line-height: 22px;
+	padding: 13px 87px 0 110px;
+	color: #c1c1c1; 
+} 
+.lnewemail {
+	margin-top: 16px;
+}
+.llabel2 {
+	width: 92px;
+	overflow: hidden;
+	font-size: 14px;
+	line-height: 30px;
+	padding-top: 2px;
+	text-align: right;
+	color: #3e3e3e;
+	margin-right: 13px;
+}
+.lnewemail input {
+	width: 262px;
+	border: 1px solid #e5e5e5;
+	background-color: #fbfbfb;
+	font-size: 14px;
+	line-height: 14px;
+	color: #c1c1c1;
+	padding: 8px 9px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	-ms-border-radius: 3px;
+	border-radius: 3px;
+
+}
+.lmargin29 {
+	margin-top: 29px;
+}
+/**********设置邮箱***************/
+.lsettip,
+.lsetbtn {
+	font-size: 12px;
+	line-height: 38px;
+	padding-bottom: 1px;
+	color: #404040;
+}
+.lsetbtn {
+	margin-left: 21px;
+	color: #015cc5;
+
+}
+.lverification-mode2 {
+	font-size: 14px;
+	line-height: 26px;
+	color: #3f3f3f;
+	padding-left: 11px;
+}
+.lverication-tip {
+	font-size: 12px;
+	line-height: 32px;
+	padding-left: 106px;
+	padding-right: 93px;
+	color: #c0c0c0;
+	margin-top: 21px;
+}
+.lemailnumb-wrap {
+	font-size: 14px;
+	line-height: 34px;
+	padding-left: 106px;
+	padding-right: 93px;
+}
+.lemailnumb {
+	color: #3e3e3e;
+	margin-right: 15px;
+}
+.lemailnumb-wrap a {
+	color: #025ac4;
+}
+.lmargin17 {
+	margin-top: 17px;
+}
+.lcolor005bc4 {
+	color: #005bc4;
+}
+.lplacesee {
+	display: none;
+}
+.lemailformfalse,
+.lemailalreadyr {
+	display: none;
+	padding: 19px 93px 0 108px;
+	font-size: 12px;
+	line-height: 38px;
+	color: #fd9802;
+}
+.lsignrightnow {
+	color: #005bc2;
+}
+.getcodebtn {
+	display: block;
+}

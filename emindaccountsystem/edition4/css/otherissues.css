@@ -1,0 +1,95 @@
+
+
+.lsidemenu {
+	border: 1px solid #e5e5e5;
+	margin-top: 20px;
+	width: 250px;
+	margin-right: 20px;
+	min-height: 678px;
+	background-color: #fbfbfb;
+}
+.lsideli {
+	border-bottom: 1px solid #e5e5e5;
+}
+.lsideli h2 {
+	padding-left: 80px;
+	overflow: hidden;
+	width: 170px;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	font-size: 14px;
+	line-height: 49px;
+	font-weight: normal;
+}
+.lsideli a {
+	display: block;
+	color: #3e3e3e;
+}
+.lsidel1 {
+	padding-top: 3px;
+}
+.lsidel1 h2 {
+	line-height: 48px;
+}
+.lsidel2 {
+	padding-top: 1px;
+}
+.lsideli:hover ,
+.lsideliactive {
+ 	background-color: #005bc4;
+ }
+.lsideli:hover a ,
+.lsideliactive a {
+	color: #fff;
+}
+.lemailland {
+	margin-top: 20px;
+	border: 1px solid #e5e5e5;
+	width: 726px;
+	min-height: 678px;
+}
+.lh2title {
+	font-size: 24px;
+	line-height: 64px;
+	color: #3f3f3f;
+	overflow: hidden;
+	margin-left: 39px;
+}
+.loilist {
+	padding-left: 41px;
+	padding-top: 4px;
+	font-size: 12px;
+}
+.lpoint {
+	width: 4px;
+	height: 4px;
+	background-color: #005bc6;
+	margin-right: 10px;
+	margin-top: 12px;
+}
+.ltext {
+	line-height: 30px;
+	font-weight: normal;
+
+}
+.ltext a {
+	display: block;
+	color: #3f3f3f;
+}
+.ldetailedinfolist {
+	overflow: hidden;
+	display: none;
+	padding: 15px 0 15px 30px;
+}
+.ldetailedinfoli,
+.ldetailedinfotitle {
+	font-size: 12px;
+	line-height: 22px;
+	color: #3f3f3f;
+	width: 500px;
+}
+
+.loili .loiliavtive,
+.loili a:hover {
+	color: #1b69cb;
+}

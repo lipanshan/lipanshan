@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>管理控制台-权限管理</title>
+	<link rel="stylesheet" href="../css/public.css">
+	<link rel="stylesheet" href="../css/backstagemanage.css">
+	<script src="../js/jquery.js"></script>
+	<script src="../js/headaccount.js"></script>
+</head>
+<body>
+	<header class="lhead">
+		<div class="lwrap clearfix">
+			<h1 class="lh1 lfloatl">
+				<a class="lh1href" href="index.html">
+				<img class="lfloatl" src="../image/emindlogo.png" alt="">
+				<span class="lborder lfloatl"></span>
+				<span class="lfloatl lh1text">一铭账户系统</span>
+				</a>
+			</h1>
+			<div class="lsignwrap">
+				<div class="lindexpage">
+					<a class="lpaddingr" target="_block" href="index.html">Emind&nbsp;首页&gt;&gt;</a>
+				</div>
+				<div  class="laccountname">
+					<a id="accountName" href="javascript:;" class="laccountn lfloatl">欢迎您,小桥流水</a>
+					<span id="accountNameIco" class="ljt lfloatl"></span>
+					<ul id="accountlist" class="laccountnamelist">
+						<li class="laccountnameli"><a index="ac" href="javascript:;">账户信息</a></li>
+						<li class="laccountnameli"><a index="ac" href="javascript:;">推出</a></li>
+					</ul>
+				</div>
+				<a href="javascript:;"  class="lheadico2"></a>
+			</div>
+		</div>
+	</header>
+	<div class="lmainmenu-wrap">
+		<div class="lwrap">
+			<nav class="lmainmenu clearfix">
+				<a href="index.html" class="lfloatl">首页</a>
+				<a href="myhead.html" class="lfloatl ">账户信息</a>
+				<a href="backstagemanage.html" class="lfloatl menuactive">管理控制台</a>
+				<a href="accountproblem.html" class="lfloatl">帮助中心</a>
+			</nav>
+		</div>
+	</div>
+	<div class="lwrap clearfix">
+		<ul id="menu3list" class="lsidemenu lfloatl">
+			<li class="lsideli ">
+				<h2 class="clearfix"><a class="lfloatl lsidelih2a" href="javascript:;">最新动态</a><span class="licojt lfloatl"></span></h2>
+				<ul class="lmenu3list">
+					<li class="lmenu3li "><span class="licomenu3 "></span><a class="lmenu3cnt" href="javascript:;">标题1</a></li>
+					<li class="lmenu3li "><span class="licomenu3 "></span><a class="lmenu3cnt" href="javascript:;">标题2</a></li>
+				</ul>
+			</li>
+			<li class="lsideli">
+				<h2 class="clearfix"><a class="lfloatl lsidelih2a" href="javascript:;">用户管理</a><span class="licojt lfloatl"></span></h2>
+				<ul class="lmenu3list">
+					<li class="lmenu3li "><span class="licomenu3 "></span><a class="lmenu3cnt" href="javascript:;">标题1</a></li>
+					<li class="lmenu3li "><span class="licomenu3 "></span><a class="lmenu3cnt" href="javascript:;">标题2</a></li>
+				</ul>
+			</li>
+			<li class="lsideli lsideliactive">
+				<h2 class="clearfix"><a class="lfloatl lsidelih2a" href="javascript:;">权限管理</a><span class="licojt lfloatl"></span></h2>
+				<ul class="lmenu3list">
+					<li class="lmenu3li "><span class="licomenu3 "></span><a class="lmenu3cnt" href="javascript:;">管理授权</a></li>
+					<li class="lmenu3li "><span class="licomenu3 "></span><a class="lmenu3cnt" href="javascript:;">成员授权</a></li>
+				</ul>
+			</li>
+		</ul>
+		<div class="lfloatl lemailland">
+			<div class="lqmtitle-wrap clearfix">
+				<h4 class="lfloatl lqmcol1">选择</h4>
+				<h4 class="lfloatl lqmcol2">ID</h4>
+				<h4 class="lfloatl lqmcol3">组类别</h4>
+				<h4 class="lfloatl lqmcol4">类型</h4>
+				<h4 class="lfloatl lqmcol5">描述</h4>
+				<h4 class="lfloatl lqmcol6">状态</h4>
+				<h4 class="lfloatl lqmcol7">管理级别</h4>
+				<h4 class="lfloatl  lqmcol8">权限授权</h4> 
+				<h4 class="lfloatl lqmcol9">操作</h4> 
+			</div>
+			<ul class="lqmlist">
+				<li class="lqmlistli">     
+					<div class="lqmlistlicol1"><input type="checkbox" class="lqmcheckbox "></div>
+					<p class="lqmlistlicol2">32</p>
+					<p class="lqmlistlicol3">管理员</p>
+					<p class="lqmlistlicol4">内置</p>
+					<p class="lqmlistlicol5">用于管理整个后台所有权限</p>
+					<p class="lqmlistlicol6"><a href="javascript:;">正常</a></p>
+					<p class="lqmlistlicol7">超级管理员</p>
+					<div class="lqmlistlicol8 ">
+						<a class="lbtn" href="javascript:;">管理授权</a>
+						<span class="lsx"></span>
+						<a class="lbtn" href="javascript:;">成员授权</a>
+					</div>
+					<div class="lqmlistlicol9">
+						<a class="lbtn marginl5" href="javascript:;">编辑</a>
+						<span class="lsx"></span>
+						<a class="lbtn" href="javascript:;">禁用</a>
+						<span class="lsx"></span>
+						<a class="lbtn" href="javascript:;">删除</a>
+					</div>
+				</li>
+				<li class="lqmlistli">     
+					<div class="lqmlistlicol1"><input type="checkbox" class="lqmcheckbox "></div>
+					<p class="lqmlistlicol2">32</p>
+					<p class="lqmlistlicol3">管理员</p>
+					<p class="lqmlistlicol4">内置</p>
+					<p class="lqmlistlicol5">用于管理整个后台所有权限</p>
+					<p class="lqmlistlicol6"><a href="javascript:;">正常</a></p>
+					<p class="lqmlistlicol7">超级管理员</p>
+					<div class="lqmlistlicol8 ">
+						<a class="lbtn" href="javascript:;">管理授权</a>
+						<span class="lsx"></span>
+						<a class="lbtn" href="javascript:;">成员授权</a>
+					</div>
+					<div class="lqmlistlicol9">
+						<a class="lbtn marginl5" href="javascript:;">编辑</a>
+						<span class="lsx"></span>
+						<a class="lbtn" href="javascript:;">禁用</a>
+						<span class="lsx"></span>
+						<a class="lbtn" href="javascript:;">删除</a>
+					</div>
+				</li>
+				<li class="lqmlistli">     
+					<div class="lqmlistlicol1"><input type="checkbox" class="lqmcheckbox "></div>
+					<p class="lqmlistlicol2">32</p>
+					<p class="lqmlistlicol3">管理员</p>
+					<p class="lqmlistlicol4">内置</p>
+					<p class="lqmlistlicol5">用于管理整个后台所有权限</p>
+					<p class="lqmlistlicol6"><a href="javascript:;">正常</a></p>
+					<p class="lqmlistlicol7">超级管理员</p>
+					<div class="lqmlistlicol8 ">
+						<a class="lbtn" href="javascript:;">管理授权</a>
+						<span class="lsx"></span>
+						<a class="lbtn" href="javascript:;">成员授权</a>
+					</div>
+					<div class="lqmlistlicol9">
+						<a class="lbtn marginl5" href="javascript:;">编辑</a>
+						<span class="lsx"></span>
+						<a class="lbtn" href="javascript:;">禁用</a>
+						<span class="lsx"></span>
+						<a class="lbtn" href="javascript:;">删除</a>
+					</div>
+				</li>
+				<li class="lqmlistli">     
+					<div class="lqmlistlicol1"><input type="checkbox" class="lqmcheckbox "></div>
+					<p class="lqmlistlicol2">32</p>
+					<p class="lqmlistlicol3">管理员</p>
+					<p class="lqmlistlicol4">内置</p>
+					<p class="lqmlistlicol5">用于管理整个后台所有权限</p>
+					<p class="lqmlistlicol6"><a href="javascript:;">正常</a></p>
+					<p class="lqmlistlicol7">超级管理员</p>
+					<div class="lqmlistlicol8 ">
+						<a class="lbtn" href="javascript:;">管理授权</a>
+						<span class="lsx"></span>
+						<a class="lbtn" href="javascript:;">成员授权</a>
+					</div>
+					<div class="lqmlistlicol9">
+						<a class="lbtn marginl5" href="javascript:;">编辑</a>
+						<span class="lsx"></span>
+						<a class="lbtn" href="javascript:;">禁用</a>
+						<span class="lsx"></span>
+						<a class="lbtn" href="javascript:;">删除</a>
+					</div>
+				</li>
+				<li class="lqmlistli">     
+					<div class="lqmlistlicol1"><input type="checkbox" class="lqmcheckbox "></div>
+					<p class="lqmlistlicol2">32</p>
+					<p class="lqmlistlicol3">管理员</p>
+					<p class="lqmlistlicol4">内置</p>
+					<p class="lqmlistlicol5">用于管理整个后台所有权限</p>
+					<p class="lqmlistlicol6"><a href="javascript:;">正常</a></p>
+					<p class="lqmlistlicol7">超级管理员</p>
+					<div class="lqmlistlicol8 ">
+						<a class="lbtn" href="javascript:;">管理授权</a>
+						<span class="lsx"></span>
+						<a class="lbtn" href="javascript:;">成员授权</a>
+					</div>
+					<div class="lqmlistlicol9">
+						<a class="lbtn marginl5" href="javascript:;">编辑</a>
+						<span class="lsx"></span>
+						<a class="lbtn" href="javascript:;">禁用</a>
+						<span class="lsx"></span>
+						<a class="lbtn" href="javascript:;">删除</a>
+					</div>
+				</li>
+				<li class="lqmlistli">     
+					<div class="lqmlistlicol1"><input type="checkbox" class="lqmcheckbox "></div>
+					<p class="lqmlistlicol2">32</p>
+					<p class="lqmlistlicol3">管理员</p>
+					<p class="lqmlistlicol4">内置</p>
+					<p class="lqmlistlicol5">用于管理整个后台所有权限</p>
+					<p class="lqmlistlicol6"><a href="javascript:;">正常</a></p>
+					<p class="lqmlistlicol7">超级管理员</p>
+					<div class="lqmlistlicol8 ">
+						<a class="lbtn" href="javascript:;">管理授权</a>
+						<span class="lsx"></span>
+						<a class="lbtn" href="javascript:;">成员授权</a>
+					</div>
+					<div class="lqmlistlicol9">
+						<a class="lbtn marginl5" href="javascript:;">编辑</a>
+						<span class="lsx"></span>
+						<a class="lbtn" href="javascript:;">禁用</a>
+						<span class="lsx"></span>
+						<a class="lbtn" href="javascript:;">删除</a>
+					</div>
+				</li>
+				<li class="lqmlistli">     
+					<div class="lqmlistlicol1"><input type="checkbox" class="lqmcheckbox "></div>
+					<p class="lqmlistlicol2">32</p>
+					<p class="lqmlistlicol3">管理员</p>
+					<p class="lqmlistlicol4">内置</p>
+					<p class="lqmlistlicol5">用于管理整个后台所有权限</p>
+					<p class="lqmlistlicol6"><a href="javascript:;">正常</a></p>
+					<p class="lqmlistlicol7">超级管理员</p>
+					<div class="lqmlistlicol8 ">
+						<a class="lbtn" href="javascript:;">管理授权</a>
+						<span class="lsx"></span>
+						<a class="lbtn" href="javascript:;">成员授权</a>
+					</div>
+					<div class="lqmlistlicol9">
+						<a class="lbtn marginl5" href="javascript:;">编辑</a>
+						<span class="lsx"></span>
+						<a class="lbtn" href="javascript:;">禁用</a>
+						<span class="lsx"></span>
+						<a class="lbtn" href="javascript:;">删除</a>
+					</div>
+				</li>
+			</ul>
+			<div class="clearfix lallchecked-wrap">
+				<input  type="checkbox" class="lfloatl lallchecked" id="qmallchecked">
+				<label class="lfloatl qmaclabel" for="qmallchecked">全选</label>
+				<a class="lfloatl ldeletchecked" href="javascript:;">删除选中项</a>
+			</div>
+			<div class="lnavpage-wrap">
+				<nav class="lnavpage clearfix">
+					<a class="lfloatl lpagenu lar" href="javascript:;">&lt;</a>
+					<a class="lfloatl lpageactive lpagenu" href="javascript:;">1</a>
+					<a class="lfloatl lpagenu" href="javascript:;">2</a>
+					<a class="lfloatl lpagenu" href="javascript:;">3</a>
+					<a class="lfloatl lmore" href="javascript:;">…</a>
+					<a class="lfloatl lpagenu" href="javascript:;">11</a>
+					<a class="lfloatl lpagenu" href="javascript:;">12</a>
+					<a class="lfloatl lpagenu lar" href="javascript:;">&gt;</a>
+					<span class="lfloatl ljump">跳到</span>
+					<input class="lfloatl linputnum" type="text">
+					<span class="lpage lfloatl">页</span>
+					<span class="lsure lfloatl" href="javascript:;">确定</span>
+				</nav>
+			</div>
+		</div>
+	</div>
+	<footer class="lfooter lmargint19">
+		<p class="lfootertext"><span class="l2016">2016</span><a class="lemind" href="javascript:;">&copy;emind</a></p>
+	</footer>
+</body>
+</html>

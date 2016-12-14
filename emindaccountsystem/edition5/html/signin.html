@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="../css/signin.css"/>
+		<script src="../js/jquery-1.8.3.js" type="text/javascript"></script>
+		<script src="../js/jquery.cookie.js" type="text/javascript"></script>
+		<script src="../js/signin.js" type="text/javascript" charset="utf-8"></script>
+
+	</head>
+	<body>
+		<div class="jwrap">
+			<div class="jhead">
+				<ul class="jlogo">
+					<li class="jlogol"><a href="index.html"></a></li>
+					<li class="jlogor">
+						<a href="../html/register.html">快速注册>></a>
+					</li>
+				</ul>
+			</div>
+			<div class="jnar">
+				<form action="" method="post" class="jform" id="formdate">
+					<div class="jsignin">
+						<ul class="jdltop">
+							<li class="jzhdl" id="zhdl">账号登录</li>
+							<li class="jcenter">|</li>
+							<li class="jkjdl" id="kjdl">快捷登录</li>							
+						</ul>
+						
+						<p class="tishi0" id="p0"></p>
+						<!--<p class="tishi1" id="p1">您输入的账号格式不正确</p>
+						<p class="tishi2" id="p2">您输入的密码错误</p>
+						<p class="tishi3" id="p3">您输入的验证码错误</p>-->
+						<p class="tishi4" id="p4">密码错误,可以试试 
+							<a href="javascript:;" onclick="kuaijie()">短信登录</a>,或者
+							<a href="../html/RetrievePasswordOne.html">找回密码</a>
+						</p>
+						<div class="jdlfs">
+							<div class="jleftdl" id="jleft">
+								<ul class="jyhm">
+									<li class="jtoux"></li>
+									<li class="jshr"><input type="text" name="" id="txt_username"maxlength="128" value="" class="jshrn" placeholder="请输入您的账号"autocomplete="off" />
+										<div class="x" id="again"></div>
+									</li>
+								</ul>
+								<ul class="jmm">
+									<li class="jtoux"></li>
+									<li class="jshr"><input type="password" name=""maxlength="128" id="txt_password" value="" class="jshrn" placeholder="请输入您的密码" /></li>
+								</ul>
+								<ul id="view3show" class="jyzm0">
+									<li class="jyzm"><input type="text" id="jinput"/></li>
+									<li class="jyzm1"><input type="text" id="jimg" /></li>
+									<li class="jhyz">看不清？<a href="javascript:;">换一张</a></li>
+								</ul>
+								<ul class="jrememberpassword">
+									<li class="jzddl"><input type="checkbox" name="remember" id="ck_rmbUser" class="jcheck" /><label for="自动登录">自动登录</label></li>
+									<li class="jforget">
+										<a href="RetrievePassword.html">忘记密码？</a>
+									</li>
+								</ul>
+								<input type="submit" name="" class="jbutton" value="确定" id="sub" onclick="Save()" />
+								<ul class="jqita">
+									<li class="jqita1"></li>
+									<li class="jqita2">使用其他登录</li>
+									<li class="jqita1"></li>
+								</ul>
+								<ul class="jqita3">
+									<li class="jqitali1" id="qq"></li>
+									<li class="jqitali2" id="wb"></li>
+									<li class="jqitali3" id="wx"></li>
+								</ul>
+							</div>
+							<div class="jrightdl" id="jright">
+								<ul class="jyhm1">
+									<li class="jsj"></li>
+									<li class="jshr"><input type="text" name="" id="txt_username1"maxlength="128" value="" class="jshrn" placeholder="请输入您的账号"autocomplete="off" />
+										<div class="x" id="again1"></div>
+									</li>
+								</ul>
+								<ul class="jmm1">
+									<li class="jtoux"></li>
+									<li class="jshr1"><input type="password" name=""maxlength="128" id="txt_password1" value="" class="jshrn1" placeholder="请输入验证码" /></li>
+								</ul>
+								<div class="jhqyzm"><input type="button" name="" id="" value="获取验证码"class="jhqyzm1" /></div>
+								<input type="submit" name="" class="jbutton jbutton1" value="确定" id="sub" onclick="Save()" />
+								<p class="jzhmmdl">账号密码登录</p>
+								<ul class="jqita">
+									<li class="jqita1"></li>
+									<li class="jqita2">使用其他登录</li>
+									<li class="jqita1"></li>
+								</ul>
+								<ul class="jqita3">
+									<li class="jqitali1" id="qq"></li>
+									<li class="jqitali2" id="wb"></li>
+									<li class="jqitali3" id="wx"></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</form>
+			</div>
+			<div class="fool">
+				2016©emind
+			</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,56 @@
+@charset "utf-8";
+/*=========================Reset_start==========================*/
+body,h1,h2,h3,h4,h5,h6,div,p,dl,dt,dd,ol,ul,li,form,table,th,td,a,img,span,strong,var,em,input,textarea,select,option{margin: 0; padding: 0;}
+html,body{font-family:"微软雅黑","宋体",Arail,Tabhoma; font-size: 12px; text-align: left;}
+ul,ol{list-style: none;}
+img{border: 0;}
+input,select,textarea{outline:0;}
+textarea{resize:none; overflow: auto;}
+table{border-collapse: collapse; border-spacing: 0;}
+th,strong,var,em{font-weight: normal; font-style: normal;}
+a{text-decoration: none;}
+a:link,a:visited,a:hover,a:active{text-decoration:none;} 
+.jwrap{
+	width:100%;height:100%;background:#fbfbfb;
+}
+.jhead{
+	width:100%;height:74px;border-bottom: 1px solid #e5e5e5;background: #fff;
+}
+.jlogol a {
+	display: block;
+	height: 100%;
+}
+.jlogo{width: 1000px;height:74px; overflow: hidden;line-height:74px;margin: 0 auto;}
+.jlogo .jlogol{width: 215px;height: 42px;float: left;background: url(../image/logo.png)0 0 no-repeat;margin-top: 20px;}
+.jlogo .jlogor{width: 155px;height: 42px;float: right;text-align: right; line-height: 42px;color: #3f3f3f;font-size: 14px;margin-top: 20px;}
+.jlogo .jlogor a{text-decoration: none;color: #3f3f3f;}
+.jnar{
+	width: 1000px;height: 632px;margin:60px auto;background: #fff;border: 1px solid #e5e5e5;font-weight: bolder;color: #3f3f3f;
+}
+.jfand{width: 100px;margin-top: 52px;margin-left:107px;color: #5e5e5e;font-size: 19px;}
+.jbiaodan{margin-top: 40px;margin-left: 300px;border: none;}
+.jtd{height:50px;line-height:50px;text-align: right;color: #5e5e5e;border: none;}
+.jtd2{text-align: left;}
+.jtd .jyhm{width: 175px;height: 30px;border: 1px solid #e5e5e5;font-size: 12px;background: #fbfbfb;border-radius: 3px;padding-left: 15px;color: #3f3f3f;font-size: 14px;}
+.jtd .jyzm{width: 85px;height: 30px;border: 1px solid #e5e5e5;background: #fbfbfb;border-radius: 3px;color: #3f3f3f;font-size: 14px;padding-left: 15px;}
+.jtd .jyzm1{width: 80px;height: 30px;font-size: 14px;border: none;}
+.jtd4{padding-left: 20px;}
+.jtr{}
+
+.jtr0 .jtd2 .jshuru{width:77px;height:30px;border: 1px solid #e5e5e5;background: #fbfbfb;outline: none;border-radius: 3px;text-align: center;padding-left: 10px;}
+.jtr0 .jtd2 .jhuoqu{width:89px;height:32px;border: 1px solid #e5e5e5;background:#005bc4;border-radius: 3px;margin-left:11px;color: #fff;}
+  
+
+.jtr1 .jtd3{overflow:hidden;}
+.jtd3 div{color: #ff9602;font-size:12px;float: left;display: none;}
+.jtd3 .jp1{width: 18px;height: 18px;background: url(../image/duicuo.png);margin-top:20px;background-position: 0px 0px;}
+/*加js判断时background-position的第二个值为18是对勾,为0 是错误*/
+.jtd3 .jp2{width:265px;}
+.jtd3 .jhuan{text-decoration: none;color: #005bc3;font-size: 12px;}
+.jtd4{text-align: left;}
+.jtr1 .jtd3, .jtr2 .jtd3, .jtr3 .jtd3{padding-left: 15px;}
+.jyes{
+	width: 130px;height: 38px;background: #005bc3;text-align: center;line-height: 38px;
+	border-radius: 3px;margin-left: 384px;margin-top: 40px;color:#fff;font-size: 16px;outline: none;border: none;
+}
+

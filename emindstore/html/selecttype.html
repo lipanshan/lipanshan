@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>选择开发者类型</title>
+	<link rel="stylesheet" href="../css/header.css">
+	<link rel="stylesheet" href="../css/selecttype.css">
+	<link rel="icon" href="../favicon.ico">
+	<script src="../js/jquery/jquery.js"></script>
+	<script src="../js/publiclogin.js"></script>
+	<script src="../js/selecttype.js"></script>
+	<script src="../js/html5shiv.min.js"></script>
+</head>
+<body>
+	<header class="lheader">
+		<div class="lwrap clearfix">
+			<h1 class="floatl lh1">
+				<a href="index.html">
+					<img src="../images/web-index-ico/h1.png" alt="一名软件">
+				</a>
+			</h1>
+			<ul class="lmainmenu floatl">
+				<li class="lliactive">
+					<a class="lmenu-cnt" href="index.html">
+						首页
+					</a>
+					<span class="lbtm-line"></span>
+				</li>
+				<li>
+					<a id="lsy-menu-glgzt" class="lmenu-cnt" href="javascript:;">
+						管理控制台
+					</a>
+				</li>
+				<li>
+					<a class="lmenu-cnt" href="javascript:;">
+						服务
+					</a>
+				</li>
+				<li>
+					<a class="lmenu-cnt" href="javascript:;">
+						文档
+					</a>
+				</li>
+				<li>
+					<a class="lmenu-cnt" href="javascript:;">
+						论坛
+					</a>
+				</li>
+			</ul>
+			<div class="ldl-regtister">
+				<a id="ldlzc-dlbtn" class="floatl ldl" href="javascript:;">登录</a>
+				<a id="ldlzc-zcbtn" class="floatl lzc" href="javascript:;">注册</a>
+			</div>
+			<div class="ldenglu" id="ldenglu2">
+				<p class="llanding-name floatl">北京一名</p><span class="lsj floatl"></span>
+				<ul class="llonding-list" id="llonding-li">
+					<li class="ldl-ist" >
+						<a class="la1" id="lxgtu-xgbtn" href="javascript:;">密钥中心</a>
+					</li>
+					<li class="ldl-ist">
+						<a class="la2" id="tuchu" href="javascript:;">退出</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</header>
+	<div class="lselecttype-wrap">
+		<div class="lxzle-wrap">
+			<h3>选择注册开发者类型</h3>
+		</div>
+		<ul class="lxzle-textwrap clearfix">
+			<li  class="lxzle-grkfz">
+				<div id="lxzle-grkfzbtn" class="lxzle-box clearfix">
+					<span class="lgrkfz-ico"></span>
+					<h4><a href="javascript:;">个人开发者</a></h4>
+				</div>
+				<p class="lxzlx-xq">适用个人开发者，免费发布应用和免费游戏</p>
+			</li>
+			<li  class="lxzle-qykfz">
+				<div id="lxzle-qykfzbtn" class="lxzle-box clearfix">
+					<span class="lqykfz-ico"></span>
+					<h4><a href="javascript:;">企业开发者</a></h4>
+				</div>
+				<p class="lxzlx-xq">适用公司、企业、机构注册，可以接入支付SDK</p>
+			</li>
+		</ul>
+	</div>
+	
+	<!-- 遮罩层 -->
+	<div class="lshade">
+    </div>
+    <!-- 修改密码 -->
+
+     <div id="lxgma-onoff" class="banxin" style="display:none">
+        <div class="login">
+            <div class="login-wd">修改密码</div>
+            <div class="login-ct ">
+				<!-- 修改密码表单 -->
+                <form action="" class="lxgmmform" id="xgmmformdata">
+                   	<div class="form-wrap">
+                   		<!-- 旧密码输入框 -->
+                   		<div class="row1 clearfix ">
+                   			<label for="">旧密码</label>
+                   			<input id="loldPassword" type="password" name="password" placeholder="请输入您的旧密码" autocomplete="off">
+                   			<span class="lduigou"></span>
+                   		</div>
+                         <div class="row2 clearfix">
+                   			<label for="">新密码</label>
+                   			<input id="lnewPassword" type="password" name="newPass" placeholder="请输入您的新密码" autocomplete="off">
+                   			<span class="lduigou"></span>
+                   		</div>
+                   		<div class="row2 clearfix">
+                   			<label for="">新密码</label>
+                   			<input id="lnewPassword2" type="password" name="newPass" placeholder="请再次输入您的新密码" autocomplete="off">
+                   			<span class="lduigou"></span>
+                   		</div>
+                   		<div id="lxgmmsubmit" class="row3 ">
+                        <a class="row3Btn" href="javascript:;">确定</a>
+                        <!-- 调试时需要用户名咱是先写一个以后在本地存储中去取 -->
+                        <input type="hidden" id="lxgmm-account" name="account">
+                        <!-- 用来存储验证码 -->
+                        <input type="hidden" name="vcode" id="vcode">
+                        <!-- 修改密码在后台分为两种update(正常修改) forget(忘记密码修改) -->
+                         <input type="hidden" name="type" value="update" id="ltype">
+                   		</div>
+                   	</div>
+                </form>
+            </div>
+        </div>
+        <div class="lx-btn"></div>
+    </div>
+    <!-- 登陆、注册、修改密码成功后提示 -->
+    <div class="lsuccess">
+    	<div class="lh4-box">
+    		<h4 id="lsuccess-tsxx">注册成功</h4>
+    	</div>
+    	<div class="lsuce-text clearfix">
+    		
+	        <div class="lsuccess-ico">
+	            
+	        </div>
+	        <p id="lsuccess-tsxx2">
+	             恭喜你，密码修改成功！
+	        </p> 
+        </div>
+        <div class="lx-btn"></div>
+    </div>
+
+	<footer class="lfooter">
+		<div class="lwrap">
+			<p class="lfoot-text">
+				<span>
+					Copyright&nbsp;&copy;&nbsp;2016-2025&nbsp;Downjoy.&nbsp;Allrights&nbsp;Reserved.
+				</span>
+				<a href="#">&nbsp;一铭软件股份有限公司 版权所有</a>
+			</p>
+		</div>
+	</footer>
+</body>
+</html>

@@ -1,0 +1,470 @@
+
+#orderevaluation h1,h2,h3,h4,h5,
+#orderevaluation input,
+#orderevaluation p,
+#orderevaluation ul,
+#orderevaluation dd,
+#orderevaluation dt,
+#orderevaluation th,
+#orderevaluation td,
+#orderevaluation form ,
+#texttranslation h1,h2,h3,h4,h5,
+#texttranslation input,
+#texttranslation p,
+#texttranslation ul,
+#texttranslation dd,
+#texttranslation dt,
+#texttranslation th,
+#texttranslation td,
+#texttranslation form {
+	margin: 0;
+	padding: 0;
+}
+html {
+	height: 100%;
+}
+body {
+	background-color: #f2f2f2;
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	/*font-family: "微软雅黑","宋体";*/
+}
+#orderevaluation table ,
+#texttranslation table {
+	border-collapse: collapse;
+	border: 1px solid #f2f2f2;
+	border-spacing: 0;
+	width: 100%;
+}
+#orderevaluation th,
+#orderevaluation td {
+	text-align: center;
+	overflow: hidden;
+	white-space: pre-wrap;
+	font-size: 14px;
+}
+#orderevaluation input {
+	-webkit-border-radius: 5px;
+	-ms-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+#orderevaluation a ,
+#texttranslation a{
+	text-decoration: none;
+}
+.wrap {
+	padding-left: 30px;
+	border-top: 1px solid #ccccce;
+}
+#orderevaluation .lborder1 {
+	border: 1px solid #ccccce;
+}
+#orderevaluation .lh3 {
+	display: inline-block;
+	padding-top: 18px;
+	font-size: 20px;
+	line-height: 54px;
+	font-weight: normal;
+	color: #323232;
+	border-bottom: 3px solid #005cc0;
+}
+#orderevaluation .ltitleline {
+	width: 100%;
+	font-size: 0;
+	border-bottom: 1px solid #ccccce;
+}
+#orderevaluation .lpaddingtr {
+	height: 31px;
+}
+#orderevaluation .lsearch {
+	width: 388px;
+	border: 1px solid #ccccce;
+	background-color: #fff;
+	line-height: 14px;
+	font-size: 14px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 10px;
+	margin-left: 10px;
+}
+#orderevaluation .lheight60 th{
+	height: 60px;
+}
+#orderevaluation .lbgcolorf3 {
+	background-color: #f3f6fb;
+}
+#orderevaluation .lbgcolorff {
+	background-color: #fff;
+}
+#orderevaluation .ltextp {
+	width: 59px;
+	text-align: right;
+	font-size: 14px;
+	line-height: 58px;
+	padding-top: 2px;
+}
+#orderevaluation .lselect ,
+#orderevaluation .lselect2 {
+	width: 58px;
+	padding: 10px;
+	border: 1px solid #ccccce;
+	background-color: #fff;
+	line-height: 14px;
+	font-size: 14px;
+}
+#orderevaluation .lbtn {
+	padding: 10px;
+	border: 1px solid #ccccce;
+	background-color: #f5f4f2;
+	line-height: 14px;
+	font-size: 14px;
+	background-color: #f5f4f2;
+	width: 85px;
+	margin-left: 29px;
+
+}
+#orderevaluation .lhover,
+#orderevaluation .lbtn:hover {
+	background-color: #005bc3;
+	color: #fff;
+}
+#orderevaluation .lddh {
+	width: 77px;
+}
+#orderevaluation .lddh p,
+#orderevaluation .lwidth99 p,
+#orderevaluation .lcjsj p {
+	font-size: 14px;
+	line-height: 58px;
+	padding-top: 2px;
+	width: 69px;
+	text-align: right;
+}
+#orderevaluation .lwidth160 {
+	width: 160px;
+}
+#orderevaluation .lwidth99 {
+	width: 99px;
+}
+#orderevaluation .lwidth99 p {
+	width: 91px;
+}
+#orderevaluation .lcjsj p {
+	width: 114px;
+}
+#orderevaluation .linput {
+	width: 138px;
+	height: 36px;
+	padding: 0 10px;
+	font-size: 14px;
+	line-height: 36px;
+}
+#orderevaluation .lcjsj {
+	width: 120px;
+}
+#orderevaluation .lwidth153 {
+	width: 153px;
+}
+#orderevaluation .linput2 {
+	width: 131px;
+	padding: 0 10px;
+	font-size: 14px;
+	line-height: 36px;
+}
+#orderevaluation .lz {
+	width: 39px;
+	
+}
+#orderevaluation .lz p {
+	font-size: 14px;
+	line-height: 58px;
+	padding-top: 2px;
+	text-align: center;
+	color: #333;
+}
+#orderevaluation .lwidth109 {
+	width: 109px;
+}
+#orderevaluation .lheight9 {
+	height: 9px;
+}
+#orderevaluation .lcol1,
+#orderevaluation .lcol2,
+#orderevaluation .lcol3,
+#orderevaluation .lcol4,
+#orderevaluation .lcol6 {
+	font-size: 14px;
+	color: #333;
+	overflow: hidden;
+}
+#orderevaluation .lcol1 {
+	width: 64px;
+	text-align: left;
+}
+#orderevaluation .lcol2 {
+	width: 183px;
+}
+#orderevaluation .lcol3 {
+	width: 193px;
+}
+#orderevaluation .lcol4 {
+	width: 219px;
+}
+
+#orderevaluation .lcol6 {
+	width: 87px;
+}
+#orderevaluation .lcheckbox {
+	width: 13px;
+	height: 13px;
+	margin-left: 24px;
+}
+#orderevaluation .lheight100 {
+	height: 100px;
+}
+#orderevaluation .lcontext {
+	display: inline-block;
+	padding: 0 34px 0 29px;
+	font-size: 14px;
+	line-height: 24px;
+	color: #333;
+	white-space: pre-wrap;
+}
+#orderevaluation .lbgcolorfff {
+	background-color: #fff;
+}
+#orderevaluation .ldeletebtn {
+	display: inline-block;
+	font-size: 14px;
+	color: #005bc3;
+	line-height: 14px;
+}
+#orderevaluation .ldeletebtn:hover {
+	text-decoration: underline;
+}
+#orderevaluation .lwidth146 {
+	width: 146px;
+	text-align: left;
+}
+#orderevaluation .lallchecked {
+	width: 14px;
+	height: 14px;
+	margin-right: 10px;
+	margin-left: 24px;
+}
+#orderevaluation .lallcheckedl {
+	display: inline-block;
+	font-size: 14px;
+	line-height: 14px;
+}
+#orderevaluation .lallrow {
+	height: 60px;
+	border: 1px solid #ccc;
+	border-top: none;
+	border-bottom: none;
+}
+#orderevaluation .lwidth120 {
+	width: 120px;
+}
+#orderevaluation .ldeletachecked {
+	font-size: 14px;
+	line-height: 20px;
+	border: none;
+	background: none;
+	color: #404040;
+}
+#orderevaluation .lpagewrap {
+	height: 163px;
+	background-color: #fff;
+}
+#orderevaluation .lpagenum {
+	width: 100%;
+	text-align: right;
+}
+#orderevaluation .lpagetd1 {
+	width: 90px;
+	text-align: right;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+}
+#orderevaluation .lpagenum td {
+	font-size: 14px;
+	line-height: 28px;
+	height: 28px;
+}
+#orderevaluation .lpagetd2 {
+	width: 67px;
+}
+#orderevaluation .lpagetd3 {
+	width: 28px;
+}
+#orderevaluation .lpagetd4 {
+	width: 66px;
+	color: #797979;
+}
+#orderevaluation .lpagetd5 {
+	width: 40px;
+}
+#orderevaluation .lpagetd6 {
+	width: 39px;
+	text-align: right;
+}
+#orderevaluation .lpagetd5 input ,
+#orderevaluation .lpagetd6 input {
+	width: 38px;
+	height: 28px;
+	font-size: 14px;
+	line-height: 28px;
+	-webkit-border-radius: 0;
+	-ms-border-radius: 0;
+	-moz-border-radius: 0;
+	border-radius: 0;
+
+}
+#orderevaluation .lpagetd6 input {
+	width: 28px;
+	height: 30px;
+	background-color: #fcfcfc;
+}
+#orderevaluation .ltd9 {
+	width: 9px;
+}
+#orderevaluation .td5 {
+	width: 5px;
+}
+#orderevaluation .td39 {
+	width: 39px;
+}
+#orderevaluation .lbtnwrap {
+	position: relative;
+	width: 105px;
+	height: 40px;
+	text-align: right;
+	display: inline-block;
+	
+}
+#orderevaluation .lbtnwrap input {
+	width: 100%;
+	height: 100%;
+	border: none;
+	color: #fff;
+	background-color: #0059ca;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	-ms-border-radius: 0;
+	border-radius: 0;
+	text-align: left;
+	text-indent: 36px;
+}
+#orderevaluation .lbtnwrap .lplus {
+	position: absolute;
+	left: 10px;
+	top: 13px;
+	width: 15px;
+	height: 15px;
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	-ms-border-radius: 15px;
+	border-radius: 15px;
+	border-radius: 15px;
+	background: url(../image/jiahao.jpg)
+	no-repeat 3px 3px #fff;
+}
+#orderevaluation .loperationbtn {
+	background: none;
+	border: none;
+	font-size: 15px;
+	line-height: 15px;
+	padding-bottom: 1px;
+	border-bottom: 1px solid transparent;
+	color: #005bbe;
+	-weibkit-border-radius: 0;
+	-moz-border-radius: 0;
+	-ms-border-radius: 0;
+	border-radius: 0;
+}
+#orderevaluation .loperationbtn:hover {
+	border-bottom-color: #005bbe;
+}
+#orderevaluation .lborderl {
+	display: inline-block;
+	width: 10px;
+	border-right: 1px solid #cdcdcd;
+	margin-right: 10px;
+	height: 15px;
+}
+
+#orderevaluation .lhover:hover {
+	background-color: #005bc4;
+	border-color: #005bc4;
+	color: #fff;
+}
+#orderevaluation .lpagebtn {
+	width: 100%;
+	height: 100%;
+	padding: 0;
+	color: #6c6c6c;
+	border: none;
+	background: none;
+	border: none;
+	font-size: 15px;
+	line-height: 15px;
+	-weibkit-border-radius: 0;
+	-moz-border-radius: 0;
+	-ms-border-radius: 0;
+	border-radius: 0;
+
+}
+#orderevaluation .lwzfy {
+	display: inline;
+	position: relative;
+}
+#orderevaluation .lilogo {
+	position: absolute;
+	right: -12px;
+	top: -12px;
+	width: 16px;
+	height: 16px;
+	-webkit-border-radius: 16px;
+	-moz-border-radius: 16px;
+	-ms-border-radius: 16px;
+	border-radius: 16px;
+	color: #fff;
+	font-size: 16px;
+	line-height: 16px;
+	background-color: #559c4c;
+	text-indent: 0px;
+}
+#orderevaluation .lwidth127 {
+	width: 127px;
+	text-align: right;
+}
+#orderevaluation .lwidth110 {
+	width: 110px;
+	text-align: right;
+}
+#orderevaluation .lwidth109 {
+	width: 109px;
+	text-align: right;
+}
+#orderevaluation .lwidth464 {
+	width: 464px;
+	text-align: right;
+}
+#orderevaluation .lwidth91 {
+	width: 91px;
+	text-align: right;
+}
+#orderevaluation .lwidth88 {
+	width: 88px;
+	text-align: right;
+}
+#orderevaluation .lwidth119 {
+	width: 119px;
+	text-align: left;
+}
+
+

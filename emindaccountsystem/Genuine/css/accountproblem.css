@@ -1,0 +1,159 @@
+
+
+.lsidemenu {
+	border: 1px solid #e5e5e5;
+	margin-top: 20px;
+	width: 250px;
+	margin-right: 20px;
+	min-height: 678px;
+	background-color: #fbfbfb;
+}
+.lsideli {
+	border-bottom: 1px solid #e5e5e5;
+}
+.lsideli h2 {
+	padding-left: 80px;
+	overflow: hidden;
+	width: 170px;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	font-size: 14px;
+	line-height: 49px;
+	font-weight: normal;
+}
+.lsideli a {
+	display: block;
+	color: #3e3e3e;
+}
+.lsidel1 {
+	padding-top: 3px;
+}
+.lsidel1 h2 {
+	line-height: 48px;
+}
+.lsidel2 {
+	padding-top: 1px;
+}
+.lsideli:hover ,
+.lsideliactive {
+ 	background-color: #005bc4;
+ }
+.lsideli:hover a ,
+.lsideliactive a {
+	color: #fff;
+}
+.lemailland {
+	margin-top: 20px;
+	border: 1px solid #e5e5e5;
+	width: 726px;
+	min-height: 651px;
+	padding-bottom: 27px;
+}
+.lh2title {
+	font-size: 24px;
+	line-height: 64px;
+	color: #3f3f3f;
+	overflow: hidden;
+	margin-left: 39px;
+}
+.loilist {
+	padding-left: 42px;
+	padding-top: 4px;
+	font-size: 12px;
+}
+.lpoint {
+	width: 4px;
+	height: 4px;
+	background-color: #005bc6;
+	margin-right: 10px;
+	margin-top: 12px;
+}
+.ltext {
+	line-height: 30px;
+
+}
+.ltext a {
+	display: block;
+	color: #3f3f3f;
+}
+.ldetailedinfolist {
+	display: none;
+	width: 618px;
+	padding-top: 1px;
+	margin-top: 6px;
+	margin-left: 12px;
+	background-color: #fbfbfb;
+	padding-bottom: 20px;
+	margin-bottom: 6px;
+}
+.ldetailedinfoli,
+.ldetailedinfotitle {
+	font-size: 12px;
+	line-height: 22px;
+	color: #3f3f3f;
+	margin-left: 19px;
+	padding-bottom: 7px;
+}
+.ldetailedinfoli p {
+	padding-left: 12px;
+}
+.ldetailedinfoshow {
+	display: block;
+}
+.loili .loiliavtive,
+.loili a:hover {
+	color: #1b69cb;
+}
+.loili h3 {
+	font-weight: normal
+}
+.limga {
+	display: block;
+	margin-top: 8px;
+	border: 1px solid #f1f1f1;
+}
+.limga img ,
+.limga {
+	width: 577px;
+	height: 365px;
+}
+.ldetailedinfolist2 {
+	display: none;
+	padding-left: 29px;
+	padding-top: 11px;
+	padding-bottom: 49px;
+}
+.ltext2 ,
+.lstep2 {
+	font-size: 12px;
+	line-height: 32px;
+	color: #404040;
+}
+.lcolory {
+	color: #fe9600;
+}
+.lpaddingb3 {
+	padding-bottom: 3px;
+}
+.lpaddint11 {
+	padding-top: 11px;
+}
+.limg-wrap {
+	display: block;
+	padding-top: 11px;
+}
+.limg-wrap img,
+.limg-wrap {
+	width: 583px;
+}
+.lstep2 {
+	font-weight: normal;
+}
+.lstep2 a {
+	color: #005cc6;
+}
+.ldetailedinfolist3 {
+	display: none;
+	padding-top: 20px;
+	padding-left: 30px;
+}

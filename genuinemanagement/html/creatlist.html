@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="../js/jquery/jquery-1.9.1.min.js"></script>
+	<style>
+		#listsoft table,
+		#listsoft tr,
+		#listsoft td,
+		#listsoft th {
+			border: 1px solid #ddd;
+			border-collapse: collapse;
+			font-size: 12px;
+			color: #555;
+			line-height: 28px;
+		}
+	</style>
+</head>
+<body>
+	<ul class="list">
+		<li id="li1">1</li>
+		<li>1</li>
+		<li>1</li>
+		<li>1</li>
+		<li>1</li>
+		<li>1</li>
+		<li>1</li>
+	</ul>
+	
+		<div id="listsoft">
+			<table>
+				<tr>
+					<th>软件编号</th>
+					<th>软件名称</th>
+					<th>软件版本</th>
+					<th>许可期限</th>
+					<th>软件类型</th>
+					<th>购入时间</th>
+					<th>操作</th>
+				</tr>
+				<tbody id="listfostbody">
+					
+				</tbody>
+			</table>
+		</div>
+	
+	
+<script>
+$(function (){
+	function creatListTr(elem,data){
+		var str = '';
+		str+='<tr>'
+				str+='<td>'+data+'</td>'
+				str+='<td>'+data+'</td>'
+				str+='<td>'+data+'</td>'
+				str+='<td>'+data+'</td>'
+				str+='<td>'+data+'</td>'
+				str+='<td>'+data+'</td>'
+				str+='<td>'+data+'</td>'
+		str+='</tr>'
+		elem.
+	}
+	//elem点击的元素，data生成div时添加内容
+	function addList(elem,fun){
+		elem.css('cursor','pointer');
+		
+		var onoff = true;
+		elem.unbind('click').bind('click',function (){
+			if(onoff){
+				var st = '';
+				st+='<tr>'
+					st+='<th>软件编号</th>'
+					st+='<th>软件名称</th>'
+					st+='<th>软件版本</th>'
+					st+='<th>许可期限</th>'
+					st+='<th>软件类型</th>'
+					st+='<th>购入时间</th>'
+					st+='<th>操作</th>'
+				st+='</tr>'
+				str+=fun();
+				var div = $('<div>');
+				div.html(st);
+				div.attr('listindex',1);
+				elem.after(div);
+				onoff = false;
+			}else if(!onoff&&elem.next()&&elem.next().attr('listindex')){
+				elem.next().remove();
+				onoff = true;
+			}	
+		});
+	};
+	addList($('#li1'),12334);
+	$('.list').children().each(function(i, elem) {
+		
+		addList($(elem));
+	});
+});
+</script>
+</body>
+</html>

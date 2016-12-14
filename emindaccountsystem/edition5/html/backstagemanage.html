@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>管理控制台-最新动态</title>
+	<link rel="stylesheet" href="../css/public.css">
+	<link rel="stylesheet" href="../css/backstagemanage.css">
+	<link rel="stylesheet" href="../css/pagination.css">
+	<script src="../js/jquery-1.8.3.js"></script>
+	<script src="../js/headaccount.js"></script>
+	<script type="text/javascript" src="../js/jquery.pagination.js"></script>
+	<script type="text/javascript">
+	$(document).ready(function() {
+		$("#Pagination").pagination("15",{
+			items_per_page:1,
+			num_display_entries:4,
+			current_page:0,
+			num_edge_entries:1,
+			link_to:"#",
+			prev_text:"<",
+			next_text:">",
+			ellipse_text:"...",
+			prev_show_always:true,
+			next_show_always:true,
+			renderer:"defaultRenderer",
+			show_if_single_page:false,
+			load_first_page:false,
+			callback:paginationCallBack
+		});
+		function paginationCallBack(_id,jq){
+			// console.log(_id,jq)
+		}
+	});
+</script>
+<script type="text/javascript">
+	$(document).ready(function() {
+		$("#Pagination2").pagination("15",{
+			items_per_page:1,
+			num_display_entries:4,
+			current_page:0,
+			num_edge_entries:1,
+			link_to:"#",
+			prev_text:"<",
+			next_text:">",
+			ellipse_text:"...",
+			prev_show_always:true,
+			next_show_always:true,
+			renderer:"defaultRenderer",
+			show_if_single_page:false,
+			load_first_page:false,
+			callback:paginationCallBack
+		});
+		function paginationCallBack(_id,jq){
+			// console.log(_id,jq)
+		}
+	});
+</script>
+</head>
+<body>
+	<div class="lwrap clearfix">
+		<ul id="menu3list" class="lsidemenu lfloatl">
+			<li class="lsideli lsideliactive">
+				<h2 class="clearfix"><a class="lfloatl lsidelih2a" href="javascript:;">最新动态</a><span class="licojt lfloatl"></span></h2>
+				<ul class="lmenu3list">
+					<li class="lmenu3li "><span class="licomenu3 "></span><a class="lmenu3cnt" href="javascript:;">标题1</a></li>
+					<li class="lmenu3li "><span class="licomenu3 "></span><a class="lmenu3cnt" href="javascript:;">标题2</a></li>
+				</ul>
+			</li>
+			<li class="lsideli">
+				<h2 class="clearfix"><a class="lfloatl lsidelih2a" href="javascript:;">用户管理</a><span class="licojt lfloatl"></span></h2>
+				<ul class="lmenu3list">
+					<li class="lmenu3li "><span class="licomenu3 "></span><a class="lmenu3cnt" href="javascript:;">标题1</a></li>
+					<li class="lmenu3li "><span class="licomenu3 "></span><a class="lmenu3cnt" href="javascript:;">标题2</a></li>
+				</ul>
+			</li>
+			<li id="qxgl" class="lsideli">
+				<h2 class="clearfix"><a class="lfloatl lsidelih2a" href="javascript:;">权限管理</a><span class="licojt lfloatl"></span></h2>
+				<ul class="lmenu3list">
+					<li class="lmenu3li "><span class="licomenu3 "></span><a class="lmenu3cnt" href="javascript:;">管理授权</a></li>
+					<li class="lmenu3li "><span class="licomenu3 "></span><a class="lmenu3cnt" href="javascript:;">成员授权</a></li>
+				</ul>
+			</li>
+		</ul>
+		<div class="lfloatl lemailland">
+			<div id="lpagenav" class="lnav-wrap">
+				<h3 class=" lnavh3"><a id="news" href="javascript:;">最新动态</a></h3>
+				<!-- <h3 class=" lnavh3"><a  href="javascript:;">普通用户普通用户</a><span class="lfalseico"></span></h3> -->
+			</div>
+			<div id="lpage-content" class="">
+				<!-- 最新动态的内容 -->
+				<div id="showaccount" class="lboxz clearfix">
+					<div class="llistl-wrap lfloatl">
+						<div class="llisttitle clearfix">
+							<h4 class="ltitle-texta lfloatl">今日新增用户</h4>
+							<div class="ltitle-btnwrap ">
+								<a id="account01" class="lrightbtn " tagnum="1" tagname="普通用户" href="javascript:;">查看所有</a>
+								<a class="lrightbtn lpaddinglr14" href="javascript:;">刷新</a>
+							</div>
+						</div>
+						<div class="lrol-wrap clearfix">
+							<h5 class="lrolb1 lfloatl">用户名</h5>
+							<h5 class="lrolb2 lfloatl">手机号</h5>
+							<h5 class="lrolb3 lfloatl">邮箱</h5>
+							<h5 class="lrolb4 lfloatl">时间</h5>
+						</div>
+						<ul class="llist-cnt">
+							<li class="lrolc-wrap clearfix">
+								<p class="lrolc1 lfloatl">小桥流水</p>
+								<p class="lrolc2 lfloatl">15002121212</p>
+								<p class="lrolc3 lfloatl">150301222@163.com</p>
+								<p class="lrolc4 lfloatl">2016-11-10</p>
+							</li>
+							<li class="lrolc-wrap clearfix">
+								<p class="lrolc1 lfloatl">小桥流水</p>
+								<p class="lrolc2 lfloatl">15002121212</p>
+								<p class="lrolc3 lfloatl">150301222@163.com</p>
+								<p class="lrolc4 lfloatl">2016-11-10</p>
+							</li>
+							<li class="lrolc-wrap clearfix">
+								<p class="lrolc1 lfloatl">小桥流水</p>
+								<p class="lrolc2 lfloatl">15002121212</p>
+								<p class="lrolc3 lfloatl">150301222@163.com</p>
+								<p class="lrolc4 lfloatl">2016-11-10</p>
+							</li>
+							<li class="lrolc-wrap clearfix">
+								<p class="lrolc1 lfloatl">小桥流水</p>
+								<p class="lrolc2 lfloatl">15002121212</p>
+								<p class="lrolc3 lfloatl">150301222@163.com</p>
+								<p class="lrolc4 lfloatl">2016-11-10</p>
+							</li>
+							<li class="lrolc-wrap clearfix">
+								<p class="lrolc1 lfloatl">小桥流水</p>
+								<p class="lrolc2 lfloatl">15002121212</p>
+								<p class="lrolc3 lfloatl">150301222@163.com</p>
+								<p class="lrolc4 lfloatl">2016-11-10</p>
+							</li>
+							<li class="lrolc-wrap clearfix">
+								<p class="lrolc1 lfloatl">小桥流水</p>
+								<p class="lrolc2 lfloatl">15002121212</p>
+								<p class="lrolc3 lfloatl">150301222@163.com</p>
+								<p class="lrolc4 lfloatl">2016-11-10</p>
+							</li>
+						</ul>
+					</div>
+					<div class="llistl-wrap lfloatl">
+						<div class="llisttitle clearfix">
+							<h4 class="ltitle-texta lfloatl">今日新增管理员</h4>
+							<div class="ltitle-btnwrap ">
+								<a id="account02" class="lrightbtn " tagname="管理员" tagnum="2" href="javascript:;">查看所有</a>
+								<a class="lrightbtn lpaddinglr14" href="javascript:;">刷新</a>
+							</div>
+						</div>
+						<div class="lrol-wrap clearfix">
+							<h5 class="lrolb1 lfloatl">姓名</h5>
+							<h5 class="lrolb2 lfloatl">手机号</h5>
+							<h5 class="lrolb3 lfloatl">邮箱</h5>
+							<h5 class="lrolb4 lfloatl">时间</h5>
+						</div>
+						<ul class="llist-cnt">
+							<li class="lrolc-wrap clearfix">
+								<p class="lrolc1 lfloatl">小桥流水</p>
+								<p class="lrolc2 lfloatl">15002121212</p>
+								<p class="lrolc3 lfloatl">150301222@163.com</p>
+								<p class="lrolc4 lfloatl">2016-11-10</p>
+							</li>
+							<li class="lrolc-wrap clearfix">
+								<p class="lrolc1 lfloatl">小桥流水</p>
+								<p class="lrolc2 lfloatl">15002121212</p>
+								<p class="lrolc3 lfloatl">150301222@163.com</p>
+								<p class="lrolc4 lfloatl">2016-11-10</p>
+							</li>
+							<li class="lrolc-wrap clearfix">
+								<p class="lrolc1 lfloatl">小桥流水</p>
+								<p class="lrolc2 lfloatl">15002121212</p>
+								<p class="lrolc3 lfloatl">150301222@163.com</p>
+								<p class="lrolc4 lfloatl">2016-11-10</p>
+							</li>
+							<li class="lrolc-wrap clearfix">
+								<p class="lrolc1 lfloatl">小桥流水</p>
+								<p class="lrolc2 lfloatl">15002121212</p>
+								<p class="lrolc3 lfloatl">150301222@163.com</p>
+								<p class="lrolc4 lfloatl">2016-11-10</p>
+							</li>
+							<li class="lrolc-wrap clearfix">
+								<p class="lrolc1 lfloatl">小桥流水</p>
+								<p class="lrolc2 lfloatl">15002121212</p>
+								<p class="lrolc3 lfloatl">150301222@163.com</p>
+								<p class="lrolc4 lfloatl">2016-11-10</p>
+							</li>
+							<li class="lrolc-wrap clearfix">
+								<p class="lrolc1 lfloatl">小桥流水</p>
+								<p class="lrolc2 lfloatl">15002121212</p>
+								<p class="lrolc3 lfloatl">150301222@163.com</p>
+								<p class="lrolc4 lfloatl">2016-11-10</p>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<!-- 普通用户内容 -->
+				<div id="normalaccount" class="lhide">
+					<div class="ltitleh3 clearfix">
+						<h3 class="lfloatl lnewadd">今日新增用户</h3>
+						<p class="lrefresh lpaddingr19"><a class="lrefreshbtn lmarginr0" href="javascript:;">刷新</a></p>
+					</div>
+					<div class="lnewadd-wrap">
+						<div class="lnewaddtitle clearfix">
+							<h4 class="lfloatl lnewaddcol1">ID</h4>
+							<h4 class="lfloatl lnewaddcol2">用户名</h4>
+							<h4 class="lfloatl lnewaddcol3">手机号</h4>
+							<h4 class="lfloatl lnewaddcol4">邮箱</h4>
+							<h4 class="lfloatl lnewaddcol5">时间</h4>
+						</div>
+						<ul class="">
+							<li class="clearfix lnewaddli">
+								<p class="lfloatl lnewadd2col1">12345</p>
+								<p class="lfloatl lnewadd2col2">小桥流水</p>
+								<p class="lfloatl lnewadd2col3">15003212154</p>
+								<p class="lfloatl lnewadd2col4">15003212154@163.com</p>
+								<p class="lfloatl lnewadd2col5">2016-03-12</p>
+							</li>
+							<li class="clearfix lnewaddli">
+								<p class="lfloatl lnewadd2col1">12345</p>
+								<p class="lfloatl lnewadd2col2">小桥流水</p>
+								<p class="lfloatl lnewadd2col3">15003212154</p>
+								<p class="lfloatl lnewadd2col4">15003212154@163.com</p>
+								<p class="lfloatl lnewadd2col5">2016-03-12</p>
+							</li>
+							<li class="clearfix lnewaddli">
+								<p class="lfloatl lnewadd2col1">12345</p>
+								<p class="lfloatl lnewadd2col2">小桥流水</p>
+								<p class="lfloatl lnewadd2col3">15003212154</p>
+								<p class="lfloatl lnewadd2col4">15003212154@163.com</p>
+								<p class="lfloatl lnewadd2col5">2016-03-12</p>
+							</li>
+							<li class="clearfix lnewaddli">
+								<p class="lfloatl lnewadd2col1">12345</p>
+								<p class="lfloatl lnewadd2col2">小桥流水</p>
+								<p class="lfloatl lnewadd2col3">15003212154</p>
+								<p class="lfloatl lnewadd2col4">15003212154@163.com</p>
+								<p class="lfloatl lnewadd2col5">2016-03-12</p>
+							</li>
+							<li class="clearfix lnewaddli">
+								<p class="lfloatl lnewadd2col1">12345</p>
+								<p class="lfloatl lnewadd2col2">小桥流水</p>
+								<p class="lfloatl lnewadd2col3">15003212154</p>
+								<p class="lfloatl lnewadd2col4">15003212154@163.com</p>
+								<p class="lfloatl lnewadd2col5">2016-03-12</p>
+							</li>
+							<li class="clearfix lnewaddli">
+								<p class="lfloatl lnewadd2col1">12345</p>
+								<p class="lfloatl lnewadd2col2">小桥流水</p>
+								<p class="lfloatl lnewadd2col3">15003212154</p>
+								<p class="lfloatl lnewadd2col4">15003212154@163.com</p>
+								<p class="lfloatl lnewadd2col5">2016-03-12</p>
+							</li>
+							<li class="clearfix lnewaddli">
+								<p class="lfloatl lnewadd2col1">12345</p>
+								<p class="lfloatl lnewadd2col2">小桥流水</p>
+								<p class="lfloatl lnewadd2col3">15003212154</p>
+								<p class="lfloatl lnewadd2col4">15003212154@163.com</p>
+								<p class="lfloatl lnewadd2col5">2016-03-12</p>
+							</li>
+							<li class="clearfix lnewaddli">
+								<p class="lfloatl lnewadd2col1">12345</p>
+								<p class="lfloatl lnewadd2col2">小桥流水</p>
+								<p class="lfloatl lnewadd2col3">15003212154</p>
+								<p class="lfloatl lnewadd2col4">15003212154@163.com</p>
+								<p class="lfloatl lnewadd2col5">2016-03-12</p>
+							</li>
+							<li class="clearfix lnewaddli">
+								<p class="lfloatl lnewadd2col1">12345</p>
+								<p class="lfloatl lnewadd2col2">小桥流水</p>
+								<p class="lfloatl lnewadd2col3">15003212154</p>
+								<p class="lfloatl lnewadd2col4">15003212154@163.com</p>
+								<p class="lfloatl lnewadd2col5">2016-03-12</p>
+							</li>
+							<li class="clearfix lnewaddli">
+								<p class="lfloatl lnewadd2col1">12345</p>
+								<p class="lfloatl lnewadd2col2">小桥流水</p>
+								<p class="lfloatl lnewadd2col3">15003212154</p>
+								<p class="lfloatl lnewadd2col4">15003212154@163.com</p>
+								<p class="lfloatl lnewadd2col5">2016-03-12</p>
+							</li>
+							<li class="clearfix lnewaddli">
+								<p class="lfloatl lnewadd2col1">12345</p>
+								<p class="lfloatl lnewadd2col2">小桥流水</p>
+								<p class="lfloatl lnewadd2col3">15003212154</p>
+								<p class="lfloatl lnewadd2col4">15003212154@163.com</p>
+								<p class="lfloatl lnewadd2col5">2016-03-12</p>
+							</li>
+						</ul>
+						<div class="lnavpage-wrap">
+							<div class="pages ">
+						        <div id="Pagination"></div>
+						        <div class="searchPage">
+						          <span class="page-sum">共<strong class="allPage">15</strong>页</span>
+						          <span class="page-go">跳转<input type="text">页</span>
+						          <a href="javascript:;" class="page-btn">确定</a>
+						        </div>
+						    </div>
+						</div>
+					</div>
+				</div>
+				<!-- 管理员用户内容 -->
+				<div id="manageraccount" class="lhide">
+					<div class="ltitleh3 clearfix">
+						<h3 class="lfloatl lnewadd">今日新增管理员</h3>
+						<p class="lrefresh lpaddingr19"><a class="lrefreshbtn lmarginr0" href="javascript:;">刷新</a></p>
+					</div>
+					<div class="lnewadd-wrap">
+						<div class="lnewaddtitle clearfix">
+							<h4 class="lfloatl lnewaddcol1">ID</h4>
+							<h4 class="lfloatl lnewaddcol2">用户名</h4>
+							<h4 class="lfloatl lnewaddcol3">手机号</h4>
+							<h4 class="lfloatl lnewaddcol4">邮箱</h4>
+							<h4 class="lfloatl lnewaddcol5">时间</h4>
+						</div>
+						<ul class="">
+							<li class="clearfix lnewaddli">
+								<p class="lfloatl lnewadd2col1">12345</p>
+								<p class="lfloatl lnewadd2col2">小桥流水</p>
+								<p class="lfloatl lnewadd2col3">15003212154</p>
+								<p class="lfloatl lnewadd2col4">15003212154@163.com</p>
+								<p class="lfloatl lnewadd2col5">2016-03-12</p>
+							</li>
+							<li class="clearfix lnewaddli">
+								<p class="lfloatl lnewadd2col1">12345</p>
+								<p class="lfloatl lnewadd2col2">小桥流水</p>
+								<p class="lfloatl lnewadd2col3">15003212154</p>
+								<p class="lfloatl lnewadd2col4">15003212154@163.com</p>
+								<p class="lfloatl lnewadd2col5">2016-03-12</p>
+							</li>
+							<li class="clearfix lnewaddli">
+								<p class="lfloatl lnewadd2col1">12345</p>
+								<p class="lfloatl lnewadd2col2">小桥流水</p>
+								<p class="lfloatl lnewadd2col3">15003212154</p>
+								<p class="lfloatl lnewadd2col4">15003212154@163.com</p>
+								<p class="lfloatl lnewadd2col5">2016-03-12</p>
+							</li>
+							<li class="clearfix lnewaddli">
+								<p class="lfloatl lnewadd2col1">12345</p>
+								<p class="lfloatl lnewadd2col2">小桥流水</p>
+								<p class="lfloatl lnewadd2col3">15003212154</p>
+								<p class="lfloatl lnewadd2col4">15003212154@163.com</p>
+								<p class="lfloatl lnewadd2col5">2016-03-12</p>
+							</li>
+							<li class="clearfix lnewaddli">
+								<p class="lfloatl lnewadd2col1">12345</p>
+								<p class="lfloatl lnewadd2col2">小桥流水</p>
+								<p class="lfloatl lnewadd2col3">15003212154</p>
+								<p class="lfloatl lnewadd2col4">15003212154@163.com</p>
+								<p class="lfloatl lnewadd2col5">2016-03-12</p>
+							</li>
+							<li class="clearfix lnewaddli">
+								<p class="lfloatl lnewadd2col1">12345</p>
+								<p class="lfloatl lnewadd2col2">小桥流水</p>
+								<p class="lfloatl lnewadd2col3">15003212154</p>
+								<p class="lfloatl lnewadd2col4">15003212154@163.com</p>
+								<p class="lfloatl lnewadd2col5">2016-03-12</p>
+							</li>
+							<li class="clearfix lnewaddli">
+								<p class="lfloatl lnewadd2col1">12345</p>
+								<p class="lfloatl lnewadd2col2">小桥流水</p>
+								<p class="lfloatl lnewadd2col3">15003212154</p>
+								<p class="lfloatl lnewadd2col4">15003212154@163.com</p>
+								<p class="lfloatl lnewadd2col5">2016-03-12</p>
+							</li>
+							<li class="clearfix lnewaddli">
+								<p class="lfloatl lnewadd2col1">12345</p>
+								<p class="lfloatl lnewadd2col2">小桥流水</p>
+								<p class="lfloatl lnewadd2col3">15003212154</p>
+								<p class="lfloatl lnewadd2col4">15003212154@163.com</p>
+								<p class="lfloatl lnewadd2col5">2016-03-12</p>
+							</li>
+							<li class="clearfix lnewaddli">
+								<p class="lfloatl lnewadd2col1">12345</p>
+								<p class="lfloatl lnewadd2col2">小桥流水</p>
+								<p class="lfloatl lnewadd2col3">15003212154</p>
+								<p class="lfloatl lnewadd2col4">15003212154@163.com</p>
+								<p class="lfloatl lnewadd2col5">2016-03-12</p>
+							</li>
+							<li class="clearfix lnewaddli">
+								<p class="lfloatl lnewadd2col1">12345</p>
+								<p class="lfloatl lnewadd2col2">小桥流水</p>
+								<p class="lfloatl lnewadd2col3">15003212154</p>
+								<p class="lfloatl lnewadd2col4">15003212154@163.com</p>
+								<p class="lfloatl lnewadd2col5">2016-03-12</p>
+							</li>
+							<li class="clearfix lnewaddli">
+								<p class="lfloatl lnewadd2col1">12345</p>
+								<p class="lfloatl lnewadd2col2">小桥流水</p>
+								<p class="lfloatl lnewadd2col3">15003212154</p>
+								<p class="lfloatl lnewadd2col4">15003212154@163.com</p>
+								<p class="lfloatl lnewadd2col5">2016-03-12</p>
+							</li>
+						</ul>
+						<div class="lnavpage-wrap">
+							<div class="pages ">
+						        <div id="Pagination2"></div>
+						        <div class="searchPage">
+						          <!-- <span class="page-sum">共<strong class="allPage">15</strong>页</span> -->
+						          <span class="page-go">跳转<input type="text">页</span>
+						          <a href="javascript:;" class="page-btn">确定</a>
+						        </div>
+						    </div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

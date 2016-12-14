@@ -1,0 +1,839 @@
+h4 {
+	margin: 0;
+}
+.lbtm-line {
+	position: absolute;
+	width: 100%;
+	height: 9px;
+	left: 16px;
+	bottom: 0;
+	background: url(../images/web-index-ico/lmenu-line2.png) no-repeat 0 0;
+}
+.lcontent {
+	padding: 0 15px 0 16px;
+	background-color: #fff;
+}
+.l2level-menu {
+	border-bottom: 1px solid #dedede;
+}
+.l2-menu-li {
+	margin-right: 28px;
+	padding: 4px 15px 0;
+	margin-bottom: -1px;
+	line-height: 58px;
+	height: 59px;
+	border-bottom: 3px solid transparent;
+}
+.l2-menu-li:hover {
+	border-color: #3286ff;
+	color: #3286ff;
+}
+.l2-menu-li h2 {
+	font-weight: normal;
+	text-align: center;
+	font-size: 16px ;
+}
+.l2-menu-li h2 a {
+	display: block;
+	color: #19110f;
+}
+.l2-menu-li h2 a:hover {
+	color: #3685fe;
+}
+.l3lmenu {
+	margin-top: 21px;
+	border: 1px dashed #d6d6d8;
+	background-color: #ebf3ff;
+}
+.l3lmenu h3 {
+	font-weight: normal;
+	font-size: 14px;
+	color: #3285ff;
+	line-height: 43px;
+	padding-left: 37px;
+	padding-right: 35px;
+}
+.l2-level-li {
+	float: left;
+	margin-right: 23px;
+	margin-top: 8px;
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	-ms-border-radius: 15px;
+	border-radius: 15px;
+	cursor: pointer;
+}
+.l2-level-li>span ,
+.l2-level-li>span>span {
+	background-image: url(../images/web-index-ico/btnbg2.jpg) !important;
+	color: #000;
+}
+.l2-level-li>span {
+	background-position: 0 -37px;
+}
+.l2-level-li>span>span {
+	background-position: right -37px;
+}
+.l2-level-li:hover>span {
+	color: #fff;
+	background-position: 0 0;
+}
+.l2-level-li:hover>span>span {
+	color: #fff;
+	background-position: right 0;
+}
+
+.l2-level-li p {
+	line-height: 27px;
+}
+.l2-level-li:hover {
+	color: #fff;
+	background-color: #3285ff;
+}
+.lmain-list {
+	margin-top: 5px;
+	min-height: 686px;
+}
+.lli-box {
+	border: 1px solid #dedede;
+	margin-top: 14px;
+}
+.limgwrap {
+	padding: 25px 0 0 18px;
+}
+.limgwrap img {
+	width: 74px;
+	height: 75px;
+}
+.lgame-name {
+	padding-left: 12px;
+	padding-top: 25px;
+	width: 120px;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+.lname {
+	display: block;
+	font-size: 16px;
+	line-height: 30px;
+	color: #2c2c2c;
+	width: 120px;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+}
+.lgame-version {
+	display: block;
+	font-size: 12px;
+	line-height: 40px;
+	padding-bottom: 29px;
+	color: #696969;
+	width: 120px;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+}
+.lgame-state {
+	margin-top: 27px;
+	/*min-width: 50px;*/
+	width: 300px;
+}
+.lysx,.lwsx{
+	font-size: 12px;
+	line-height: 27px;
+	display: inline-block;
+	padding: 0 6px 0 8px;
+	color: #fff;
+	background-color: #98c1ff;
+	text-align: center;
+}
+.lwsx {
+	background-color: #fdd28e;
+}
+.lshwtg {
+	background-color: #fdd190;
+}
+.lckyy {
+	font-size: 14px;
+	line-height: 46px;
+}
+.lckyy a {
+	color: #3585fe;
+}
+.lcreatyy {
+	float: right;
+	padding-right: 9px;
+	width: 136px;
+	margin-top:  8px;
+}
+.lcreatyy span {
+	display: block;
+	font-size: 12px;
+	line-height: 26px;
+	padding-top: 1px;
+	color: #fff;
+	padding-left: 34px;
+	padding-right: 34px;
+	border-radius: 10px;
+	background-color: #fda51f;
+}
+.lappxq,.lcreatbtn{
+	width: 136px;
+	padding-right: 10px;
+	float: right;
+}
+.lappxq a, .lcreatbtn a{
+	display: block;
+	color: #fff;
+	font-size: 14px;
+	line-height: 26px;
+	padding-top: 1px;
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	-ms-border-radius: 15px;
+	border-radius: 15px;
+	/*background-color: #3285ff;*/
+	text-align: center;
+}
+.lcreatbtn .creatAP>span,
+.lcreatbtn .creatAP>span>span {
+	background-image: url(../images/web-index-ico/btnbg5.jpg) !important;
+	color: #fff;
+}
+.lupdate {
+	margin-top: 26px;
+	
+}
+.lamend {
+	margin-top: 18px;
+}
+.lchange-pages {
+	
+}
+.lpages, .lchange-pages{
+	float: right;
+}
+.lpages {
+	width: 278px;
+}
+.lpages a , .lpagesnum{
+	float: left;
+	width: 24px;
+	border: 1px solid #dedede;
+	font-size: 12px;
+	line-height: 28px;
+	padding-top: 2px;
+	text-align: center;
+	color: #666;
+	margin-right: 14px;
+}
+.lchange-pages {
+	width: 152px;
+}
+.lpages-wrap {
+	padding-top: 29px;
+	padding-bottom: 49px;
+}
+.lfont {
+	font-family: "宋体";
+}
+.lpages .lpoints {
+	border: none;
+	margin-right: 0;
+}
+.lpages .lmarign {
+	margin-right: 0;
+}
+.lspan1 {
+	font-size: 14px;
+	line-height: 30px;
+	padding: 2px 8px;
+}
+.lchange-pages span,.lchange-pages a{
+	float: left;
+	color: #656565;
+}
+.lpagesnum {
+	margin-right: 6px;
+}
+.lcount {
+	float: left;
+	font-size: 16px;
+	padding-left: 8px;
+	line-height: 27px;
+}
+
+
+
+
+.ltext {
+	padding-top: 16px;
+}
+.ltext a{
+	float: left;
+	font-size: 14px;
+	line-height: 14px;
+	color: #3186fd;
+
+}
+.lshz {
+	background-color: #7ed27d;
+}
+.lcreatbtn {
+	margin-top: 8px;
+}
+/*.lcreatbtn a {
+	background-color: #fda51f;
+}*/
+.lactive {
+	border-color: #3286ff;
+}
+.lactive h2 a {
+	color: #3286ff;
+}
+.lliactive {
+	background-color: #2974da;
+}
+/******************************************统计数据****************************/
+.lyygl {
+	/*display: none;*/
+	display: block;
+}
+.ltjsj {
+	/*display: block;*/
+	display: none;
+	min-height: 886px;
+	padding-top: 30px;
+}
+.lyyffsj {
+	border: 1px solid #dedede;
+
+}
+.lh3 {
+	font-size: 16px;
+	line-height: 61px;
+	color: #17120f;
+	padding-left: 23px;
+	font-weight: normal;
+}
+.lcount-list {
+	padding: 0 17px 19px 17px;
+	/*margin-right: -1px;*/
+}
+.lcount-list-li , .lyym-name{
+	width: 168px;
+	border: 1px dashed #d7d6d4;
+	background-color: #ebf3ff;
+	margin-right: 20px;
+}
+.lcount-list-li h4 {
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 44px;
+	color: #3285ff;
+	margin-top: 14px;
+	text-align: center;
+}
+.lcount-list-li p {
+	font-size: 14px;
+	line-height: 36px;
+	color: #151110;
+	text-align: center;
+}
+.lmarginr {
+	margin-right: 0;
+}
+.lmarginr p {
+	color: #72a5ff;
+}
+.lyym {
+	margin-top: 29px;
+}
+.lyym-name {
+	/*width: 100%;*/
+	width: 968px;
+	padding-bottom: 6px;
+	position: relative;
+	z-index: 4;
+}
+.lyym-name-li {
+	font-size: 14px;
+	line-height: 28px;
+	color: #171111;
+	text-align: center;
+	border-right: 1px dashed #d7d6d4;
+	padding-top: 3px;
+	margin-top: 6px;
+}
+.lli-width1 {
+	width: 104px;
+}
+.lli-width2 {
+	width: 123px;
+}
+.lli-width3 {
+	width: 132px;
+}
+.lli-width4 {
+	width: 165px;
+}
+.lli-width5 {
+	width: 178px;
+}
+.lli-width6 {
+	width: 136px;
+}
+.lli-width7 {
+	width: 123px;
+}
+.lborder1 {
+	border-right: none;
+}
+.lyym-app-li {
+	border: 1px solid #fff;
+	margin-top: -1px;
+	position: relative;
+	z-index: 0;
+	margin-bottom: 20px;
+}
+.lyym-app-li:hover {
+	border-color: #d7d6d4;
+	z-index: 10;
+}
+.lyym-app-li h4,.lyym-count {
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 26px;
+	padding-top: 15px;
+	padding-bottom: 12px;
+	color: #190f0e;
+	text-align: center;
+	/*border-right: 1px solid #fff;*/
+}
+.lyym-app-li h4 a {
+	display: block;
+	color: #190f0e;
+}
+.lbtn {
+	font-size: 0;
+	/*padding-right: 1px;*/
+	text-align: center;
+}
+.lbtn a {
+	display: inline-block;
+	font-size: 14px;
+	line-height: 27px;
+	color: #fff;
+	background-color: #3285ff;
+	padding: 0 19px 0 20px;
+	-webkit-border-radius: 15px ;
+	-moz-border-radius: 15px ;
+	-ms-border-radius: 15px ;
+	border-radius: 15px ;
+}
+/**********************账户管理部分**************************************/
+.zhgl {
+	display: none;
+	min-height: 868px;
+}
+.lstats-wrap {
+	position: absolute;
+	right: 0;
+	top: 10px;
+	width: 223px;
+	height: 27px;
+	text-align: center;
+
+
+}
+.login1 {
+	position: relative;
+}
+.lstats {
+	display: inline-block;
+	color: #fff;
+	font-size: 14px;
+	line-height: 14px;
+	padding: 7px 14px 6px;
+	min-width: 70px;
+	text-align: center;
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	-ms-border-radius: 15px;
+	border-radius: 15px;
+	background-color: #3285ff;
+}
+.lyshtg {
+	background-color: #3285ff;
+}
+.lwsh-shz {
+	background-color: #ffa41f;
+}
+
+/*************************隐藏按钮样式**********************/
+.lhidebtn {
+	display: none;
+	min-width: 30px;
+	padding: 0 16px 0;
+	font-size: 14px;
+	line-height: 26px;
+	background-color: #3185ff;
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	-ms-border-radius: 15px;
+	border-radius: 15px;
+	text-align: center;
+	z-index: 30;
+	position: absolute;
+	left: 141px;
+	top: 0;
+	color: #fff;
+
+}
+.filelist-wrap {
+	position: absolute;
+	left: 100%;
+	top: 50px;
+	width: 120px;
+	height: 100px;
+	overflow: visible;
+	font-size: 14px;
+}
+.lfilelist {
+	opacity: 100;
+	filter:alpha(opacity = 100);
+	text-align: center;
+}
+.lfilelist , .lfilelist b{
+	display: block;
+	width: 120px;
+	font-size: 14px;
+	line-height: 20px;
+	color: #000;
+}
+.lappbtn {
+	left: 200px;
+}
+/***************在管理中心点击登陆****************/
+/*********************提示输入对或错样式****************************/
+label {
+	position: relative;
+}
+.llabel-box {
+    display: block;
+    font-family: "microsoft yahei";
+    margin-top: 14px;
+    font-size: medium;
+
+    margin-right: 42%;
+    position: relative;
+}
+.lduigou {
+    position: absolute;
+    left: 100%;
+    top: 0;
+    width: 17px;
+    height: 17px;
+    background: 
+    url(../images/web-index-ico/sprite1.png)
+    no-repeat -137px -76px;
+    margin-left: 10px;
+
+}
+.lduigoud {
+    background-position: -96px -76px;
+}
+.lduigoux {
+    background-position: -117px -76px;
+}
+/*********************财务结算样式*************************/
+.lcwjs {
+	display: none;
+	min-height: 868px;
+}
+
+.llzdjs-box {
+	margin-top: 20px;
+	background-color: #f2f2f2;
+	-webkit-box-shadow: 0 1px 0 0 #f0f0f0, 0 1px 0 0 #f8f8f8;
+	-moz-box-shadow: 0 1px 0 0 #f0f0f0, 0 1px 0 0 #f8f8f8;
+	-ms-box-shadow: 0 1px 0 0 #f0f0f0, 0 1px 0 0 #f8f8f8;
+	box-shadow: 0 1px 0 0 #f0f0f0, 0 1px 0 0 #f8f8f8;
+	padding-top: 11px;
+	padding-bottom: 12px;
+}
+.llzdjs-box h3 {
+	font-weight: bold;
+	margin-left: 24px;
+	border-left: 4px solid #3285ff;
+	font-size: 20px;
+	line-height: 20px;
+	padding-top: 2px;
+	color: #3285fd;
+	padding-left: 10px;
+	min-width: 300px;
+}
+.llzdjs-list {
+	margin-top: 17px;
+}
+.llzdjs-list1 {
+	position: relative;
+	z-index: 2;
+	border: 1px dashed #d2d6d9;
+	background-color: #ebf3ff;
+}
+.llzdjs-list1 li {
+	text-align: center;
+	border-right: 1px dashed #d5d7d4;
+	margin-top: 6px;
+	margin-bottom: 6px;
+	font-size: 14px;
+	line-height: 28px;
+	padding-top: 3px;
+	color: #19110e;
+}
+.llzdjs-list1 li h4 {
+	font-weight: normal;
+}
+.llzdjs-li1 {
+	width: 117px;
+}
+.llzdjs-li2 {
+	width: 151px;
+}
+.llzdjs-li3 {
+	width: 204px;
+}
+.llzdjs-li4 {
+	width: 174px;
+}
+.llzdjs-li5 {
+	width: 193px;
+}
+.llzdjs-list1 .llzdjs-li6 {
+	width: 123px;
+	border-right: none;
+}
+.llzdjs-list2 , .lname{
+	font-size: 14px;
+	line-height: 14px;
+	color: #16120f;
+}
+.llzdjs-list2 li {
+	padding-top: 21px;
+	padding-bottom: 18px;
+	text-align: center;
+	border: 1px solid #dfdfdf;
+	margin-top: -1px;
+	position: relative;
+	z-index: 1;
+}
+/********点击每一项的时候hover效果*************/
+.llzdjs-list2 li:hover {
+
+}
+.lname {
+	font-weight: normal;
+
+}
+.lbtnbox {
+	
+
+}
+.lbtn {
+	position: absolute;
+	right: 18px;
+	top: 14px;
+	display: block;
+	/*padding: 0 14px 0 17px;*/
+	font-size: 14px;
+	line-height: 27px;
+	background-color: #3285ff;
+	color:#fff;
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	-ms-border-radius: 15px;
+	border-radius: 15px;
+}
+#lvoxyyzz input,
+#lvoxzjz input {
+	width: 80px;
+}
+#lvoxyyzz span,
+#lvoxswdjz span ,
+#lvoxzjz span{
+	float: left;
+	text-align: right;
+}
+#lvoxyyzz span ,
+#lvoxzjz span{
+	width: 120px;
+}
+#lvoxswdjz span {
+	width: 136px;
+}
+#lvoxswdjz input {
+	width: 80px;
+}
+/****************userregister.css*******************/
+.div{
+	clear: none;
+	min-height:1050px;
+	background-color: #FFFFFF;
+	padding-top: 20px;
+}
+
+.login1 {
+	vertical-align: middle;
+	height: 35px;
+	font-size: large;
+	font-family: "microsoft yahei";
+	font-weight: normal;
+	background-color: #F4F4F4;
+	color: #3385ff;
+}
+.lmanage-num ,
+.realName ,
+.nick ,
+.email ,
+.qq ,
+.telephone,
+.mobile ,
+.id ,
+.payName,
+.bankNum ,
+.taxNum ,
+.licenseNum,
+.financeName,
+.financeEmail,
+.financeMobile,
+.openedBankName{
+	height: 40px;
+	width: 400px;
+	border-radius: 20px;
+	background-color: #F4F4F4;
+	font-size: 12px;
+	line-height: 40px;
+	overflow: hidden;
+	font-family: "microsoft yahei";
+	margin-top: 0;
+	color: #171110;
+	margin-left: 20px;
+	border: 0;
+	padding-left: 20px;
+}
+.lkfwzdd {
+	width: 402px;
+
+}
+.lgr-email {
+	width: 398px !important;
+}
+input:hover,
+textarea:hover,
+input:focus,
+textarea:focus {
+	outline:0;
+	-webkit-box-shadow:0 0 2px 2px #a5c7fe;
+	-moz-box-shadow:0 0 2px 2px #a5c7fe;
+	-ms-box-shadow:0 0 2px 2px #a5c7fe;
+	box-shadow:0 0 2px 2px #a5c7fe;
+	border-color:#fff;
+}
+label .lwidth200 {
+	min-width: 200px;
+}
+label {
+	display: block;
+	font-family: "microsoft yahei";
+	margin-top: 14px;
+	font-size: medium;
+	margin-right: 42%;
+}
+.lmanage-num  > input {
+	border: none;
+	margin-top: 5px;
+	display: block;
+	margin-left: 50px;
+	background-color: #F4F4F4;
+}
+.end-wd {
+	vertical-align: middle;
+	height: 35px;
+	width: 100%;
+	font-size: small;
+	font-family: "microsoft yahei";
+	font-weight: normal;
+	background-color: #3385ff;
+	color: #F4F4F4;
+	text-align: center;
+	padding-top: 20px;
+}
+.num1 {
+	height: 40px;
+	width: 198px;
+	border-radius: 20px;
+	background-color: #F4F4F4;
+	font-size: 12px;
+	line-height: 40px;
+	font-family: "microsoft yahei";
+	margin-top: 0;
+	color: #171110;
+	margin-left: 20px;
+	border: 0;
+	padding-right: 20px;
+	padding-left: 15px;
+}
+.div2 {
+	display: none;
+	padding-top: 20px;
+	min-height: 860px;
+}
+label span {
+	float: left;
+	width: 120px;
+	display: block;
+	text-align: right;
+}
+label .lnowrap {
+	white-space: nowrap;
+}
+
+#llookimg,
+#llookimg3,
+#llookimg5{
+	display: block;
+	width: 160px;
+	height: 210px;
+	position: relative;
+	left: 50%;
+	margin-top: 20px;
+}
+#llookimg2 ,
+#llookimg4,
+#llookimg6 {
+	display: none;
+	width: 160px;
+	height: 210px;
+	position: absolute;
+	left: 110%;
+	top: 0px;
+}
+/*.lcolorF4 {
+	background-color: #F4F4F4 !important;
+}*/
+#lvoxswdjz .moxie-shim {
+    width: 100px !important;
+    height: 27px !important;
+    left: 158px !important;
+}
+/*************页码的样式***************/
+.lpages .lpageactive {
+	color: #fff;
+	background-color: #3285FF;
+}
+.ltextp2 {
+	width: 120px;
+    text-align: right;
+    font-size: 16px;
+}

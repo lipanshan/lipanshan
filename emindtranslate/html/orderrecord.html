@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>订单记录</title>
+	<link rel="stylesheet" href="../css/orderrecord.css">
+	<script src="../js/jquery/jquery-1.9.1.min.js"></script>
+</head>
+<body>
+	<div class="wrap" id="contentor">
+		<div class="ltitleline">
+			<h3 class="lh3">订单记录</h3>
+		</div>
+		<table>
+			<thead class="ltitleline" >
+				<tr ><td class="lpaddingtr"></td></tr>
+				<tr class="lborder1 lheight60 lbgcolorf3">
+					<th class="lddh">订单号：</th>
+					<th class="lwidth78"><input class="linput lborder1" type="text" value="123456456"></th>
+					<th class="lje">金额：</th>
+					<th class="lwidth78"><input class="linput lborder1" type="text" value="123456456"></th>
+					<th class="llx">类型：</th>
+					<th class="lwidth78"><input class="linput lborder1" type="text" value="文字翻译"></th>
+					<th class="lzfsj">支付方式：</th>
+					<th class="lwidth78"><input class="linput lborder1" type="text" value="柬埔寨语"></th>
+					<th class="lcjsj">创建时间：</th>
+					<th class="lwidth144"><input class="linput2 lborder1" type="text" value="2016.06.15"></th>
+					<th class="lz">至：</th>
+					<th class="lwidth144"><input class="linput2 lborder1" type="text" value="2016.06.15"></th>
+					<th class="lwidth112"><input class="lbtn lborder1 lhover" type="button" value="查询"></th>
+					<th></th>
+				</tr>
+			</thead>
+		</table>
+		<table>
+			<thead >
+				<tr>
+					<td class="lheight19" colspan="9"></th>
+				</tr>
+				<tr class="lbgcolorf3 lheight60">
+					<th class="lcols2 lborder1 marginr">序号</th>
+					<th class="lcols3 lborder1 marginr">订单号</th>
+					<th class="lcols4 lborder1 marginr">创建时间</th>
+					<th class="lcols5 lborder1 marginr">金额</th>
+					<th class="lcols6 lborder1 marginr">类型</th>
+					<th class="lcols7 lborder1 marginr">语言</th>
+					<th class="lcols8 lborder1 marginr">支付方式</th>
+					<th class="lcols9 lborder1 marginr">负责译员</th>
+					<th class="lcols10 lborder1 marginr">操作</th>
+				</tr>
+			</thead>
+			<tbody id="orderRecordList">
+				<tr class="lbgcolorff lborder1">
+					<td class="lcols2 lborder1 ">1</td>
+					<td class="lcols3 lborder1 ">1454558888</td>
+					<td class="lcols4 lborder1 ">2016-08-12 12:37:55</td>
+					<td class="lcols5 lborder1 ">24.69</td>
+					<td class="lcols6 lborder1 "><div class="lwzfy"><span class="lcurcor">文字翻译</span><div class="lilogo">i</div></div></td>
+					<td class="lcols7 lborder1 ">中文云南语互译</td>
+					<td class="lcols8 lborder1 ">微信支付</td>
+					<td class="lcols9 lborder1 ">快乐小川哗啦啦</td>
+					<td colspan="" class="lcols10 lborder1"><input class="loperationbtn" type="button" value="查看">
+					</td>
+				</tr>
+				<tr class="lborder1">
+					<td class="lcols2 lborder1 ">1</td>
+					<td class="lcols3 lborder1 ">1454558888</td>
+					<td class="lcols4 lborder1 ">2016-08-12 12:37:55</td>
+					<td class="lcols5 lborder1 ">24.69</td>
+					<td class="lcols6 lborder1 "><div class="lwzfy"><span class="lcurcor">文字翻译</span><div class="lilogo">i</div></div></td>
+					<td class="lcols7 lborder1 ">中文云南语互译</td>
+					<td class="lcols8 lborder1 ">微信支付</td>
+					<td class="lcols9 lborder1 ">快乐小川哗啦啦</td>
+					<td class="lcols10 lborder1"><input class="loperationbtn" type="button" value="查看">
+					</td>
+				</tr>
+				<tr class="lbgcolorff lborder1">
+					<td class="lcols2 lborder1 ">1</td>
+					<td class="lcols3 lborder1 ">1454558888</td>
+					<td class="lcols4 lborder1 ">2016-08-12 12:37:55</td>
+					<td class="lcols5 lborder1 ">24.69</td>
+					<td class="lcols6 lborder1 "><div class="lwzfy"><span class="lcurcor">图片翻译</span><div class="lilogo">i</div></div></td>
+					<td class="lcols7 lborder1 ">中文云南语互译</td>
+					<td class="lcols8 lborder1 ">微信支付</td>
+					<td class="lcols9 lborder1 ">快乐小川哗啦啦</td>
+					<td class="lcols10 lborder1"><input class="loperationbtn" type="button" value="查看">
+					</td>
+				</tr>
+				<tr class="lborder1">
+					<td class="lcols2 lborder1 ">1</td>
+					<td class="lcols3 lborder1 ">1454558888</td>
+					<td class="lcols4 lborder1 ">2016-08-12 12:37:55</td>
+					<td class="lcols5 lborder1 ">24.69</td>
+					<td class="lcols6 lborder1 "><div class="lwzfy"><span class="lcurcor">图片翻译</span><div class="lilogo">i</div></div></td>
+					<td class="lcols7 lborder1 ">中文云南语互译</td>
+					<td class="lcols8 lborder1 ">微信支付</td>
+					<td class="lcols9 lborder1 ">快乐小川哗啦啦</td>
+					<td class="lcols10 lborder1"><input class="loperationbtn" type="button" value="查看">
+					</td>
+				</tr>
+				<tr class="lbgcolorff lborder1">
+					<td class="lcols2 lborder1 ">1</td>
+					<td class="lcols3 lborder1 ">1454558888</td>
+					<td class="lcols4 lborder1 ">2016-08-12 12:37:55</td>
+					<td class="lcols5 lborder1 ">24.69</td>
+					<td class="lcols6 lborder1 "><div class="lwzfy"><span class="lcurcor">语音翻译</span><div class="lilogo">i</div></div></td>
+					<td class="lcols7 lborder1 ">中文云南语互译</td>
+					<td class="lcols8 lborder1 ">微信支付</td>
+					<td class="lcols9 lborder1 ">快乐小川哗啦啦</td>
+					<td class="lcols10 lborder1"><input class="loperationbtn" type="button" value="查看">
+					</td>
+				</tr>
+				<tr class="lborder1">
+					<td class="lcols2 lborder1 ">1</td>
+					<td class="lcols3 lborder1 ">1454558888</td>
+					<td class="lcols4 lborder1 ">2016-08-12 12:37:55</td>
+					<td class="lcols5 lborder1 ">24.69</td>
+					<td class="lcols6 lborder1 "><div class="lwzfy"><span class="lcurcor">语音翻译</span><div class="lilogo">i</div></div></td>
+					<td class="lcols7 lborder1 ">中文云南语互译</td>
+					<td class="lcols8 lborder1 ">微信支付</td>
+					<td class="lcols9 lborder1 ">快乐小川哗啦啦</td>
+					<td class="lcols10 lborder1"><input class="loperationbtn" type="button" value="查看">
+					</td>
+				</tr>
+					<tr class="lborder1">
+					<td class="lcols2 lborder1 ">1</td>
+					<td class="lcols3 lborder1 ">1454558888</td>
+					<td class="lcols4 lborder1 ">2016-08-12 12:37:55</td>
+					<td class="lcols5 lborder1 ">24.69</td>
+					<td class="lcols6 lborder1 "><div class="lwzfy"><span class="lcurcor">在线陪翻</span><div class="lilogo">i</div></div></td>
+					<td class="lcols7 lborder1 ">中文云南语互译</td>
+					<td class="lcols8 lborder1 ">微信支付</td>
+					<td class="lcols9 lborder1 ">快乐小川哗啦啦</td>
+					<td class="lcols10 lborder1"><input class="loperationbtn" type="button" value="查看">
+					</td>
+				</tr>
+			</tbody>
+		</table>
+		<table class="lpagenum">
+			<tbody >
+				<tr><td colspan="18" class="lheight29"></td></tr>
+				<tr>
+					<td></td>
+					<td class="lpagetd1">有2670条记录</td>
+					<td class="ltd9"></td>
+					<td class="lpagetd2 lborder1 "><input type="button" class="lpagebtn lhover" value="&lt;上一页"></td>
+					<td class="ltd9"></td>
+					<td class="lpagetd3 lborder1 "><input type="button" class="lpagebtn lhover" value="1"></td>
+					<td class="td5"></td>
+					<td class="lpagetd3 lborder1 "><input type="button" class="lpagebtn lhover" value="2"></td>
+					<td class="td5"></td>
+					<td class="lpagetd3 lborder1 "><input type="button" class="lpagebtn lhover" value="3"></td>
+					<td class="td5"></td>
+					<td class="lpagetd3 lborder1 "><input type="button" class="lpagebtn lhover" value="4"></td>
+					<td class="td5"></td>
+					<td class="lpagetd3 lborder1 "><input type="button" class="lpagebtn lhover" value="…"></td>
+					<td class="ltd9"></td>
+					<td class="lpagetd2 lborder1 "><input type="button" class="lpagebtn lhover" value="下一页&gt;"></td>
+					<td class="ltd9"></td>
+					<td class="lpagetd4 lborder1">共24页</td>
+					<td class="td39"></td>
+				</tr>
+				<tr><td style="height: 82px;" colspan="18"></td></tr>
+			</tbody>
+		</table>
+	</div>
+	<!-- 文字翻译弹窗 -->
+	<div id="texttranslation">
+		<table>
+			<tr class="ltr1">
+				<td class="ltr1td1">订单详情</td>
+				<td></td>
+				<td class="ltr1td2"><span id="lclosedBtn"></span></td>
+			</tr>
+		</table>
+		<div class="lpadding19">
+			<table >
+				<tr><td colspan="14" class="lheight10"></td></tr>
+				<tr class="lborder1 lbgcolorf3">
+					<td class="ltitle">订单信息<span class="ldian"></span></td>
+					<td colspan="13"></td>
+				</tr>
+			</table>
+			<table>
+				<tr class="ltr2">
+					<td class="lwidth57">创建时间:</td>
+					<td class="lwidth86">2016-04-23</td>
+					<td class="lwidth64">订单号:</td>
+					<td class="lwidth94">2245555555</td>
+					<td class="lwidth48">类型:</td>
+					<td class="lwidth70">文字翻译</td>
+					<td class="lwidth51">语种:</td>
+					<td class="lwidth110">中文越南语互译</td>
+					<td class="lwidth68">支付方式:</td>
+					<td class="lwidth50">微信</td>
+					<td class="lwidth46">金额:</td>
+					<td class="lwidth60">32.48</td>
+					<td class="lwidth54">字数</td>
+					<td class="lwidth104">13224字</td>
+				</tr>
+			</table>
+			<table>
+				<tr>
+					<td class="lborder1 lwidth470" ></td>
+					<td ></td>
+					<td class="lborder1 lwidth470" ></td>
+				</tr>
+				<tr>
+					<td class="lheight32">原文</td>
+					<td></td>
+					<td class="lheight32">译文</td>
+				</tr>
+				<tr>
+					<td class="lheight22" colspan="3"></td>
+				</tr>
+			</table>
+			<table >
+				<tr class="lborder1 lbgcolorf3">
+					<td class="ltitle">备注<span class="ldian"></span></td>
+					<td colspan="13"></td>
+				</tr>
+				<tr class="lheight20">
+					<td colspan="14"></td>
+				</tr>
+				<tr class="lheight20">
+					<td colspan="14">此译文为一铭翻译云测试使用,仅供参考！</td>
+				</tr>
+				<tr>
+					<td class="lheight54" colspan="14"></td>
+				</tr>
+			</table>
+			<table >
+				<tr class="lborder1 lbgcolorf3">
+					<td class="ltitle">评价<span class="ldian"></span></td>
+					<td colspan="13"></td>
+				</tr>
+				<tr class="lheight20">
+					<td colspan="14"></td>
+				</tr>
+				<tr class="lheight14">
+					<td colspan="14">此译文为一铭翻译云测试使用,仅供参考！</td>
+				</tr>
+				<tr class="lheight24">
+					<td colspan="14"></td>
+				</tr>
+			</table>
+		</div>
+	</div>
+	<!-- 图片弹窗 -->
+	<div id="picturetranslation">
+		<table>
+			<tr class="ltr1">
+				<td class="ltr1td1">订单详情</td>
+				<td></td>
+				<td class="ltr1td2"><span id="lclosedBtnpt"></span></td>
+			</tr>
+		</table>
+		<div class="lpadding19">
+			<table >
+				<tr><td colspan="14" class="lheight10"></td></tr>
+				<tr class="lborder1 lbgcolorf3">
+					<td class="ltitle">订单信息<span class="ldian"></span></td>
+					<td colspan="13"></td>
+				</tr>
+			</table>
+			<table>
+				<tr>
+					<th class="lheight16" colspan="9"></th>
+				</tr>
+				<tr class="ltr2">
+					<td class="lwidth85">订单号:</td>
+					<td class="lwidth158">2245555555</td>
+					<td class="lwidth118">翻译类型:</td>
+					<td class="lwidth185">中文越南语互译</td>
+					<td class="lwidth80">类型:</td>
+					<td class="lwidth120">图片翻译</td>
+					<td class="lwidth134">负责译员:</td>
+					<td class="lwidth81">说翻就翻</td>
+					<td></td>
+				</tr>
+				<tr class="ltr2">
+					<td class="lwidth85">创建时间:</td>
+					<td class="lwidth158">2016-12-21</td>
+					<td class="lwidth118">支付方式:</td>
+					<td class="lwidth185">微信支付</td>
+					<td class="lwidth80">金额:</td>
+					<td class="lwidth120">32.32</td>
+					<td class="lwidth134">字数:</td>
+					<td class="lwidth81">1322字</td>
+					<td></td>
+				</tr>
+			</table>
+			<table>
+				<tr>
+					<td colspan="2"></td>
+					<td class="lheight32">原文:</td>
+				</tr>
+				<tr>
+					<td class="limgwrap"><img src="../image/img1.jpg" alt=""></td>
+					<td ></td>
+					<td rowspan="2" class="lborder1 lwidth675" >
+						<p class="ltextarea"></p>
+					</td>
+				</tr>
+				<tr>
+					<td class="lheight59"><input class="llookbtn" id="vieworiginalimgbtn" type="button" value="查看原图"><input class="ldownbtn" type="button" value="下载"></td>
+				</tr>
+				<tr>
+					<td class="ltranslate">译文：</td>
+					<td colspan="2"></td>
+				</tr>
+				<tr>
+					<td colspan="3"><p class="ltextarea2"></p></td>
+				</tr>
+				<tr>
+					<td class="lheight22" colspan="3"></td>
+				</tr>
+			</table>
+			<table >
+				<tr class="lborder1 lbgcolorf3">
+					<td class="ltitle">备注<span class="ldian"></span></td>
+					<td colspan="13"></td>
+				</tr>
+				<tr class="lheight20">
+					<td colspan="14"></td>
+				</tr>
+				<tr class="lheight20">
+					<td colspan="14">此译文为一铭翻译云测试使用,仅供参考！</td>
+				</tr>
+				<tr>
+					<td class="lheight54" colspan="14"></td>
+				</tr>
+			</table>
+			<table >
+				<tr class="lborder1 lbgcolorf3">
+					<td class="ltitle">评价<span class="ldian"></span></td>
+					<td colspan="13"></td>
+				</tr>
+				<tr class="lheight20">
+					<td colspan="14"></td>
+				</tr>
+				<tr class="lheight14">
+					<td colspan="14">此译文为一铭翻译云测试使用,仅供参考！</td>
+				</tr>
+				<tr class="lheight24">
+					<td colspan="14"></td>
+				</tr>
+			</table>
+		</div>
+	</div>
+	<!-- 语音弹窗 -->
+	<div id="speechtranslation">
+		<table>
+			<tr class="ltr1">
+				<td class="ltr1td1">订单详情</td>
+				<td></td>
+				<td class="ltr1td2"><span id="lclosedBtnst"></span></td>
+			</tr>
+		</table>
+		<div class="lpadding19">
+			<table >
+				<tr><td colspan="14" class="lheight10"></td></tr>
+				<tr class="lborder1 lbgcolorf3">
+					<td class="ltitle">订单信息<span class="ldian"></span></td>
+					<td colspan="13"></td>
+				</tr>
+			</table>
+			<table>
+				<tr>
+					<th class="lheight15" colspan="9"></th>
+				</tr>
+				<tr class="ltr2">
+					<td class="lwidth85">订单号:</td>
+					<td class="lwidth158">2245555555</td>
+					<td class="lwidth118">翻译类型:</td>
+					<td class="lwidth185">中文越南语互译</td>
+					<td class="lwidth80">类型:</td>
+					<td class="lwidth120">图片翻译</td>
+					<td class="lwidth134">负责译员:</td>
+					<td class="lwidth81">说翻就翻</td>
+					<td></td>
+				</tr>
+				<tr class="ltr2">
+					<td class="lwidth85">创建时间:</td>
+					<td class="lwidth158">2016-12-21</td>
+					<td class="lwidth118">支付方式:</td>
+					<td class="lwidth185">微信支付</td>
+					<td class="lwidth80">金额:</td>
+					<td class="lwidth120">32.32</td>
+					<td class="lwidth134">字数:</td>
+					<td class="lwidth81">1322字</td>
+					<td></td>
+				</tr>
+				<tr>
+					<th class="lheight6" colspan="9"></th>
+				</tr>
+			</table>
+			<table>
+				<tr class="lborder1">
+					<td class="ltransltion">译文：</td>
+					<td><a class="lplay" href="javascript:;"><a class="lpause" href="javascript:;"></td>
+					<td class="ldownst"><a href="javascript:;">下载</a></td>
+				</tr>
+				<tr>
+					<td class="ltranslate">译文：</td>
+					<td colspan="2"></td>
+				</tr>
+				<tr>
+					<td colspan="3"><p class="ltextarea2"></p></td>
+				</tr>
+				<tr>
+					<td class="lheight22" colspan="3"></td>
+				</tr>
+			</table>
+			<table >
+				<tr class="lborder1 lbgcolorf3">
+					<td class="ltitle">备注<span class="ldian"></span></td>
+					<td colspan="13"></td>
+				</tr>
+				<tr class="lheight20">
+					<td colspan="14"></td>
+				</tr>
+				<tr class="lheight20">
+					<td colspan="14">此译文为一铭翻译云测试使用,仅供参考！</td>
+				</tr>
+				<tr>
+					<td class="lheight54" colspan="14"></td>
+				</tr>
+			</table>
+			<table >
+				<tr class="lborder1 lbgcolorf3">
+					<td class="ltitle">评价<span class="ldian"></span></td>
+					<td colspan="13"></td>
+				</tr>
+				<tr class="lheight20">
+					<td colspan="14"></td>
+				</tr>
+				<tr class="lheight14">
+					<td colspan="14">此译文为一铭翻译云测试使用,仅供参考！</td>
+				</tr>
+				<tr class="lheight24">
+					<td colspan="14"></td>
+				</tr>
+			</table>
+		</div>
+	</div>
+	<!-- 在线陪翻 -->
+	<div id="onlineaccompany">
+		<table>
+			<tr class="ltr1">
+				<td class="ltr1td1">订单详情</td>
+				<td></td>
+				<td class="ltr1td2"><span id="lclosedBtnoa"></span></td>
+			</tr>
+		</table>
+		<div class="lpadding19">
+			<table >
+				<tr><td colspan="14" class="lheight10"></td></tr>
+				<tr class="lborder1 lbgcolorf3">
+					<td class="ltitle">订单信息<span class="ldian"></span></td>
+					<td colspan="13"></td>
+				</tr>
+			</table>
+			<table>
+				<tr>
+					<th class="lheight15" colspan="9"></th>
+				</tr>
+				<tr class="ltr2">
+					<td class="lwidth85">订单号:</td>
+					<td class="lwidth158">2245555555</td>
+					<td class="lwidth118">翻译类型:</td>
+					<td class="lwidth185">中文越南语互译</td>
+					<td class="lwidth80">类型:</td>
+					<td class="lwidth120">图片翻译</td>
+					<td class="lwidth134">负责译员:</td>
+					<td class="lwidth81">说翻就翻</td>
+					<td></td>
+				</tr>
+				<tr class="ltr2">
+					<td class="lwidth85">创建时间:</td>
+					<td class="lwidth158">2016-12-21</td>
+					<td class="lwidth118">支付方式:</td>
+					<td class="lwidth185">微信支付</td>
+					<td class="lwidth80">金额:</td>
+					<td class="lwidth120">32.32</td>
+					<td class="lwidth134">字数:</td>
+					<td class="lwidth81">1322字</td>
+					<td></td>
+				</tr>
+				<tr>
+					<th class="lheight6" colspan="9"></th>
+				</tr>
+			</table>
+			<table >
+				<tr class="lborder1 lbgcolorf3">
+					<td class="ltitle">评价<span class="ldian"></span></td>
+					<td colspan="13"></td>
+				</tr>
+				<tr class="lheight20">
+					<td colspan="14"></td>
+				</tr>
+				<tr class="lheight82">
+					<td colspan="14">感觉不错哦，谢谢！</td>
+				</tr>
+				<tr class="lheight24">
+					<td colspan="14"></td>
+				</tr>
+			</table>
+		</div>
+	</div>
+	<div id="boxshadow"></div>
+	<!-- 说明弹窗 -->
+	<div id="explain">
+		<table>
+			<thead>
+				<tr class="lheight40">
+					<td></td>
+					<td class="lwidth33"><span id="lclosebtne"></span></td>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td class="lheight21" colspan="2"></td>
+				</tr>
+				<tr>
+					<td class="ltitle">说明</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td class="ltext" colspan="2">输入用户名或手机，点击新增直接增加到对应列表</td>
+				</tr>
+				<tr>
+					<td class="lheight27" colspan="2"></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	<!-- 查看原图按钮 -->
+	<div id="viewOriginaLimage">
+		<table>
+			<thead>
+				<tr class="ltr1">
+				<td></td>
+				<td class="ltr1td2"><span id="lclosedbtnvol"></span></td>
+			</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td colspan="2"><img class="loriginalimg" src="../image/img2.jpg" alt="原图"></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+<script>
+	$(function (){
+		var animateOnoff = true;
+		$('#orderRecordList').click(function (ev){
+			if(ev.target.innerHTML == '文字翻译'){
+				$('#boxshadow').css('height',$('body').height());
+				$('#picturetranslation').hide(0);
+				$('#speechtranslation').hide(0);
+				$('#boxshadow').show(0);
+				$('#texttranslation').show(0);
+				window.scrollTo(0, 0);
+			}
+			if(ev.target.innerHTML =='语音翻译'){
+				$('#boxshadow').css('height',$('body').height());
+				$('#texttranslation').hide(0);
+				$('#picturetranslation').hide(0);
+				$('#boxshadow').show(0);
+				$('#speechtranslation').show(0);
+				window.scrollTo(0, 0);
+			}
+			if(ev.target.innerHTML =='图片翻译'){
+				$('#boxshadow').css('height',$('body').height());
+				$('#speechtranslation').hide(0);
+				$('#texttranslation').hide(0);
+				$('#picturetranslation').show(0);
+				$('#boxshadow').show(0);
+				window.scrollTo(0, 0);
+			}
+			if(ev.target.innerHTML == '在线陪翻'){
+				$('#boxshadow').css('height',$('body').height());
+				$('#speechtranslation').hide(0);
+				$('#texttranslation').hide(0);
+				$('#picturetranslation').hide(0);
+				$('#onlineaccompany').show(0);
+				$('#boxshadow').show(0);
+				window.scrollTo(0, 0);
+			}
+			if(ev.target.innerHTML == 'i'){
+				if(animateOnoff){
+					animateOnoff = false;
+					$('#explain').animate({'width': '0','opacity': '0'},400,function (){
+						$('#explain').css('display','block');
+						$('#explain').css('left',ev.pageX+30);
+						$('#explain').css('top',ev.pageY);
+						$('#explain').animate({'width': '290px','opacity': '100'},400,function (){
+							setTimeout(function (){animateOnoff = true;}, 400);
+						});
+					});
+				}
+			}
+
+			ev.preventDefault();
+			ev.stopPropagation();
+		});
+		$('#lclosedBtn').click(function (){
+			$('#boxshadow').hide(0);
+			$('#texttranslation').hide(0);
+			
+		});
+		$('#lclosedBtnpt').click(function (){
+			$('#picturetranslation').hide(0);
+			$('#boxshadow').hide(0);
+		});
+		$('#lclosedBtnst').click(function (){
+			$('#speechtranslation').hide(0);
+			$('#boxshadow').hide(0);
+		});
+		$('#lclosebtne').click(function (){
+			$('#explain').animate({'width': '0','height': '0','opacity': '0'},400,function (){
+				$('#explain').hide(0);
+			});
+
+		});
+		$('#lclosedbtnvol').click(function (){
+			$('#viewOriginaLimage').hide(0);
+			$('#boxshadow').hide(0);
+		});
+		$('#vieworiginalimgbtn').click(function (){
+			window.scrollTo(0, 0);
+			$('#picturetranslation').hide(0);
+			$('#viewOriginaLimage').show(0);
+		});
+		$('#lclosedBtnoa').click(function (){
+			$('#boxshadow').hide(0);
+			$('#onlineaccompany').hide(0);
+		});
+		
+	});
+</script>
+</body>
+</html>

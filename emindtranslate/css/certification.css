@@ -1,0 +1,267 @@
+
+#content h1,h2,h3,h4,h5,
+#content input,
+#content p,
+#content ul,
+#content dd,
+#content dt,
+#content th,
+#content td,
+#content form {
+	margin: 0;
+	padding: 0;
+}
+body {
+	background-color: #f2f2f2;
+	margin: 0;
+	padding: 0;
+	/*font-family: "微软雅黑","宋体";*/
+}
+#content table {
+	border-collapse: collapse;
+	border: 1px solid #f2f2f2;
+	border-spacing: 0;
+	width: 100%;
+}
+#content th,
+#content td {
+	height: 70px;
+	text-align: center;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+}
+#content input {
+	-webkit-border-radius: 8px;
+	-ms-border-radius: 8px;
+	-moz-border-radius: 8px;
+	border-radius: 8px;
+}
+#content a {
+	text-decoration: none;
+}
+.wrap {
+	padding-left: 30px;
+	border-top: 1px solid #ccccce;
+}
+#content .lborder1 {
+	border: 1px solid #ccccce;
+}
+#content .lh3 {
+	display: inline-block;
+	padding-top: 18px;
+	font-size: 20px;
+	line-height: 54px;
+	font-weight: normal;
+	color: #323232;
+	border-bottom: 3px solid #005cc0;
+}
+#content .ltitleline {
+	width: 100%;
+	font-size: 0;
+	border-bottom: 1px solid #ccccce;
+}
+#content .lpaddingtr {
+	height: 31px;
+}
+#content .lsearch {
+	width: 388px;
+	border: 1px solid #ccccce;
+	background-color: #fff;
+	line-height: 14px;
+	font-size: 14px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 10px;
+	margin-left: 10px;
+}
+#content .lheight60 th{
+	height: 60px;
+}
+#content .lbgcolorf3 {
+	background-color: #f3f6fb;
+}
+#content .lbgcolorff {
+	background-color: #fff;
+}
+#content .ltextp {
+	width: 59px;
+	text-align: right;
+	font-size: 14px;
+	line-height: 58px;
+	padding-top: 2px;
+}
+#content .lselect ,
+#content .lselect2 {
+	width: 58px;
+	padding: 10px;
+	border: 1px solid #ccccce;
+	background-color: #fff;
+	line-height: 14px;
+	font-size: 14px;
+}
+#content .lbtn {
+	padding: 10px;
+	border: 1px solid #ccccce;
+	background-color: #f5f4f2;
+	line-height: 14px;
+	font-size: 14px;
+	background-color: #f5f4f2;
+	margin-left: 10px;
+
+}
+#content .lmarginr {
+	margin-right: 50px;
+}
+#content .lcol1 {
+	width: 64px;
+}
+#content .lcol2 {
+	width: 49px;
+}
+#content .lcol3 {
+	width: 133px;
+}
+#content .lcol4 {
+	width: 171px;
+}
+#content .lcol5 {
+	width: 175px;
+}
+#content .lcol6 {
+	width: 163px;
+}
+#content .lcol7 {
+	width: 134px;
+}
+#content .lcol8 {
+	width: 86px;
+}
+#content .lcol9 {
+	width: 177px;
+}
+#content .lcol10 {
+	width: 200px;
+}
+#content .lcol11 {
+	width: 237px;
+}
+#content  .marginr {
+	margin-left: -1px;
+}
+#content .lheight19 {
+	height: 19px;
+}
+#content .lbtns2 {
+	display: inline-block;
+	width: 84px;
+	font-size: 14px;
+	line-height: 30px;
+	color: #fff;
+	
+}
+#content .lbtns3 {
+	display: inline-block;
+	position: relative;
+	width: 84px;
+	text-align: center;
+	height: 30px;
+}
+#content .lbtns3 input {
+	width: 84px;
+	font-size: 14px;
+	line-height: 30px;
+	color: #fff;
+	background-color: #f8a74c;
+	border: none;
+	border-radius: 0;
+
+}
+#content .lbtnbgcolor2 {
+	background-color: #4e9f43;
+}
+#content .lbtnbgcolor3 {
+	background-color: #e5514d;
+}
+#content .lnum {
+	position: absolute;
+	right: -12px;
+	top: -12px;
+	width: 16px;
+	height: 16px;
+	font-size: 12px;
+	line-height: 16px;
+	background-color: #4d9e41;
+	color: #fff;
+	-webkit-border-radius: 16px;
+	-moz-border-radius: 16px;
+	-ms-border-radius: 16px;
+	border-radius: 16px;
+}
+#content .lheight29 {
+	height: 29px;
+}
+#content .lpagenum {
+	width: 100%;
+	text-align: right;
+}
+#content .lpagetd1 {
+	width: 121px;
+	text-align: left;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+}
+#content .lpagenum td {
+	font-size: 14px;
+	line-height: 28px;
+	height: 28px;
+}
+#content .lpagetd2 {
+	width: 67px;
+}
+#content .lpagetd3 {
+	width: 28px;
+}
+#content .lpagetd4 {
+	width: 66px;
+}
+#content .ltd9 {
+	width: 9px;
+}
+#content .td5 {
+	width: 5px;
+}
+#content .td39 {
+	width: 39px;
+}
+#content .ldetails {
+	background: none;
+	width: 100%;
+	height: 100%;
+	font-size: 14px;
+	line-height: 14px;
+	border:none;
+}
+
+#content .lhover:hover {
+	background-color: #005bc4;
+	border-color: #005bc4;
+	color: #fff;
+}
+#content .lpagebtn {
+	width: 100%;
+	height: 100%;
+	padding: 0;
+	color: #6c6c6c;
+	border: none;
+	background: none;
+	border: none;
+	font-size: 15px;
+	line-height: 15px;
+	-weibkit-border-radius: 0;
+	-moz-border-radius: 0;
+	-ms-border-radius: 0;
+	border-radius: 0;
+
+}

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="bootstrap.min.css"/>
+		<link rel="stylesheet" type="text/css" href="jeesite.css"/>
+		<style type="text/css">
+
+			#jid {
+				width: 1000px;margin: 50px auto;
+			}
+			#jid .jh2{
+				width: 1000px;height: 30px;text-align:center;line-height: 30px;
+			}
+			#jid .jtable{
+				border: 1px solid #000;width: 1000px;height: 800px;border-collapse: collapse;font-size: 18px;
+			}
+			#jid .jtable tr{
+				height: 20px;
+			}	
+			#jid .jtable td{
+				width: 198px;text-align:center;/*line-height: 20px;*/
+			}
+			#jid  input{
+				width: 90% /*;height: 50px*/;border: none; font-size: 18px; text-align: center;box-shadow: none;
+				}
+			#jid .jinput1{
+				width: 15px;height:15px;background: #fff;
+				}
+			#jid .jinput2{
+				width: 110px;height: 20px !important;
+			}
+		</style>
+	</head>
+	<body>
+		<form action="" method="post">			
+				<div class="jdiv" id="jid">
+				<h2 class="jh2">软件安装维护确认单</h2>
+				<table class="jtable" border="1" cellpadding="0" cellspacing="0">
+					<tr class="jtr1">
+						<td class="jtd1" colspan="2">计算机编号</td>
+						<td class="jtd2" colspan="2"><input type="text" name="" id="" style="" /></td>
+						<td class="jtd3" colspan="2">计算机品牌</td>
+						<td class="jtd4" colspan="2"><input type="text" name="" id="" /></td>
+					</tr>
+					<tr class="jtr2">
+						<td class="jtd1" colspan="2">计算机使用人姓名</td>
+						<td class="jtd2" colspan="2"><input type="text" name="" id="" /></td>
+						<td class="jtd3" colspan="2">使用部门</td>
+						<td class="jtd4" colspan="2"><input type="text" name="" id="" /></td>
+					</tr>
+					<tr class="jtr3">
+						<td class="jtd1" colspan="2">安装维护类型</td>
+						<td class="jtd2" colspan="2">软件名称</td>
+						<td class="jtd3" colspan="2">软件版本</td>
+						<td class="jtd4" colspan="2">完成情况</td>
+					</tr>
+					<tr class="jtr4">
+						<td class="jtd1">安装</td>
+						<td class="jtd2"><input type="checkbox" name="" id="" class="jinput1"/></td>
+						<td class="jtd3" colspan="2"><input type="text" name="" id="" /></td>
+						<td class="jtd4" colspan="2"><input type="text" name="" id="" /></td>
+						<td class="jtd5"><input type="checkbox" name="" id="" class="jinput1" />完成</td>
+						<td class="jtd6"><input type="checkbox" name="" id="" class="jinput1" />未完成</td>
+					</tr>
+					<tr class="jtr5">
+						<td class="jtd1">卸载</td>
+						<td class="jtd2"><input type="checkbox" name="" id="" class="jinput1" /></td>
+						<td class="jtd3" colspan="2"><input type="text" name="" id="" /></td>
+						<td class="jtd4" colspan="2"><input type="text" name="" id="" /></td>
+						<td class="jtd5"><input type="checkbox" name="" id="" class="jinput1" />完成</td>
+						<td class="jtd6"><input type="checkbox" name="" id="" class="jinput1" />未完成</td>
+					</tr>
+					<tr class="jtr6">
+						<td class="jtd1"rowspan="3">升级</td>
+						<td class="jtd2"rowspan="3"><input type="checkbox" name="" id="" class="jinput1" /></td>
+						<td class="jtd3" colspan="2">升级前</td>
+						<td class="jtd4" colspan="2">升级后</td>
+						<td class="jtd5" colspan="2" rowspan="2">完成情况</td>
+					</tr>
+					<tr class="jtr7">
+						<td class="jtd1">软件名称</td>
+						<td class="jtd2">软件版本</td>
+						<td class="jtd3">软件名称</td>
+						<td class="jtd4">软件版本</td>
+					</tr>
+					<tr class="jtr8">
+						<td class="jtd1"><input type="text" name="" id=""/></td>
+						<td class="jtd2"><input type="text" name="" id=""/></td>
+						<td class="jtd3"><input type="text" name="" id=""/></td>
+						<td class="jtd4"><input type="text" name="" id=""/></td>
+						<td class="jtd5"><input type="checkbox" name="" id=""  class="jinput1"/>完成</td>
+						<td class="jtd6"><input type="checkbox" name="" id="" class="jinput1" />未完成</td>
+					</tr>
+					<tr class="jtr9">
+						<td class="jtd1"colspan="2">计算机使用人确认</td>
+						<td class="jtd2" colspan="6">签名：<input type="text" name="" id="" class="jinput2" />
+							<p style="text-align: right;">
+								<input type="text" name="" id="" class="jinput2" />年
+								<input type="text" name="" id="" class="jinput2" />月
+								<input type="text" name="" id="" class="jinput2" />日
+							</p>
+						</td>
+					</tr>
+					<tr class="jtr11">
+						<td class="jtd1" colspan="2">安装维护人确认</td>
+						<td class="jtd2" colspan="6">签名：<input type="text" name="" id="" class="jinput2" />
+							<p style="text-align: right;">
+								<input type="text" name="" id="" class="jinput2" />年
+								<input type="text" name="" id="" class="jinput2" />月
+								<input type="text" name="" id="" class="jinput2" />日
+							</p>
+						</td>
+					</tr>
+				</table>
+			</div>
+			</div>
+			
+		</form>
+	</body>
+</html>

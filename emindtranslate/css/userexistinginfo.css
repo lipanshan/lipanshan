@@ -1,0 +1,211 @@
+
+#userexistinginfo h1,h2,h3,h4,h5,
+#userexistinginfo input,
+#userexistinginfo p,
+#userexistinginfo ul,
+#userexistinginfo dd,
+#userexistinginfo dt,
+#userexistinginfo th,
+#userexistinginfo td,
+#userexistinginfo form {
+	margin: 0;
+	padding: 0;
+}
+body {
+	background-color: #f2f2f2;
+	margin: 0;
+	padding: 0;
+	/*font-family: "微软雅黑","宋体";*/
+}
+#userexistinginfo table {
+	border-collapse: collapse;
+	border: 1px solid #f2f2f2;
+	border-spacing: 0;
+	width: 100%;
+}
+#userexistinginfo th,
+#userexistinginfo td {
+	height: 70px;
+	text-align: center;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+}
+#userexistinginfo input {
+	-webkit-border-radius: 8px;
+	-ms-border-radius: 8px;
+	-moz-border-radius: 8px;
+	border-radius: 8px;
+}
+#userexistinginfo a {
+	text-decoration: none;
+}
+.wrap {
+	padding-left: 30px;
+	border-top: 1px solid #ccccce;
+}
+#userexistinginfo .lborder1 {
+	border: 1px solid #ccccce;
+}
+#userexistinginfo .lh3 {
+	display: inline-block;
+	padding-top: 18px;
+	font-size: 20px;
+	line-height: 54px;
+	font-weight: normal;
+	color: #323232;
+	border-bottom: 3px solid #005cc0;
+}
+#userexistinginfo .ltitleline {
+	width: 100%;
+	font-size: 0;
+	border-bottom: 1px solid #ccccce;
+}
+#userexistinginfo  .lheight {
+	height: 31px;
+}
+#userexistinginfo .ltitle {
+	padding-left: 46px;
+	font-size: 14px;
+	line-height: 60px;
+	color: #414246;
+	position: relative;
+	text-align: left;
+	height: 60px;
+	background-color: #f3f6fb;
+}
+#userexistinginfo .ldot {
+	position: absolute;
+	left: 27px;
+	top: 26px;
+	width: 10px;
+	height: 10px;
+	background-color: #005bc0;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-ms-border-radius: 10px;
+	border-radius: 10px;
+}
+#userexistinginfo .lh4 {
+	display: inline-block;
+}
+
+#userexistinginfo .linputw {
+	width: 153px;
+	font-size: 14px;
+	line-height: 28px;
+	padding: 0 10px;
+	-webkit-border-radius: 0;
+	-ms-border-radius: 0;
+	-moz-border-radius: 0;
+	border-radius: 0;
+	
+}
+#userexistinginfo .lwidth76 {
+	width: 76px;
+}
+#userexistinginfo  .lwidth176 {
+	width: 176px;
+}
+#userexistinginfo .lwidth242 {
+	width: 242px;
+}
+#userexistinginfo .lwidth144 {
+	width: 144px;
+}
+#userexistinginfo .lwidth82 ,
+#userexistinginfo .lwidth76 ,
+#userexistinginfo .lwidth55 ,
+#userexistinginfo .lwidth176,
+#userexistinginfo .lwidth242 {
+	font-size: 14px;
+	line-height: 28px;
+	color: #353535;
+}
+#userexistinginfo .ltextl {
+	text-align: left;
+}
+#userexistinginfo .ltextr {
+	text-align: right;
+}
+#userexistinginfo .linputw input {
+	font-size: 14px;
+	line-height: 28px;
+	height: 28px;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	-ms-border-radius: 0;
+	border-radius: 0;
+	background-color: #fff;
+}
+#userexistinginfo .lbgfff {
+	background-color: #fff;
+}
+#userexistinginfo .lheight22 {
+	height: 22px;
+}
+#userexistinginfo .lheight87 {
+	height: 87px;
+}
+#userexistinginfo .headportrait {
+	width: 322px;
+}
+#userexistinginfo .headportrait img {
+	width: 180px;
+	height: 180px;
+}
+#userexistinginfo .headportrait input{
+	width: 78px;
+	font-size: 14px;
+	line-height: 34px;
+	height: 34px;
+	background-color: #f5f5f5;
+	text-align: center;
+	margin-top: 68px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-ms-border-radius: 5px;
+	border-radius: 5px;
+}
+#userexistinginfo .lbtnn input {
+	width: 78px;
+	font-size: 14px;
+	line-height: 34px;
+	height: 34px;
+	background-color: #f5f5f5;
+	text-align: center;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-ms-border-radius: 5px;
+	border-radius: 5px;
+
+}
+#userexistinginfo .lhover:hover {
+	background-color: #005bc4;
+	border-color: #005bc4;
+	color: #fff;
+}
+#userexistinginfo .lheight28 {
+	height: 28px;
+}
+#userexistinginfo .lbtnn {
+	width: 80px;
+}
+#userexistinginfo .lheight36 td{
+	height: 36px;
+}
+#userexistinginfo .lbordert {
+	border-top: 1px solid #ccc;
+}
+#userexistinginfo .lmarginl9 {
+	margin-left: 9px;
+}
+#userexistinginfo .lheight354 {
+	height: 354px;
+}
+#userexistinginfo .lheight70 {
+	height: 70px;
+}
+#userexistinginfo .lborderb {
+	border-bottom: 1px solid #ccc;
+}

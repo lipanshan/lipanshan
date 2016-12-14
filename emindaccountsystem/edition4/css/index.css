@@ -1,0 +1,272 @@
+
+/*************内容部分**************/
+.lcontent {
+	padding-top: 20px;
+}
+.lcntleft {
+	width: 252px;
+	padding-right: 38px;
+}
+.lcntright {
+	width: 710px;
+}
+.lpresoninfo {
+	
+	background-color: #fbfbfb;
+}
+.lrow1 {
+	padding-top: 27px;
+	padding-left: 26px;
+	border: 1px solid #e5e5e5;
+}
+.limgwrap {
+	display: block;
+	width: 90px;
+	height: 90px;
+	margin-right: 22px;
+	position: relative;
+}
+.limgwrap img {
+	width: 90px;
+	height: 90px;
+
+}
+.lshadow,
+.lshadowtext {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 19px;
+	background-color: #c8ccd7;
+	z-index: 1;
+}
+.lshadowtext {
+	font-size: 12px;
+	line-height: 18px;
+	padding-top: 1px;
+	color: #fff;
+	text-align: center;
+	z-index: 4;
+	background: none;
+}
+.lrow1r {
+	width: 112px;
+	padding-top: 3px;
+}
+.lrow1r h2,
+.lrow1r h3 {
+	font-weight: normal;
+}
+.lh2 a {
+	display: block;
+	font-size: 18px;
+	line-height: 52px;
+	color: #3f3f3f;
+	width: 110px;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+}
+.lh3 {
+	font-size: 12px;
+	line-height: 12px;
+	
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+	width: 103px;
+}
+.lh3 a {
+	color: #005bc4;
+}
+.ltext1 {
+	font-size: 12px;
+	line-height: 29px;
+	padding-top: 22px;
+	font-weight: bold;
+}
+.ltext2 {
+	font-size: 12px;
+	line-height: 29px;
+	padding-bottom: 11px;
+}
+.ltime {
+	width: 128px;
+	color: #3f3f3f;
+	padding-right: 19px;
+}
+.llocaltion {
+	width: 67px;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+	color: #005bc4;
+
+}
+.lbox2 {
+	margin-top: 20px;
+	border: 1px solid #e5e5e5;
+	height: 447px;
+}
+.ltitle {
+	color: #3f3f3f;
+	background-color: #f3f3f3;
+	border-bottom: 1px solid #e5e5e5;
+}
+.ltitle h2 {
+	padding-left: 23px;
+	font-size: 14px;
+	line-height: 38px;
+}
+.ldd {
+	background-color: #fbfbfb;
+	padding-left: 22px;
+	border-bottom: 1px solid #e5e5e5;
+}
+.ldd a {
+	display: block;
+	color: #404040;
+	padding-top: 17px;
+	padding-bottom: 16px;
+}
+.lico {
+	width: 18px;
+	height: 18px;
+	margin-right: 10px;
+}
+.lico1 {
+	background: url(../image/sprite1.png)
+	no-repeat 0 0;
+}
+.lico2 {
+	background: url(../image/sprite1.png)
+	no-repeat -20px 0;
+}
+.lico3 {
+	background: url(../image/sprite1.png)
+	no-repeat -40px 0;
+}
+.licotext {
+	width: 190px;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+
+}
+.lcntright {
+	width: 710px;
+}
+.ltitleh2 {
+	font-size: 24px;
+	line-height: 36px;
+	width: 100%;
+	color: #3f3f3f;
+	text-indent: 4px;
+}
+.ldatawrap {
+	padding-top: 14px;
+	height: 435px;
+}
+.lsigntp {
+	font-size: 12px;
+	line-height: 24px;
+	width: 100%;
+}
+.lsigntext {
+	padding-left: 1px;
+	color: #3f3f3f;
+}
+.lmodifypass {
+	color: #ff9700;
+}
+.ldllist {
+	padding-top: 7px;
+	padding-bottom: 96px;
+}
+.ldt2 {
+	background-color: #f3f3f3;
+	font-size: 12px;
+	line-height: 36px;
+	padding-top: 1px;
+	color: #3e3e3e;
+	text-align: center;
+	border-top: 1px solid #e0e0e0;
+}
+.ldate {
+	width: 166px;
+}
+.ldltime {
+	width: 172px;
+}
+.lip {
+ 	width: 124px;
+}
+.lcity {
+ 	width: 211px;
+ 	/*padding-right: 37px;*/
+}
+.ldd2 {
+	font-size: 12px;
+	line-height: 36px;
+	padding-top: 2px;
+	color: #3f3f3f;
+	text-align: center;
+	border-bottom: 1px dashed #e0e0e0;
+	background: #fff;
+}
+.ldate2 ,
+.ldltime2,
+.lip2,
+.lcity2 {
+	padding-left: 10px;
+	padding-right: 10px;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+	background-color: #fff;
+}
+.ldate2 {
+	width: 156px;
+}
+.ldltime2 {
+	width: 138px;
+}
+.lip2 {
+	width: 109px;
+}
+.lcity2 {
+	width: 190px;
+}
+.bgcolorfff {
+	background-color: #fbfbfb;
+}
+.llandinglog-wrap {
+	position: relative;
+	height: 508px;
+	overflow: hidden;
+}
+.llandloglist {
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 15;
+}
+/**************登陆记录也的样式**************/
+.lloginrecord-wrap {
+	padding-right: 20px;
+	padding-left: 20px;
+	padding-top: 14px;
+}
+.lpaddingl18 {
+	padding-left: 14px;
+}
+.lpaddingb0 {
+	padding-bottom: 0;
+}
+.lnavpage-wrap {
+ 	/*width: 735px;*/
+    font-size: 0;
+    text-align: center;
+ }
+/****************************/

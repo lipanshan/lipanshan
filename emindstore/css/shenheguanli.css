@@ -1,0 +1,615 @@
+dl,
+dd {
+	margin: 0;
+	padding: 0;
+}
+.lcontent {
+	padding: 0 14px 0 16px;
+	background-color: #fff;
+}
+.l2level-menu {
+	border-bottom: 1px solid #dedede;
+}
+.l2-menu-li {
+	margin-right: 28px;
+	padding: 4px 15px 0;
+	margin-bottom: -1px;
+	line-height: 58px;
+	height: 59px;
+	border-bottom: 3px solid transparent;
+	position: relative;
+}
+.l2-menu-li:hover {
+	border-color: #3286ff;
+	color: #3286ff;
+}
+.l2-menu-li h2 {
+	font-weight: normal;
+	text-align: center;
+	font-size: 16px ;
+}
+.l2-menu-li  a {
+	display: block;
+	color: #19110f;
+}
+.l2-menu-li h2 a:hover {
+	color: #3685fe;
+}
+.lactive {
+	border-color: #3286ff;
+}
+.lactive h2 .lactive-color {
+	color: #3286ff;
+}
+.lnum {
+	position: absolute;
+	top: 19px;
+	right: 0;
+	padding-left: 5px;
+	padding-right: 5px;
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	-ms-border-radius: 15px;
+	border-radius: 15px;
+	background-color: #fda51f;
+	font-size: 12px;
+	line-height: 15px;
+	color: #fff;
+	text-align: center;
+}
+.l3level-menu {
+	margin-top: 30px;
+	border: 1px dashed #d6d4d7;
+	background-color: #ebf3ff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*********************设计图没有暂时先按原型大概定S*****************/
+.l3level-menu-li1,
+.lapp-li h3{
+	width: 173px;
+}
+.l3level-menu-li2,.lkfzlx{
+	/*width: 454px;*/
+	position: relative;
+	width: 151px;
+	height: 37px;
+}
+.l3level-menu-li3, .lstartbtn, .ltime{
+	width: 230px;
+}
+.l3level-menu-li4 , .lappName, .lkfz-yymc{
+	width: 178px;
+}
+.l3level-menu-li5 {
+	width: 232px;
+}
+.l3level-menu-li1 a,
+.l3level-menu-li2 a,
+.l3level-menu-li3 a,
+.l3level-menu-li4 a,
+.l3level-menu-li5 a,
+.lkfz-type dt ,
+.lkfz-type dd {
+	text-align: center;
+	display: block;
+	font-size: 14px;
+	line-height: 31px;
+	margin-top: 6px;
+	border-right: 1px dashed #d6d4d7;
+	padding-bottom: 6px;
+	color: #17120f;
+
+}
+
+.lkfz-type {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 151px;
+	height: 80px;
+	z-index: 20;
+}
+.l3level-menu-li5 a , .lkfz-type dd{
+	border-right: none;
+}
+.lkfz-type dd {
+	display: none;
+	background-color: #ccc;
+	margin: 0;
+}
+.lkfz-type dd:hover {
+	background-color: #3285ff;
+	color: #fff;
+}
+.ltime {
+	width: auto;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+.lkfzlx , .lkfz-yymc{
+	text-align: center;
+	font-size: 14px;
+	line-height: 50px;
+	padding-top: 3px;
+	display: inline-block;
+	vertical-align: middle;
+	padding-bottom: 13px;
+}
+
+.lshkfz {
+	display: inline-block;
+	vertical-align: middle;
+	font-size: 14px;
+	width: 641px;
+}
+.lshkfz time {
+	width: 230px;
+	padding-left: 0;
+	padding-right: 0;
+}
+.lappName {
+	float: left;
+	font-size: 14px;
+	line-height: 50px;
+	padding-top: 3px;
+	text-align: center;
+}
+
+.lyysh-zli time {
+	padding-left: 0;
+	padding-right: 0;
+	width: 230px;
+
+}
+.lyyshz {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*********************设计图没有暂时先按原型大概定E*****************/
+
+
+
+
+
+
+
+.lapp-list {
+	border-left: 1px solid #d6d4d7;
+	border-right: 1px solid #d6d4d7;
+}
+.lapp-li {
+	vertical-align: top;
+	border-bottom: 1px solid #d6d4d7;
+	font-size: 0;
+}
+.lapp-li h3 , .ltime , .lstartbtn{
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 50px;
+	padding-top: 3px;
+	text-align: center;
+	display: inline-block;
+	vertical-align: middle;
+}
+.lapp-li h3 a {
+	display: block;
+	color: #17120f;
+	
+}
+.lstartbtn a{
+	display: inline-block;
+	padding: 1px 16px 0;
+	color: #fff;
+	line-height: 26px;
+	background-color: #3185ff;
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	-ms-border-radius: 15px;
+	border-radius: 15px;
+}
+.lchang-tap {
+	min-height: 851px;
+}
+.lshgl {
+	display: block;
+}
+.lyygl {
+	display: none;
+
+}
+.l3level-menu2 {
+	border: 1px dashed #d8d7d5;
+	padding: 6px 0;
+	background-color: #ebf3ff;
+	margin-top: 30px;
+}
+.l3level-menu2 li {
+	text-align: center;
+	border-right: 1px dashed #d8d7d5;
+}
+.l3level-menu2-li1 a ,
+.l3level-menu2-li2 a ,
+.l3level-menu2-li3 a ,
+.l3level-menu2-li4 a ,
+.l3level-menu2-li5 a {
+	font-size: 14px;
+	line-height: 28px;
+	padding-top: 3px;
+	color: #17120f;
+}
+.l3level-menu2-li1 , .lapp-list2-li h3{
+	width: 158px;
+}
+.l3level-menu2-li2 , .lyy-num{
+	width: 175px;
+}
+.l3level-menu2-li3 , .ldown-addnum{
+	width: 207px;
+}
+.l3level-menu2-li4 , .lls-acount{
+	width: 222px;
+}
+.l3level-menu2 .l3level-menu2-li5 , .lcz{
+	width: 201px;
+	border-right: none;
+}
+.lapp-list2-li h3 ,
+.lyy-num ,
+.ldown-addnum , 
+.lls-acount , 
+.lapp-list2-li h3 a,
+.lcz a {
+	font-size: 14px;
+	line-height: 27px;
+	color: #16110e; 
+
+}
+.lapp-list2-li h3 {
+	font-weight: normal;
+}
+.lapp-list2-li h3 ,
+.lyy-num ,
+.ldown-addnum , 
+.lls-acount {
+	padding: 60px 0 56px 0;
+	text-align: center;
+}
+.lapp-list2-li {
+	border: 1px solid #dedede;
+	border-top: none;
+}
+.lcz a{
+	display: inline-block;
+	margin: 8px 0 9px 0;
+	background-color: #3685fe;
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	-ms-border-radius: 15px;
+	border-radius: 15px;
+	padding: 0 16px;
+	color: #fff;
+}
+.lcz {
+	padding: 5px 0 6px;
+}
+.lcz div {
+	text-align: center;
+}
+
+/********************在线管理***********************/
+.l3lmenu {
+	margin-top: 21px;
+	border: 1px dashed #d6d6d8;
+	background-color: #ebf3ff;
+}
+.l3lmenu h3 {
+	font-weight: normal;
+	font-size: 14px;
+	color: #3285ff;
+	line-height: 43px;
+	padding-left: 37px;
+	padding-right: 35px;
+}
+.l2-level-li {
+	float: left;
+	padding: 0 13px 0 14px;
+	margin-right: 23px;
+	margin-top: 8px;
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	-ms-border-radius: 15px;
+	border-radius: 15px;
+}
+.l2-level-lip {
+	float: left;
+	line-height: 27px;
+}
+.l2-level-li:hover {
+	color: #fff;
+	background-color: #3285ff;
+}
+.lmain-list {
+	margin-top: 5px;
+	/*height: 686px;*/
+}
+.lli-box {
+	border: 1px solid #dedede;
+	margin-top: 14px;
+}
+.limgwrap {
+	padding: 25px 0 0 18px;
+}
+.limgwrap img {
+	width: 74px;
+	height: 75px;
+}
+.lgame-name {
+	padding-left: 12px;
+	padding-top: 25px;
+	width: 120px;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+.lname {
+	display: block;
+	font-size: 16px;
+	line-height: 30px;
+	color: #2c2c2c;
+}
+.lgame-version {
+	display: block;
+	font-size: 12px;
+	line-height: 40px;
+	padding-bottom: 29px;
+	color: #696969;
+}
+.lgame-state {
+	margin-top: 27px;
+	/*min-width: 50px;*/
+	width: 300px;
+}
+.lysx,.lwsx{
+	font-size: 12px;
+	line-height: 27px;
+	display: inline-block;
+	padding: 0 6px 0 8px;
+	color: #fff;
+	background-color: #98c1ff;
+	text-align: center;
+}
+.lwsx {
+	background-color: #fdd28e;
+}
+.lcreatyy {
+	float: right;
+	padding-right: 9px;
+	width: 136px;
+	margin-top:  8px;
+}
+.lcreatyy span {
+	display: block;
+	font-size: 12px;
+	line-height: 26px;
+	padding-top: 1px;
+	color: #fff;
+	padding-left: 34px;
+	padding-right: 34px;
+	border-radius: 10px;
+	background-color: #fda51f;
+}
+.lappxq,.lcreatbtn{
+	width: 136px;
+	padding-right: 10px;
+	float: right;
+}
+
+.lamend {
+	margin-top: 18px;
+}
+.lchange-pages {
+	
+}
+.lpages, .lchange-pages{
+	float: right;
+}
+.lpages {
+	width: 278px;
+}
+.lpages a , .lpagesnum{
+	float: left;
+	width: 24px;
+	border: 1px solid #dedede;
+	font-size: 12px;
+	line-height: 28px;
+	padding-top: 2px;
+	text-align: center;
+	color: #666;
+	margin-right: 14px;
+}
+.lchange-pages {
+	width: 152px;
+}
+.lpages-wrap {
+	padding-top: 29px;
+	padding-bottom: 49px;
+}
+.lfont {
+	font-family: "宋体";
+}
+.lpages .lpoints {
+	border: none;
+	margin-right: 0;
+}
+.lpages .lmarign {
+	margin-right: 0;
+}
+.lspan1 {
+	font-size: 14px;
+	line-height: 30px;
+	padding: 2px 8px;
+}
+.lchange-pages span,.lchange-pages a{
+	float: left;
+	color: #656565;
+}
+.lpagesnum {
+	margin-right: 6px;
+}
+.lcount {
+	float: left;
+	font-size: 16px;
+	padding-left: 8px;
+	line-height: 27px;
+}
+.lshtg {
+	background-color: #7fd17f;
+}
+.lyxx {
+	background-color: #fdd28e;
+}
+.lddsh {
+	background-color: #7fd17f;
+}
+.lapp-manager {
+	width: 200px;
+	padding-right: 18px;
+	float: right;
+	padding-top: 8px;
+	padding-bottom: 28px;
+}
+.lapp-manager-btn {
+	float: left;
+	width: 88px;
+	text-align: center;
+	font-size: 14px;
+	line-height: 26px;
+	padding-top: 1px;
+	background-color: #3285ff;
+	color: #fff;
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	-ms-border-radius: 15px;
+	border-radius: 15px;
+	margin-top: 17px;
+	margin-right: 12px;
+}
+.ldisbale {
+	background-color: #ccc;
+}
+.lonline-management {
+	display: none;
+}
+.lactiveb {
+	color: #fff;
+    background-color: #3285ff;
+}
+
+/***************删除应用的弹出框*****************/
+
+.deleteapp {
+    display: none;
+    background-color: #fff;
+    width: 391px;
+    height: 203px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -180px;
+    margin-top: -101px;
+    z-index: 60;
+}
+.lxbtns {
+    position: absolute;
+    top: -24px;
+    right: -27px;
+    width: 26px;
+    height: 26px;
+    background:
+    url(../images/web-index-ico/sprite1.png)
+    no-repeat -98px -2px;
+}
+.deleteapp h2 {
+    padding-top: 25px;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    color: #2d2d2d;
+}
+.litem-wrap {
+    padding-left: 82px;
+    padding-right: 82px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    height: 17px;
+}
+.litem {
+    width: 17px;
+    height: 17px;
+
+}
+.llabel-span {
+    width: 40px;
+    text-align: right;
+}
+.litem-wrap label {
+    padding-top: 0;
+    width: 90px;
+    clear: none;
+    font-size: 14px;
+    line-height: 14px;
+    margin-right: 0;
+    height: 17px !important;
+}
+.lcenter {
+    text-align: center;
+    margin-top: 14px;
+    font-size: 0;
+}
+.lcolorqx ,
+.lcolorsr{
+	display: inline-block;
+	font-size: 14px;
+	width: 68px;
+	line-height: 26px;
+	padding-top: 1px;
+	background-color: #9f9fa7;
+	color: #fff;
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	-ms-border-radius: 15px;
+	border-radius: 15px;
+}
+.lcolorsr {
+	background-color: #3285ff;
+	margin-left: 41px;
+}

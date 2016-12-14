@@ -1,0 +1,487 @@
+
+#feedback h1,h2,h3,h4,h5,
+#feedback input,
+#feedback p,
+#feedback ul,
+#feedback dd,
+#feedback dt,
+#feedback th,
+#feedback td,
+#feedback form ,
+#texttranslation h1,h2,h3,h4,h5,
+#texttranslation input,
+#texttranslation p,
+#texttranslation ul,
+#texttranslation dd,
+#texttranslation dt,
+#texttranslation th,
+#texttranslation td,
+#texttranslation form {
+	margin: 0;
+	padding: 0;
+}
+html {
+	height: 100%;
+}
+body {
+	background-color: #f2f2f2;
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	/*font-family: "微软雅黑","宋体";*/
+}
+#feedback table ,
+#texttranslation table {
+	border-collapse: collapse;
+	border: 1px solid #f2f2f2;
+	border-spacing: 0;
+	width: 100%;
+}
+#feedback th,
+#feedback td {
+	text-align: center;
+	overflow: hidden;
+	white-space: pre-wrap;
+	font-size: 14px;
+}
+#feedback input {
+	-webkit-border-radius: 5px;
+	-ms-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+#feedback a ,
+#texttranslation a{
+	text-decoration: none;
+}
+.wrap {
+	padding-left: 30px;
+	border-top: 1px solid #ccccce;
+}
+#feedback .lborder1 {
+	border: 1px solid #ccccce;
+}
+#feedback .lh3 {
+	display: inline-block;
+	padding-top: 18px;
+	font-size: 20px;
+	line-height: 54px;
+	font-weight: normal;
+	color: #323232;
+	border-bottom: 3px solid #005cc0;
+}
+#feedback .ltitleline {
+	width: 100%;
+	font-size: 0;
+	border-bottom: 1px solid #ccccce;
+}
+#feedback .lpaddingtr {
+	height: 31px;
+}
+#feedback .lsearch {
+	width: 388px;
+	border: 1px solid #ccccce;
+	background-color: #fff;
+	line-height: 14px;
+	font-size: 14px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 10px;
+	margin-left: 10px;
+}
+#feedback .lheight60 th{
+	height: 60px;
+}
+#feedback .lbgcolorf3 {
+	background-color: #f3f6fb;
+}
+#feedback .lbgcolorff {
+	background-color: #fff;
+}
+#feedback .ltextp {
+	width: 59px;
+	text-align: right;
+	font-size: 14px;
+	line-height: 58px;
+	padding-top: 2px;
+}
+#feedback .lselect ,
+#feedback .lselect2 {
+	width: 58px;
+	padding: 10px;
+	border: 1px solid #ccccce;
+	background-color: #fff;
+	line-height: 14px;
+	font-size: 14px;
+}
+#feedback .lbtn {
+	padding: 10px;
+	border: 1px solid #ccccce;
+	background-color: #f5f4f2;
+	line-height: 14px;
+	font-size: 14px;
+	background-color: #f5f4f2;
+	width: 85px;
+	margin-left: 29px;
+
+}
+#feedback .lhover,
+#feedback .lbtn:hover {
+	background-color: #005bc3;
+	color: #fff;
+}
+#feedback .lddh {
+	width: 77px;
+}
+#feedback .lddh p,
+#feedback .lwidth99 p,
+#feedback .lcjsj p {
+	font-size: 14px;
+	line-height: 58px;
+	padding-top: 2px;
+	width: 69px;
+	text-align: right;
+}
+#feedback .lwidth160 {
+	width: 160px;
+}
+#feedback .lwidth99 {
+	width: 99px;
+}
+#feedback .lwidth99 p {
+	width: 91px;
+}
+#feedback .lcjsj p {
+	width: 114px;
+}
+#feedback .linput {
+	width: 138px;
+	height: 36px;
+	padding: 0 10px;
+	font-size: 14px;
+	line-height: 36px;
+}
+#feedback .lcjsj {
+	width: 120px;
+}
+#feedback .lwidth153 {
+	width: 153px;
+}
+#feedback .linput2 {
+	width: 131px;
+	padding: 0 10px;
+	font-size: 14px;
+	line-height: 36px;
+}
+#feedback .lz {
+	width: 39px;
+	
+}
+#feedback .lz p {
+	font-size: 14px;
+	line-height: 58px;
+	padding-top: 2px;
+	text-align: center;
+	color: #333;
+}
+#feedback .lwidth109 {
+	width: 109px;
+}
+#feedback .lheight9 {
+	height: 9px;
+}
+#feedback .lcol1,
+#feedback .lcol2,
+#feedback .lcol3,
+#feedback .lcol4,
+#feedback .lcol6 {
+	font-size: 14px;
+	color: #333;
+	overflow: hidden;
+}
+#feedback .lcol1 {
+	width: 64px;
+	text-align: left;
+}
+#feedback .lcol2 {
+	width: 183px;
+}
+#feedback .lcol3 {
+	width: 193px;
+}
+#feedback .lcol4 {
+	width: 219px;
+}
+
+#feedback .lcol6 {
+	width: 87px;
+}
+#feedback .lcheckbox {
+	width: 13px;
+	height: 13px;
+	margin-left: 24px;
+}
+#feedback .lheight100 {
+	height: 100px;
+}
+#feedback .lcontext {
+	display: inline-block;
+	padding: 0 34px 0 29px;
+	font-size: 14px;
+	line-height: 24px;
+	color: #333;
+	white-space: pre-wrap;
+}
+#feedback .lbgcolorfff {
+	background-color: #fff;
+}
+#feedback .ldeletebtn {
+	display: inline-block;
+	font-size: 14px;
+	color: #005bc3;
+	line-height: 14px;
+}
+#feedback .ldeletebtn:hover {
+	text-decoration: underline;
+}
+#feedback .lwidth146 {
+	width: 146px;
+	text-align: left;
+}
+#feedback .lallchecked {
+	width: 14px;
+	height: 14px;
+	margin-right: 10px;
+	margin-left: 24px;
+}
+#feedback .lallcheckedl {
+	display: inline-block;
+	font-size: 14px;
+	line-height: 14px;
+}
+#feedback .lallrow {
+	height: 60px;
+	border: 1px solid #ccc;
+	border-top: none;
+	border-bottom: none;
+}
+#feedback .lwidth120 {
+	width: 120px;
+}
+#feedback .ldeletachecked {
+	font-size: 14px;
+	line-height: 20px;
+	border: none;
+	background: none;
+	color: #404040;
+}
+#feedback .lpagewrap {
+	height: 163px;
+	background-color: #fff;
+}
+#feedback .lpagenum {
+	width: 100%;
+	text-align: right;
+}
+#feedback .lpagetd1 {
+	width: 90px;
+	text-align: right;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+}
+#feedback .lpagenum td {
+	font-size: 14px;
+	line-height: 28px;
+	height: 28px;
+}
+#feedback .lpagetd2 {
+	width: 67px;
+}
+#feedback .lpagetd3 {
+	width: 28px;
+}
+#feedback .lpagetd4 {
+	width: 66px;
+	color: #797979;
+}
+#feedback .lpagetd5 {
+	width: 40px;
+}
+#feedback .lpagetd6 {
+	width: 39px;
+	text-align: right;
+}
+#feedback .lpagetd5 input ,
+#feedback .lpagetd6 input {
+	width: 38px;
+	height: 28px;
+	font-size: 14px;
+	line-height: 28px;
+	-webkit-border-radius: 0;
+	-ms-border-radius: 0;
+	-moz-border-radius: 0;
+	border-radius: 0;
+
+}
+#feedback .lpagetd6 input {
+	width: 28px;
+	height: 30px;
+	background-color: #fcfcfc;
+}
+#feedback .ltd9 {
+	width: 9px;
+}
+#feedback .td5 {
+	width: 5px;
+}
+#feedback .td39 {
+	width: 39px;
+}
+#feedback .lbtnwrap {
+	position: relative;
+	width: 105px;
+	height: 40px;
+	text-align: right;
+	display: inline-block;
+	
+}
+#feedback .lbtnwrap input {
+	width: 100%;
+	height: 100%;
+	border: none;
+	color: #fff;
+	background-color: #0059ca;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	-ms-border-radius: 0;
+	border-radius: 0;
+	text-align: left;
+	text-indent: 36px;
+}
+#feedback .lbtnwrap .lplus {
+	position: absolute;
+	left: 10px;
+	top: 13px;
+	width: 15px;
+	height: 15px;
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	-ms-border-radius: 15px;
+	border-radius: 15px;
+	border-radius: 15px;
+	background: url(../image/jiahao.jpg)
+	no-repeat 3px 3px #fff;
+}
+#feedback .loperationbtn {
+	background: none;
+	border: none;
+	font-size: 15px;
+	line-height: 15px;
+	padding-bottom: 1px;
+	border-bottom: 1px solid transparent;
+	color: #005bbe;
+	-weibkit-border-radius: 0;
+	-moz-border-radius: 0;
+	-ms-border-radius: 0;
+	border-radius: 0;
+}
+#feedback .loperationbtn:hover {
+	border-bottom-color: #005bbe;
+}
+#feedback .lborderl {
+	display: inline-block;
+	width: 10px;
+	border-right: 1px solid #cdcdcd;
+	margin-right: 10px;
+	height: 15px;
+}
+
+#feedback .lhover:hover {
+	background-color: #005bc4;
+	border-color: #005bc4;
+	color: #fff;
+}
+#feedback .lpagebtn {
+	width: 100%;
+	height: 100%;
+	padding: 0;
+	color: #6c6c6c;
+	border: none;
+	background: none;
+	border: none;
+	font-size: 15px;
+	line-height: 15px;
+	-weibkit-border-radius: 0;
+	-moz-border-radius: 0;
+	-ms-border-radius: 0;
+	border-radius: 0;
+
+}
+#feedback .lwzfy {
+	display: inline;
+	position: relative;
+}
+#feedback .lilogo {
+	position: absolute;
+	right: -12px;
+	top: -12px;
+	width: 16px;
+	height: 16px;
+	-webkit-border-radius: 16px;
+	-moz-border-radius: 16px;
+	-ms-border-radius: 16px;
+	border-radius: 16px;
+	color: #fff;
+	font-size: 16px;
+	line-height: 16px;
+	background-color: #559c4c;
+	text-indent: 0px;
+}
+#feedback .lwidth127 {
+	width: 127px;
+	text-align: right;
+}
+#feedback .lwidth110 {
+	width: 110px;
+	text-align: right;
+}
+#feedback .lwidth109 {
+	width: 109px;
+	text-align: right;
+}
+#feedback .lwidth464 {
+	width: 464px;
+	text-align: right;
+}
+#feedback .lwidth91 {
+	width: 91px;
+	text-align: right;
+}
+#feedback .lwidth88 {
+	width: 88px;
+	text-align: right;
+}
+#feedback .lwidth119 {
+	width: 119px;
+	text-align: left;
+}
+#feedback .limglist {
+	text-align: left;
+	padding-bottom: 24px;
+}
+#feedback .limgborder {
+	display: inline-block;
+	margin-left: 21px;
+	width: 82px;
+	height: 82px;
+	border: 1px solid #ccc;
+	padding: 6px;
+}
+#feedback .limgborder img {
+	width: 80px;
+	height: 80px;
+	border: 1px solid #ccc;
+}
+
+

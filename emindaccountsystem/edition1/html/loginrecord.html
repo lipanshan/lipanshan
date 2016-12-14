@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>账户信息-详细信息</title>
+	<link rel="stylesheet" href="../css/public.css">
+	<link rel="stylesheet" href="../css/detailedinfo.css">
+	<link rel="stylesheet" href="../css/index.css">
+	<link rel="stylesheet" href="../css/pagination.css">
+	<script src="../js/jquery-1.8.3.js"></script>
+	<script src="../js/headaccount.js"></script>
+	<script type="text/javascript" src="../js/jquery.pagination.js"></script>
+	<script type="text/javascript">
+	$(document).ready(function() {
+		$("#Pagination").pagination("15",{
+			items_per_page:1,
+			num_display_entries:4,
+			current_page:0,
+			num_edge_entries:1,
+			link_to:"#",
+			prev_text:"<",
+			next_text:">",
+			ellipse_text:"...",
+			prev_show_always:true,
+			next_show_always:true,
+			renderer:"defaultRenderer",
+			show_if_single_page:false,
+			load_first_page:false,
+			callback:paginationCallBack
+		});
+		function paginationCallBack(_id,jq){
+			// console.log(_id,jq)
+		}
+	});
+</script>
+</head>
+<body>
+	<header class="lhead">
+		<div class="lwrap clearfix">
+			<h1 class="lh1 lfloatl">
+				<a class="lh1href" href="index.html">
+					<img class="lfloatl" src="../image/emindlogo.png" alt="">
+					<span class="lborder lfloatl"></span>
+					<span class="lfloatl lh1text">一铭账户系统</span>
+				</a>
+			</h1>
+			<div class="lsignwrap">
+				<div class="lindexpage">
+					<a class="lpaliingr" target="_block" href="index.html">Emind&nbsp;首页&gt;&gt;</a>
+				</div>
+				<div  class="laccountname">
+					<a id="accountName" href="javascript:;" class="laccountn lfloatl">欢迎您,小桥流水</a>
+					<span id="accountNameIco" class="ljt lfloatl"></span>
+					<ul id="accountlist" class="laccountnamelist">
+						<li class="laccountnameli"><a index="ac" href="javascript:;">账户信息</a></li>
+						<li class="laccountnameli"><a index="ac" href="javascript:;">退出</a></li>
+					</ul>
+				</div>
+				<a href="javascript:;"  class="lheadico2"><img src="../image/headico2.png" alt=""></a>
+			</div>
+		</div>
+	</header>
+	<div class="lmainmenu-wrap">
+		<div class="lwrap">
+			<nav class="lmainmenu clearfix">
+				<a href="index.html" class="lfloatl">首页</a>
+				<a href="myhead.html" class="lfloatl ">账户信息</a>
+				<a href="backstagemanage.html" class="lfloatl ">管理控制台</a>
+				<a href="accountproblem.html" class="lfloatl menuactive">帮助中心</a>
+			</nav>
+		</div>
+	</div>
+	<div class="lwrap clearfix">
+		<ul class="lsidemenu lfloatl">
+			<li class="lsideli lsidel1 ">
+				<h2><a href="myhead.html">我的头像</a></h2>
+			</li>
+			<li class="lsideli lsidel2 ">
+				<h2><a href="basicdata.html">基本资料</a></h2>
+			</li>
+			<li class="lsideli ">
+				<h2><a href="detailedinfo.html">详细信息</a></h2>
+			</li>
+			<li class="lsideli">
+				<h2><a href="modifyPassword.html">修改密码</a></h2>
+			</li>
+			<li class="lsideli ">
+				<h2><a href="accountsystem.html">登录邮箱</a></h2>
+			</li>
+			<li class="lsideli">
+				<h2><a href="boundphone.html">绑定手机</a></h2>
+			</li>
+			<li class="lsideli lsideliactive">
+				<h2><a href="loginrecord.html">登陆记录</a></h2>
+			</li>
+		</ul>
+		<div class="lfloatl lemailland">
+			<div class="lloginrecord-wrap">
+				<h2 class="ltitleh2 lpaddingl18">登陆记录</h2>
+				<p class="lsigntp clearfix"><span class="lsigntext lfloatl">如确定非本人登陆，建议您立即</span><a href="javascript:;" class="lfloatl lmodifypass">修改密码</a></p>
+				<div class="ldllist lpaddingb0">
+					<div class="clearfix ldt2" >
+						 <p class="ldate lfloatl">日期</p>
+						 <p class="lfloatl ldltime">时间</p>
+						 <p class="lfloatl lip">IP</p>
+						 <p class="lfloatl lcity">城市</p>
+					</div>
+					<div id="landinglog-wrap" class="llandinglog-wrap">
+						<ul id="landinglog" class="llandloglist">
+							<li class="clearfix ldd2">
+								<p class="ldate2 lfloatl">2016年10月14日</p>
+								 <p class="lfloatl ldltime2">17:59:20</p>
+								 <p class="lfloatl lip2">192.168.00.00</p>
+								 <p class="lfloatl lcity2">北京市2</p>
+							</li>
+							<li class="clearfix ldd2 bgcolorfff">
+								<p class="ldate2 lfloatl">2016年10月14日</p>
+								 <p class="lfloatl ldltime2">17:59:20</p>
+								 <p class="lfloatl lip2">192.168.00.00</p>
+								 <p class="lfloatl lcity2">北京市1</p>
+							</li>
+							<li class="clearfix ldd2">
+								<p class="ldate2 lfloatl">2016年10月14日</p>
+								 <p class="lfloatl ldltime2">17:59:20</p>
+								 <p class="lfloatl lip2">192.168.00.00</p>
+								 <p class="lfloatl lcity2">北京市2</p>
+							</li>
+							<li class="clearfix ldd2 bgcolorfff">
+								<p class="ldate2 lfloatl">2016年10月14日</p>
+								 <p class="lfloatl ldltime2">17:59:20</p>
+								 <p class="lfloatl lip2">192.168.00.00</p>
+								 <p class="lfloatl lcity2">北京市1</p>
+							</li>
+							<li class="clearfix ldd2">
+								<p class="ldate2 lfloatl">2016年10月14日</p>
+								 <p class="lfloatl ldltime2">17:59:20</p>
+								 <p class="lfloatl lip2">192.168.00.00</p>
+								 <p class="lfloatl lcity2">北京市2</p>
+							</li>
+							<li class="clearfix ldd2 bgcolorfff">
+								<p class="ldate2 lfloatl">2016年10月14日</p>
+								 <p class="lfloatl ldltime2">17:59:20</p>
+								 <p class="lfloatl lip2">192.168.00.00</p>
+								 <p class="lfloatl lcity2">北京市1</p>
+							</li>
+							<li class="clearfix ldd2">
+								<p class="ldate2 lfloatl">2016年10月14日</p>
+								 <p class="lfloatl ldltime2">17:59:20</p>
+								 <p class="lfloatl lip2">192.168.00.00</p>
+								 <p class="lfloatl lcity2">北京市2</p>
+							</li>
+							<li class="clearfix ldd2 bgcolorfff">
+								<p class="ldate2 lfloatl">2016年10月14日</p>
+								 <p class="lfloatl ldltime2">17:59:20</p>
+								 <p class="lfloatl lip2">192.168.00.00</p>
+								 <p class="lfloatl lcity2">北京市1</p>
+							</li>
+							<li class="clearfix ldd2">
+								<p class="ldate2 lfloatl">2016年10月14日</p>
+								 <p class="lfloatl ldltime2">17:59:20</p>
+								 <p class="lfloatl lip2">192.168.00.00</p>
+								 <p class="lfloatl lcity2">北京市2</p>
+							</li>
+							<li class="clearfix ldd2 bgcolorfff">
+								<p class="ldate2 lfloatl">2016年10月14日</p>
+								 <p class="lfloatl ldltime2">17:59:20</p>
+								 <p class="lfloatl lip2">192.168.00.00</p>
+								 <p class="lfloatl lcity2">北京市1</p>
+							</li>
+							<li class="clearfix ldd2">
+								<p class="ldate2 lfloatl">2016年10月14日</p>
+								 <p class="lfloatl ldltime2">17:59:20</p>
+								 <p class="lfloatl lip2">192.168.00.00</p>
+								 <p class="lfloatl lcity2">北京市2</p>
+							</li>
+							<li class="clearfix ldd2 bgcolorfff">
+								<p class="ldate2 lfloatl">2016年10月14日</p>
+								 <p class="lfloatl ldltime2">17:59:20</p>
+								 <p class="lfloatl lip2">192.168.00.00</p>
+								 <p class="lfloatl lcity2">北京市1</p>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="lnavpage-wrap">
+				<div class="pages ">
+			        <div id="Pagination"></div>
+			        <div class="searchPage">
+			          <!-- <span class="page-sum">共<strong class="allPage">15</strong>页</span> -->
+			          <span class="page-go">跳转<input type="text">页</span>
+			          <a href="javascript:;" class="page-btn">确定</a>
+			        </div>
+			    </div>
+			</div>
+		</div>
+	</div>
+	<footer class="lfooter lmargint19">
+		<p class="lfootertext"><span class="l2016">2016</span><a class="lemind" href="javascript:;">&copy;emind</a></p>
+	</footer>
+</body>
+</html>

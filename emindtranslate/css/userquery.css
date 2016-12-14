@@ -1,0 +1,363 @@
+
+#contentai h1,h2,h3,h4,h5,
+#contentai input,
+#contentai p,
+#contentai ul,
+#contentai dd,
+#contentai dt,
+#contentai th,
+#contentai td,
+#contentai form {
+	margin: 0;
+	padding: 0;
+}
+body {
+	background-color: #f2f2f2;
+	margin: 0;
+	padding: 0;
+	/*font-family: "微软雅黑","宋体";*/
+}
+#contentai table {
+	border-collapse: collapse;
+	border: 1px solid #f2f2f2;
+	border-spacing: 0;
+	width: 100%;
+}
+#contentai th,
+#contentai td {
+	height: 70px;
+	text-align: center;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+}
+#contentai input {
+	-webkit-border-radius: 8px;
+	-ms-border-radius: 8px;
+	-moz-border-radius: 8px;
+	border-radius: 8px;
+}
+#contentai a {
+	text-decoration: none;
+}
+.wrap {
+	padding-left: 30px;
+	border-top: 1px solid #ccccce;
+}
+#contentai .lborder1 {
+	border: 1px solid #ccccce;
+}
+#contentai .lh3 {
+	display: inline-block;
+	padding-top: 18px;
+	font-size: 20px;
+	line-height: 54px;
+	font-weight: normal;
+	color: #323232;
+	border-bottom: 3px solid #005cc0;
+}
+#contentai .ltitleline {
+	width: 100%;
+	font-size: 0;
+	border-bottom: 1px solid #ccccce;
+}
+#contentai .lpaddingtr {
+	height: 31px;
+}
+#contentai .lsearch {
+	width: 388px;
+	border: 1px solid #ccccce;
+	background-color: #fff;
+	line-height: 14px;
+	font-size: 14px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 10px;
+}
+#contentai .lheight60 th{
+	height: 60px;
+}
+#contentai .lbgcolorf3 {
+	background-color: #f3f6fb;
+}
+#contentai .lbgcolorff {
+	background-color: #fff;
+}
+#contentai .ltextp {
+	width: 59px;
+	text-align: right;
+	font-size: 14px;
+	line-height: 58px;
+	padding-top: 2px;
+	display: inline-block;
+}
+#contentai .lselect ,
+#contentai .lselect2 {
+	width: 58px;
+	padding: 10px;
+	border: 1px solid #ccccce;
+	background-color: #fff;
+	line-height: 14px;
+	font-size: 14px;
+}
+#contentai .lbtn {
+	padding: 10px;
+	border: 1px solid #ccccce;
+	background-color: #f5f4f2;
+	line-height: 14px;
+	font-size: 14px;
+	background-color: #f5f4f2;
+	width: 80px;
+}
+#contentai .lmarginr {
+	margin-right: 50px;
+}
+#contentai .lcol1 {
+	width: 64px;
+}
+#contentai .lcol2 {
+	width: 49px;
+}
+#contentai .lcol3 {
+	width: 168px;
+}
+#contentai .lcol4 {
+	width: 169px;
+}
+#contentai .lcol5 {
+	width: 205px;
+}
+#contentai .lcol6 {
+	width: 101px;
+}
+#contentai .lcol7 {
+	width: 120px;
+}
+#contentai .lcol8 {
+	width: 196px;
+}
+#contentai .lcol9 {
+	width: 281px;
+}
+#contentai .lcol10 {
+	width: 237px;
+}
+#contentai  .marginr {
+	margin-left: -1px;
+}
+#contentai .lheight19 {
+	height: 19px;
+}
+#contentai .lbtns2 {
+	display: inline-block;
+	width: 84px;
+	font-size: 14px;
+	line-height: 30px;
+	color: #fff;
+	
+}
+#contentai .lbtns3 {
+	display: inline-block;
+	position: relative;
+	width: 84px;
+	text-align: center;
+	height: 30px;
+}
+#contentai .lbtns3 input {
+	width: 84px;
+	font-size: 14px;
+	line-height: 30px;
+	color: #fff;
+	background-color: #f8a74c;
+	border: none;
+	border-radius: 0;
+
+}
+#contentai .lbtnbgcolor2 {
+	background-color: #4e9f43;
+}
+#contentai .lbtnbgcolor3 {
+	background-color: #e5514d;
+}
+#contentai .lnum {
+	position: absolute;
+	right: -12px;
+	top: -12px;
+	width: 16px;
+	height: 16px;
+	font-size: 12px;
+	line-height: 16px;
+	background-color: #4d9e41;
+	color: #fff;
+	-webkit-border-radius: 16px;
+	-moz-border-radius: 16px;
+	-ms-border-radius: 16px;
+	border-radius: 16px;
+}
+#contentai .lheight29 {
+	height: 29px;
+}
+#contentai .lpagenum {
+	width: 100%;
+	text-align: right;
+}
+#contentai .lpagetd1 {
+	width: 121px;
+	text-align: left;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+}
+#contentai .lpagenum td {
+	font-size: 14px;
+	line-height: 28px;
+	height: 28px;
+}
+#contentai .lpagetd2 {
+	width: 67px;
+}
+#contentai .lpagetd3 {
+	width: 28px;
+}
+#contentai .lpagetd4 {
+	width: 66px;
+}
+#contentai .ltd9 {
+	width: 9px;
+}
+#contentai .td5 {
+	width: 5px;
+}
+#contentai .td39 {
+	width: 39px;
+}
+#contentai .lbtnwrap {
+	position: relative;
+	width: 105px;
+	height: 40px;
+	text-align: right;
+	display: inline-block;
+	
+}
+#contentai .lbtnwrap input {
+	width: 100%;
+	height: 100%;
+	border: none;
+	color: #fff;
+	background-color: #0059ca;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	-ms-border-radius: 0;
+	border-radius: 0;
+	text-align: left;
+	text-indent: 36px;
+}
+#contentai .lbtnwrap .lplus {
+	position: absolute;
+	left: 10px;
+	top: 13px;
+	width: 15px;
+	height: 15px;
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	-ms-border-radius: 15px;
+	border-radius: 15px;
+	border-radius: 15px;
+	background: url(../image/jiahao.jpg)
+	no-repeat 3px 3px #fff;
+}
+#contentai .loperationbtn {
+	background: none;
+	border: none;
+	font-size: 15px;
+	line-height: 15px;
+	padding-bottom: 1px;
+	border-bottom: 1px solid transparent;
+	color: #005bbe;
+	-weibkit-border-radius: 0;
+	-moz-border-radius: 0;
+	-ms-border-radius: 0;
+	border-radius: 0;
+}
+#contentai .loperationbtn:hover {
+	border-bottom-color: #005bbe;
+}
+#contentai .lborderl {
+	display: inline-block;
+	width: 10px;
+	border-right: 1px solid #cdcdcd;
+	margin-right: 10px;
+	height: 15px;
+}
+
+#contentai .lhover:hover {
+	background-color: #005bc4;
+	border-color: #005bc4;
+	color: #fff;
+}
+#contentai .lpagebtn {
+	width: 100%;
+	height: 100%;
+	padding: 0;
+	color: #6c6c6c;
+	border: none;
+	background: none;
+	border: none;
+	font-size: 15px;
+	line-height: 15px;
+	-weibkit-border-radius: 0;
+	-moz-border-radius: 0;
+	-ms-border-radius: 0;
+	border-radius: 0;
+
+}
+#contentai .lwzfy {
+	display: inline;
+	position: relative;
+}
+#contentai .lilogo {
+	position: absolute;
+	right: -12px;
+	top: -12px;
+	width: 16px;
+	height: 16px;
+	-webkit-border-radius: 16px;
+	-moz-border-radius: 16px;
+	-ms-border-radius: 16px;
+	border-radius: 16px;
+	color: #fff;
+	font-size: 16px;
+	line-height: 16px;
+	background-color: #559c4c;
+	text-indent: 0px;
+}
+#contentai .lwidth125 {
+	width: 125px;
+	text-align: right;
+}
+#contentai .lwidth430 {
+	width: 430px;
+	text-align: right;
+}
+#contentai .lwidth118 {
+	width: 118px;
+	text-align: right;
+}
+#contentai .lwidth80 {
+	width: 80px;
+	text-align: right;
+}
+#contentai .lwidth89 {
+	width: 89px;
+	text-align: right;
+}
+#contentai .lwidth119 {
+	width: 119px;
+	text-align: right;
+}
+#contentai .lwidth60 {
+	width: 60px;
+	text-align: right;
+}
+
+

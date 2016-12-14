@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="../css/table6.css">
+	<script src="../js/jquery/jquery-1.9.1.min.js"></script>
+</head>
+<body>
+	<form >
+		<div id="lformwrap" >
+			<table class="lforms">
+				<tbody>
+					<tr class="lh2s">
+						<th colspan="9"><h2>可使用免费软件清单</h2></th>
+					</tr>
+					<tr class="lh2s lrow1 ltr2">
+						<th>单位名称:</th>
+						<th><input type="text"></th>
+						<th>填表人:</th>
+						<th><input type="text"></th>
+						<th>联系电话:</th>
+						<th><input type="text"></th>
+						<th>填表日期:</th>
+						<th colspan="2"><input class="lnyr" type="text">年<input class="lnyr" type="text">月<input class="lnyr" type="text">日</th>
+					</tr>
+						<tr>
+							<th>序号</th>
+							<th>软件编号</th>
+							<th>软件名称</th>
+							<th>软件版本</th>
+							<th>软件来源</th>
+							<th>软件厂商名称</th>
+							<th>软件厂商<br>客服联系方式</th>
+							<th>使用部门</th>
+							<th>使用原因</th>
+						</tr>
+						<tr>
+							<td>1</td>
+							<td><input type="text"></td>
+							<td><input type="text"></td>
+							<td><input type="text"></td>
+							<td><input type="text"></td>
+							<td><input type="text"></td>
+							<td><input type="text"></td>
+							<td><input type="text"></td>
+							<td><input type="text"></td>
+						</tr>
+						<tr>
+							<td>2</td>
+							<td><input type="text"></td>
+							<td><input type="text"></td>
+							<td><input type="text"></td>
+							<td><input type="text"></td>
+							<td><input type="text"></td>
+							<td><input type="text"></td>
+							<td><input type="text"></td>
+							<td><input type="text"></td>
+						</tr>
+						<tr>
+							<td>3</td>
+							<td><input type="text"></td>
+							<td><input type="text"></td>
+							<td><input type="text"></td>
+							<td><input type="text"></td>
+							<td><input type="text"></td>
+							<td><input type="text"></td>
+							<td><input type="text"></td>
+							<td><input type="text"></td>
+						</tr>
+						<tr>
+							<td>4</td>
+							<td><input type="text"></td>
+							<td><input type="text"></td>
+							<td><input type="text"></td>
+							<td><input type="text"></td>
+							<td><input type="text"></td>
+							<td><input type="text"></td>
+							<td><input type="text"></td>
+							<td><input type="text"></td>
+						</tr>
+						<tr>
+							<td>5</td>
+							<td><input type="text"></td>
+							<td><input type="text"></td>
+							<td><input type="text"></td>
+							<td><input type="text"></td>
+							<td><input type="text"></td>
+							<td><input type="text"></td>
+							<td><input type="text"></td>
+							<td><input type="text"></td>
+						</tr>
+				</tbody>
+			</table>
+		</div>
+	</form>
+<script>
+$(function (){
+	//向elem元素里面插入一行，行号lineNum;
+	function creatline(elem,lineNum){
+		var str = '';
+		str+='	<tr>'
+					str+='<td>'+lineNum+'</td>'
+					str+='<td><input type="text"></td>'
+					str+='<td><input type="text"></td>'
+					str+='<td><input type="text"></td>'
+					str+='<td><input type="text"></td>'
+					str+='<td><input type="text"></td>'
+					str+='<td><input type="text"></td>'
+					str+='<td><input type="text"></td>'
+					str+='<td><input type="text"></td>'
+				str+='</tr>'
+		elem.append(str);
+	}
+});
+</script>
+</body>
+</html>

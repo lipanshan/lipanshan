@@ -1,0 +1,396 @@
+
+.lsidemenu {
+	border: 1px solid #e5e5e5;
+	margin-top: 20px;
+	width: 199px;
+	margin-right: 20px;
+	min-height: 678px;
+	background-color: #fbfbfb;
+}
+.lsideli {
+	border-bottom: 1px solid #e5e5e5;
+}
+.lsideli h2 {
+	padding-left: 60px;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	font-size: 14px;
+	line-height: 49px;
+	font-weight: normal;
+}
+.lsideli a {
+	display: block;
+	color: #3e3e3e;
+}
+.lsidel1 h2 {
+	line-height: 48px;
+	padding-top: 3px;
+}
+.lsidel2 {
+	padding-top: 1px;
+}
+.lsideli:hover ,
+.lsideliactive {
+ 	background-color: #005bc4;
+ }
+.lsideli:hover .lsidelih2a ,
+.lsideliactive .lsidelih2a {
+	color: #fff;
+}
+.lsideli:hover .licojt,
+.lsideliactive .licojt {
+	background-position: -45px -116px;
+}
+.lsideli .licojtclickh {
+	background-position: -30px -116px !important;
+}
+.lsidelih2a {
+	width: 87px;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+	color: #3f3f3f;
+}
+.licojt {
+	width: 13px;
+	height: 13px;
+	background: url(../image/sprite1.png)
+	no-repeat -2px -116px;
+	margin-top: 18px;
+}
+
+/*未选中未点开位置为 -2px -116px*/
+/*未选中点开后位置为 -15px -116px*/
+/*选中未点开位置为 -45px -116px*/
+/*选中点开后位置为 -30px -116px*/
+.lmenu3list {
+	display: none;
+	border-top: 1px solid #e5e5e5;
+	padding-bottom: 5px;
+	background-color: #e6eef9;
+}
+.lmenu3li {
+	text-align: center;
+	font-size: 0;
+}
+.licomenu3 {
+	display: inline-block;
+	width: 6px;
+	height: 8px;
+	background: url(../image/sprite1.png)
+	no-repeat -60px -116px;
+	margin-right: 6px;
+	vertical-align: middle;
+}
+.lmenu3liactive .licomenu3,
+.lmenu3li:hover .licomenu3 {
+	background-position: -68px -116px;
+}
+.lmenu3liactive .lmenu3cnt ,
+.lmenu3li:hover .lmenu3cnt {
+	color: #005bc4;
+}
+.lsideli .lmenu3cnt {
+	display: inline-block;
+}
+.lmenu3cnt {
+	
+	font-size: 12px;
+	line-height: 49px;
+	color: #3f3f3f;
+	vertical-align: middle;
+}
+.lemailland {
+	margin-top: 20px;
+	border: 1px solid #e5e5e5;
+	width: 776px;
+	min-height: 678px;
+}
+
+.ldllist ,
+.lqmtitle-wrap,
+.lqmlist ,
+.lallchecked-wrap {
+	width: 735px;
+	margin: 0 auto;
+	border-top: 1px solid #e5e5e5;
+}
+.lnewaddcol1,
+.lnewaddcol2,
+.lnewaddcol3,
+.lnewaddcol4,
+.lnewaddcol5,
+.lnewadd2col1,
+.lnewadd2col2,
+.lnewadd2col3,
+.lnewadd2col4,
+.lnewadd2col5,
+.lrolc1,
+.lrolc2,
+.lrolc3,
+.lrolc4 {
+	font-size: 12px;
+	line-height: 38px;
+	color: #606060;
+	padding-top: 1px;
+	text-align: center;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.ltitleh3 {
+	background-color: #e6eef9;
+	border-top: 1px solid #e5e5e5;
+	margin: 19px auto 0;
+	width: 735px;
+}
+.lnewadd {
+	font-size: 12px;
+	line-height: 38px;
+	padding-top: 1px;
+	padding-left: 62px;
+	width: 200px;
+	font-weight: normal;
+	color: #3f3f3f;
+}
+.lrefresh {
+	float: right;
+	width: 300px;
+	text-align: right;
+	font-size: 0;
+	padding-right: 22px;
+}
+.lrefreshbtn {
+	display: inline-block;
+	margin-top: 7px;
+	font-size: 12px;
+	line-height: 24px;
+	background-color: #fff;
+	color: #3f3f3f;
+	padding: 2px 14px 0;
+	cursor: pointer;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	-ms-border-radius: 3px;
+	border-radius: 3px;
+	margin-right: 9px;
+}
+.lrefreshbtn:hover,
+.lrightbtn:hover {
+	background-color: #005bc4;
+	color: #fff;
+}
+/***************页码*******************/
+.lnavpage-wrap {
+	margin: 9px auto 0;
+	width: 735px;
+	font-size: 0;
+	text-align: center;
+}
+/****************管理控制台-最新动态************************/
+.lhide {
+	display: none;
+}
+.lnav-wrap {
+	font-size: 0;
+	padding-left: 10px;
+	background-color: #fbfbfb;
+	border-bottom: 1px solid #e5e5e5;
+	width: 766px;
+	overflow: hidden;
+	white-space: nowrap;
+}
+.lnavh3 {
+	display: inline-block;
+	padding-right: 25px;
+	background: url(../image/nextico.png)
+	no-repeat right 0 #fbfbfb;
+	padding-top: 4px;
+/*	position: relative;
+	z-index: 5;*/
+	overflow: hidden;
+	font-size: 0px;
+}
+.lnavh3 a {
+	font-size: 18px;
+	line-height: 46px;
+	display: inline-block;
+	padding-left: 10px;
+	padding-right: 6px;
+	color: #3f3f3f;
+	overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: 72px;
+}
+.lnavh3aactive {
+	z-index: 20;
+}
+.lnavh3 .lnavh3acolor {
+	color: #adadad;
+}
+.lfalseico {
+	vertical-align: top;
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	background: url(../image/checkedico2.png)
+	no-repeat 0 0;
+	margin-top: 14px;
+}
+.lfalseicoactive {
+	background-position: right 0;
+}
+.lpaddingr19 {
+	padding-right: 19px;
+}
+.lmarginr0 {
+	margin-right: 0;
+}
+.lnewadd-wrap {
+	width: 737px;
+	margin: 0 auto 0;
+}
+.lnewaddtitle {
+	border-top: 1px solid #e5e5e5;
+	border-bottom: 1px solid #e5e5e5;
+}
+.lnewaddtitle h4 {
+	font-weight: normal;
+}
+.lnewaddcol1 {
+	width: 54px;
+	padding-left: 32px;
+}
+.lnewaddcol2 {
+	width: 91px;
+}
+.lnewaddcol3 {
+	width: 126px;
+	padding-left: 52px;
+}
+.lnewaddcol4 {
+	width: 190px;
+}
+.lnewaddcol5 {
+	width: 182px;
+	padding-left: 10px;
+}
+.lnewadd2col1 {
+	width: 53px;
+	padding-left: 33px;
+}
+.lnewadd2col2 {
+	width: 86px;
+}
+.lnewadd2col3 {
+	width: 134px;
+	padding-left: 49px;
+}
+.lnewadd2col4 {
+	width: 196px;
+}
+.lnewadd2col5 {
+	width: 185px;s
+}
+.lnewaddli {
+	border-bottom: 1px solid #e5e5e5;
+}
+.lboxz {
+	padding: 19px 7px 0 19px;
+}
+.llistl-wrap {
+	width: 361px;
+	margin-right: 12px;
+	border-left: 1px solid #e5e5e5;
+	border-right: 1px solid #e5e5e5;
+}
+.llisttitle {
+	border-top: 1px solid #e5e5e5;
+	border-bottom: 1px solid #e5e5e5;
+	background-color: #e6eef9;
+}
+.ltitle-texta {
+	width: 120px;
+	font-size: 12px;
+	line-height: 38px;
+	padding-top: 1px;
+	color: #3f3f3f;
+	font-weight: normal;
+	padding-left: 32px;
+}
+.ltitle-btnwrap {
+	float: right;
+	width: 190px;
+	padding-right: 10px;
+}
+.lrightbtn {
+	float: right;
+	border: 1px solid #e5e5e5;
+	background-color: #fff;
+	color: #3f3f3f;
+	margin-top: 6px;
+	margin-left: 9px;
+	font-size: 12px;
+	line-height: 24px;
+	padding: 2px 12px 0;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	-ms-border-radius: 3px;
+	border-radius: 3px;
+}
+.lpaddinglr14 {
+	padding-left: 14px;
+	padding-right: 14px;
+}
+.lrol-wrap {
+	border-bottom: 1px solid #e5e5e5;
+}
+.lrol-wrap h5 {
+	font-weight: normal;
+
+}
+.lrolb1 ,
+.lrolb2,
+.lrolb3,
+.lrolb4 {
+	font-size: 12px;
+	line-height: 36px;
+	padding-top: 2px;
+	color: #3f3f3f;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	text-align: center;
+}
+.lrolb1 ,
+.lrolb2,
+.lrolb3 {
+	border-right: 1px solid #e5e5e5;
+}
+.lrolb1,
+.lrolc1 {
+	width: 58px;
+}
+.lrolb2 {
+	width: 97px;
+}
+.lrolb3 {
+	width: 126px;
+}
+.lrolb4 {
+	width: 77px;
+}
+.lrolc-wrap {
+	border-bottom: 1px solid #e5e5e5;
+}
+.lrolc2 {
+	width: 99px;
+}
+.lrolc3 {
+	width: 132px;
+}
+.lrolc4 {
+	width: 69px;
+}

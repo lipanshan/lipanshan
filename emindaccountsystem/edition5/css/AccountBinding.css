@@ -1,0 +1,36 @@
+@charset "utf-8";
+/*=========================Reset_start==========================*/
+body,h1,h2,h3,h4,h5,h6,div,p,dl,dt,dd,ol,ul,li,form,table,th,td,a,img,span,strong,var,em,input,textarea,select,option{margin: 0; padding: 0;}
+html,body{font-family:"微软雅黑","宋体",Arail,Tabhoma; font-size: 12px; text-align: left;}
+ul,ol{list-style: none;}
+img{border: 0;}
+input,select,textarea{outline:0;}
+textarea{resize:none; overflow: auto;}
+table{border-collapse: collapse; border-spacing: 0;}
+th,strong,var,em{font-weight: normal; font-style: normal;}
+a{text-decoration: none;}
+a:link,a:visited,a:hover,a:active{text-decoration:none;} 
+.jwrap{
+	width:100%;height:100%;background:#fbfbfb;
+}
+.jhead{
+	width:100%;height:74px;border-bottom: 1px solid #e5e5e5;background: #fff;
+}
+.jlogol a {
+	display: block;
+	height: 100%;
+}
+.jlogo{width: 1000px;height:74px; overflow: hidden;line-height:74px;margin: 0 auto;}
+.jlogo .jlogol{width: 215px;height: 42px;float: left;background: url(../image/logo.png)0 0 no-repeat;margin-top: 20px;}
+.jlogo .jlogor{width: 155px;height: 42px;float: right;text-align: right; line-height: 42px;color: #343434;font-size: 14px;margin-top: 20px;}
+.jlogo .jlogor a{text-decoration: none;color: #727272;}
+.jnar{
+	width: 1000px;height: 632px;margin:60px auto;background: #fff;border: 1px solid #e5e5e5;font-weight: bolder;color: #333;
+}
+.jfand{width: 200px;margin-top: 52px;margin-left:107px;color: #5e5e5e;}
+.jtouxiang{width: 100px;height: 100px;background:url(../image/touxiang.jpg);border: 3px solid #e5e5e5;margin:0 auto;margin-top: 40px;}
+.jwangming{width: 200px;height:20px;font-size: 18px;color: #3f3f3f;margin: 0 auto;margin-top: 20px;text-align:center;margin-bottom: 70px;}
+.jbangding{width: 265px;height:41px;margin: 0 auto;}
+.jbangding input{width: 263px;height: 39px;border: 1px solid #e5e5e5;background: #fbfbfb;font-size: 16px;color: #3f3f3f;border-radius:3px;outline: none;}
+.jchuangjian{width: 265px;height:41px;margin: 0 auto;margin-top:20px;}
+.jchuangjian input{width: 265px;height: 41px;border: 1px solid #e5e5e5;background:#005bc4;font-size: 16px;color:#fff;border-radius:3px;outline: none;}

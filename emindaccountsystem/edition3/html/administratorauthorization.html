@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>管理控制台-权限管理-管理员授权</title>
+	<link rel="stylesheet" href="../css/public.css">
+	<link rel="stylesheet" href="../css/pagination.css">
+	<link rel="stylesheet" href="../css/backstagemanage.css">
+	<script src="../js/jquery.js"></script>
+	<script src="../js/checked.js"></script>
+	<script src="../js/headaccount.js"></script>
+	<script type="text/javascript" src="../js/jquery.pagination.js"></script>
+	<script type="text/javascript">
+	$(document).ready(function() {
+		$("#Pagination").pagination("15",{
+			items_per_page:1,
+			num_display_entries:4,
+			current_page:0,
+			num_edge_entries:1,
+			link_to:"#",
+			prev_text:"<",
+			next_text:">",
+			ellipse_text:"...",
+			prev_show_always:true,
+			next_show_always:true,
+			renderer:"defaultRenderer",
+			show_if_single_page:false,
+			load_first_page:false,
+			callback:paginationCallBack
+		});
+		function paginationCallBack(_id,jq){
+			// console.log(_id,jq)
+		}
+	});
+</script>
+</head>
+<body>
+	<header class="lhead">
+		<div class="lwrap clearfix">
+			<h1 class="lh1 lfloatl">
+				<a class="lh1href" href="index.html">
+				<img class="lfloatl" src="../image/emindlogo.png" alt="">
+				<span class="lborder lfloatl"></span>
+				<span class="lfloatl lh1text">一铭账户系统</span>
+				</a>
+			</h1>
+			<div class="lsignwrap">
+				<div class="lindexpage">
+					<a class="lpaddingr" target="_block" href="index.html">Emind&nbsp;首页&gt;&gt;</a>
+				</div>
+				<div  class="laccountname">
+					<a id="accountName" href="javascript:;" class="laccountn lfloatl">欢迎您,小桥流水</a>
+					<span id="accountNameIco" class="ljt lfloatl"></span>
+					<ul id="accountlist" class="laccountnamelist">
+						<li class="laccountnameli"><a index="ac" href="javascript:;">账户信息</a></li>
+						<li class="laccountnameli"><a index="ac" href="javascript:;">推出</a></li>
+					</ul>
+				</div>
+				<a href="javascript:;"  class="lheadico2"></a>
+			</div>
+		</div>
+	</header>
+	<div class="lmainmenu-wrap">
+		<div class="lwrap">
+			<nav class="lmainmenu clearfix">
+				<a href="index.html" class="lfloatl">首页</a>
+				<a href="myhead.html" class="lfloatl ">账户信息</a>
+				<a href="backstagemanage.html" class="lfloatl menuactive">管理控制台</a>
+				<a href="accountproblem.html" class="lfloatl">帮助中心</a>
+			</nav>
+		</div>
+	</div>
+	<div class="lwrap clearfix">
+		<ul id="menu3list" class="lsidemenu lfloatl">
+			<li class="lsideli ">
+				<h2 class="clearfix"><a class="lfloatl lsidelih2a" href="javascript:;">最新动态</a><span class="licojt lfloatl"></span></h2>
+				<ul class="lmenu3list">
+					<li class="lmenu3li "><span class="licomenu3 "></span><a class="lmenu3cnt" href="javascript:;">标题1</a></li>
+					<li class="lmenu3li "><span class="licomenu3 "></span><a class="lmenu3cnt" href="javascript:;">标题2</a></li>
+				</ul>
+			</li>
+			<li class="lsideli">
+				<h2 class="clearfix"><a class="lfloatl lsidelih2a" href="javascript:;">用户管理</a><span class="licojt lfloatl"></span></h2>
+				<ul class="lmenu3list">
+					<li class="lmenu3li "><span class="licomenu3 "></span><a class="lmenu3cnt" href="javascript:;">标题1</a></li>
+					<li class="lmenu3li "><span class="licomenu3 "></span><a class="lmenu3cnt" href="javascript:;">标题2</a></li>
+				</ul>
+			</li>
+			<li id="qxgl" class="lsideli lsideliactive">
+				<h2 class="clearfix"><a class="lfloatl lsidelih2a" href="javascript:;">权限管理</a><span class="licojt lfloatl"></span></h2>
+				<ul class="lmenu3list">
+					<li class="lmenu3li "><span class="licomenu3 "></span><a class="lmenu3cnt" href="administrationauthorization.html">管理授权</a></li>
+					<li class="lmenu3li lmenu3liactive"><span class="licomenu3 "></span><a class="lmenu3cnt" href="administratorauthorization.html">成员授权</a></li>
+				</ul>
+			</li>
+		</ul>
+		<div class="lfloatl lemailland">
+			<div class="lglsqwrap lselectwrap clearfix">
+				<div class="lselectn" >
+					<select name="" id="normalmanager" class="lselectn"></select>
+					<div class="lselect01 lselect01n">
+						<input type="hidden" name="" class="linputval">
+						<p class="lselectshow lselectshown">普通管理员</p>
+						<ul class="lselectlist lselectlisn">
+							<li value="123">普通管理员</li>
+							<li value="12">超级管理员</li>
+						</ul>
+					</div>
+					<div class="lselect-ico lselect-icon"></div>
+				</div>
+			</div>
+			<div class="lglsqwrap">
+				<div class="ltitle-text clearfix">
+					<h4 class="lfloatl lh4col1">选择</h4>
+					<h4 class="lfloatl lh4col2">ID</h4>
+					<h4 class="lfloatl lh4col3">用户名</h4>
+					<h4 class="lfloatl lh4col4">姓名</h4>
+					<h4 class="lfloatl lh4col5">手机</h4>
+					<h4 class="lfloatl lh4col6">创建时间</h4>
+					<h4 class="lfloatl lh4col7">状态</h4>
+					<h4 class="lfloatl lh4col8">属组</h4>
+					<h4 class="lfloatl lh4col9">设置为以下组管理员</h4>
+				</div>
+				<ul id="qmlsit" class="lh4list">
+					<li class="lh4li clearfix">
+						<div class="lh4licol1 lfloatl"><input type="checkbox"></div>
+						<p class="lh4licol2 lfloatl">33</p>
+						<p class="lh4licol3 lfloatl">小桥流水</p>
+						<p class="lh4licol4 lfloatl">张三</p>
+						<p class="lh4licol5 lfloatl">15003125145</p>
+						<p class="lh4licol6 lfloatl">创建时间</p>
+						<p class="lh4licol7 lfloatl"><a class="lnormaln" href="javascript:;">正常</a></p>
+						<div class="lh4licol8 lfloatl">
+							<div class="lboxselect">普通用户</div>
+							<!-- 缺少一个下拉多选框 -->
+						</div>
+						<div class="lh4licol9 lfloatl">
+							<div class="lboxselect">应用商店</div>
+							<!-- 缺少一个下拉多选框 -->
+						</div>
+					</li>
+					<li class="lh4li clearfix">
+						<div class="lh4licol1 lfloatl"><input type="checkbox"></div>
+						<p class="lh4licol2 lfloatl">33</p>
+						<p class="lh4licol3 lfloatl">小桥流水</p>
+						<p class="lh4licol4 lfloatl">张三</p>
+						<p class="lh4licol5 lfloatl">15003125145</p>
+						<p class="lh4licol6 lfloatl">创建时间</p>
+						<p class="lh4licol7 lfloatl"><a class="lnormaln" href="javascript:;">正常</a></p>
+						<div class="lh4licol8 lfloatl">
+							<div class="lboxselect">普通用户</div>
+							<!-- 缺少一个下拉多选框 -->
+						</div>
+						<div class="lh4licol9 lfloatl">
+							<div class="lboxselect">应用商店</div>
+							<!-- 缺少一个下拉多选框 -->
+						</div>
+					</li>
+					<li class="lh4li clearfix">
+						<div class="lh4licol1 lfloatl"><input type="checkbox"></div>
+						<p class="lh4licol2 lfloatl">33</p>
+						<p class="lh4licol3 lfloatl">小桥流水</p>
+						<p class="lh4licol4 lfloatl">张三</p>
+						<p class="lh4licol5 lfloatl">15003125145</p>
+						<p class="lh4licol6 lfloatl">创建时间</p>
+						<p class="lh4licol7 lfloatl"><a class="lnormaln" href="javascript:;">正常</a></p>
+						<div class="lh4licol8 lfloatl">
+							<div class="lboxselect">普通用户</div>
+							<!-- 缺少一个下拉多选框 -->
+						</div>
+						<div class="lh4licol9 lfloatl">
+							<div class="lboxselect">应用商店</div>
+							<!-- 缺少一个下拉多选框 -->
+						</div>
+					</li>
+					<li class="lh4li clearfix">
+						<div class="lh4licol1 lfloatl"><input type="checkbox"></div>
+						<p class="lh4licol2 lfloatl">33</p>
+						<p class="lh4licol3 lfloatl">小桥流水</p>
+						<p class="lh4licol4 lfloatl">张三</p>
+						<p class="lh4licol5 lfloatl">15003125145</p>
+						<p class="lh4licol6 lfloatl">创建时间</p>
+						<p class="lh4licol7 lfloatl"><a class="lnormaln" href="javascript:;">正常</a></p>
+						<div class="lh4licol8 lfloatl">
+							<div class="lboxselect">普通用户</div>
+							<!-- 缺少一个下拉多选框 -->
+						</div>
+						<div class="lh4licol9 lfloatl">
+							<div class="lboxselect">应用商店</div>
+							<!-- 缺少一个下拉多选框 -->
+						</div>
+					</li>
+					<li class="lh4li clearfix">
+						<div class="lh4licol1 lfloatl"><input type="checkbox"></div>
+						<p class="lh4licol2 lfloatl">33</p>
+						<p class="lh4licol3 lfloatl">小桥流水</p>
+						<p class="lh4licol4 lfloatl">张三</p>
+						<p class="lh4licol5 lfloatl">15003125145</p>
+						<p class="lh4licol6 lfloatl">创建时间</p>
+						<p class="lh4licol7 lfloatl"><a class="lnormaln" href="javascript:;">正常</a></p>
+						<div class="lh4licol8 lfloatl">
+							<div class="lboxselect">普通用户</div>
+							<!-- 缺少一个下拉多选框 -->
+						</div>
+						<div class="lh4licol9 lfloatl">
+							<div class="lboxselect">应用商店</div>
+							<!-- 缺少一个下拉多选框 -->
+						</div>
+					</li>
+					<li class="lh4li clearfix">
+						<div class="lh4licol1 lfloatl"><input type="checkbox"></div>
+						<p class="lh4licol2 lfloatl">33</p>
+						<p class="lh4licol3 lfloatl">小桥流水</p>
+						<p class="lh4licol4 lfloatl">张三</p>
+						<p class="lh4licol5 lfloatl">15003125145</p>
+						<p class="lh4licol6 lfloatl">创建时间</p>
+						<p class="lh4licol7 lfloatl"><a class="lnormaln" href="javascript:;">正常</a></p>
+						<div class="lh4licol8 lfloatl">
+							<div class="lboxselect">普通用户</div>
+							<!-- 缺少一个下拉多选框 -->
+						</div>
+						<div class="lh4licol9 lfloatl">
+							<div class="lboxselect">应用商店</div>
+							<!-- 缺少一个下拉多选框 -->
+						</div>
+					</li>
+					<li class="lh4li clearfix">
+						<div class="lh4licol1 lfloatl"><input type="checkbox"></div>
+						<p class="lh4licol2 lfloatl">33</p>
+						<p class="lh4licol3 lfloatl">小桥流水</p>
+						<p class="lh4licol4 lfloatl">张三</p>
+						<p class="lh4licol5 lfloatl">15003125145</p>
+						<p class="lh4licol6 lfloatl">创建时间</p>
+						<p class="lh4licol7 lfloatl"><a class="lnormaln" href="javascript:;">正常</a></p>
+						<div class="lh4licol8 lfloatl">
+							<div class="lboxselect">普通用户</div>
+							<!-- 缺少一个下拉多选框 -->
+						</div>
+						<div class="lh4licol9 lfloatl">
+							<div class="lboxselect">应用商店</div>
+							<!-- 缺少一个下拉多选框 -->
+						</div>
+					</li>
+					<li class="lh4li clearfix">
+						<div class="lh4licol1 lfloatl"><input type="checkbox"></div>
+						<p class="lh4licol2 lfloatl">33</p>
+						<p class="lh4licol3 lfloatl">小桥流水</p>
+						<p class="lh4licol4 lfloatl">张三</p>
+						<p class="lh4licol5 lfloatl">15003125145</p>
+						<p class="lh4licol6 lfloatl">创建时间</p>
+						<p class="lh4licol7 lfloatl"><a class="lnormaln" href="javascript:;">正常</a></p>
+						<div class="lh4licol8 lfloatl">
+							<div class="lboxselect">普通用户</div>
+							<!-- 缺少一个下拉多选框 -->
+						</div>
+						<div class="lh4licol9 lfloatl">
+							<div class="lboxselect">应用商店</div>
+							<!-- 缺少一个下拉多选框 -->
+						</div>
+					</li>
+					<li class="lh4li clearfix">
+						<div class="lh4licol1 lfloatl"><input type="checkbox"></div>
+						<p class="lh4licol2 lfloatl">33</p>
+						<p class="lh4licol3 lfloatl">小桥流水</p>
+						<p class="lh4licol4 lfloatl">张三</p>
+						<p class="lh4licol5 lfloatl">15003125145</p>
+						<p class="lh4licol6 lfloatl">创建时间</p>
+						<p class="lh4licol7 lfloatl"><a class="lnormaln" href="javascript:;">正常</a></p>
+						<div class="lh4licol8 lfloatl">
+							<div class="lboxselect">普通用户</div>
+							<!-- 缺少一个下拉多选框 -->
+						</div>
+						<div class="lh4licol9 lfloatl">
+							<div class="lboxselect">应用商店</div>
+							<!-- 缺少一个下拉多选框 -->
+						</div>
+					</li>
+					<li class="lh4li clearfix">
+						<div class="lh4licol1 lfloatl"><input type="checkbox"></div>
+						<p class="lh4licol2 lfloatl">33</p>
+						<p class="lh4licol3 lfloatl">小桥流水</p>
+						<p class="lh4licol4 lfloatl">张三</p>
+						<p class="lh4licol5 lfloatl">15003125145</p>
+						<p class="lh4licol6 lfloatl">创建时间</p>
+						<p class="lh4licol7 lfloatl"><a class="lnormaln" href="javascript:;">正常</a></p>
+						<div class="lh4licol8 lfloatl">
+							<div class="lboxselect">普通用户</div>
+							<!-- 缺少一个下拉多选框 -->
+						</div>
+						<div class="lh4licol9 lfloatl">
+							<div class="lboxselect">应用商店</div>
+							<!-- 缺少一个下拉多选框 -->
+						</div>
+					</li>
+					<li class="lh4li clearfix">
+						<div class="lh4licol1 lfloatl"><input type="checkbox"></div>
+						<p class="lh4licol2 lfloatl">33</p>
+						<p class="lh4licol3 lfloatl">小桥流水</p>
+						<p class="lh4licol4 lfloatl">张三</p>
+						<p class="lh4licol5 lfloatl">15003125145</p>
+						<p class="lh4licol6 lfloatl">创建时间</p>
+						<p class="lh4licol7 lfloatl"><a class="lnormaln" href="javascript:;">正常</a></p>
+						<div class="lh4licol8 lfloatl">
+							<div class="lboxselect">普通用户</div>
+							<!-- 缺少一个下拉多选框 -->
+						</div>
+						<div class="lh4licol9 lfloatl">
+							<div class="lboxselect">应用商店</div>
+							<!-- 缺少一个下拉多选框 -->
+						</div>
+					</li>
+					<li class="lh4li clearfix">
+						<div class="lh4licol1 lfloatl"><input type="checkbox"></div>
+						<p class="lh4licol2 lfloatl">33</p>
+						<p class="lh4licol3 lfloatl">小桥流水</p>
+						<p class="lh4licol4 lfloatl">张三</p>
+						<p class="lh4licol5 lfloatl">15003125145</p>
+						<p class="lh4licol6 lfloatl">创建时间</p>
+						<p class="lh4licol7 lfloatl"><a class="lnormaln" href="javascript:;">正常</a></p>
+						<div class="lh4licol8 lfloatl">
+							<div class="lboxselect">普通用户</div>
+							<!-- 缺少一个下拉多选框 -->
+						</div>
+						<div class="lh4licol9 lfloatl">
+							<div class="lboxselect">应用商店</div>
+							<!-- 缺少一个下拉多选框 -->
+						</div>
+					</li>
+				</ul>
+				<div class="clearfix lallchecked-wrap">
+					<input  type="checkbox" class="lfloatl lallchecked" id="qmallchecked">
+					<label class="lfloatl qmaclabel" for="qmallchecked">全选</label>
+					<a id="deletchecked" class="lfloatl ldeletchecked" href="javascript:;">删除选中项</a>
+				</div>
+				<div class="lnavpage-wrap">
+					<div class="pages ">
+				        <div id="Pagination"></div>
+				        <div class="searchPage">
+				          <span class="page-sum">共<strong class="allPage">15</strong>页</span>
+				          <span class="page-go">跳转<input type="text">页</span>
+				          <a href="javascript:;" class="page-btn">确定</a>
+				        </div>
+				    </div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<footer class="lfooter lmargint19">
+		<p class="lfootertext"><span class="l2016">2016</span><a class="lemind" href="javascript:;">&copy;emind</a></p>
+	</footer>
+</body>
+</html>

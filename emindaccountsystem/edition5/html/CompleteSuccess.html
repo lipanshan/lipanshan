@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="../css/CompleteSuccess.css" />
+	</head>
+
+	<body>
+		<div class="jwrap">
+			<div class="jhead">
+				<ul class="jlogo">
+					<li class="jlogol"><a href="index.html"></a></li>
+					<li class="jlogor">
+						<a href="../html/signin.html">登录>></a>
+					</li>
+				</ul>
+			</div>
+			<div class="jnar">
+				<p class="jfand">补全完成</p>
+				<ol class="jover">
+					<li class="jduigou"></li>
+					<li class="jgongxi">恭喜您，资料补充成功！</li>
+					<li class="jtiaozhuan"><span id="jumpTo">5</span>s后自动跳转到登录页面,<a href="../html/signin.html">马上登录</a></li>
+				</ol>				
+			</div>
+		</div>
+	</body>
+<script type="text/javascript">  
+/**************************5秒后自动跳转到登录页面*********************************/
+	function countDown(secs,surl){     
+		var jumpTo = document.getElementById('jumpTo');
+		jumpTo.innerHTML=secs;  
+		if(--secs>0){     
+	    	setTimeout("countDown("+secs+",'"+surl+"')",1000);     
+	   }else{       
+	    	location.href=surl;     
+	    }     
+	}  
+	countDown(5,'signin.html');
+</script> 
+</html>

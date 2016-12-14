@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>账户信息-我的头像</title>
+	<link rel="stylesheet" href="../css/public.css">
+	<link rel="stylesheet" href="../css/myhead.css">
+	<link rel="stylesheet" href="../js/jcrop/css/jquery.Jcrop.css" type="text/css"></link>
+	<script src="../js/jquery-1.8.3.js"></script>
+	<script src="../js/headaccount.js"></script>
+	<script type="text/javascript" src="../js/jcrop/js/jquery.min.js"></script>
+	<script type="text/javascript" src="../js/jcrop/js/jquery.Jcrop.js"></script>
+</head>
+<body>
+	<header class="lhead">
+		<div class="lwrap clearfix">
+			<h1 class="lh1 lfloatl">
+				<a class="lh1href" href="index.html">
+					<img class="lfloatl" src="../image/emindlogo.png" alt="">
+					<span class="lborder lfloatl"></span>
+					<span class="lfloatl lh1text">一铭账户系统</span>
+				</a>
+			</h1>
+			<div class="lsignwrap">
+				<div class="lindexpage">
+					<a class="lpaliingr" target="_block" href="index.html">Emind&nbsp;首页&gt;&gt;</a>
+				</div>
+				<div  class="laccountname">
+					<a id="accountName" href="javascript:;" class="laccountn lfloatl">欢迎您,小桥流水</a>
+					<span id="accountNameIco" class="ljt lfloatl"></span>
+					<ul id="accountlist" class="laccountnamelist">
+						<li class="laccountnameli"><a index="ac" href="javascript:;">账户信息</a></li>
+						<li class="laccountnameli"><a index="ac" href="javascript:;">退出</a></li>
+					</ul>
+				</div>
+				<a href="javascript:;"  class="lheadico2"><img src="../image/headico2.png" alt=""></a>
+			</div>
+		</div>
+	</header>
+	<div class="lmainmenu-wrap">
+		<div class="lwrap">
+			<nav class="lmainmenu clearfix">
+				<a href="index.html" class="lfloatl">首页</a>
+				<a href="myhead.html" class="lfloatl ">账户信息</a>
+				<a href="backstagemanage.html" class="lfloatl ">管理控制台</a>
+				<a href="accountproblem.html" class="lfloatl menuactive">帮助中心</a>
+			</nav>
+		</div>
+	</div>
+	<div class="lwrap clearfix">
+		<ul class="lsidemenu lfloatl">
+			<li class="lsideli lsidel1 lsideliactive">
+				<h2><a href="javascript:;">我的头像</a></h2>
+			</li>
+			<li class="lsideli lsidel2 ">
+				<h2><a href="basicdata.html">基本资料</a></h2>
+			</li>
+			<li class="lsideli ">
+				<h2><a href="detailedinfo.html">详细信息</a></h2>
+			</li>
+			<li class="lsideli">
+				<h2><a href="modifyPassword.html">修改密码</a></h2>
+			</li>
+			<li class="lsideli ">
+				<h2><a href="accountsystem.html">登录邮箱</a></h2>
+			</li>
+			<li class="lsideli">
+				<h2><a href="boundphone.html">绑定手机</a></h2>
+			</li>
+			<li class="lsideli">
+				<h2><a href="javascript:;">登陆记录</a></h2>
+			</li>
+
+		</ul>
+		<div class="lfloatl lemailland">
+			<h2 class="lh2title">我的头像</h2>
+			<form id="uploadheadimgform" class="" action="<%=request.getContextPath()%>/UploadDemo/uploadHeadImage" method="post" enctype="multipart/form-data">
+				<div  class="lmyheadimg">
+					<div class="modal-body lpositionr text-center ">
+						<div class="zxx_main_con">
+							<div class="zxx_test_list">
+								<img alt="默认头像" class="mrimg" src="../image/headimg.png" id="cutimghead" />
+							<!--<c:if test="${imgCut}==null || ${imgCut}==''">-->
+								<!--<img alt="默认头像" class="mrimg" src="../image/headimg.png" id="cutimghead" />-->
+							<!--</c:if>-->
+							<!--<c:if test="${imgCut}!=null || ${imgCut}!=''">-->
+								<!--<img alt="默认头像" class="mrimg" src="<%=request.getContextPath()%>/${imgCut}" id="cutimghead2" />-->
+							<!--</c:if>-->
+                            <img alt="默认头像" src="../image/headimg.png" id="cutimg" />
+                            <input type="hidden" id="x" name="x" />
+                            <input type="hidden" id="y" name="y" />
+                            <input type="hidden" id="w" name="w" />
+                            <input type="hidden" id="h" name="h" />
+                        </div>
+						<div id="preview-pane" class="modalbtn-body">
+							<div class="preview-container">
+								<img id="previewimg" src="" class="jcrop-preview" alt="预览">
+							</div>
+						</div>
+                    </div>
+                </div>
+
+            </div>
+            <p id="falsetipurl" class="lfalsebox clearfix"> <span class="lfalseico lfloatl"></span><span class="lfalsetext lfloatl">请上传正确格式图片</span></p>
+            <div class="lrowbtn-wrap modal-footer">
+                <div class="lrowbtn ">
+                    <a class="lbc lxztp" href="javascript:;">选择图片</a>
+                    <a class="lbc lbctx" href="javascript:;">保存头像</a>
+                    <a class="lbc lcxxz" href="javascript:;">重新选择</a>
+					</div>
+					<div class="lrowbtn lrowbtn2">
+						<input class="photo-file lbc lxztp" type="file" value="选择图片" name="imgFile" id="fcupload" />
+						<button id="submit" class="lbc lbctx">保存头像</button>
+						<a id="reupload" class="lbc lcxxz" href="javascript:;">重新选择</a>
+					</div>
+				</div>
+				<p class="limgtip">支持JPG、PNG、GIF图片类型，不能大于3M，推荐尺寸：180PX*180PX</p>
+			</form>
+		</div>
+	</div>
+	<footer class="lfooter lmargint19">
+		<p class="lfootertext"><span class="l2016">2016</span><a class="lemind" href="javascript:;">&copy;emind</a></p>
+	</footer>
+	<script type="text/javascript">
+		$('#reupload').click(function (){
+			window.location.reload();
+		});
+		function viewUrl(){
+			var imgUrlFormat = $('#fcupload').val();
+			var onoff = /.[jpg,png,gif]$/i.test(imgUrlFormat);
+			if(onoff){
+				return true;
+			}else {
+				return false;
+			}
+		}
+		$('#uploadheadimgform').submit(function (){
+			var viewu = viewUrl();
+			if(!viewu){
+				return false;
+			}
+			var fileSzie = $('#fcupload')[0].files[0].size;
+			var  fileSiz = Number(fileSzie/1048576).toFixed(3);
+			if(fileSiz>3){
+				alret("图片不能大于3M");
+				return false;
+			}
+			$('#cutimghead').attr('src','<%=request.getContextPath()%>/${imgCut}');
+			$('#cutimghead').show(0);
+			$('#preview-pane').hide(0);
+			$('.jcrop-holder').hide(0);
+			$('.lxztp').css('display','inline-block');
+			$('.lcxxz').css('display','none');
+			$('.lbctx').css('display','none');
+		});
+		//定义一个全局api，这样操作起来比较灵活
+		var api = null,
+
+				boundx,
+				boundy,
+
+				$preview = $('#preview-pane');
+				$pcnt = $('#preview-pane .preview-container');
+				$pimg = $('#preview-pane .preview-container img');
+				xsize = $pcnt.width();
+				ysize = $pcnt.height();
+		$('#fcupload').bind('change',function (){
+			var _this = $(this)[0];
+			readURL(_this);
+		});
+		function readURL(input) {
+			var s = $('#fcupload').val();
+			if(s){
+				var fileSzie = $('#fcupload')[0].files[0].size;
+				var  fileSiz = Number(fileSzie/1048576).toFixed(3);
+				if(fileSiz>3){
+					alret("图片不能大于3M");
+					return false;
+				}
+				var viewu = viewUrl();
+				if(viewu){
+					$('#falsetipurl').css('height',0);
+
+				}else {
+					$('#falsetipurl').css('height','auto');
+					return false;
+				}
+				$('#preview-pane').show(0);
+				$('#cutimghead').hide(0);
+				$('.lxztp').css('display','none');
+				$('.lcxxz').css('display','inline-block');
+				$('.lbctx').css('display','inline-block');
+			}
+			if (input.files && input.files[0]) {
+				var reader = new FileReader();
+				reader.readAsDataURL(input.files[0]);
+				reader.onload = function(e) {
+					$('#cutimg').removeAttr('src');
+					$('#cutimg').attr('src', e.target.result);
+					$pimg.removeAttr('src');
+					$pimg.attr('src', e.target.result);
+
+					api = $.Jcrop('#cutimg', {
+						setSelect: [ 20, 20, 200, 200 ],
+						aspectRatio: 1,//截取框尺寸（例16/9）
+						onSelect: updateCoords,
+						onChange:updateCoords
+					});
+					var bounds = api.getBounds();
+					boundx = bounds[0];
+					boundy = bounds[1];
+					$preview.appendTo(api.ui.holder);
+				};
+				if (api != undefined) {
+					api.destroy();
+				}
+			}
+			function updateCoords(obj) {
+				$("#x").val(obj.x);
+				$("#y").val(obj.y);
+				$("#w").val(obj.w);
+				$("#h").val(obj.h);
+				if (parseInt(obj.w) > 0) {
+					var rx = xsize / obj.w;
+					var ry = ysize / obj.h;
+					$pimg.css({
+						width : Math.round(rx * boundx) + 'px',
+						height : Math.round(ry * boundy) + 'px',
+						marginLeft : '-' + Math.round(rx * obj.x) + 'px',
+						marginTop : '-' + Math.round(ry * obj.y) + 'px'
+					});
+				}
+			}
+			;
+		}
+	</script>
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="../css/CompleteData.css" />
+	</head>
+
+	<body>
+		<div class="jwrap">
+			<div class="jhead">
+				<ul class="jlogo">
+					<li class="jlogol"><a href="index.html"></a></li>
+					<li class="jlogor">
+						<a href="../html/signin.html">登录>></a>
+					</li>
+				</ul>
+			</div>
+			<div class="jnar">
+				<p class="jfand">补全资料</p>
+				<table border="" cellspacing="" cellpadding=""class="jbiaodan">
+					<tr class="jtr jtr1">
+						<td class="jtd1 jtd">用户名：</td>
+						<td colspan="2" class="jtd2 jtd"><input type="text" class="jyhm"placeholder="手机号或邮箱"/></td>
+						<td class="jtd3 jtd"><div class="jp1"></div><div class="jp2">用户名应为手机号或邮箱</div></td>
+					</tr>
+					<tr class="jtr jtr0">
+						<td class="jtd1 jtd">验证码：</td>
+						<td class="jtd2 jtd"><input type="text"placeholder="输入验证码" class="jshuru" /><input type="button" value="获取验证码" class="jhuoqu" /></td>
+						<td class="jtd3 jtd"><div class="jp1"></div><div class="jp2">验证码有误，请重新输入</div></td>
+					</tr>
+					<tr class="jtr jtr2">
+						<td class="jtd1 jtd">密码：</td>
+						<td colspan="2" class="jtd2 jtd"><input type="password" class="jyhm"placeholder="请输入密码"/></td>
+						<td class="jtd3 jtd"><div class="jp1"></div><div class="jp2">密码应为2-148个字符</div></td>
+					</tr>
+					<tr class="jtr jtr3">
+						<td class="jtd1 jtd">确认密码：</td>
+						<td colspan="2" class="jtd2 jtd"><input type="password" class="jyhm"placeholder="请再次输入密码"/></td>
+						<td class="jtd3 jtd"><div class="jp1"></div><div class="jp2">密码应为2-148个字符</div></td>
+					</tr>
+					<tr class="jtr4 jtr">
+						<td class="jtd1 jtd">验证码：</td>
+						<td class="jtd2 jtd"><input type="text" class="jyzm"placeholder="输入验证码"/><input type="text" class="jyzm1"/></td>
+						<td class="jtd3 jtd"><a href="javascript:;" class="jhuan">换一张</a></td>
+					</tr>
+				</table>
+				<input type="button" name="" class="jyes" value="提交" id="next" />
+			</div>
+		</div>
+	</body>
+<script type="text/javascript">
+	var next=document.getElementById('next');
+	next.onmouseover=function(){
+		next.style.background='#0150ab'
+	}
+	next.onmouseout=function(){
+		next.style.background='#005bc4'
+	}
+/**********************************账号格式判断*****************************************/
+		$('#txt_username').bind('blur', function() {
+		$(this).css('color', '#323230');
+		var v = $('#txt_username').val();
+		if(v != '') {
+			var oPhone = /^1[34578]\d{9}$/.test(v);
+			var oEmail = /^(\w-*\.*)+@(\w-?)+(\.\w{2,})+$/g.test(v);
+			if(oPhone || oEmail) {
+				$('#p0').show(0);
+				$('#p1').hide(0);
+			} else {
+
+				$('#p1').show(0);
+				$('#p0').hide(0);
+			}
+		} else {
+			$('#p1').hide(0);
+			$('#p0').show(0);
+			return;
+		}
+	});
+</script>
+</html>

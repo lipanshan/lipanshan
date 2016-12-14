@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>table3</title>
+	<link rel="stylesheet" href="../css/table3.css">
+	<script src="../js/jquery/jquery-1.9.1.min.js"></script>
+</head>
+<body>
+	<form >
+		<div id="lformwrap" >
+			<table class="lforms">
+				<tr class="lbordern">
+					<th class="lbordern" colspan="8"><h2 class="lh2">软件使用需求申请表</h2></th>
+				</tr>
+				<tr class="lbordern lrow1">
+					<th class="lbordern lright">申请部门：</th>
+					<th class="lbordern"><input class="lbottom" type="text"></th>
+					<th class="lbordern lright">经手人：</th>
+					<th class="lbordern"><input class="lbottom" type="text"></th>
+					<th class="lbordern lright">联系电话：</th>
+					<th class="lbordern"><input class="lbottom" type="text"></th>
+					<th class="lbordern" colspan="2">填表日期：<input class="lbottom lwidth28" type="text">年<input class="lbottom lwidth28"  type="text">月<input class="lbottom lwidth28"  type="text">日</th>
+				</tr>
+				<tbody id="ltbody1">
+					<tr>
+						<th>序号</th>
+						<th>软件类型</th>
+						<th colspan="2">软件用途</th>
+						<th colspan="2">功能需求</th>
+						<th>申请许可数<br>（单位：个）</th>
+						<th>备注</th>
+					</tr>
+					<tr>
+						<td>1</td>
+						<td>操作系统</td>
+						<td colspan="2"><input type="text"></td>
+						<td colspan="2"><input type="text"></td>
+						<td><input type="text"></td>
+						<td><input type="text"></td>
+					</tr>
+					<tr>
+						<td>2</td>
+						<td>办公软件</td>
+						<td colspan="2"><input type="text"></td>
+						<td colspan="2"><input type="text"></td>
+						<td><input type="text"></td>
+						<td><input type="text"></td>
+					</tr>
+					<tr>
+						<td>3</td>
+						<td>杀毒软件</td>
+						<td colspan="2"><input type="text"></td>
+						<td colspan="2"><input type="text"></td>
+						<td><input type="text"></td>
+						<td><input type="text"></td>
+					</tr>
+					<tr>
+						<td>4</td>
+						<td>其他软件</td>
+						<td colspan="2"><input type="text"></td>
+						<td colspan="2"><input type="text"></td>
+						<td><input type="text"></td>
+						<td><input type="text"></td>
+					</tr>
+					<tr>
+						<td>5</td>
+						<td><input type="text"></td>
+						<td colspan="2"><input type="text"></td>
+						<td colspan="2"><input type="text"></td>
+						<td><input type="text"></td>
+						<td><input type="text"></td>
+					</tr>
+					<tr>
+						<td>6</td>
+						<td><input type="text"></td>
+						<td colspan="2"><input type="text"></td>
+						<td colspan="2"><input type="text"></td>
+						<td><input type="text"></td>
+						<td><input type="text"></td>
+					</tr>
+				</tbody>
+				<tbody>
+					<tr class="lheight64">
+						<td conspan="2">信息技术部门<br>审核</td>
+						<td class="lright" colspan="7">审核人:<input class="laudit" type="text"><input class="lwidth28" type="text">年<input class="lwidth28" type="text">月<input class="lwidth28" type="text">日</td>
+					</tr>
+					<tr class="lheight64">
+						<td conspan="2">资产部门<br>审核</td>
+						<td class="lright" colspan="7">审核人:<input class="laudit" type="text"><input class="lwidth28" type="text">年<input class="lwidth28" type="text">月<input class="lwidth28" type="text">日</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</form>
+<script>
+$(function (){
+	// 在某个元素（elem）里面插入一行，行号lineNum;
+	function creatTr(elem,lineNum){
+		var str = '';
+		str+='<tr>'
+			str+='<td>'+lineNum+'</td>'
+			str+='<td><input type="text"></td>'
+			str+='<td colspan="2"><input type="text"></td>'
+			str+='<td colspan="2"><input type="text"></td>'
+			str+='<td></td>'
+			str+='<td></td>'
+		str+='</tr>'
+		elem.append(str);
+	}
+})
+</script>
+</body>
+</html>

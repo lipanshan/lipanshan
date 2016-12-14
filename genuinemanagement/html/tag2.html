@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>标签</title>
+	<link rel="stylesheet" href="../css/genuinemanageinfo.css">
+	<script src="../js/jquery/jquery-1.9.1.min.js"></script>
+<style>
+	.ltagbox {
+	width: 100%;
+	overflow: hidden;
+}
+.lnam-wrap {
+	width: 100%;
+	padding-top: 10px;
+	position: relative;
+	height: 36px;
+}
+.lnav-list {
+	
+	position: absolute;
+	left: 0;
+	top: 10px;
+	-webkit-transition: .5s;
+	-moz-transition: .5s;
+	-ms-transition: .5s;
+	transition: .5s;
+	z-index: 0;
+	border-bottom: 1px solid #f1f1f1;
+}
+.lnam-li {
+	margin-right: 1px;
+	border: 1px solid #ededed;
+	border-top-left-radius: 5px;
+	-webkit-border-top-left-radius: 5px;
+	-moz-border-top-left-radius: 5px;
+	-ms-border-top-left-radius: 5px;
+	-webkit-border-top-right-radius: 5px;
+	-moz-border-top-right-radius: 5px;
+	-ms-border-top-right-radius: 5px;
+	border-top-right-radius: 5px;
+	border-top-left-radius: 5px;
+	height: 34px;
+	margin-bottom: -1px;
+	color: #000;
+	text-align: center;
+	background-color: #f3f6fc;
+	position: relative;
+}
+.lnam-li h3 {
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 34px;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow-x: hidden;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+.lnam-li:hover ,
+.lnavactive {
+	color: #1188ec;
+	background-color: #fff;
+	border-bottom-color: #fff;
+	z-index: 35;
+}
+.lcont-list {
+	width: 100%;
+	height: 400px;
+	overflow: hidden;
+}
+.lcont-li {
+	display: none;
+}
+.lcont-li iframe ,
+.lcont-li {
+	width: 100%;
+	height: 100%;
+}
+.lmodifybtn {
+	display: none;
+	width: 120px;
+	height: 14px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin-left: -50px;
+	margin-top: -17px;
+	z-index: 30;
+}
+
+</style>
+</head>
+<body>
+	<div id="llabelbox" class="ltagbox">
+		<div class="lnam-wrap"><ul id="lnavlist" class="lnav-list"></ul></div>
+		<ul id="lcntlist" class="lcont-list"></ul>
+	</div>
+<script>
+$(function (){
+	var nowLeft = 0;
+	//遍历生成标签 data参数为后台数据
+	function creatLabel(startNum,endNum,data){ 
+		var str1 = '';
+		var str2 = '';
+		var labelw = ($('.lnam-wrap').width()/($('#lnavlist').children().size()+(endNum-startNum)))-21;
+		if(labelw>=133){
+			labelw = 133;
+		}
+		$('#lnavlist').css('width',(labelw+21)*endNum);
+		for(var i = startNum; i < endNum;i++){ 
+			//生成标签
+			str1+='<li style="width:'+labelw+'px;" class="lnam-li lfloatl"><h3 class="clearfix">标题标题标题标题标题标题标题'+i+'</h3></li>';
+			// 生成标签相对应的内容
+			str2+='<li class="lcont-li"><iframe src="http://" frameborder="0"></iframe></li>';
+		}
+		for(var j = 0;j<$('#lnavlist').children().size()+(endNum-startNum);j++){
+			$('#lnavlist').children().eq(j).css('width',labelw);
+		}
+		$('#lnavlist').append(str1);
+		$('#lcntlist').append(str2);
+		function showDiv(index){
+			$('#lcntlist').children().hide(0);
+			$('#lcntlist').children().eq(index).show(0);
+		}
+		function addTagStyle(elem){
+			elem.addClass('lnavactive');
+			elem.siblings().removeClass('lnavactive');
+			var n = elem.index();
+			showDiv(n);
+		}
+		$('#lnavlist').children().unbind('click').bind('click',function (ev){
+			var _this = $(this);
+			addTagStyle(_this);
+		});
+	
+	}
+	 creatLabel(4,20);  //调用生成几个标签
+
+
+})
+</script>
+</body>
+</html>

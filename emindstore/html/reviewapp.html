@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>审核应用</title>
+	<!-- reviewinfo reviewapp -->
+	<link rel="stylesheet" href="../css/header.css">
+	<link rel="stylesheet" href="../css/reviewapp.css">
+	<link rel="icon" href="../favicon.ico">
+	<script src="../js/jquery/jquery.js"></script>
+	<script src="../js/publiclogin.js"></script>
+	<script src="../js/reviewapp.js"></script>
+	<script src="../js/city.js"></script>
+	<script src="../js/html5shiv.min.js"></script>
+	
+</head>
+<body>
+	<header class="lheader">
+		<div class="lwrap clearfix">
+			<h1 class="floatl lh1">
+				<a href="index.html">
+					<img src="../images/web-index-ico/h1.png" alt="一名软件">
+				</a>
+			</h1>
+			<ul class="lmainmenu floatl">
+				<li class="lliactive">
+					<a class="lmenu-cnt" href="index.html">
+						首页
+					</a>
+					<span class="lbtm-line"></span>
+				</li>
+				<li>
+					<a id="lsy-menu-glgzt" class="lmenu-cnt" href="javascript:;">
+						管理控制台
+					</a>
+				</li>
+				<li>
+					<a class="lmenu-cnt" href="javascript:;">
+						服务
+					</a>
+				</li>
+				<li>
+					<a class="lmenu-cnt" href="javascript:;">
+						文档
+					</a>
+				</li>
+				<li>
+					<a class="lmenu-cnt" href="javascript:;">
+						论坛
+					</a>
+				</li>
+			</ul>
+			<div class="ldl-regtister">
+				<a id="ldlzc-dlbtn" class="floatl ldl" href="javascript:;">登陆</a>
+				<a id="ldlzc-zcbtn" class="floatl lzc" href="javascript:;">注册</a>
+			</div>
+			<div class="ldenglu" id="ldenglu2">
+				<p class="llanding-name floatl">北京一铭</p><span class="lsj floatl"></span>
+				<ul class="llonding-list" id="llonding-li">
+					<li class="ldl-ist" >
+						<a class="la1" id="lxgtu-xgbtn" href="javascript:;">密钥中心</a>
+					</li>
+					<li class="ldl-ist">
+						<a class="la2" id="tuchu" href="javascript:;">退出</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</header>
+	<div class="lwrap">
+		<form class="lcontent" id="lapk-formdata">
+
+			<!-- 在测试中必须提交account暂时先写一个等测试的时候取消Star -->
+			<input type="hidden" id="laccount" name="account" >
+			<!-- 在测试中必须提交account暂时先写一个等测试的时候取消E -->
+			<div class="lupload-app-wrap clearfix" >
+				<h2 class="lh2 floatl">
+					<p>
+						安装包审核
+					</p>
+				</h2>
+				<p class="reasonname">item301</p>
+			</div>
+			<div  class="lpeople-msg clearfix">
+				<div class="limg-wrap floatl">
+					<!-- <input type="file" name="up" > -->
+					<img id="lappImg" src="../images/web-index-ico/bt-3.png" alt="">
+				</div>
+				<div class="lapp-msg floatl">
+					<div class=" clearfix">
+						<p class="lapp-msg-xq floatl">
+							包名：
+						</p>
+						<p id="pack" class="lapp-msg-text floatl"></p>
+						<input type="hidden" name="" id="lhpackageName">
+					</div>
+					<div class=" clearfix">
+						<p for="lapp-name" class="lapp-msg-xq floatl">
+							版本名称：
+						</p>
+						<p id="packageName" class="lapp-msg-text floatl"></p>
+						
+						<input type="hidden" name="version" id="lhversion2">
+					</div>
+					<div class=" clearfix">
+						<p for="lapp-name" class="lapp-msg-xq floatl">
+							版本号：
+						</p>
+						<p id="lversion" class="lapp-msg-text floatl"></p>
+						<input type="hidden" name="versionNum" id="lhversion">
+					</div>
+					<div class=" clearfix">
+						<p for="lapp-name" class="lapp-msg-xq floatl">
+							系统支持：
+						</p>
+						<p id="lsdkVersion" class="lapp-msg-text floatl"></p>
+						<input type="hidden" name="sdkVersion" id="lhsdkVersion">
+					</div>
+				</div>
+				<div class="lapp-msg2 floatl">
+					<div class=" clearfix">
+						<p for="lapp-name" class="lapp-msg-xq floatl">
+							AppID：
+						</p>
+						<p id="lappId" class="lapp-msg-text floatl"></p>
+						<input type="hidden" name="" id="">
+					</div>
+					<div class=" clearfix">
+						<p for="lapp-name" class="lapp-msg-xq floatl">
+							AppKey:
+						</p>
+						<p id="lappKey" class="lapp-msg-text floatl"></p>
+						<input type="hidden" name="" id="">
+					</div>
+					<div class=" clearfix">
+						<p for="lapp-name" class="lapp-msg-xq floatl">
+							AppSecret:
+						</p>
+						<p id="lappSecret" class="lapp-msg-text floatl"></p>
+						<input type="hidden" name="" id="">
+					</div>
+				</div>
+				<div id="lvoxapp" class="lapp-upbtn floatl">
+					<a id="lappDownload" href="#" >下载APK</a>
+				</div>
+			</div>
+			<div class="lupload-app-wrap  clearfix lmargin20">
+				<h2 class="lh2">
+					<p>
+						完善应用信息
+					</p>
+				</h2>
+				 <p class="reasonname">item302</p>
+			</div>
+			<div class="lwsyyxx">
+				<div class="lrow1 clearfix">
+					<p class="lwsyyxxp">*应用名称:</p>
+					<div class="linput-wrap clearfix">
+						<input type="text" name="appname"  id="lappname" placeholder="20字以内" value="" class="floatl">
+					</div>
+				</div>
+				<div class="lrow2 clearfix">
+					<p class="lwsyyxxp">*应用类型:</p>
+					<div class="linput-wrap2 floatl">
+						<input class="floatl" type="checkbox" name="type" id="lpcyy" checked value="p">
+						<label class="floatl" for="lpcyy">PC/平板应用</label>
+						<input class="floatl" type="checkbox" name="type" id="lsjyy" value="m">
+						<label class="floatl" for="lsjyy">手机应用</label>
+					</div>
+				</div>
+				<div class="lrow3 clearfix" >
+					<p class="lwsyyxxp">*应用分类:</p>
+					<div class="linput-wrap4 ">
+						<div class="lselect-wrap"><div class="jsel1">
+        		<div class="jsel2"><div class="jsel3"></div></div>
+							<select name="categoryId" id="" class="lgame lyxfl1">
+								<option id="categoryId" value=""></option>
+					
+							</select></div>
+						</div>
+						<div class="lselect-wrap lmagin31"><div class="jsel1">
+        		<div class="jsel2"><div class="jsel3"></div></div>
+							<select name="subCategoryId" id="" class="lgame lyxfl2">
+								<option id="subCategoryId" value=""></option>
+							</select></div>
+						</div>
+					</div>
+				</div>
+				<div class="lrow1 lrow4 clearfix">
+					<p class="lwsyyxxp">*搜索关键字:</p>
+					<div class="linput-box floatl">
+						<div class="linput-wrap lbgcolora clearfix">
+							<input type="text" name="keyword1" value=""  id="keywords" placeholder="输入关键字" class="floatl lgjz">
+							<input type="text" name="keyword2" value=""  id="keywords2" placeholder="输入关键字" class="floatl lgjz">
+							<input type="text" name="keyword3" value=""  id="keywords3" placeholder="输入关键字" class="floatl lgjz">
+						</div>
+						<p class="ltsxx">
+							<span id="lkeyw-tip">关键字最多4个汉字</span>
+							<span class="llr lcolora7">例如:</span>
+							<a class="lcolora7" href="javascript:;">游戏，</a>
+							<a class="lcolora7" href="javascript:;">平台</a>
+						</p>
+					</div>
+				</div>
+				<div class="lrow1 lrow4 clearfix">
+					<p class="lwsyyxxp">*应用简介:</p>
+					<div class="linput-box floatl">
+						<div class="linput-wrap clearfix">
+							<input type="text" name="introduce" value=""  id="introduce" placeholder="输入最少15个汉字，不多于30个汉字的简介" class="floatl">
+						</div>
+						<p class="ltsxx">
+							<span>应用简介,不少于15个汉字，不多于30个汉字</span>
+						</p>
+					</div>
+				</div>
+				<div class="lrow5 clearfix">
+					<p class="lwsyyxxp">*应用描述:</p>
+					<textarea name="description" id="description"></textarea>
+				</div>
+				<div class="lrow5 clearfix">
+					<p class="lwsyyxxp">更新日志:</p>
+					<textarea name="versionlog" id="lupdata"></textarea>
+				</div>
+				<div class="lrow6 clearfix">
+					<!--  收费需要更改，暂时先这样-->
+					<p class="lwsyyxxp">*收费描述:</p>
+					<div class="linput-wrap6 floatl">
+						<input type="radio" checked id="lmf" name="price" value="0">
+						<label for="lmf">免费</label>
+						<input type="radio" id="lsf" name="price" value="1">
+						<label for="lsf">收费</label>
+					</div>
+				</div>
+
+				<div class="lrow6 clearfix">
+					<p class="lwsyyxxp">*广告状态:</p>
+					<div class="linput-wrap6 floatl">
+						<input type="radio" checked id="lwgg" name="existadv" value="0">
+						<label for="lwgg">无广告</label>
+						<input type="radio" id="lnqgg" name="existadv" value="1">
+						<label for="lnqgg">内嵌广告</label>
+					</div>
+				</div>
+				<div class="lrow6 clearfix">
+					<p class="lwsyyxxp">*支持语言:</p>
+					<div class="linput-wrap6 floatl">
+						<input type="checkbox" checked id="ljtzw" name="language" value="zh_CN">
+						<label for="ljtzw">简体中文</label>
+						<input type="checkbox" id="lyw" name="language" value="us_EN">
+						<label for="lyw">英文</label>
+					</div>
+				</div>
+			</div>
+			<div class="lupload-app-wrap clearfix lmargin8">
+				<h2 class="lh2 ">
+					<p>
+						上传图片和截图
+					</p>
+				</h2>
+				 <p class="reasonname">item303</p>
+			</div>
+			<div class="lsctphjt">
+				<div class="lyytb clearfix">
+					<p class="lwsyyxxp">*应用图标:</p>
+					<div class="lup-img floatl">
+						<p class="clearfix lbs">
+							<span class="floatl">请上传</span>
+							 <span class="floatl lcolor32">png</span>
+							 <span class="floatl">格式图标,背景透明且带圆角,建议上传分辨率</span>
+							 <span class="floatl lcolor32">512px*512px</span>
+							 <span class="floatl">(最低256px*256px)最大100k</span>
+						</p>
+						<div id="lvox" class="limg">
+							<input type="file" id="file_upload" >
+							<img id="imagepath" src="../images/web-index-ico/bt-3.png" alt="">
+						
+							<!-- 隐藏的上传进度条 -->
+							<div id="fl-wrap" class="filelist-wrap">
+								<div id="filelist" class="lhide-jdt">
+								
+								</div>
+
+							</div>
+							
+							<input type="hidden" name="logoPath" id="logoPath">
+						</div>
+					</div>
+				</div>
+				<div class="lyytb clearfix">
+					<p class="lwsyyxxp">*应用截图:</p>
+					<div class="lup-img floatl">
+						<p class="clearfix lbs">
+							<span class="floatl">请上传至少</span>
+							 <span class="floatl lcolor32">4</span>
+							 <span class="floatl"> 张图片,规格：720*1280或1080*1920,支持</span>
+							 <span class="floatl lcolor32">横屏或竖屏</span>
+						</p>
+						<ul class="limg-wrapn clearfix" id="shotimg">
+							<li id="lvoxj1" class="limg2 floatl">
+								<input type="file"   id="file_uploadj1" >
+								<img src="../images/web-index-ico/bt-3.png" id="imagepathj1" alt="">
+								<input type="hidden" name="imagePath" id="imagePath2">
+
+								
+								<!-- 隐藏的上传进度条 -->
+								<div class="filelist-wrap lleft120">
+									<div id="filelistj1" class="lhide-jdt ">
+									
+									</div>
+
+								</div>
+							</li>
+							<li class="limg2 floatl">
+								<img src="../images/web-index-ico/bt-3.png" id="imagepathj2" alt="">
+							</li>
+							<li class="limg2 floatl">
+								<img src="../images/web-index-ico/bt-3.png" id="imagepathj3" alt="">
+							</li>
+							<li class="limg2 floatl">
+								<img src="../images/web-index-ico/bt-3.png" id="imagepathj4" alt="">
+							</li>
+							<li class="limg2 floatl">
+								<img src="../images/web-index-ico/bt-3.png" id="imagepathj5" alt="">
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="lbeizhu clearfix">
+				<p class="lbz floatl">备注:</p>
+				<p class="lcolor19 floatl">所有文件上传仅接受JPEG/PNG格式(*涉及到新闻、股票、医疗、彩票、银行业务等还需要提供相应版权证明)</p>
+			</div>
+			<div class="lbtn-submit">
+				<input class="ltj" id="submit"  type="button" value="确认应用审核通过" disabled="false">
+				<input class="ltj2" id="lreasonsub" type="button" value="审核有问题" disabled="false">
+				
+			</div>
+		</form>
+	</div>
+	<div class="lshade"></div>
+	<div class="jbg"></div>
+	<div class="jtk">
+		<div class="jx"></div>
+		<div class="jtk-b">
+			<p class="jz">您确定进行审核通过吗？确定将进行提交!</p>
+			<div class="jtk-c">
+				<div class="jqx">取消</div>
+				<div id="lsure" class="jqr">确认</div>
+			</div>
+		</div>
+
+	</div>
+
+	<!--审核成功弹窗-->
+	<div class="jtk2">
+		<div class="jx2"></div>
+		<div class="jtk-b2">
+			<p id="lshts" class="jz2">审核成功!</p>
+			<div class="jtk-c2">
+				<dvi class="jxl"></dvi>
+				<div id="lshtstext" class="jz3">恭喜您！您审核通过了！</div>
+			</div>
+		</div>
+
+	</div>
+	   <!-- 审核提交后有问题弹窗 -->
+    <div  class="lshywt">
+    	<form id="lshenheform">
+    		<h2>您的审核有问题,请选择问题编号！</h2>
+    		<div id="lreason-list">
+    			
+    		
+	  <!--   		<div class="litem-wrap clearfix">
+	    			<input name="reason" value="item001" class="floatl litem" id="litem1" type="checkbox" name="" >
+	    			<label class="floatl" for="litem1">
+	    				<span class="llabel-span floatl">item</span>
+	    				<span class="llabel-span floatl">001</span>
+	    			</label>
+	    		</div>
+	    		<div class="litem-wrap clearfix">
+	    			<input name="reason" value="item002" class="floatl litem" id="litem2" type="checkbox" name="" >
+	    			<label class="floatl" for="litem2">
+	    				<span class="llabel-span floatl">item</span>
+	    				<span class="llabel-span floatl">002</span>
+	    			</label>
+	    		</div>
+	    		<div class="litem-wrap clearfix">
+	    			<input  name="reason" value="item003" class="floatl litem" id="litem3" type="checkbox" name="" >
+	    			<label class="floatl" for="litem3">
+	    				<span class="llabel-span floatl">item</span>
+	    				<span class="llabel-span floatl">003</span>
+	    			</label>
+	    		</div> -->
+    		</div>
+    		<p class="clearfix lx-qxqr lcenter">
+    			<a id="lcancel2" class="lcolorqx" href="javascript:;">取消</a>
+    			<a id="lsure2" class="lcolorsr" href="javascript:;">确认</a>
+    		</p>
+    	</form>
+    	<div id="lxbtn3" class='lxbtns'>
+    		
+    	</div>
+    </div>
+    <!-- 修改密码 -->
+    <div id="lxgma-onoff" class="banxin" style="display:none">
+        <div class="login">
+            <div class="login-wd">修改密码</div>
+            <div class="login-ct ">
+				<!-- 修改密码表单 -->
+                <form action="" class="lxgmmform" id="xgmmformdata">
+                   	<div class="form-wrap">
+                   		<!-- 旧密码输入框 -->
+                   		<div class="row1 clearfix ">
+                   			<label for="">旧密码</label>
+                   			<input id="loldPassword" type="password" name="password" placeholder="请输入您的旧密码" autocomplete="off">
+                   			<span class="lduigou"></span>
+                   		</div>
+                         <div class="row2 clearfix">
+                   			<label for="">新密码</label>
+                   			<input id="lnewPassword" type="password" name="newPass" placeholder="请输入您的新密码" autocomplete="off">
+                   			<span class="lduigou"></span>
+                   		</div>
+                   		<div class="row2 clearfix">
+                   			<label for="">新密码</label>
+                   			<input id="lnewPassword2" type="password" name="newPass" placeholder="请再次输入您的新密码" autocomplete="off">
+                   			<span class="lduigou"></span>
+                   		</div>
+                   		<div id="lxgmmsubmit" class="row3 ">
+                        <a class="row3Btn" href="javascript:;">确定</a>
+                        <!-- 调试时需要用户名咱是先写一个以后在本地存储中去取 -->
+                        <input type="hidden" id="lxgmm-account" name="account">
+                        <!-- 用来存储验证码 -->
+                        <input type="hidden" name="vcode" id="vcode">
+                        <!-- 修改密码在后台分为两种update(正常修改) forget(忘记密码修改) -->
+                         <input type="hidden" name="type" value="update" id="ltype">
+                   		</div>
+                   	</div>
+                </form>
+            </div>
+        </div>
+        <div class="lx-btn"></div>
+    </div>
+	<footer class="lfooter">
+		<div class="lwrap">
+			<p class="lfoot-text">
+				<span>
+					Copyright&nbsp;&copy;&nbsp;2016-2025&nbsp;Downjoy.&nbsp;Allrights&nbsp;Reserved.
+				</span>
+				<a href="#">&nbsp;一铭软件股份有限公司 版权所有</a>
+			</p>
+		</div>
+	</footer>
+
+</body>
+</html>

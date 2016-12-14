@@ -1,0 +1,546 @@
+.div {
+    clear: none;
+    width: 974px;
+    min-height:900px;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: #FFFFFF;
+    padding-top: 20px;
+    padding-left: 16px;
+    padding-right: 10px;
+    display: block;
+}
+
+.login1 {
+    vertical-align: middle;
+    font-size: large;
+    font-family: "microsoft yahei";
+    font-weight: normal;
+    background-color: #F4F4F4;
+    color: #3385ff;
+    margin-left: 14px;
+    margin-right: 14px;
+    padding-top: 11px;
+    padding-bottom: 14px;
+    clear: both;
+}
+.login1 h3 {
+    width: 400px;
+    margin-left: 24px;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 20px;
+    color: #3285ff;
+    padding-top: 2px;
+    border-left: 4px solid #3285ff;
+    padding-left: 10px;
+}
+.reasonname {
+    float: right;
+    width: 400px;
+    text-align: right;
+    font-size: 20px;
+    line-height: 20px;
+    color: #3285ff;
+    padding-top: 2px;
+    padding-right: 20px;
+
+}
+
+.num , 
+.realName,
+.nick , 
+.id ,
+.num1 ,
+.email ,
+.telephone,
+.mobile ,
+.qq ,
+.payName,
+.openedBankName,
+.licenseNum{
+    height: 12px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    background-color: #F4F4F4;
+    font-size: 12px;
+    line-height: 12px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    overflow: hidden;
+    font-family: "microsoft yahei";
+    margin-top: 0;
+    color: #171110;
+    margin-left: 20px;
+    border: 0;
+    padding-left: 15px;
+}
+
+label {
+    margin-top: 20px;
+    display: block;
+    font-family: "microsoft yahei";
+    font-size: 14px;
+    line-height: 36px;
+    text-align: end;
+    margin-right: 42%;
+    clear: both;
+    /*min-height: 36px;*/
+    height: 36px;
+    vertical-align: middle;
+}
+label>input , label>span{
+    float: left;
+
+}
+ label>span{
+    display: block;
+    width: 106px;
+    text-align: right;
+ }
+ label>input {
+    width: 408px !important;
+
+ }
+.num > input {
+    border: none;
+    margin-top: 5px;
+    display: block;
+    margin-left: 50px;
+    background-color: #F4F4F4;
+}
+.end-wd {
+    vertical-align: middle;
+    height: 35px;
+    width: 100%;
+    font-size: small;
+    font-family: "microsoft yahei";
+    font-weight: normal;
+    background-color: #3385ff;
+    color: #F4F4F4;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.num1 {
+    width: 196px;
+    height: 36px;
+    line-height: 36px;
+    padding: 0;
+    margin: 0 11px 0 20px;
+    text-align: center;
+    text-indent: 10px;
+}
+
+
+
+
+.financeEmail {
+    height: 30px;
+    width: 400px;
+    border-radius: 20px;
+    background-color: #F4F4F4;
+    font-size: 12px;
+    line-height: 40px;
+    overflow: hidden;
+    font-family: "microsoft yahei";
+    margin-top: 0;
+    color: #171110;
+    margin-left: 20px;
+    border: 0;
+    padding-left: 20px;
+}
+.financeMobile {
+    height: 30px;
+    width: 400px;
+    border-radius: 20px;
+    background-color: #F4F4F4;
+    font-size: 12px;
+    line-height: 40px;
+    overflow: hidden;
+    font-family: "microsoft yahei";
+    margin-top: 0;
+    color: #171110;
+    margin-left: 20px;
+    border: 0;
+    padding-left: 20px;
+}
+.financeName {
+    height: 30px;
+    width: 400px;
+    border-radius: 20px;
+    background-color: #F4F4F4;
+    font-size: 12px;
+    line-height: 40px;
+    overflow: hidden;
+    font-family: "microsoft yahei";
+    margin-top: 0;
+    color: #171110;
+    margin-left: 20px;
+    border: 0;
+    padding-left: 20px;
+}
+.taxNum {
+    height: 30px;
+    width: 400px;
+    border-radius: 20px;
+    background-color: #F4F4F4;
+    font-size: 12px;
+    line-height: 40px;
+    overflow: hidden;
+    font-family: "microsoft yahei";
+    margin-top: 0;
+    color: #171110;
+    margin-left: 20px;
+    border: 0;
+    padding-left: 20px;
+}
+.bankNum {
+    height: 30px;
+    width: 400px;
+    border-radius: 20px;
+    background-color: #F4F4F4;
+    font-size: 12px;
+    line-height: 40px;
+    overflow: hidden;
+    font-family: "microsoft yahei";
+    margin-top: 0;
+    color: #171110;
+    margin-left: 20px;
+    border: 0;
+    padding-left: 20px;
+}
+
+.div2{
+    clear: none;
+    width: 974px;
+    height: 900px;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: #FFFFFF;
+    padding-top: 20px;
+    display: none;
+    padding-left: 16px;
+    padding-right: 10px;
+}
+.lyegrbtn {
+    padding: 4px 10px 0 16px;
+    width: 974px;
+    margin: 0 auto;
+    background-color: #fff;
+}
+.lbtn-list {
+    border-bottom: 1px solid #dedede;
+}
+.lkfzxx {
+    float: left;
+    min-width: 114px;
+    padding-left: 15px;
+    padding-right: 18px;
+    height: 59px;
+    font-size: 16px;
+    line-height: 58px;
+    margin-bottom: -1px;
+    border-bottom: 3px solid transparent;
+}
+.lkfzxx a {
+    display: block;
+    text-align: center;
+    color: #161012;
+}
+.lkfzxx a:hover {
+    color: #3286ff;
+}
+.lkfzxx:hover {
+    border-bottom-color: #3286ff;
+}
+.lgrkfxx ,.lqykazxx{
+    display: none;
+    min-height: 900px;
+}
+.lmargint22 {
+    margin-top: 22px;
+}
+.lnowrap {
+    white-space: nowrap;
+}
+label .agree {
+    border-radius: 20px;
+    border: 0;color: white; 
+    background-color: #3385ff;
+    padding-left: 26px;
+    padding-right: 26px;
+    font-size: 14px;
+    line-height: 26px;
+    padding-top: 1px;
+    display: inline-block;
+}
+label .lradios {
+    width: 42px !important;
+    margin-top: 11px;
+}
+
+.lwidth220 {
+    width: 176px;
+}
+.lmiddle {
+    margin-top: 11px;
+}
+.lwidth28 {
+    width: 28px;
+}
+/********************隐藏的上传按钮的样式******************/
+.filelist-wrap {
+    float: left;
+    padding-left: 20px;
+    text-align: left;
+    color: #000;
+    font-size: 14px;
+    line-height: 14px;
+    padding-top: 7px;
+    padding-bottom: 6px;
+    position: absolute;
+    left: 308px;
+    top: 25px;
+    width: 70px;
+    height: 100px;
+    overflow: visible;
+    font-size: 14px;
+}
+.lfilelist {
+    opacity: 100;
+    filter:alpha(opacity = 100);
+    text-align: center;
+}
+.lfilelist , .lfilelist b{
+    display: block;
+    width: 120px;
+    font-size: 14px;
+    line-height: 20px;
+    color: #000;
+}
+.lhidebtn {
+    display: none;
+    min-width: 30px;
+    padding: 0 16px 0;
+    font-size: 14px;
+    line-height: 26px;
+    background-color: #3185ff;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    border-radius: 15px;
+    text-align: center;
+    z-index: 30;
+    position: absolute;
+    left: 290px;
+    top: 34;
+    color: #fff;
+    text-decoration: none;
+
+}
+#lpersubmit {
+    margin-right: 20px;
+}
+#lpersub ,
+#lcpsub {
+    background-color: #fca61f;
+}
+
+/***************************/
+#file_upload , 
+.luploadperimg, 
+#lfile_upload-a,
+#file_upload2{
+    position: absolute;
+    left: 190px;
+    top: 24px;
+    width: 91px !important;
+    height: 121px;
+}
+#lvoxyyzz {
+    height: 121px;
+}
+#lvoxswdjz {
+    height: 131px;
+}
+#file_upload {
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
+#lvoxzjz {
+    height: 137px;
+}
+.lpaddingt22 {
+    clear: both;
+    position: relative;
+    padding-top: 22px;
+}
+.lpersubmit {
+    clear: both;
+    text-align: center;
+    padding-top: 36px;
+    padding-bottom: 50px;
+    padding-left: 129px;
+    width: 423px;
+}
+.lpersubmit a {
+    display: inline-block;
+    padding: 7px 26px 6px 25px;
+    background-color: #3285ff;
+    color: #fff;
+    font-size: 14px;
+    line-height: 14px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    border-radius: 15px;
+
+}
+/*************审核确认弹窗***********************/
+.ltjqr {
+    display: none;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 391px;
+    height: 184px;
+    margin-left: -180px;
+    margin-top: -92px;
+    background-color: #fff;
+    z-index: 60;
+}
+.lx {
+    height: 26px;
+    padding: 13px 17px 0 0;
+    background-color: #3285ff;
+}
+.lx-btn {
+    float: right;
+    width: 14px;
+    height: 14px;
+    background: 
+    url(../images/web-index-ico/sprite1.png)
+    no-repeat -132px -41px;
+}
+.lx-cnt p {
+    text-align: center;
+    font-size: 14px;
+}
+.lx-text {
+    line-height: 68px;
+}
+.lx-cnt .lx-qxqr {
+    font-size: 0;
+    margin-top: 23px;
+    text-align: center;
+}
+.lx-qxqr a {
+    display: inline-block;
+    font-size: 14px;
+    min-width: 28px;
+    padding: 1px 19px 0 19px;
+    line-height: 26px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    border-radius: 15px;
+    color: #fff;
+}
+#lcancel ,
+.lcolorqx{
+    background-color: #9f9fa7;
+    margin-right: 20px;
+}
+#lsure ,
+.lcolorsr {
+    background-color: #3285ff;
+    margin-left: 21px;
+}
+
+/***********判断输入格式样式*************/
+label {
+    position: relative;
+}
+.lduigou {
+    position: absolute;
+    left: 100%;
+    top: 22px;
+    width: 17px !important;
+    height: 17px;
+    background: 
+    url(../images/web-index-ico/sprite1.png)
+    no-repeat -137px -76px;
+    margin-left: 10px;
+
+}
+.lduigoud {
+    background-position: -96px -76px;
+}
+.lduigoux {
+    background-position: -117px -76px;
+}
+
+/************审核有问题后弹出有问题的窗口*************/
+.lshywt {
+    display: none;
+    background-color: #fff;
+    width: 391px;
+    height: 203px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -180px;
+    margin-top: -101px;
+    padding-bottom: 17px;
+    z-index: 60;
+}
+.lxbtns {
+    position: absolute;
+    top: -24px;
+    right: -27px;
+    width: 26px;
+    height: 26px;
+    background:
+    url(../images/web-index-ico/sprite1.png)
+    no-repeat -98px -2px;
+}
+.lshywt h2 {
+    padding-top: 25px;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    color: #2d2d2d;
+}
+.litem-wrap {
+    padding-left: 82px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    height: 17px;
+}
+.litem {
+    width: 17px;
+    height: 17px;
+
+}
+.llabel-span {
+    width: 40px;
+    text-align: right;
+}
+.litem-wrap label {
+    margin-top: 0;
+    padding-top: 0;
+    width: 90px;
+    clear: none;
+    font-size: 14px;
+    line-height: 14px;
+    margin-right: 0;
+    height: 17px !important;
+}
+.lcenter {
+    text-align: center;
+    margin-top: 14px;
+}

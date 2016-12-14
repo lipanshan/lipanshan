@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>账户系统-登陆邮箱</title>
+	<link rel="stylesheet" href="../css/public.css">
+	<link rel="stylesheet" href="../css/accountsystem.css">
+	<script src="../js/jquery.js"></script>
+	<script src="../js/headaccount.js"></script>
+</head>
+<body>
+	<header class="lhead">
+		<div class="lwrap clearfix">
+			<h1 class="lh1 lfloatl">
+				<a class="lh1href" href="index.html">
+				<img class="lfloatl" src="../image/emindlogo.png" alt="">
+				<span class="lborder lfloatl"></span>
+				<span class="lfloatl lh1text">一铭账户系统</span>
+				</a>
+			</h1>
+			<div class="lsignwrap">
+				<div class="lindexpage">
+					<a class="lpaddingr" target="_block" href="index.html">Emind&nbsp;首页&gt;&gt;</a>
+				</div>
+				<div  class="laccountname">
+					<a id="accountName" href="javascript:;" class="laccountn lfloatl">欢迎您,小桥流水</a>
+					<span id="accountNameIco" class="ljt lfloatl"></span>
+					<ul id="accountlist" class="laccountnamelist">
+						<li class="laccountnameli"><a index="ac" href="javascript:;">账户信息</a></li>
+						<li class="laccountnameli"><a index="ac" href="javascript:;">推出</a></li>
+					</ul>
+				</div>
+				<a href="javascript:;"  class="lheadico2"></a>
+			</div>
+		</div>
+	</header>
+	<div class="lmainmenu-wrap">
+		<div class="lwrap">
+			<nav class="lmainmenu clearfix">
+				<a href="index.html" class="lfloatl">首页</a>
+				<a href="myhead.html" class="lfloatl menuactive">账户信息</a>
+				<a href="backstagemanage.html" class="lfloatl ">管理控制台</a>
+				<a href="accountproblem.html" class="lfloatl ">帮助中心</a>
+			</nav>
+		</div>
+	</div>
+	<div class="lwrap clearfix">
+		<ul class="lsidemenu lfloatl">
+			<li class="lsideli lsidel1 ">
+				<h2><a href="myhead.html">我的头像</a></h2>
+			</li>
+			<li class="lsideli lsidel2 ">
+				<h2><a href="basicdata.html">基本资料</a></h2>
+			</li>
+			<li class="lsideli ">
+				<h2><a href="detailedinfo.html">详细信息</a></h2>
+			</li>
+			<li class="lsideli">
+				<h2><a href="javascript:;">修改密码</a></h2>
+			</li>
+			<li class="lsideli lsideliactive">
+				<h2><a href="accountsystem.html">登录邮箱</a></h2>
+			</li>
+			<li class="lsideli">
+				<h2><a href="boundphone.html">绑定手机</a></h2>
+			</li>
+			<li class="lsideli">
+				<h2><a href="loginrecord.html">登陆记录</a></h2>
+			</li>
+		</ul>
+		<div class="lfloatl lemailland">
+			<h2 class="lh2title">登录邮箱</h2>
+			<p class="clearfix lalerady" id="alreadyexisting"><a class="lfloatl lemailhref" href="javascript:;">376584545@gmail.com</a><a id="modifyemailbtn" class="lmodify lfloatl" href="javascript:;">修改</a><a id="unbindemail" class="lunbinding lfloatl" href="javascript:;">解绑</a></p>
+			<p class="clearfix lnoemail" id="noemail"><a class="lfloatl lsettip" href="javascript:;">您还没有设置登录邮箱</a> <a class="lsetbtn" id="setbtn" href="javascript:;">现在设置</a></p>
+			<p class="lemail-tip">登陆邮箱可以用来登陆您的emind账号与找回密码</p>
+		</div>
+	</div>
+	<footer class="lfooter lmargint19">
+		<p class="lfootertext"><span class="l2016">2016</span><a class="lemind" href="javascript:;">&copy;emind</a></p>
+	</footer>
+	<!-- 背景遮罩 -->
+	<div id="lshadow"></div>
+	<!-- 解绑邮箱 -->
+	<div id="unbindingemail" class="lunbindingemail">
+		<div class="clearfix lhead2">
+			<h3 class="lunbinding-title lfloatl">解绑邮箱</h3>
+			<span id="closebtn" class="lclosebtn"></span>
+		</div>
+		<form class="lformunbind-email">
+			<p id="ubstep1tip" class="lrow1">为了您的账号安全，操作前请您进行安全验证</p>
+			<p id="ubsendsuccess" class="lrow1 lplacesee lcolor005bc4">发送成功,请查收！</p>
+			<p id="ubverifyfalse" class="lrow1 lplacesee lcolor005bc4">校验码输入有误</p>
+			<div class="lrow2 clearfix">
+				<p class="llabel lfloatl">验证方式</p>
+				<select id="verification-mode" class="lverification-mode lfloatl" name="" id="">
+					<option value="">绑定手机(132****789)</option>
+				</select>
+			</div>
+			<div class="lrow3 clearfix">
+				<p class="lfloatl llabel">校验码</p>
+				<input id="ubstep1checkcode" type="text" class="linput lfloatl" placeholder="请输入6位校验码">
+				<input id="ubstep1getcode" class="lverification-num lfloatl" type="button" value="免费获取验证码">
+			</div>
+			<p class="ltip "><a target="_blank" href="accountproblem.html">收不到短信验证码怎么办？</a></p>
+			<div class="lrow5 clearfix">
+				<a id="ubstep1submit" class="lsubmitbtn lfloatl" href="javascript:;">提交</a>
+			</div>
+		</form>
+	</div>
+	<!-- 解绑成功提示 -->
+	<div id="unbinding-emails" class="lunbinding-emails">
+		<div class="clearfix lhead2">
+			<h3 class="lunbinding-title lfloatl">解绑成功</h3>
+			<span id="closebtn2" class="lclosebtn"></span>
+		</div>
+		<div class="lsuccess-wrap">
+			<div class="ltext1 clearfix">
+				<span class="lsuccess-logo lfloatl"></span>
+				<p class="lsuccess-text lfloatl">解绑邮箱成功</p>
+			</div>
+			<p class="ltext2">解绑后，您之前在一铭账户系统注册的账号，将无法继续使用此邮箱登陆</p>
+			<div class="lback">
+				<a href="index.html">返回首页>></a>
+			</div>
+		</div>
+	</div>
+	<!-- 修改登录邮箱 -->
+	<div id="modifyemail" class="lmodifyemail">
+		<div class="clearfix lhead2">
+			<h3 class="lunbinding-title lfloatl">修改登陆邮箱</h3>
+			<span id="modifyclose" class="lclosebtn"></span>
+		</div>
+		<form class="lformunbind-email">
+			<p id="mtip"class="lrow1">为了您的账号安全，操作前请您进行安全验证</p>
+			<p id="msendsuccess" class="lrow1 lplacesee lcolor005bc4">发送成功,请查收！</p>
+			<p id="mverifynumfalse" class="lrow1 lplacesee lcolor005bc4">校验码输入有误</p>
+			<div class="lrow2 clearfix">
+				<p class="llabel lfloatl">验证方式</p>
+				<select id="modifytype" class="lverification-mode lfloatl" name="" id="">
+					<option value="">绑定手机(132****789)</option>
+				</select>
+			</div>
+			<div class="lrow3 clearfix">
+				<p class="lfloatl llabel">校验码</p>
+				<input id="modifyemailstep1" type="text" class="linput lfloatl" placeholder="请输入6位校验码">
+				<input id="mgetverificationcode" class="lverification-num lfloatl" type="button" value="免费获取验证码">
+			</div>
+			<p class="ltip "><a target="_blank" href="accountproblem.html">收不到短信验证码怎么办？</a></p>
+			<div class="lrow5 clearfix">
+				<a id="msubitstep1" class="lsubmitbtn lfloatl" href="javascript:;">提交</a>
+			</div>
+		</form>
+	</div>
+	<!-- 修改登录邮箱2 -->
+	<div id="modifyemail-success" class="lmodifyemails">
+		<div class="clearfix lhead2">
+			<h3 class="lunbinding-title lfloatl">修改登录邮箱</h3>
+			<span id="modifyemail-closebtn" class="lclosebtn"></span>
+		</div>
+		<form action="">
+		<p id="mstep2tip" class="ltextp">点击"提交"后，我们会向您的邮箱发送一封验证邮件，请按提示完成操作。</p>
+		<p id="mstep2verifyfalse" class="lemailformfalse">邮箱格式错误</p>
+		<p id="mstep2sendsuccess" class="clearfix lemailalreadyr"><span class="lfloatl">改邮箱已经注册。</span><a id="signrightnow" class="lfloatl lsignrightnow" href="javascript:;">马上登录</a></p>
+		<div class="lnewemail clearfix">
+			<span class="llabel2 lfloatl">新邮箱登陆</span>
+			<input id="newemail" type="text" class="lfloatl" placeholder="请输入您的登陆邮箱">
+		</div>
+		<div class="lrow5 clearfix lmargin29">
+			<a id="mstep2submit" class="lsubmitbtn lfloatl" href="javascript:;">提交</a>
+		</div>
+		
+		</form>
+	</div>
+	<!-- 设置登录邮箱 步骤1-->
+	<div id="setloginemail" class="lsetloginemail">
+		<div class="clearfix lhead2">
+			<h3 class="lunbinding-title lfloatl">设置登录邮箱</h3>
+			<span id="setloginemail-closebtn" class="lclosebtn"></span>
+		</div>
+		<form class="lformunbind-email">
+			<p id="verifstep1tip" class="lrow1">为了您的账号安全，操作前请您进行安全验证</p>
+			<p id="lsendsuccess" class="lrow1 lplacesee lcolor005bc4">发送成功,请查收！</p>
+			<p id="verifynumfalse" class="lrow1 lplacesee lcolor005bc4">校验码输入有误</p>
+			<div class="lrow2 clearfix">
+				<p class="llabel lfloatl">验证方式</p>
+				<p id="verifyphone" class="lverification-mode2  lfloatl">绑定手机(132****789)</p>
+			</div>
+			<div class="lrow3 clearfix">
+				<p class="lfloatl llabel">校验码</p>
+				<input id="verifynum" type="text" class="linput lfloatl" placeholder="请输入6位校验码">
+				<input id="getverificationcode" class="lverification-num lfloatl" type="button" value="免费获取验证码">
+			</div>
+			<p class="ltip"><a target="_blank" href="accountproblem.html">收不到短信验证码怎么办？</a></p>
+			<div class="lrow5 clearfix">
+				<a id="step1submit" class="lsubmitbtn lfloatl" href="javascript:;">提交</a>
+			</div>
+		</form>
+	</div>
+	<!-- 设置登录邮箱 步骤2 -->
+	<div id="setloginemail2" class="lsetloginemail2">
+		<div class="clearfix lhead2">
+			<h3 class="lunbinding-title lfloatl">设置登录邮箱</h3>
+			<span id="setloginemail2-closebtn" class="lclosebtn"></span>
+		</div>
+		<form action="">
+		<p id="emailtip" class="ltextp">点击"提交"后，我们会向您的邮箱发送一封验证邮件，请按提示完成操作。</p>
+		<p id="emailformfalse" class="lemailformfalse">邮箱格式错误</p>
+		<p id="emailalreadyr" class="clearfix lemailalreadyr"><span class="lfloatl">改邮箱已经注册。</span><a id="signrightnow" class="lfloatl lsignrightnow" href="javascript:;">马上登录</a></p>
+		<div class="lnewemail clearfix">
+			<span class="llabel2 lfloatl">登陆邮箱</span>
+			<input id="setemailstep2" type="text" class="lfloatl" placeholder="请输入您的登陆邮箱">
+		</div>
+		<div class="lrow5 clearfix lmargin29">
+			<a id="step2submit" class="lsubmitbtn lfloatl" href="javascript:;">提交</a>
+		</div>
+		</form>
+	</div>
+	<!-- 设置登陆邮箱 步骤3 -->
+	<div id="setloginemail3" class="lsetloginemail3">
+		<div class="clearfix lhead2">
+			<h3 class="lunbinding-title lfloatl">设置登录邮箱</h3>
+			<span id="setloginemail3-closebtn" class="lclosebtn"></span>
+		</div>
+		<form action="">
+			<p class="lverication-tip">验证邮件已发送到您的邮箱</p>
+			<p class="clearfix lemailnumb-wrap"><span id="emailnumstep3" class="lemailnumb lfloatl">965548475@qq.com</span><a class="lfloatl" href="javascript:;">去激活</a></p>
+			<div class="lrow5 clearfix lmargin17">
+				<a id="alreadyactivetion" class="lsubmitbtn lfloatl" href="javascript:;">已完成激活</a>
+			</div>
+		</form>
+	</div>
+</body>
+</html>

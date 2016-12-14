@@ -1,0 +1,217 @@
+
+.lsidemenu {
+	border: 1px solid #e5e5e5;
+	margin-top: 20px;
+	width: 250px;
+	margin-right: 20px;
+	min-height: 678px;
+	background-color: #fbfbfb;
+}
+.lsideli {
+	border-bottom: 1px solid #e5e5e5;
+}
+.lsideli h2 {
+	padding-left: 80px;
+	overflow: hidden;
+	width: 170px;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	font-size: 14px;
+	line-height: 49px;
+	font-weight: normal;
+}
+.lsideli a {
+	display: block;
+	color: #3e3e3e;
+}
+.lsidel1 {
+	padding-top: 3px;
+}
+.lsidel1 h2 {
+	line-height: 48px;
+}
+.lsidel2 {
+	padding-top: 1px;
+}
+.lsideli:hover ,
+.lsideliactive {
+ 	background-color: #005bc4;
+ }
+.lsideli:hover a ,
+.lsideliactive a {
+	color: #fff;
+}
+.lemailland {
+	margin-top: 20px;
+	border: 1px solid #e5e5e5;
+	width: 726px;
+	min-height: 678px;
+}
+.lh2title {
+	font-size: 24px;
+	line-height: 64px;
+	color: #3f3f3f;
+	overflow: hidden;
+	margin-left: 39px;
+}
+.lrow {
+	margin-top: 18px;
+}
+.llbalelp {
+	width: 99px;
+	font-size: 12px;
+	line-height: 30px;
+	margin-right: 9px;
+	text-align: right;
+}
+.lselect0 {
+	width: 109px;
+	height: 30px;
+	border: 1px solid #e5e5e5;
+	position: relative;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	-ms-border-radius: 3px;
+	border-radius: 3px;
+	/*overflow: hidden;*/
+	margin-right: 10px;
+}
+.lselect-ico {
+	position: absolute;
+	right: 1px;
+	top: 1px;
+	width: 24px;
+	height: 28px;
+	background: url(../image/sprite1.png) 
+	no-repeat -60px 0;
+}
+.lselect01 {
+	border: none;
+	font-size: 14px;
+	line-height: 30px;
+	background-color: #fbfbfb;
+	color: #3d3d3d;
+	padding-left: 10px;
+	
+}
+.lrow4 {
+	margin-top: 6px;
+}
+.lcharacterlist {
+	width: 576px;
+}
+.lcharacterli {
+	margin-top: 12px;
+	position: relative;
+}
+.lmagint12 {
+	margin-top: 12px;
+}
+.lwr ,
+.lcheckb {
+	position: absolute;
+	left: 0px;
+	top: 8px;
+}
+.lwr {
+	width: 16px;
+	height: 16px;
+	z-index: 40;
+	opacity: 0;
+	filter: alpha(opacity=0);
+}
+.lcheckb {
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-ms-border-radius: 50%;
+	border-radius: 50%;
+	width: 16px;
+	height: 16px;
+	background: url(../image/checkedico.png) 
+	no-repeat 0 0;
+}
+.lcheckbox-label {
+	font-size: 14px;
+	line-height: 16px;
+	padding: 6px 10px;
+	margin-left: 18px;
+	min-width: 58px;
+}
+.lcontact {
+	width: 319px;
+	height: 14px;
+	padding: 8px 19px;
+	font-size: 14px;
+	line-height: 14px;
+	border: 1px solid #e5e5e5;
+	-webkit-border-radius: 3px;
+	-ms-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+}
+.lrowbtn {
+	margin-top: 40px;
+}
+.lbc {
+	display: block;
+	width: 109px;
+	height: 39px;
+	background-color: #ff9700;
+	color: #fff;
+	font-size: 16px;
+	line-height: 38px;
+	padding-top: 1px; 
+	-webkit-border-radius: 3px;
+	-ms-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	margin-left: 108px;
+	text-align: center;
+}
+.lgenderlist li {
+	margin-right: 29px;
+	padding-top: 8px;
+	padding-bottom: 7px;
+	position: relative;
+}
+.lgenderinput {
+	width: 16px;
+	height: 16px;
+	opacity: 0;
+	filter: alpha(opacity =0);
+}
+.lgenderm {
+	position: absolute;
+	left: 0px;
+	top: 8px;
+	z-index: 60;
+}
+.lgenderw {
+	position: absolute;
+	left: 0px;
+	top: 8px;
+	z-index: 60;
+}
+.lgenderl {
+	font-size: 14px;
+	line-height: 16px;
+	color: #3f3f3f;
+	margin-left: 27px;
+}
+.lgenderl2 {
+	font-size: 14px;
+	line-height: 16px;
+	color: #3f3f3f;
+	margin-left: 25px;
+}
+
+.lpersonalprofile {
+	width: 594px;
+	height: 120px;
+	border: 1px solid #e5e5e5;
+	background-color: #fbfbfb;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	-ms-border-radius: 3px;
+	border-radius: 3px;
+}

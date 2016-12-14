@@ -1,0 +1,196 @@
+input:hover, 
+textarea:hover, 
+input:focus, 
+textarea:focus { 
+    outline:0; 
+    -webkit-box-shadow:0 0 2px 2px #a5c7fe;
+    -moz-box-shadow:0 0 2px 2px #a5c7fe;
+    -ms-box-shadow:0 0 2px 2px #a5c7fe;
+    box-shadow:0 0 2px 2px #a5c7fe;
+    border-color:#fff; 
+    background:#fff
+}
+.div{
+    clear: none;
+    width: 1000px;
+    min-height:900px;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: #FFFFFF;
+    padding-top: 20px;
+}
+.login1 {
+    vertical-align: middle;
+    height: 35px;
+    font-size: large;
+    font-family: "microsoft yahei";
+    font-weight: normal;
+    background-color: #F4F4F4;
+    color: #3385ff;
+    margin-left: 14px;
+    margin-right: 14px;
+}
+.num,
+.nick,
+.email,
+.realName,
+.qq,
+.telephone,
+.mobile,
+.id {
+    height: 40px;
+    width: 400px;
+    border-radius: 20px;
+    background-color: #F4F4F4;
+    font-size: 12px;
+    line-height: 40px;
+    overflow: hidden;
+    font-family: "microsoft yahei";
+    margin-top: 0;
+    color: #171110;
+    margin-left: 20px;
+    border: 0;
+    padding-left: 20px;
+
+}
+label {
+    display: block;
+    font-family: "microsoft yahei";
+    margin-top: 14px;
+    font-size: medium;
+    text-align: end;
+    margin-right: 42%;
+    position: relative;
+    text-align: right;
+}
+.num > input {
+    border: none;
+    margin-top: 5px;
+    display: block;
+    margin-left: 50px;
+    background-color: #F4F4F4;
+}
+.end-wd {
+    vertical-align: middle;
+    height: 35px;
+    width: 100%;
+    font-size: small;
+    font-family: "microsoft yahei";
+    font-weight: normal;
+    background-color: #3385ff;
+    color: #F4F4F4;
+    text-align: center;
+    padding-top: 20px;
+}
+.num1 {
+    height: 40px;
+    width: 198px;
+    border-radius: 20px;
+    background-color: #F4F4F4;
+    font-size: 12px;
+    line-height: 40px;
+    font-family: "microsoft yahei";
+    margin-top: 0;
+    color: #171110;
+    margin-left: 20px;
+    border: 0;
+    padding-right: 20px;
+    padding-left: 15px;
+}
+#llookimg {
+    display: block;
+    width: 160px;
+    height: 210px;
+   position: relative;
+   left: 50%;
+   margin-top: 20px;
+}
+#llookimg2 {
+    display: none;
+    width: 160px;
+    height: 210px;
+   position: absolute;
+   left: 110%;
+   top: 33px;
+}
+
+/*********************提示输入对或错样式****************************/
+.lduigou {
+    position: absolute;
+    left: 100%;
+    top: 6px;
+    width: 17px;
+    height: 17px;
+    background: 
+    url(../images/web-index-ico/sprite1.png)
+    no-repeat -137px -76px;
+    margin-left: 10px;
+
+}
+.lduigoud {
+    background-position: -96px -76px;
+}
+.lduigoux {
+    background-position: -117px -76px;
+}
+/*input[type=button] {*/
+/*border: none;*/
+/*color: #FFF;*/
+/*background-color: blue;*/
+/*border-radius: 4px;*/
+/*cursor: pointer;*/
+/*}*/
+
+/*.form-control{*/
+/*border: 1px solid #000;*/
+/*border-radius: 10px;*/
+/*}*/
+
+/*input:focus{*/
+/*outline: medium;*/
+/*}*/
+/*.mydiv{*/
+/*border: 1px solid;*/
+/*}*/
+/********************隐藏的上传按钮的样式******************/
+.filelist-wrap {
+    position: absolute;
+    left: 0;
+    top: 80px;
+    width: 160px;
+    height: 100px;
+    overflow: visible;
+    font-size: 14px;
+}
+.lfilelist {
+    opacity: 100;
+    filter:alpha(opacity = 100);
+    text-align: center;
+}
+.lfilelist , .lfilelist b{
+    display: block;
+    width: 120px;
+    font-size: 14px;
+    line-height: 20px;
+    color: #000;
+}
+.lhidebtn {
+    display: none;
+    min-width: 30px;
+    padding: 0 16px 0;
+    font-size: 14px;
+    line-height: 26px;
+    background-color: #3185ff;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    border-radius: 15px;
+    text-align: center;
+    z-index: 30;
+    position: absolute;
+    left: 210px;
+    top: 0;
+    color: #fff;
+    text-decoration: none;
+
+}

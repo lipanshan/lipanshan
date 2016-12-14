@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>小组成员信息</title>
+	<link rel="stylesheet" href="../css/genuinemanageinfo.css">
+	<script src="../js/jquery/jquery-1.9.1.min.js"></script>
+</head>
+<body>
+	<div id="lwrap" class="lgenuiemanage-wrap">
+		<div class="llist-wrap">
+			<ul id="linfolist" class="linfo-list"></ul>
+			<div id="lbox"  class="lbttn"></div>
+		</div>
+		<div class="lmore-wrap">
+			<a id="lmoreinfo" class="lmore" href="javascript:;">查看更多</a>
+		</div>
+		
+	</div>
+<script>
+$(function (){
+
+	var liNum = 0; //每一页显示信息条数
+	var maxNum = 100; //最大信息条数
+		//创建个人信息列表 ，创建组员//startNum开始数，endNum结束数
+	function creatLi(startNum,endNum,data){	
+		var s1 = '';
+		for(var i = startNum; i < endNum; i++){
+				if(i%2){
+					s1 +='<li class="linfor-li clearfix">'
+				}else {
+					s1 +='<li class="linfor-li clearfix bgcolor">'
+				}
+				
+				s1 +='<div class="lright lfloatl"><div class="lcenter">'
+				s1 +='<div class="lgroup-leader clearfix">'
+				
+				s1 +='<p class="ltitle-name lfloatl"><span class="lspancenter2">站给</span></p>'
+				s1 +='<p class="ltitle lfloatl">组员:</p>'
+				s1 +='</div>'
+				s1 +='<div class="lgroup-leader  clearfix">'
+				
+				s1 +='<p class="ltitle-name lfloatl"><span class="lspancenter2">个人基本信息</span></p>'
+				s1 +='<p class="ltitle lfloatl">职务:</p>'
+				s1 +='</div>'
+				s1 +='<div class="lgroup-leader  clearfix">'
+				
+				s1 +='<p class="ltitle-name2 lfloatl"><span class="lspancenter">个人基本信息个人基本信息个人基本信息个人基本信息个人基本信息个人基本信息个人基本信息个人基本信息个人基本信息个人基本信息个人基本信息个人基本信息个人基本信息个人基本信息个人基本信息</span></p>'
+				s1 +='<p class="ltitle2  lfloatl">个人基本信息:</p>'
+				s1 +='</div></div>'
+				s1 +='</div>'
+				s1 +='<div class="lleft lfloatl">'
+				s1 +='<div class="limg-box">'
+				s1 +='<a href="javascript:;"><img src="../image/headimg.png" alt="头像"></a>'
+				s1 +='</div>'
+				s1 +='<h3 class="lname"><a href="javascript:;">张伟</a></h3>'
+				s1 +='</div>'
+				s1 +='</li>'
+		}
+		$('#linfolist').append(s1);
+		liNum = endNum;
+		$('#lbox').height($('.llist-wrap')[0].offsetHeight/liNum);
+	}
+	//创建个人信息列表 ，创建组长、班长
+	function creatLi2(data){	
+		var s1 = '';
+		for(var i = 0; i < 2; i++){
+				if(i%2){
+					s1 +='<li class="linfor-li clearfix">'
+					
+					s1 +='<div class="lright lfloatl"><div class="lcenter">'
+					s1 +='<div class="lgroup-leader clearfix">'
+					s1 +='<p class="ltitle lfloatl">班长:</p>'
+					s1 +='<p class="ltitle-name lfloatl">蔡定剑'+i+'</p>'
+					s1 +='</div>'
+					s1 +='<div class="lgroup-leader clearfix">'
+					s1 +='<p class="ltitle lfloatl">职务:</p>'
+					s1 +='<p class="ltitle-name lfloatl">蔡定剑蔡定剑蔡定剑蔡定剑蔡定剑蔡定剑蔡定剑</p>'
+					s1 +='</div>'
+					s1 +='<div class="lgroup-leader clearfix">'
+					
+					s1 +='<p class="ltitle-name lfloatl"><span class="lspancenter">蔡定剑蔡定剑蔡定剑蔡定剑蔡定剑蔡定剑蔡定剑蔡定剑蔡定剑</span></p>'
+					s1 +='<p class="ltitle lfloatl">个人基本信息:</p>'
+					s1 +='</div></div>'
+					s1 +='</div>'
+					s1 +='<div class="lleft lfloatl">'
+					s1 +='<div class="limg-box">'
+					s1 +='<a href="javascript:;"><img src="../image/headimg.png" alt="头像"></a>'
+					s1 +='</div>'
+					s1 +='<h3 class="lname"><a href="javascript:;">蔡定剑</a></h3>'
+					s1 +='</div>'
+					s1 +='</li>'
+				}else {
+					s1 +='<li class="linfor-li clearfix bgcolor">'
+					
+					s1 +='<div class="lright lfloatl"><div class="lcenter">'
+					s1 +='<div class="lgroup-leader clearfix">'
+					s1 +='<p class="ltitle lfloatl">组长:</p>'
+					s1 +='<p class="ltitle-name lfloatl">蔡定剑'+i+'</p>'
+					s1 +='</div>'
+					s1 +='<div class="lgroup-leader clearfix">'
+					s1 +='<p class="ltitle lfloatl">职务:</p>'
+					s1 +='<p class="ltitle-name lfloatl"></p>'
+					s1 +='</div>'
+					s1 +='<div class="lgroup-leader clearfix">'
+					s1 +='<p class="ltitle-name2 lfloatl"><span class="lspancenter">蔡定剑蔡定剑蔡定剑蔡定剑蔡定剑蔡定剑蔡定剑</span></p>'
+					s1 +='<p class="ltitle2 lfloatl">个人基本信息:</p>'
+					s1 +='</div></div>'
+					s1 +='</div>'
+					s1 +='<div class="lleft lfloatl">'
+					s1 +='<div class="limg-box">'
+					s1 +='<a href="javascript:;"><img src="../image/headimg.png" alt="头像"></a>'
+					s1 +='</div>'
+					s1 +='<h3 class="lname"><a href="javascript:;">蔡定剑</a></h3>'
+					s1 +='</div>'
+					s1 +='</li>'
+				}
+		}
+		$('#linfolist').prepend(s1);
+		liNum +=2;
+		$('#lbox').height($('.llist-wrap')[0].offsetHeight/liNum);
+	}
+	
+		 //模拟滚动框
+	$('#lbox')[0].onmousedown=function (ev){
+
+			var e=ev||window.event;
+			if (e.preventDefault) {
+			     e.preventDefault();
+			} else{
+			     e.returnValue=false;
+			};
+			var d_bky = e.clientY - $('#lbox')[0].offsetTop;
+
+			document.onmousemove=function (ev){
+				var e=ev||window.event;
+				var top=e.clientY-d_bky;
+				if (top<=0) {
+					top=0;
+				}else if(top>=document.body.clientHeight-$('#lbox')[0].offsetHeight-$('.lmore-wrap').height()){
+					top=document.body.clientHeight-$('#lbox')[0].offsetHeight-$('.lmore-wrap').height();
+				};
+				top = Math.ceil(top);
+				$('#lbox')[0].style.top=top+'px';
+				var top2=0;
+				var scale=top/($('.llist-wrap')[0].offsetHeight-$('#lbox')[0].offsetHeight);
+				if($('#linfolist')[0].offsetHeight-$('.llist-wrap')[0].offsetHeight>0){
+					$('#lbox').show(0);
+					top2=scale*($('#linfolist')[0].offsetHeight-$('.llist-wrap')[0].offsetHeight);
+				}else {
+					top2 = 0;
+					$('#lbox').hide(0);
+				}
+				top2 = Math.ceil(top2);
+				$('#linfolist')[0].style.top=-top2+'px';
+			}
+			document.onmouseup=function (){
+				document.onmousemove=null;
+			}
+	}
+	addWhell(document,function (down){
+		var tops = $('#lbox')[0].offsetTop;
+		var scale = 0;
+		var tops2 = 0;
+		if(down){
+			tops-=50;
+			if(tops<=0)tops = 0;
+			
+		}else {
+			tops+=50;
+			if(tops >= $('.llist-wrap')[0].offsetHeight-$('#lbox')[0].offsetHeight)
+			tops = $('.llist-wrap')[0].offsetHeight-$('#lbox')[0].offsetHeight;
+		}
+		scale = tops/($('.llist-wrap')[0].offsetHeight-$('#lbox')[0].offsetHeight);
+		if($('#linfolist')[0].offsetHeight-$('.llist-wrap')[0].offsetHeight>0){
+			$('#lbox').show(0);
+			tops2=scale*($('#linfolist')[0].offsetHeight-$('.llist-wrap')[0].offsetHeight);
+		}else {
+			tops2= 0;
+			tops = 0;
+			$('#lbox').hide(0);
+
+		}
+		
+		$('#lbox').css('top',tops);
+		$('#linfolist').css('top',-tops2);
+	});
+	//滚轮事件封装函数
+	function addWhell(obj,fun){
+		var navt = window.navigator.userAgent.toLowerCase().indexOf('firefox');
+		// 先判断是不是Firefox浏览器
+		if(navt != -1){
+			obj.addEventListener('DOMMouseScroll', scrollFn);
+		}else {
+			obj.addEventListener('mousewheel', scrollFn);
+		}
+		// 在函数中判断是ev.wheelDelta||ev.detail,然后统一方向down = true(向上)，down = false(向下)
+		function scrollFn(ev){
+			var down = true;
+			if(ev.wheelDelta){
+				down = ev.wheelDelta > 0? true: false;
+			}else {
+				down = ev.detail < 0 ? true: false;
+			}
+			// 判断是否有函数传入，有就走下面这条，没有就不走；
+			typeof(fun) == 'function' && fun(down);
+			ev.preventDefault();
+		}
+	}
+	$(window).bind('resize',function (){
+		var lheight = $(window).height();
+		$('.llist-wrap').css('height',lheight-100);
+		$('.lgenuiemanage-wrap').css('height',lheight-60);
+	});
+	$(window).trigger('resize');
+		creatLi(3,6)
+});
+</script>
+</body>
+</html>

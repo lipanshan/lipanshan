@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>议员管理</title>
+	<link rel="stylesheet" href="../css/managementofmembers.css">
+	<script src="../js/jquery/jquery-1.9.1.min.js"></script>
+</head>
+<body>
+	<div class="wrap" id="contentmm">
+		<div class="ltitleline">
+			<h3 class="lh3">议员管理</h3>
+		</div>
+		<table>
+			<thead class="ltitleline">
+				<tr ><td class="lpaddingtr"></td></tr>
+				<tr class="lborder1 lheight60 lbgcolorf3">
+					<th><div class="lbtnwrap"><input type="button" value="新增议员"><div class="lplus"></div></div></th>
+					<th colspan="2"><input class="lsearch lborder1" type="text"></th>
+					<th><p class="ltextp">状态：</p></th>
+					<th><input class="lselect lborder1" type="text" value="正常"></th>
+					<th><p class="ltextp">语言:</p></th>
+					<th><input class="lselect2 lborder1" type="text" value="阿拉伯语"></th>
+					<th><input class="lbtn lborder1 lhover" type="button" value="查询"></th>
+					<th style="min-width:250px"></th>
+					<th><input class="lbtn lborder1 lhover" type="button" value="删除选中"></th>
+					<th><input class="lbtn lborder1 lhover lmarginr" type="button" value="修改选中"></th>
+				</tr>
+			</thead>
+		</table>
+		<table>
+			<thead>
+				<tr>
+					<td class="lheight19" colspan="10"></th>
+				</tr>
+				<tr class="lbgcolorf3 lheight60">
+					<th class="lcol1 lborder1 marginr"><input id="allchecked" type="checkbox"></th>
+					<th class="lcol2 lborder1 marginr">编号</th>
+					<th class="lcol3 lborder1 marginr">用户名</th>
+					<th class="lcol4 lborder1 marginr">姓名</th>
+					<th class="lcol5 lborder1 marginr">手机</th>
+					<th class="lcol6 lborder1 marginr">接单数</th>
+					<th class="lcol7 lborder1 marginr">翻译语言</th>
+					<th class="lcol8 lborder1 marginr">状态</th>
+					<th class="lcol9 lborder1 marginr">创建时间</th>
+					<th class="lcol10 lborder1 marginr">认证</th>
+					<th class="lcol11 lborder1 marginr">操作</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class="lbgcolorff lborder1">
+					<td class="lcol1 lborder1 marginr"><input  type="checkbox"></td>
+					<td class="lcol2 lborder1 marginr">12</td>
+					<td class="lcol3 lborder1 marginr"><div class="lwzfy">友谊的小船<div class="lilogo">i</div></div></td>
+					<td class="lcol4 lborder1 marginr">15003165845</td>
+					<td class="lcol5 lborder1 marginr">78454888@qq.com.cn</td>
+					<td class="lcol6 lborder1 marginr">北京学校</td>
+					<td class="lcol7 lborder1 marginr">越难越</td>
+					<td class="lcol8 lborder1 marginr">正常</td>
+					<td class="lcol9 lborder1 marginr">2016-08-12 12:37:55</td>
+					<td class="lcol10 lborder1 marginr"><a class="lbtns3" href="javascript:;"><input type="button" value="待认证"><span class="lnum">10</span></a></td>
+					<td class="lcol11 lborder1"><input class="loperationbtn" type="button" value="编辑"><div class="lborderl"></div><input class="loperationbtn" type="button" value="禁用"><div class="lborderl"></div><input class="loperationbtn" type="button" value="删除">
+					</td>
+				</tr>
+				<tr class="lborder1">
+					<td class="lcol1 lborder1 marginr"><input  type="checkbox"></td>
+					<td class="lcol2 lborder1 marginr">12</td>
+					<td class="lcol3 lborder1 marginr"><div class="lwzfy">友谊的小船<div class="lilogo">i</div></div></td>
+					<td class="lcol4 lborder1 marginr">15003165845</td>
+					<td class="lcol5 lborder1 marginr">78454888@qq.com.cn</td>
+					<td class="lcol6 lborder1 marginr">北京学校</td>
+					<td class="lcol7 lborder1 marginr">越难越</td>
+					<td class="lcol8 lborder1 marginr">正常</td>
+					<td class="lcol9 lborder1 marginr">2016-08-12 12:37:55</td>
+					<td class="lcol10 lborder1 marginr"><a class="lbtns2 lbtnbgcolor2" href="javascript:;">通过认证</a></td>
+					<td class="lcol11 lborder1"><input class="loperationbtn" type="button" value="编辑"><div class="lborderl"></div><input class="loperationbtn" type="button" value="禁用"><div class="lborderl"></div><input class="loperationbtn" type="button" value="删除">
+					</td>
+				</tr>
+				<tr class="lborder1 lbgcolorff">
+					<td class="lcol1 lborder1 marginr"><input  type="checkbox"></td>
+					<td class="lcol2 lborder1 marginr">12</td>
+					<td class="lcol3 lborder1 marginr"><div class="lwzfy">友谊的小船<div class="lilogo">i</div></div></td>
+					<td class="lcol4 lborder1 marginr">15003165845</td>
+					<td class="lcol5 lborder1 marginr">78454888@qq.com.cn</td>
+					<td class="lcol6 lborder1 marginr">北京学校</td>
+					<td class="lcol7 lborder1 marginr">越难越</td>
+					<td class="lcol8 lborder1 marginr">正常</td>
+					<td class="lcol9 lborder1 marginr">2016-08-12 12:37:55</td>
+					<td class="lcol10 lborder1 marginr"><a class="lbtns2 lbtnbgcolor3" href="javascript:;">拒绝认证</a></td>
+					<td class="lcol11 lborder1"><input class="loperationbtn" type="button" value="编辑"><div class="lborderl"></div><input class="loperationbtn" type="button" value="禁用"><div class="lborderl"></div><input class="loperationbtn" type="button" value="删除">
+					</td>
+				</tr>
+				<tr class=" lborder1">
+					<td class="lcol1 lborder1 marginr"><input  type="checkbox"></td>
+					<td class="lcol2 lborder1 marginr">12</td>
+					<td class="lcol3 lborder1 marginr"><div class="lwzfy">友谊的小船<div class="lilogo">i</div></div></td>
+					<td class="lcol4 lborder1 marginr">15003165845</td>
+					<td class="lcol5 lborder1 marginr">78454888@qq.com.cn</td>
+					<td class="lcol6 lborder1 marginr">北京学校</td>
+					<td class="lcol7 lborder1 marginr">越难越</td>
+					<td class="lcol8 lborder1 marginr">正常</td>
+					<td class="lcol9 lborder1 marginr">2016-08-12 12:37:55</td>
+					<td class="lcol10 lborder1 marginr"><a class="lbtns3" href="javascript:;"><input type="button" value="待认证"><span class="lnum">10</span></a></td>
+					<td class="lcol11 lborder1"><input class="loperationbtn" type="button" value="编辑"><div class="lborderl"></div><input class="loperationbtn" type="button" value="禁用"><div class="lborderl"></div><input class="loperationbtn" type="button" value="删除">
+					</td>
+				</tr>
+				<tr class="lborder1 lbgcolorff">
+					<td class="lcol1 lborder1 marginr"><input  type="checkbox"></td>
+					<td class="lcol2 lborder1 marginr">12</td>
+					<td class="lcol3 lborder1 marginr"><div class="lwzfy">友谊的小船<div class="lilogo">i</div></div></td>
+					<td class="lcol4 lborder1 marginr">15003165845</td>
+					<td class="lcol5 lborder1 marginr">78454888@qq.com.cn</td>
+					<td class="lcol6 lborder1 marginr">北京学校</td>
+					<td class="lcol7 lborder1 marginr">越难越</td>
+					<td class="lcol8 lborder1 marginr">正常</td>
+					<td class="lcol9 lborder1 marginr">2016-08-12 12:37:55</td>
+					<td class="lcol10 lborder1 marginr"><a class="lbtns2 lbtnbgcolor2" href="javascript:;">通过认证</a></td>
+					<td class="lcol11 lborder1"><input class="loperationbtn" type="button" value="编辑"><div class="lborderl"></div><input class="loperationbtn" type="button" value="禁用"><div class="lborderl"></div><input class="loperationbtn" type="button" value="删除">
+					</td>
+				</tr>
+				<tr class="lborder1">
+					<td class="lcol1 lborder1 marginr"><input  type="checkbox"></td>
+					<td class="lcol2 lborder1 marginr">12</td>
+					<td class="lcol3 lborder1 marginr"><div class="lwzfy">友谊的小船<div class="lilogo">i</div></div></td>
+					<td class="lcol4 lborder1 marginr">15003165845</td>
+					<td class="lcol5 lborder1 marginr">78454888@qq.com.cn</td>
+					<td class="lcol6 lborder1 marginr">北京学校</td>
+					<td class="lcol7 lborder1 marginr">越难越</td>
+					<td class="lcol8 lborder1 marginr">正常</td>
+					<td class="lcol9 lborder1 marginr">2016-08-12 12:37:55</td>
+					<td class="lcol10 lborder1 marginr"><a class="lbtns2 lbtnbgcolor3" href="javascript:;">拒绝认证</a></td>
+					<td class="lcol11 lborder1"><input class="loperationbtn" type="button" value="编辑"><div class="lborderl"></div><input class="loperationbtn" type="button" value="禁用"><div class="lborderl"></div><input class="loperationbtn" type="button" value="删除">
+					</td>
+				</tr>
+			</tbody>
+		</table>
+		<table class="lpagenum">
+			<tbody >
+				<tr><td colspan="18" class="lheight29"></td></tr>
+				<tr>
+					<td></td>
+					<td class="lpagetd1">有2670条记录</td>
+					<td class="ltd9"></td>
+					<td class="lpagetd2 lborder1 "><input type="button" class="lpagebtn lhover" value="&lt;上一页"></td>
+					<td class="ltd9"></td>
+					<td class="lpagetd3 lborder1 "><input type="button" class="lpagebtn lhover" value="1"></td>
+					<td class="td5"></td>
+					<td class="lpagetd3 lborder1 "><input type="button" class="lpagebtn lhover" value="2"></td>
+					<td class="td5"></td>
+					<td class="lpagetd3 lborder1 "><input type="button" class="lpagebtn lhover" value="3"></td>
+					<td class="td5"></td>
+					<td class="lpagetd3 lborder1 "><input type="button" class="lpagebtn lhover" value="4"></td>
+					<td class="td5"></td>
+					<td class="lpagetd3 lborder1 "><input type="button" class="lpagebtn lhover" value="…"></td>
+					<td class="ltd9"></td>
+					<td class="lpagetd2 lborder1 "><input type="button" class="lpagebtn lhover" value="下一页&gt;"></td>
+					<td class="ltd9"></td>
+					<td class="lpagetd4 lborder1">共24页</td>
+					<td class="td39"></td>
+				</tr>
+				<tr><td style="height: 82px;" colspan="18"></td></tr>
+			</tbody>
+		</table>
+	</div>
+<script>
+			//将所有复选框状态设置为同一状态,elem 为所有复选框的父级，boll复选框的状态true/false
+	function checkedCheckBox (elemParent,boll){
+		var checkInput = elemParent.find('input');
+		checkInput.each(function (i,elem){
+			if(elem.type == 'checkbox'){
+				elem.checked = boll;
+			}
+		});
+	}
+	//判断搜游复选框是否都被选中 elem全部选中按钮，elemParent为所有复选框的父级
+	function judgeChecked(elem,elemParent){
+		var checkInput = elemParent.find('input');
+		for(var i=0;i < checkInput.length; i++){
+			if(checkInput[i].type == 'checkbox'&&checkInput[i]!==elem[0]){
+				if(checkInput[i].checked == false){
+					console.log(i)
+					elem[0].checked = false;
+					return;
+				}
+			}
+		}
+		console.log(123)
+		elem[0].checked = true;
+	}
+	//点击全选全不选中
+	$('#allchecked').click(function (){
+		if($('#allchecked')[0].checked){
+			checkedCheckBox ($('#contentmm'),true);
+		}else {
+			checkedCheckBox ($('#contentmm'),false);
+		}
+	});
+	// 给每一个复选框添加点击事件
+	var checdboxs = $('#contentmm').find('input');
+	for(var i= 0; i< checdboxs.length;i++){
+		checdboxs[i].onclick = function (){
+			judgeChecked($('#allchecked'),$('#contentmm'));
+		}
+	}
+</script>
+</body>
+</html>

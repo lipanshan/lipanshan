@@ -1,0 +1,632 @@
+#presentrecord h1,h2,h3,h4,h5,
+#presentrecord input,
+#presentrecord p,
+#presentrecord ul,
+#presentrecord dd,
+#presentrecord dt,
+#presentrecord th,
+#presentrecord td,
+#presentrecord form ,
+#texttranslation h1,h2,h3,h4,h5,
+#texttranslation input,
+#texttranslation p,
+#texttranslation ul,
+#texttranslation dd,
+#texttranslation dt,
+#texttranslation th,
+#texttranslation td,
+#texttranslation form {
+	margin: 0;
+	padding: 0;
+}
+html {
+	height: 100%;
+}
+body {
+	background-color: #f2f2f2;
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	/*font-family: "微软雅黑","宋体";*/
+}
+#presentrecord table ,
+#texttranslation table {
+	border-collapse: collapse;
+	border: 1px solid #f2f2f2;
+	border-spacing: 0;
+	width: 100%;
+}
+#presentrecord th,
+#presentrecord td {
+	height: 70px;
+	text-align: center;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+	font-size: 14px;
+	line-height: 14px;
+}
+#presentrecord input {
+	-webkit-border-radius: 8px;
+	-ms-border-radius: 8px;
+	-moz-border-radius: 8px;
+	border-radius: 8px;
+}
+#presentrecord a ,
+#texttranslation a{
+	text-decoration: none;
+}
+.wrap {
+	padding-left: 30px;
+	border-top: 1px solid #ccccce;
+}
+#presentrecord .lborder1 {
+	border: 1px solid #ccccce;
+}
+#presentrecord .lh3 {
+	display: inline-block;
+	padding-top: 18px;
+	font-size: 20px;
+	line-height: 54px;
+	font-weight: normal;
+	color: #323232;
+	border-bottom: 3px solid #005cc0;
+}
+#presentrecord .ltitleline {
+	width: 100%;
+	font-size: 0;
+	border-bottom: 1px solid #ccccce;
+}
+#presentrecord .lpaddingtr {
+	height: 31px;
+}
+#presentrecord .lsearch {
+	width: 388px;
+	border: 1px solid #ccccce;
+	background-color: #fff;
+	line-height: 14px;
+	font-size: 14px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 10px;
+	margin-left: 10px;
+}
+#presentrecord .lheight60 th{
+	height: 60px;
+}
+#presentrecord .lbgcolorf3 {
+	background-color: #f3f6fb;
+}
+#presentrecord .lbgcolorff {
+	background-color: #fff;
+}
+#presentrecord .ltextp {
+	width: 59px;
+	text-align: right;
+	font-size: 14px;
+	line-height: 58px;
+	padding-top: 2px;
+}
+#presentrecord .lselect ,
+#presentrecord .lselect2 {
+	width: 58px;
+	padding: 10px;
+	border: 1px solid #ccccce;
+	background-color: #fff;
+	line-height: 14px;
+	font-size: 14px;
+}
+#presentrecord .lbtn {
+	padding: 10px;
+	border: 1px solid #ccccce;
+	background-color: #f5f4f2;
+	line-height: 14px;
+	font-size: 14px;
+	background-color: #f5f4f2;
+	width: 85px;
+
+}
+#presentrecord .lmarginr {
+	margin-right: 50px;
+}
+#presentrecord .lcol1 {
+	width: 64px;
+}
+#presentrecord .lcol2 {
+	width: 49px;
+}
+#presentrecord .lcol3 {
+	width: 168px;
+}
+#presentrecord .lcol4 {
+	width: 169px;
+}
+#presentrecord .lcol5 {
+	width: 205px;
+}
+#presentrecord .lcol6 {
+	width: 101px;
+}
+#presentrecord .lcol7 {
+	width: 120px;
+}
+#presentrecord .lcol8 {
+	width: 196px;
+}
+#presentrecord .lcol9 {
+	width: 281px;
+}
+#presentrecord .lcol10 {
+	width: 237px;
+}
+#presentrecord  .marginr {
+	margin-left: -1px;
+}
+#presentrecord .lheight9 {
+	height: 9px;
+}
+#presentrecord .lbtns2 {
+	display: inline-block;
+	width: 84px;
+	font-size: 14px;
+	line-height: 30px;
+	color: #fff;
+	
+}
+#presentrecord .lbtns3 {
+	display: inline-block;
+	position: relative;
+	width: 84px;
+	text-align: center;
+	height: 30px;
+}
+#presentrecord .lbtns3 input {
+	width: 84px;
+	font-size: 14px;
+	line-height: 30px;
+	color: #fff;
+	background-color: #f8a74c;
+	border: none;
+	border-radius: 0;
+
+}
+#presentrecord .lbtnbgcolor2 {
+	background-color: #4e9f43;
+}
+#presentrecord .lbtnbgcolor3 {
+	background-color: #e5514d;
+}
+#presentrecord .lnum {
+	position: absolute;
+	right: -12px;
+	top: -12px;
+	width: 16px;
+	height: 16px;
+	font-size: 12px;
+	line-height: 16px;
+	background-color: #4d9e41;
+	color: #fff;
+	-webkit-border-radius: 16px;
+	-moz-border-radius: 16px;
+	-ms-border-radius: 16px;
+	border-radius: 16px;
+}
+#presentrecord .lheight29 {
+	height: 29px;
+}
+#presentrecord .lpagenum {
+	width: 100%;
+	text-align: right;
+}
+#presentrecord .lpagetd1 {
+	width: 121px;
+	text-align: left;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+}
+#presentrecord .lpagenum td {
+	font-size: 14px;
+	line-height: 28px;
+	height: 28px;
+}
+#presentrecord .lpagetd2 {
+	width: 67px;
+}
+#presentrecord .lpagetd3 {
+	width: 28px;
+}
+#presentrecord .lpagetd4 {
+	width: 66px;
+}
+#presentrecord .ltd9 {
+	width: 9px;
+}
+#presentrecord .td5 {
+	width: 5px;
+}
+#presentrecord .td39 {
+	width: 39px;
+}
+#presentrecord .lbtnwrap {
+	margin-left: 20px;
+	margin-right: 30px;
+	position: relative;
+	width: 105px;
+	height: 40px;
+	
+}
+#presentrecord .lbtnwrap input {
+	width: 100%;
+	height: 100%;
+	border: none;
+	color: #fff;
+	background-color: #0059ca;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	-ms-border-radius: 0;
+	border-radius: 0;
+}
+#presentrecord .lbtnwrap .lplus {
+	position: absolute;
+	left: 10px;
+	top: 13px;
+	width: 15px;
+	height: 15px;
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	-ms-border-radius: 15px;
+	border-radius: 15px;
+	border-radius: 15px;
+	background: url(../image/jiahao.jpg)
+	no-repeat 3px 3px #fff;
+}
+#presentrecord .loperationbtn {
+	background: none;
+	border: none;
+	font-size: 15px;
+	line-height: 15px;
+	padding-bottom: 1px;
+	border-bottom: 1px solid transparent;
+	color: #005bbe;
+	-weibkit-border-radius: 0;
+	-moz-border-radius: 0;
+	-ms-border-radius: 0;
+	border-radius: 0;
+}
+#presentrecord .loperationbtn:hover {
+	border-bottom-color: #005bbe;
+}
+#presentrecord .lborderl {
+	display: inline-block;
+	width: 10px;
+	border-right: 1px solid #cdcdcd;
+	margin-right: 10px;
+	height: 15px;
+}
+
+#presentrecord .lhover:hover {
+	background-color: #005bc4;
+	border-color: #005bc4;
+	color: #fff;
+}
+#presentrecord .lpagebtn {
+	width: 100%;
+	height: 100%;
+	padding: 0;
+	color: #6c6c6c;
+	border: none;
+	background: none;
+	border: none;
+	font-size: 15px;
+	line-height: 15px;
+	-weibkit-border-radius: 0;
+	-moz-border-radius: 0;
+	-ms-border-radius: 0;
+	border-radius: 0;
+
+}
+#presentrecord .linput ,
+#presentrecord .linput2 {
+	width: 78px;
+	background-color: #fff;
+	line-height: 14px;
+	font-size: 14px;
+	padding: 10px;
+}
+#presentrecord .lwidth112 {
+	width: 112px;
+	text-align: right;
+}
+#presentrecord .lwidth132 input {
+	width: 80px;
+	margin-left: 0;
+}
+#presentrecord .lwidth144 {
+	width: 144px;
+}
+#presentrecord .linput2 {
+	width: 122px;
+}
+#presentrecord .lwidth78 {
+	width: 100px;
+}
+#presentrecord .lwidth60 {
+	min-width: 60px;
+	color: #000;
+}
+#presentrecord .ltitleline th {
+	font-size: 14px;
+	line-height: 58px;
+	padding-top: 2px;
+}
+#presentrecord .lddh {
+	width: 77px;
+}
+#presentrecord .lje {
+	width: 59px;
+}
+#presentrecord .llx {
+	width: 62px;
+}
+#presentrecord .lzfsj {
+	width: 86px;
+}
+#presentrecord .lcjsj {
+	width: 87px;
+}
+#presentrecord .lcols2 {
+	width: 114px;
+}
+/*#presentrecord .lcols3 {
+	width: 189px;
+}
+*/
+#presentrecord .lcols4 {
+	width: 182px;
+}
+#presentrecord .lcols5 {
+	width: 130px;
+}
+/*#presentrecord .lcols6 {
+	position: relative;
+	width: 172px;
+}*/
+/*#presentrecord .lcols7 {
+	width: 233px;
+}*/
+/*#presentrecord .lcols8 {
+	width: 147px;
+}*/
+/*#presentrecord .lcols9 {
+	width: 157px;
+}*/
+#presentrecord .lcols10 {
+	width: 157px;
+}
+#presentrecord .lwzfy {
+	display: inline;
+	position: relative;
+
+}
+#presentrecord .lilogo {
+	position: absolute;
+	right: -12px;
+	top: -12px;
+	width: 16px;
+	height: 16px;
+	-webkit-border-radius: 16px;
+	-moz-border-radius: 16px;
+	-ms-border-radius: 16px;
+	border-radius: 16px;
+	color: #fff;
+	font-size: 16px;
+	line-height: 16px;
+	background-color: #559c4c;
+	text-indent: 0px;
+	cursor: pointer;
+}
+#presentrecord .lz {
+	width: 36px;
+	font-size: 14px;
+	line-height: 36px;
+	text-align: center;
+}
+#presentrecord .lcurcor {
+	display: inline-block;
+	cursor: pointer;
+}
+#presentrecord .lpagewrap {
+	height: 163px;
+	background-color: #fff;
+	border-top: none;
+}
+#presentrecord .lpagenum {
+	width: 100%;
+	text-align: right;
+}
+#presentrecord .lpagetd1 {
+	width: 90px;
+	text-align: right;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+}
+#presentrecord .lpagenum td {
+	font-size: 14px;
+	line-height: 28px;
+	height: 28px;
+}
+#presentrecord .lpagetd2 {
+	width: 67px;
+}
+#presentrecord .lpagetd3 {
+	width: 28px;
+}
+#presentrecord .lpagetd4 {
+	width: 66px;
+	color: #797979;
+}
+#presentrecord .lpagetd5 {
+	width: 40px;
+}
+#presentrecord .lpagetd6 {
+	width: 39px;
+	text-align: right;
+}
+#presentrecord .lpagetd5 input ,
+#presentrecord .lpagetd6 input {
+	width: 38px;
+	height: 28px;
+	font-size: 14px;
+	line-height: 28px;
+	-webkit-border-radius: 0;
+	-ms-border-radius: 0;
+	-moz-border-radius: 0;
+	border-radius: 0;
+
+}
+#presentrecord .lpagetd6 input {
+	width: 28px;
+	height: 30px;
+	background-color: #fcfcfc;
+}
+#presentrecord .ltd9 {
+	width: 9px;
+}
+#presentrecord .td5 {
+	width: 5px;
+}
+#presentrecord .td39 {
+	width: 39px;
+}
+#presentrecord .lbtnwrap {
+	position: relative;
+	width: 105px;
+	height: 40px;
+	text-align: right;
+	display: inline-block;
+	
+}
+#presentrecord .lbtnwrap input {
+	width: 100%;
+	height: 100%;
+	border: none;
+	color: #fff;
+	background-color: #0059ca;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	-ms-border-radius: 0;
+	border-radius: 0;
+	text-align: left;
+	text-indent: 36px;
+}
+#presentrecord .lbtnwrap .lplus {
+	position: absolute;
+	left: 10px;
+	top: 13px;
+	width: 15px;
+	height: 15px;
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	-ms-border-radius: 15px;
+	border-radius: 15px;
+	border-radius: 15px;
+	background: url(../image/jiahao.jpg)
+	no-repeat 3px 3px #fff;
+}
+#presentrecord .loperationbtn {
+	background: none;
+	border: none;
+	font-size: 15px;
+	line-height: 15px;
+	padding-bottom: 1px;
+	border-bottom: 1px solid transparent;
+	color: #005bbe;
+	-weibkit-border-radius: 0;
+	-moz-border-radius: 0;
+	-ms-border-radius: 0;
+	border-radius: 0;
+}
+#presentrecord .loperationbtn:hover {
+	border-bottom-color: #005bbe;
+}
+#presentrecord .lborderl {
+	display: inline-block;
+	width: 10px;
+	border-right: 1px solid #cdcdcd;
+	margin-right: 10px;
+	height: 15px;
+}
+
+#presentrecord .lhover:hover {
+	background-color: #005bc4;
+	border-color: #005bc4;
+	color: #fff;
+}
+#presentrecord .lpagebtn {
+	width: 100%;
+	height: 100%;
+	padding: 0;
+	color: #6c6c6c;
+	border: none;
+	background: none;
+	border: none;
+	font-size: 15px;
+	line-height: 15px;
+	-weibkit-border-radius: 0;
+	-moz-border-radius: 0;
+	-ms-border-radius: 0;
+	border-radius: 0;
+
+}
+#presentrecord .lwzfy {
+	display: inline;
+	position: relative;
+}
+#presentrecord .lilogo {
+	position: absolute;
+	right: -12px;
+	top: -12px;
+	width: 16px;
+	height: 16px;
+	-webkit-border-radius: 16px;
+	-moz-border-radius: 16px;
+	-ms-border-radius: 16px;
+	border-radius: 16px;
+	color: #fff;
+	font-size: 16px;
+	line-height: 16px;
+	background-color: #559c4c;
+	text-indent: 0px;
+}
+#presentrecord .lwidth127 {
+	width: 127px;
+	text-align: right;
+}
+#presentrecord .lwidth110 {
+	width: 110px;
+	text-align: right;
+}
+#presentrecord .lwidth109 {
+	width: 109px;
+	text-align: right;
+}
+#presentrecord .lwidth464 {
+	width: 464px;
+	text-align: right;
+}
+#presentrecord .lwidth91 {
+	width: 91px;
+	text-align: right;
+}
+#presentrecord .lwidth88 {
+	width: 88px;
+	text-align: right;
+}
+#presentrecord .lwidth119 {
+	width: 119px;
+	text-align: left;
+}
+
+
