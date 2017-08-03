@@ -1,0 +1,526 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>18 详情页</title>
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<script type="text/javascript" src="js/jquery-1.2.6.min.js"></script>
+	<script type="text/javascript" src="js/comm.js"></script>
+	<!--下面这两个是分页的js-->
+	<script type="text/javascript" src="js/jquery.mousewheel.js"></script>
+	<script type="text/javascript" src="js/jScrollPane.js"></script>
+</head>
+<script type="text/javascript">
+    $(document).ready(function(){
+        /*选择颜色,尺码 边框颜色变化*/
+        $(".canshu .color .right div,.canshu .size .right div").click(function(){
+        	$(this).addClass("cur").siblings().removeClass("cur");
+        });
+        /*产品细节和交易历史的切换*/
+        $(".detail .top .xijie").click(function(){
+			$(this).addClass("cur").siblings("div").removeClass("cur");
+			$(".detail .lanxian").animate({left:"0px"},150);
+			$(".detail .history").hide();
+			$(".detail .product").show();
+		});
+		$(".detail .top .lishi").click(function(){
+			$(".detail .lanxian").animate({left:"248px"},150);
+			$(this).addClass("cur").siblings("div").removeClass("cur");
+			$(".detail .product").hide();
+		    $(".detail .history").show();
+		    //页码滚动条，这个要放在lishi的click事件里面，只有显示了历史交易div才加载这段js，否则会报错
+		    $('#pane1').jScrollPane();
+			if( $(".fanye") .outerHeight()<200){
+				$(".scroll-pane").css("height","auto");
+				$(".jScrollPaneContainer").css("height","auto");
+			} 
+			$(".page .shuzi.fr").click(function(){
+				$(".jScrollPaneContainer").css("opacity","1");
+			});
+			$('body').bind('click', function(event) {
+	    		var evt = event.srcElement ? event.srcElement : event.target;    
+	    		if(evt.id == 'fenzi' ) return; 
+	    		else {
+	        		$(".jScrollPaneContainer").css("opacity","0"); // 
+	    		}   
+			});
+		});
+	});
+</script>
+<body>
+	<div class="topbar">
+		<div class="inner">
+			<div class="loginAndzhuce">
+				<a href="denglu.html" target="_blank" class="login">登录</a>|<a href="zhuce1.html" target="_blank" class="zhuce">注册</a>
+			</div>
+			
+			<div class="seller">
+				<h4><a href="sellerindex.html" target="_blank">卖家中心</a></h4>
+				<ul style="display:none">
+					<li><a href="list.html" target="_blank">我要上货</a></li>
+					<li><a href="huopinguanli.html" target="_blank">货品管理</a></li>
+					<li><a href="huopinguanli.html" target="_blank">交易管理</a></li>
+					<li><a href="zaixianwuliu.html" target="_blank">物流管理</a></li>
+					<li><a href="zijinjilu.html" target="_blank">账户管理</a></li>
+				</ul>
+			</div>
+			<div class="seller">
+				<h4><a href="buyerindex.html" target="_blank">买家中心</a></h4>
+				<ul style="display:none">
+					<li><a href="list.html" target="_blank">我要进货</a></li>
+					<li><a href="dingdan.html" target="_blank">我的订单</a></li>
+					<li><a href="list.html" target="_blank">我的收藏</a></li>
+					<li><a href="zijinjilu.html" target="_blank">账户管理</a></li>
+				</ul>
+			</div>
+			<a href="#" target="_blank" class="huilv">今日汇率：<span>0.553</span></a>
+			<div class="seller yuyan">
+				<h4><a href="#" target="_blank">中文</a></h4>
+				<ul style="display:none">
+					<li><a href="#" target="_blank">中文</a></li>
+					<li><a href="#" target="_blank">西班牙语</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="logo">
+		<div class="fl">
+			<img src="images/logo.png" alt="" />
+			<!--新加 搜索框value值-->
+			<input type="text" placeholder="商品名称、ID  卖家" class="kuangkuang" value="3249059033"/>
+			<input type="button" value="搜索" class="niuniu"/>
+		</div>
+		<div class="fr">
+			<!--新加 如果个人中心有新消息 则加b标签-->
+			<h4>个人中心<b class="hasInfo"></b></h4>
+			<ul style="display:none">
+				<li class="shanghuo"><a href="list.html" target="_blank">我要上货</a></li>
+				<li class="huopin"><a href="huopinguanli.html" target="_blank">货品管理</a></li>
+				<!--新加 如果交易管理有新消息 则加b标签-->
+				<li class="jiaoyi"><a href="huopinguanli.html" target="_blank">交易管理</a><b class="hasInfo"></b></li>
+				<li class="wuliu"><a href="wuliuservice.html" target="_blank">物流管理</a></li>
+				<li class="zhanghu"><a href="zijinjilu.html" target="_blank">账户管理</a><b class="hasInfo"></b></li>
+			</ul>
+		</div>
+	</div>
+	<div class="banner banner2">
+		<ul class="nav">
+			<li class="no1"><a href="index.html" target="_blank">首页</a></li>
+			<li class="no2 cur"><a href="list.html" target="_blank">卖场</a></li>
+			<li class="no3"><a href="#">需求论坛</a></li>
+			<li class="no4"><a href="zhifuservice.html" target="_blank">支付服务</a></li>
+			<li class="no5"><a href="wuliuservice.html" target="_blank">物流服务</a></li>
+			<li class="no6"><a href="jiaoyiguize.html" target="_blank">交易规则与公告</a></li>
+		</ul>
+	</div>
+	<div class="gray">
+		<div class="content">
+			<h3><a href="#">卖场</a>&nbsp;>&nbsp;<a href="#">商品</a></h3>
+			<div class="main">
+			    <div class="preview">
+				    <div id="vertical" class="bigImg">
+						<img src="images/mid/01.jpg"  id="midimg" />
+						<div style="display:none;" id="winSelector"></div>
+					</div><!--bigImg end-->
+	
+					<div class="smallImg">
+						<div id="imageMenu">
+							<ul>
+								<li class="curr">
+									<div class="biankuang"></div>
+									<img src="images/small/01.jpg" />
+								</li>
+								<li>
+									<div class="biankuang"></div>
+									<img src="images/small/02.jpg" />
+
+								</li>
+								<li>
+									<div class="biankuang"></div>
+									<img src="images/small/03.jpg" />
+								</li>
+								<li>
+									<div class="biankuang"></div>
+									<img src="images/small/04.jpg" />
+								</li>
+								<li>
+									<div class="biankuang"></div>
+									<img src="images/small/04.jpg" />
+								</li>
+								<li>
+									<div class="biankuang"></div>
+									<img src="images/small/04.jpg" />
+								</li>
+							</ul>
+						</div>
+					</div><!--smallImg end-->
+					
+					<div id="bigView" style="display:none;"><img width="800" height="800" alt="" src="" /></div>
+					
+				</div><!--preview end-->
+				<div class="canshu">
+					<h5>
+						<p>顺丰包邮 罗技G402 可编程笔记本电脑有线竞技游戏鼠标 赠好礼
+						</p>
+						<span>ID:3249059033</span>
+					</h5>
+					<p class="company">北京天猫器材有限公司<span class="shuxian">|</span><span>41</span>单</p>
+					<div class="price">
+						<div class="left">价格</div>
+						<div class="middle">¥&nbsp;99.989999&nbsp;-&nbsp;¥&nbsp;109.9</div>
+						<div class="right">起批量：100</div>
+					</div>
+					<div class="color">
+						<div class="left">颜色</div>
+						<div class="right">
+							<div>黑色</div><!--class="cur" 选中状态-->
+							<div>橘色</div>
+							<div>卡其色</div>
+							<div>宝石绿色</div>
+						</div>
+					</div>
+					<div class="size">
+						<div class="left">尺寸</div>
+						<div class="right">
+							<div>Sdddd</div><!--class="cur" 选中状态-->
+							<div>Mfff</div>
+							<div>Ldd</div>
+						</div>
+					</div>
+					<div class="range">
+						<div class="left">价格区间</div>
+						<div class="right">
+							<div class="hd">
+								<div class="teshu">数量</div>
+								<div>单价</div>
+							</div>
+							<div class="bd">
+								<div>100以下</div>
+								<div>¥&nbsp;99.9</div>
+							</div>
+							<div class="bd">
+								<div>100-200</div>
+								<div>¥&nbsp;79.9</div>
+							</div>
+							<div class="bd">
+								<div>200以上</div>
+								<div>¥&nbsp;69.9</div>
+							</div>
+						</div>
+					</div>
+					<div class="contact">
+						<p>欲进货请联系卖家下单</p>
+						<div class="tel">138 1234 5678</div>
+						<div class="mail">4308443895@gmail.com</div>
+					</div>
+				</div>
+		    </div>
+		</div>
+		<div class="detail">
+			<div class="lanxian"></div>
+			<div class="top">
+				<div class="xijie cur">
+					产品细节
+			    </div>
+				<div class="lishi">
+					交易历史
+				</div>
+				<div class="xian"></div>
+		    </div>
+		    <!--商品细节-->
+		    <div class="product">
+		    	<div class="procanshu">
+			    	<div class="fl">
+			    		<div>
+			    			<span class="left">货源类别</span>
+			    			<span class="right">现货</span>
+			    		</div>
+	                    <div>
+			    			<span class="left">图案</span>
+			    			<span class="right">花色</span>
+			    		</div>
+			    		<div>
+			    			<span class="left">面料名称</span>
+			    			<span class="right">聚酯</span>
+			    		</div>
+			    	</div>
+			    	<div class="fl">
+			    		<div>
+			    			<span class="left">货源类别</span>
+			    			<span class="right">现货</span>
+			    		</div>
+	                    <div>
+			    			<span class="left">图案</span>
+			    			<span class="right">花色</span>
+			    		</div>
+			    		<div>
+			    			<span class="left">面料名称</span>
+			    			<span class="right">聚酯</span>
+			    		</div>
+			    	</div>
+			    	<div class="fl">
+			    		<div>
+			    			<span class="left">货源类别</span>
+			    			<span class="right">现货</span>
+			    		</div>
+	                    <div>
+			    			<span class="left">图案</span>
+			    			<span class="right">花色</span>
+			    		</div>
+			    		<div>
+			    			<span class="left">面料名称</span>
+			    			<span class="right">聚酯</span>
+			    		</div>
+			    	</div>
+			    	<div class="fl last">
+			    		<div>
+			    			<span class="left">货源类别</span>
+			    			<span class="right">现货</span>
+			    		</div>
+	                    <div>
+			    			<span class="left">图案</span>
+			    			<span class="right">花色</span>
+			    		</div>
+			    		<div>
+			    			<span class="left">面料名称</span>
+			    			<span class="right">聚酯</span>
+			    		</div>
+			    	</div>
+		    	</div>
+		    	<div class="proimg">
+		    		<img src="images/big/01.jpg" alt="" />
+		    	</div>
+		    </div>
+		    <!--交易历史-->
+		    <div class="history" style="display:none">
+		    	<div class="hd">
+		    		<div class="left">买家</div>
+		    		<div class="middle">成交量</div>
+		    		<div class="right">成交时间</div>
+		    	</div>
+		    	<div class="bd">
+		    		<div class="left">巴西国际商城有限公司</div>
+		    		<div class="middle">1024</div>
+		    		<div class="right">2015.10.12 - 2014.12.12</div>
+		    	</div>
+		    	<div class="bd">
+		    		<div class="left">巴西国际商城有限公司</div>
+		    		<div class="middle">2048</div>
+		    		<div class="right">2015.10.12 - 2014.12.12</div>
+		    	</div>
+		    	<div class="bd">
+		    		<div class="left">老温的国际商城有限公司</div>
+		    		<div class="middle">1024</div>
+		    		<div class="right">2014.10.12 - 2014.12.12</div>
+		    	</div>
+		    	<div class="bd">
+		    		<div class="left">巴西国际商城有限公司</div>
+		    		<div class="middle">2048</div>
+		    		<div class="right">2014.10.12 - 2014.12.12</div>
+		    	</div>
+		    	<div class="bd">
+		    		<div class="left">国际商城有限公司</div>
+		    		<div class="middle">1024</div>
+		    		<div class="right">2014.10.12 - 2014.12.12</div>
+		    	</div>
+		    	<div class="bd">
+		    		<div class="left">中国巴西友好国际商城有限公司</div>
+		    		<div class="middle">2048</div>
+		    		<div class="right">2014.10.12 - 2014.12.12</div>
+		    	</div>
+                <div class="bd">
+		    		<div class="left">天猫巴西国际商城有限公司</div>
+		    		<div class="middle">1024</div>
+		    		<div class="right">2014.10.12 - 2014.12.12</div>
+		    	</div>
+		    	<div class="bd">
+		    		<div class="left">巴西天猫国际商城有限公司</div>
+		    		<div class="middle">2048</div>
+		    		<div class="right">2014.10.12 - 2014.12.12</div>
+		    	</div>
+		    	<!--分页start-->
+                <div class="page">
+					<div class="fl">第&nbsp;<span class="shuzi">1</span>-<span class="shuzi">20</span>&nbsp;条，共&nbsp;<span class="shuzi">216</span>&nbsp;条</div>
+	                <div class="shuzi fr" id="fenzi">1/15</div>
+	                <div id="pane1" class="scroll-pane">
+					    <div class="fanye">
+					        <a href="#">第<span class="shuzi">12页</span></a>
+					        <a href="#">第<span class="shuzi">11页</span></a>
+					        <a href="#">第<span class="shuzi">10页</span></a>
+					        <a href="#">第<span class="shuzi">9页</span></a>
+					        <a href="#">第<span class="shuzi">8页</span></a>
+					        <a href="#">第<span class="shuzi">7页</span></a>
+					        <a href="#">第<span class="shuzi">6页</span></a>
+					        <a href="#">第<span class="shuzi">5页</span></a>
+					        <a href="#">第<span class="shuzi">4页</span></a>
+					        <a href="#">第<span class="shuzi">3页</span></a>
+					        <a href="#">第<span class="shuzi">2页</span></a>
+					        <a href="#">第<span class="shuzi">1页</span></a>
+					    </div>
+					</div>
+					<div class="yema fr">
+						<a href="#" class="before notuse"></a>
+						<a href="#" class="cur">1</a>
+						<a href="#">2</a>
+						<a href="#">3</a>
+						<a href="#">4</a>
+						<a href="#">5</a>
+						<a href="#" class="next"></a>
+					</div>
+				</div>
+			    <!--分页end-->
+		    </div>
+		</div>
+	</div>
+	<div class="footer">Copyright ©2015 冰激淋 All Rights Reserved.       [京ICP证030621号] 京公网安备[110401400184]</div>
+</body>
+<script type="text/javascript">
+$(document).ready(function(){
+    /*小图最后一个图片没有右padding*/
+	$(".smallImg ul li:last-child").css({
+		  "padding-right":"0px",
+		  "padding-left":"1px",
+	
+    });
+    $(".smallImg ul li:last-child .biankuang").css("left","1px");
+	// 图片上下滚动
+	var count = $("#imageMenu li").length - 5; /* 显示 6 个 li标签内容 */
+	var interval = $("#imageMenu li:first").width();
+	var curIndex = 0;
+	
+	$('.scrollbutton').click(function(){
+		if( $(this).hasClass('disabled') ) return false;
+		
+		if ($(this).hasClass('smallImgUp')) --curIndex;
+		else ++curIndex;
+		
+		$('.scrollbutton').removeClass('disabled');
+		if (curIndex == 0) $('.smallImgUp').addClass('disabled');
+		if (curIndex == count-1) $('.smallImgDown').addClass('disabled');
+		
+		$("#imageMenu ul").stop(false, true).animate({"marginLeft" : -curIndex*interval + "px"}, 600);
+	});
+	
+	// 解决 ie6 select框 问题
+	$.fn.decorateIframe = function(options) {
+        if ($.browser.msie && $.browser.version < 7) {
+            var opts = $.extend({}, $.fn.decorateIframe.defaults, options);
+            $(this).each(function() {
+                var $myThis = $(this);
+                //创建一个IFRAME
+                var divIframe = $("<iframe />");
+                divIframe.attr("id", opts.iframeId);
+                divIframe.css("position", "absolute");
+                divIframe.css("display", "none");
+                divIframe.css("display", "block");
+                divIframe.css("z-index", opts.iframeZIndex);
+                divIframe.css("border");
+                divIframe.css("top", "0");
+                divIframe.css("left", "0");
+                if (opts.width == 0) {
+                    divIframe.css("width", $myThis.width() + parseInt($myThis.css("padding")) * 2 + "px");
+                }
+                if (opts.height == 0) {
+                    divIframe.css("height", $myThis.height() + parseInt($myThis.css("padding")) * 2 + "px");
+                }
+                divIframe.css("filter", "mask(color=#fff)");
+                $myThis.append(divIframe);
+            });
+        }
+    }
+    $.fn.decorateIframe.defaults = {
+        iframeId: "decorateIframe1",
+        iframeZIndex: -1,
+        width: 0,
+        height: 0
+    }
+    //放大镜视窗
+    $("#bigView").decorateIframe();
+
+    //点击到中图
+    var midChangeHandler = null;
+	
+    $("#imageMenu li img").bind("mouseover", function(){
+        if ($(this).attr("id") != "onlickImg") {
+			window.clearTimeout(midChangeHandler);
+			midChange($(this).attr("src").replace("small", "mid"));
+			$(this).siblings(".biankuang").show().parent("li").siblings("li").children(".biankuang").hide();
+		}
+	});
+
+    function midChange(src) {
+        $("#midimg").attr("src", src).load(function() {
+            changeViewImg();
+        });
+    }
+
+    //大视窗看图
+    function mouseover(e) {
+        if ($("#winSelector").css("display") == "none") {
+            $("#winSelector,#bigView").show();
+        }
+
+        $("#winSelector").css(fixedPosition(e));
+        e.stopPropagation();
+    }
+
+
+    function mouseOut(e) {
+        if ($("#winSelector").css("display") != "none") {
+            $("#winSelector,#bigView").hide();
+        }
+        e.stopPropagation();
+    }
+
+
+    $("#midimg").mouseover(mouseover); //中图事件
+    $("#midimg,#winSelector").mousemove(mouseover).mouseout(mouseOut); //选择器事件
+
+    var $divWidth = $("#winSelector").width(); //选择器宽度
+    var $divHeight = $("#winSelector").height(); //选择器高度
+    var $imgWidth = $("#midimg").width(); //中图宽度
+    var $imgHeight = $("#midimg").height(); //中图高度
+    var $viewImgWidth = $viewImgHeight = $height = null; //IE加载后才能得到 大图宽度 大图高度 大图视窗高度
+
+    function changeViewImg() {
+        $("#bigView img").attr("src", $("#midimg").attr("src").replace("mid", "big"));
+    }
+
+    changeViewImg();
+
+    $("#bigView").scrollLeft(0).scrollTop(0);
+    function fixedPosition(e) {
+        if (e == null) {
+            return;
+        }
+        var $imgLeft = $("#midimg").offset().left; //中图左边距
+        var $imgTop = $("#midimg").offset().top; //中图上边距
+        X = e.pageX - $imgLeft - $divWidth / 2; //selector顶点坐标 X
+        Y = e.pageY - $imgTop - $divHeight / 2; //selector顶点坐标 Y
+        X = X < 0 ? 0 : X;
+        Y = Y < 0 ? 0 : Y;
+        X = X + $divWidth > $imgWidth ? $imgWidth - $divWidth : X;
+        Y = Y + $divHeight > $imgHeight ? $imgHeight - $divHeight : Y;
+
+        if ($viewImgWidth == null) {
+            $viewImgWidth = $("#bigView img").outerWidth();
+            $viewImgHeight = $("#bigView img").height();
+            if ($viewImgWidth < 200 || $viewImgHeight < 200) {
+                $viewImgWidth = $viewImgHeight = 800;
+            }
+            $height = $divHeight * $viewImgHeight / $imgHeight;
+            $("#bigView").width($divWidth * $viewImgWidth / $imgWidth);
+            $("#bigView").height($height);
+        }
+
+        var scrollX = X * $viewImgWidth / $imgWidth;
+        var scrollY = Y * $viewImgHeight / $imgHeight;
+        $("#bigView img").css({ "left": scrollX * -1, "top": scrollY * -1 });
+        $("#bigView").css({ "top": 0, "left": 430 });
+
+        return { left: X, top: Y };
+    }
+
+});
+</script>
+</html>

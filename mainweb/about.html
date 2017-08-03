@@ -1,0 +1,320 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+		<title>关于我</title>
+		<meta name="keywords"content="前端工程师个人主页"/>
+		<meta name="description"content="网页制作，前端开发"/>
+       	<link href="css/about.css"  type="text/css" rel="stylesheet" />
+       	<link href="css/buttons.css"  type="text/css" rel="stylesheet" />
+       	<link href="css/fangkuai.css"  type="text/css" rel="stylesheet" />
+       	<link href="css/reset.css"  type="text/css" rel="stylesheet" />
+
+
+       <style type="text/css">
+        .largePhoto{
+        	position: absolute;
+        	top:155px;
+        	left:825px;
+        }
+        .largePhoto ul li{
+        	display: none;
+        }
+        .largePhoto ul li img{
+        	width: 314px;
+            height: 240px;
+        }
+        .stage{
+			width: 165px;
+			height: 139px;
+			position: absolute;
+			top: 172px;
+            left: 560px;
+			-webkit-transform-style:preserve-3d;
+			-moz-transform-style:preserve-3d;
+			-ms-transform-style:preserve-3d;
+			transform-style:preserve-3d;
+			display: none;
+		}
+		.stage ul{
+			list-style: none;
+			-webkit-transform-style:preserve-3d;
+			-moz-transform-style:preserve-3d;
+			-ms-transform-style:preserve-3d;
+			transform-style:preserve-3d;
+
+			-webkit-transform:rotateY(0deg) rotateX(-10deg);
+			-moz-transform:rotateY(0deg) rotateX(-10deg);
+			-ms-transform:rotateY(0deg) rotateX(-10deg);
+			transform:rotateY(0deg) rotateX(-10deg);
+			
+			-webkit-transition:all 1s ease 0;
+			-moz-transition:all 1s ease 0s;
+			-ms-transition:all 1s ease 0;
+			transition:all 1s ease 0;
+		}
+		.stage ul li{
+			-webkit-transition:all 1s ease 0;
+			-moz-transition:all 1s ease 0s;
+			-ms-transition:all 1s ease 0;
+			transition:all 1s ease 0;
+            opacity: 0.2;
+			width: 165px;
+			height: 130px;
+		}
+	 	.stage ul li.cur{
+	 		opacity: 1;
+	 	}
+		.stage ul li:nth-child(1){
+			-webkit-transform:rotateY(0) translateZ(41px);
+			-moz-transform:rotateY(0) translateZ(41px);
+			-ms-transform:rotateY(0) translateZ(41px);
+			transform:rotateY(0) translateZ(41px);
+		}
+		.stage ul li:nth-child(2){
+			-webkit-transform:rotateY(120deg) translateZ(41px);
+			-moz-transform:rotateY(120deg) translateZ(41px);
+			-ms-transform:rotateY(120deg) translateZ(41px);
+			transform:rotateY(120deg) translateZ(41px);
+		}
+		.stage ul li:nth-child(3){
+			-webkit-transform:rotateY(240deg) translateZ(41px);
+			-moz-transform:rotateY(240deg) translateZ(41px);
+			-ms-transform:rotateY(240deg) translateZ(41px);
+			transform:rotateY(240deg) translateZ(41px);
+		}
+		#yuanxing{
+			position: absolute;
+			float: left;
+			width: 1100px;
+			height: 250px;
+            top:406px;
+            left:36px;
+		}
+		.fenlei{
+			position: absolute;
+			top:625px;
+			left:138px;
+		}
+       </style>
+       <script type="text/javascript" src="js/jquery-1.11.1.min.js" ></script>
+       <script type="text/javascript" src="js/lianxi.js" ></script>
+		<script type="text/javascript">
+			$(document).ready(
+				function(){
+
+                    var dushu = 0;
+				    var nowimg = 0;
+				    function zhuan(){
+				    	function xuanzhuan(){
+				    	dushu = dushu - 120;
+						$(".stage ul").css("-webkit-transform","rotateX(-10deg) rotateY(" + dushu +"deg)");
+						$(".stage ul").css("-moz-transform","rotateX(-10deg) rotateY(" + dushu +"deg)");
+						$(".stage ul").css("-ms-transform","rotateX(-10deg) rotateY(" + dushu +"deg)");
+						$(".stage ul").css("transform","rotateX(-10deg) rotateY(" + dushu +"deg)");
+						nowimg ++;
+						nowimg = nowimg % 3;
+						$(".stage ul li").eq(nowimg).addClass("cur").siblings().removeClass("cur");
+				    }
+				    window.clearInterval(myxuanzhuan);
+					var myxuanzhuan = window.setInterval(xuanzhuan,2000);
+					$(".stage").mouseenter(function(){
+						console.log($(this).index());
+						$(".largePhoto li").eq(nowimg).fadeIn(300).siblings().fadeOut(100);
+						 window.clearInterval(myxuanzhuan);
+					});
+					$(".stage").mouseleave(function(){
+                        $(".largePhoto li").eq(nowimg).fadeOut(100);
+						window.clearInterval(myxuanzhuan);
+						myxuanzhuan = window.setInterval(xuanzhuan,2000);
+					});
+				    }
+				    
+                  xixi();
+
+			  	  function xixi(){
+	  				$(".fanhui").animate({"top":155},1000,function(){
+	  					
+	  					$(".fanhui").animate({"top":145},1000,function(){
+	  						
+	  					})
+	  					xixi();
+	  				})		        		
+		        	};
+
+			  	zhuandong();
+			  	  	$(".butten1").click(
+			  	  		function(){
+			  	  			$(".bb").css("display","block");
+			  	  			$(".aa").animate({"left":2200},1800,function(){
+			  	  				$(".aa").css("display","none");
+			  	  			});
+			  	  			$(".bb").animate({"left":0,"top":0},2000);
+			  	  		    $(".stage").fadeIn(4000,function(){zhuan();});
+			  	  		}
+			  	  	)
+			  	  	 	$(".butten2").click(
+			  	  		function(){
+			  	  			$(".aa").css("display","block");
+			  	  			$(".cc").css("display","block");
+			  	  			$(".aa").animate({"left":0,"top":-1200},2000,function(){
+			  	  				$(".aa").css("display","none");
+			  	  			});
+			  	  			$(".bb").animate({"left":-2200,"top":-1200},2000,function(){
+			  	  				$(".bb").css("display","none");
+			  	  			});
+			  	  			$(".cc").animate({"left":0,"top":0},2000,function(){
+			  	  				$("#yuanxing").attr("src","yuanxing.html");
+			  	  			});
+			  	  			
+			  	  		}
+			  	  	)
+			  	  	 	$(".butten3").click(
+			  	  		function(){
+			  	  			$(".aa").css("display","block");
+			  	  			$(".dd").css("display","block");
+			  	  			
+			  	  			$(".cc").animate({"left":-2200,"top":2200},3000,function(){
+			  	  				$(".cc").css("display","none");
+			  	  			});
+			  	  		
+			  	  			$(".aa").animate({"left":-2200,"top":0},2000,function(){
+			  	  				$(".aa").css("display","none");
+			  	  			});
+			  	  			$(".dd").animate({"left":0,"top":0},2000);
+			  	  		}
+			  	  	)
+			  	  	 	$(".butten4").click(
+			  	  		function(){
+			  	  			$(".aa").css("display","block");
+
+			  	  			
+			  	  			$(".dd").animate({"left":2200,"top":0},2000,function(){
+			  	  				$(".dd").css("display","none");
+			  	  			});
+			  	  		
+			  	  			$(".aa").animate({"left":0,"top":0},2000);
+			  	  		}
+			  	  	)
+			  	  	
+
+			} 
+		);
+
+			
+		</script>
+	</head>
+
+	<body>
+	
+	  <div class="kuang">
+	  	<div class="aa">
+	 
+	  		<div class="fanhui"><a href="index.html" ><img src="img/fanhui.png"  alt="" /></a></div>
+	  		<img class="a1" src="img/ff/a1.png"  alt="" />
+	  		<img class="a2" src="img/ff/a2.png"  alt="" />
+	  		<div id="buttonContainer" class="butten1">
+				<a href="#" class="button red medium">开始了解</a>
+	  		</div>
+	  	</div>
+	   <div class="bb">
+	   		<img class="b1" src="img/ff/b3.jpg"  alt="" />
+	   		<img class="bb4" src="img/ff/b4.png"  alt="" />
+			<img class="bb5" src="img/ff/b5.png"  alt="" />
+	   		<img class="bb8" src="img/ff/b8.png"  alt="" />
+	   		<img class="b5" src="img/ff/b7.png"  alt="" />
+	   		<!-- <img class="ba5" src="img/ff/ba5.jpg"  alt="" /> -->
+
+	   		<div class="stage">
+		        <ul>
+		        	<li class="cur"><img src="img/ff/zhaopian1.jpg" /></li>
+		        	<li><img src="img/ff/zhaopian2.jpg" /></li>
+		        	<li><img src="img/ff/zhaopian3.jpg" /></li>
+		        </ul>
+	        </div>
+	        <div class="largePhoto">
+	        	<ul>
+	        	    <li><img src="img/ff/zhaopian4.jpg" /></li>
+		        	<li><img src="img/ff/zhaopian5.jpg" /></li>
+		        	<li><img src="img/ff/zhaopian6.jpg" /></li>
+	        	</ul>
+	        </div>
+			<div id="buttonContainer" class="butten2">
+	   	    	<a href="#" class="button orange medium">了解更多</a>
+	   		</div>
+
+	   </div>
+	   <style type="text/css">
+	       .ido p{
+	       	  font-size: 15px;
+	       	  line-height: 32px;
+	       	  color: #333;
+	       	  width: 767px;
+	       }
+	       .ido p span{
+	       	color: red;
+	       }
+	       .ido{
+	       	padding-top: 40px;
+	       }
+	   </style>
+	   <div class="cc">
+	   	<img class="b1" src="img/ff/c3.jpg"  alt="" />
+	   	<img class="b5" src="img/ff/b7.png"  alt="" />
+	   	<img class="c1" src="img/ff/c1.png"  alt="" />
+	   	<!-- <img class="c2" src="img/ff/c2.png"  alt="" /> -->
+	   	<div class="c2">
+	   		<div class="ido">
+	   			<p>1.熟练掌握W3C标准以及规范以及HTML+CSS架构网页，了解响应式布局以及相关知识，具备良好的代码风格和兼容性，能够高度还原设计稿，并能兼容主流浏览器。</p>
+	   			<p>2.熟练使用<span>Javascript</span>/<span>DOM</span>/事件流/<span>json</span>/<span>Ajax</span>/<span>jsonP</span>等开发技术，掌握并能应用面向对象的编程思想，快速实现多种前端展示与交互效果。</p>
+	   			<p>3.能熟练手写<span>Javascript</span>原生代码，使用Firebug等前端的基本调试工具。</p>
+	   			<p>4.熟悉<span>Boothstrap+HTML5+CSS3</span>，能熟练开发响应式网站，适应各种移动设备。</p>
+	   			<p>5.熟悉<span>github</span>版本控制器的操作</p>
+	   		</div>
+	   	</div>
+	   	<img class="c3" src="img/ff/c3.png"  alt="" />
+	   	 <div id="buttonContainer" class="butten3">
+	   	    	<a href="#" class="button blue medium">了解更多</a>
+	   	 </div>
+	     
+       <IFRAME style="opacity:0" NAME="content_frame" id="yuanxing"  frameborder="0"></IFRAME>
+       <div class="fenlei" style="opacity:0"><img src="img/ff/c4.png" alt="" /></div>
+	   </div>
+	   <div class="dd">
+	   	 <img class="b1" src="img/ff/d3.jpg"  alt="" />
+
+	   		<img class="b5" src="img/ff/b7.png"  alt="" />
+	   		 <ul id="ul">   
+		       <li class="myli"></li> 
+		       <li class="myli">QQ</li> 
+		       <li class="myli"><img id="no4" src="img/ff/d4.png"  alt="" /></li> 
+		       <li class="myli"><img id="no3" src="img/ff/d2.png"  alt="" /></li> 
+		       <li class="myli"><img id="no2" src="img/ff/d1.png"  alt="" /></li> 
+		       <li class="myli"><img id="no1" src="img/ff/d3.png"  alt="" /></li> 
+		    </ul>  
+		    <div class="lianxi"> 
+		    	<div class="qq">QQ:936613142</div>
+		    	<div class="shouji">电话:15003167565</div>
+		    	<div class="youxiang">邮箱:936613142@qq.com</div>
+		    	<div class="weibo">微信:15003167565</div>
+	
+
+	           <!--  <img class="qq" src="img/ff/qq.png"  alt="" />
+	            <img class="shouji" src="img/ff/shouji.png"  alt="" />
+	            <img class="weibo" src="img/ff/weibo.png"  alt="" />
+	            <img class="youxiang" src="img/ff/youxiang.png"  alt="" /> -->
+            </div>
+		    <div class="fangxiangbutton">   
+		        <img id="zuo" src="img/ff/zuo.png"  alt="" />
+		        <img id="you" src="img/ff/you.png"  alt="" />
+		    </div>   
+	   	 <div id="buttonContainer" class="butten4">
+	   	    	<a href="#" class="button gray medium">返回关于我</a>
+	   		</div>
+	   		<img class="d6" src="img/ff/d6.png"  alt="" />
+	   		<img class="d5" src="img/ff/d5.png"  alt="" />
+	   </div>
+	   </div>
+	
+			
+	</body>

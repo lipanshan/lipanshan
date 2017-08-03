@@ -1,0 +1,58 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+		<title>设计作品</title>
+		<meta name="keywords"content="前端工程师个人主页"/>
+		<meta name="description"content="网页制作，前端开发"/>
+		<link href="css/cc.css" type="text/css" rel="stylesheet" />
+        <script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+		<script type="text/javascript">
+			$(document).ready(
+			  function(){
+		  		haha();
+		  		xixi();
+
+				function haha(){
+		  				$(".logo").animate({"left":1800},30000,function(){
+		  					$(".logo").css("left",-200);
+		  					haha();
+		  				});
+		
+			        		
+			        	};
+
+		        	 function xixi(){
+	  				$(".fanhui").animate({"top":205},1000,function(){
+	  					
+	  					$(".fanhui").animate({"top":195},1000,function(){
+	  						
+	  					})
+	  					xixi();
+	  				})		        		
+		        	};
+			  	
+				
+			}
+		);
+
+			
+		</script>
+	</head>
+
+	<body>
+		<div id="bd">
+			<div class="logo"><a href="aa.html"><img src="img/logo.png" alt="" /></a></div>
+			<div class="main">
+				<div class="fanhui"><a href="index.html"><img src="img/fanhui.png" alt="" /></a></div>
+				<a href="ee/ee.html"><div class="box1">
+					<img src="img/cc/a1.png" alt="" class="boxa1"/>
+					<img src="img/cc/a3.png" alt="" class="boxa3"/>
+				</div></a>
+				<a href="ff/ff.html"><div class="box2">
+					<img src="img/cc/a2.png" alt="" class="boxa2"/>
+					<img src="img/cc/a4.png" alt="" class="boxa4"/>
+				</div></a>
+			</div>
+		</div>
+	</body>

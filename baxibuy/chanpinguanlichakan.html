@@ -1,0 +1,324 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>卖家中心_产品管理_查看</title>
+	<!--index.css,jquery-1.2.6.js,comm.js是公共文件-->
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<script type="text/javascript" src="js/jquery-1.2.6.min.js"></script>
+	<script type="text/javascript" src="js/comm.js"></script>
+</head>
+<script type="text/javascript">
+	$(document).ready(function(){
+		/*页面刚加载时，上传下载删除这三个小图标是没有的，当鼠标滑过当前图片时，图片出现蓝色边框，三个小图标出现*/
+		$(".onepic .button").hide();
+		$(".picEdit .onepic").hover(
+			function () {
+			   $(this).addClass("cur");
+			   $(this).children(".button").show();
+			},
+			function () {
+			   $(this).removeClass("cur");
+			   $(this).children(".button").hide();
+			}
+		);
+	});
+</script>
+<body>
+	<div class="topbar">
+		<div class="inner">
+			<div class="loginAndzhuce">
+				<a href="#" target="_blank" class="login">登录</a>|<a href="#" target="_blank" class="zhuce">注册</a>
+			</div>
+			
+			<div class="seller">
+				<h4><a href="#" target="_blank">卖家中心</a></h4>
+				<ul style="display:none">
+					<li><a href="#" target="_blank">我要上货</a></li>
+					<li><a href="#" target="_blank">货品管理</a></li>
+					<li><a href="#" target="_blank">交易管理</a></li>
+					<li><a href="#" target="_blank">物流管理</a></li>
+					<li><a href="#" target="_blank">账户管理</a></li>
+				</ul>
+			</div>
+			<div class="seller">
+				<h4><a href="#" target="_blank">买家中心</a></h4>
+				<ul style="display:none">
+					<li><a href="#" target="_blank">我要进货</a></li>
+					<li><a href="#" target="_blank">我的订单</a></li>
+					<li><a href="#" target="_blank">我的收藏</a></li>
+					<li><a href="#" target="_blank">账户管理</a></li>
+				</ul>
+			</div>
+			<a href="#" target="_blank" class="huilv">今日汇率：<span>0.553</span></a>
+			<div class="seller yuyan">
+				<h4><a href="#" target="_blank">中文</a></h4>
+				<ul style="display:none">
+					<li><a href="#" target="_blank">中文</a></li>
+					<li><a href="#" target="_blank">西班牙语</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="logo">
+		<div class="fl">
+			<img src="images/logo.png" alt="" />
+			<input type="text" placeholder="商品名称、ID  卖家" class="kuangkuang"/>
+			<input type="button" value="搜索" class="niuniu"/>
+		</div>
+		<div class="fr">
+			<h4>个人中心</h4>
+			<ul style="display:none">
+				<li class="jinhuo"><a href="#" target="_blank">我要进货</a></li>
+				<li class="dingdan"><a href="#" target="_blank">我的订单</a></li>
+				<li class="shoucang"><a href="#" target="_blank">我的收藏</a></li>
+				<li class="zhanghu"><a href="#" target="_blank">账户管理</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="banner banner2">
+		<ul class="nav">
+			<li class="no1"><a href="#" target="_blank">首页</a></li>
+			<li class="no2 cur" class="no1"><a href="#" target="_blank">卖场</a></li>
+			<li class="no3"><a href="#" target="_blank">需求论坛</a></li>
+			<li class="no4"><a href="#" target="_blank">支付服务</a></li>
+			<li class="no5"><a href="#" target="_blank">物流服务</a></li>
+			<li class="no6"><a href="#" target="_blank">交易规则与公告</a></li>
+		</ul>
+	</div>
+	<div class="gray">
+		<div class="sellerCenter">
+			<div class="inner">
+				<div class="fl">
+					<div class="top">
+						<h5>北京天猫器材有限公司</h5>
+						<p class="phone">138 1234 5678</p>
+						<p class="email">4308443895@gmail.com</p>
+					</div>
+					<div class="bottom">
+						<ul>
+							<li class="first">交易管理</li>
+							<li><a href="#">我的订单</a></li>
+							<li><a href="#">我的买家</a></li>
+							<li><a href="#">在线物流</a></li>
+						</ul>
+						<ul class="teshu">
+							<li class="first">产品管理</li>
+							<li class="cur"><a href="#">产品管理</a></li>
+							<li><a href="#">上货</a></li>
+							<li><a href="#">下单给买家</a></li>
+						</ul>
+						<ul>
+							<li class="first">资金账户</li>
+							<li><a href="#">资金记录</a></li>
+							<li><a href="#">绑定银行卡</a></li>
+						</ul>
+						<ul>
+							<li class="first">资金账户</li>
+							<li><a href="#">安全设置</a></li>
+							<li><a href="#">我的地址</a></li>
+							<li><a href="#">资料设置</a></li>
+						</ul>
+					</div>
+			    </div>
+				<div class="fr">
+					<div class="head">
+						<h5>产品管理&nbsp;>&nbsp;<a href="#" class="lianjie">查看&nbsp;2015春夏 女速干T恤</a></h5>
+					</div>
+					<!--产品属性表单 start-->
+					<div class="goods">
+						<div class="tupian">
+							<div class="large">
+								<img src="images/1.jpg" alt="" />
+							</div>
+							<div class="small">
+								<div class="smalltu">
+									<img src="images/1.jpg" alt="" />
+	                                <img src="images/edit.png" alt="" class="editIcon"/>
+	                                <img src="images/delete.png" alt="" class="deleteIcon"/>
+								</div>
+								<div class="smalltu">
+									<img src="images/1.jpg" alt="" />
+									<img src="images/edit.png" alt="" class="editIcon"/>
+	                                <img src="images/delete.png" alt="" class="deleteIcon"/>
+								</div>
+	                            <div class="smalltu">
+	                               <div class="uploadbtn">+</div>
+			                       <input type="file">
+	                            </div>
+							</div>
+						</div>
+						<div class="bianji">
+							<div class="goodsname">
+								<label><span>*</span>商品名称</label>
+								<input type="text" value="2015女士速干体恤体恤"/>
+							</div>
+							<div class="danwei">
+								<label><span>*</span>产品单位</label>
+								<input type="text" value="件"/>
+							</div>
+							<div class="weight">
+								<label><span>*</span>单位重量</label>
+								<input type="text" value="1000"/>
+								<select name="" id="">
+									<option value="">千克</option>
+								</select>
+							</div>
+							<div class="qipiliang">
+								<label><span>*</span>起批量</label>
+								<input type="text" value="1000900"/>
+							</div>
+							<div class="price">
+								<label><span>*</span>价格区间</label>
+								<div class="box">
+									<div class="hd">
+										<div>数量</div>
+										<div>单价</div>
+									</div>
+									<div class="item">
+										<input type="text" value="100" class="short first"/><span>-</span>
+										<input type="text" value="200" class="short"/>
+										<input type="text" value="99.9" class="long"/><span>元</span>
+									</div>
+									<div class="item">
+										<input type="text" value="201" class="short first"/><span>-</span>
+										<input type="text" value="500" class="short"/>
+										<input type="text" value="89.9" class="long"/><span>元</span>
+									</div>
+									<div class="item">
+										<input type="text" value="500" class="short first"/><span>-</span>
+										<input type="text" value="1000" class="short"/>
+										<input type="text" value="79.9" class="long"/><span>元</span>
+									</div>
+									<div class="item">
+										<input type="text" value="1000" class="short first"/><span class="long">以上</span>
+										
+										<input type="text" value="69.9" class="long"/><span>元</span>
+									</div>
+									<p>最多添加4个价格区间</p>
+								</div>
+							</div>
+							<div class="yunfei">
+								<label><span>*</span>运费单价</label>
+								<input type="text" value="￥"/>
+							</div>
+							<div class="shuifei">
+								<label><span>*</span>税费单价</label>
+								<input type="text" value="￥"/>
+							</div>
+							<div class="color">
+								<label>颜色</label>
+								<div class="box">
+									<div class="hd">
+										<div>颜色描述</div>
+										<div>辅助图片</div>
+									</div>
+									<div class="item">
+										<input type="text" value="灰色"/>
+										<div class="tianjia">
+											<div class="cont">
+												<img src="images/1.jpg"/>
+												<a href="#">添加图片</a>
+												<a href="#">删除</a>
+											</div>
+										</div>
+									</div>
+									<div class="item">
+										<input type="text" value="蓝色"/>
+										<div class="tianjia">
+											<div class="cont">
+												<img src="images/1.jpg"/>
+												<a href="#">删除</a>
+											</div>
+										</div>
+									</div>
+									<div class="item">
+										<input type="text" value="白色"/>
+										<div class="tianjia">
+											<div class="cont">
+												<a href="#">添加图片</a>
+											</div>
+										</div>
+									</div>
+									<p><span>+</span><a href="#">添加颜色</a></p>
+								</div>
+							</div>
+							<div class="size">
+								<label>尺码</label>
+								<div class="box">
+									<div class="hd">
+										<div>尺寸描述</div>
+									</div>
+									<div class="item">
+										<input type="text" value="S码"/><a href="#">删除</a>
+									</div><div class="item">
+										<input type="text" value="M码"/><a href="#">删除</a>
+									</div><div class="item">
+										<input type="text" value="L码"/><a href="#">删除</a>
+									</div>
+									<p><span>+</span><a href="#">添加尺码</a></p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--产品属性表单 end-->
+					<!--产品细节 start-->
+					<div class="detail">
+                        <div class="top">
+							<div class="lanxian"></div>
+							<div class="xijie cur">
+								产品细节
+						    </div>
+							<div class="xian"></div>
+		    			</div>
+		    			<!--产品细节表单 start-->
+						<div class="detailEdit">
+							<div class="box">
+								<div class="hd">
+									<div>细节</div>
+									<div>描述</div>
+								</div>
+								<div class="item">
+									<input type="text" class="left" value="品牌"/>
+									<input type="text" class="right" value="王小贱"/><a href="#">删除</a>
+								</div>
+								<div class="item">
+									<input type="text" class="left" value="尺寸"/>
+									<input type="text" class="right" value="S M L"/><a href="#">删除</a>
+								</div>
+							</div>
+							<p class="cl"><span>+</span><a href="#">添加细节描述</a></p>
+						</div>
+						<!--产品细节表单 end-->
+						<!--产品图片 start-->
+						<div class="picEdit">
+							<div class="onepic">
+								<img src="images/1.jpg" alt="" />
+								<div class="button"><!--页面刚加载时，上传下载删除这三个小图标是没有的，当鼠标滑过当前图片时，图片出现蓝色边框，三个小图标出现-->
+									<img src="images/upload.png" alt="" />
+									<img src="images/download.png" alt="" />
+									<img src="images/delete.png" alt="" />
+								</div>
+							</div>
+							<div class="addPic">
+								<p><span>+</span><a>添加描述图片</a></p>
+								<input type="file" />
+							</div>
+						</div>
+						<!--产品图片 start-->
+					</div>
+					<!--产品细节 start-->
+					<div class="ft">
+						<div class="btn">
+							<input type="button" class="save" value="保存"/>
+							<input type="button" class="tijiao" value="提交审核"/>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+	<div class="footer">Copyright ©2015 冰激淋 All Rights Reserved.       [京ICP证030621号] 京公网安备[110401400184]</div>
+</body>
+</html>

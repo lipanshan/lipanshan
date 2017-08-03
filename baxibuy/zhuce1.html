@@ -1,0 +1,146 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>08 注册-买家-1</title>
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<script type="text/javascript" src="js/jquery-1.2.6.min.js"></script>
+	<script type="text/javascript" src="js/comm.js"></script>
+</head>
+<script type="text/javascript">
+    $(document).ready(function(){
+    	/*买家注册，卖家注册切换，蓝线位置变动，背景图变换*/
+        $(".loginbox .top .fl").click(function(){
+			$(".chinamap").fadeOut(500);
+			$(".baximap").fadeIn(500);
+			$(this).addClass("cur").siblings("div").removeClass("cur");
+			$(".lanxian").animate({left:"-1px"},150);
+			
+		});
+		$(".loginbox .top .fr").click(function(){
+			$(".baximap").fadeOut(500);
+			$(".chinamap").fadeIn(500);
+			
+			$(".lanxian").animate({left:"247px"},150);
+			$(this).addClass("cur").siblings("div").removeClass("cur");
+
+		});
+		/*登录框点击 边框变蓝色*/
+		$(".loginbox div input").focus(function(){
+           $(this).css("border-color","#586ded");
+		});
+		$(".loginbox div input").blur(function(){
+           $(this).css("border-color","#e8e8e8");
+		});
+	});
+</script>
+<body>
+	<div class="topbar">
+		<div class="inner">
+			<div class="loginAndzhuce">
+				<a href="denglu.html" target="_blank" class="login">登录</a>|<a href="zhuce1.html" target="_blank" class="zhuce">注册</a>
+			</div>
+			
+			<div class="seller">
+				<h4><a href="sellerindex.html" target="_blank">卖家中心</a></h4>
+				<ul style="display:none">
+					<li><a href="list.html" target="_blank">我要上货</a></li>
+					<li><a href="huopinguanli.html" target="_blank">货品管理</a></li>
+					<li><a href="huopinguanli.html" target="_blank">交易管理</a></li>
+					<li><a href="zaixianwuliu.html" target="_blank">物流管理</a></li>
+					<li><a href="zijinjilu.html" target="_blank">账户管理</a></li>
+				</ul>
+			</div>
+			<div class="seller">
+				<h4><a href="buyerindex.html" target="_blank">买家中心</a></h4>
+				<ul style="display:none">
+					<li><a href="list.html" target="_blank">我要进货</a></li>
+					<li><a href="dingdan.html" target="_blank">我的订单</a></li>
+					<li><a href="list.html" target="_blank">我的收藏</a></li>
+					<li><a href="zijinjilu.html" target="_blank">账户管理</a></li>
+				</ul>
+			</div>
+			<a href="#" target="_blank" class="huilv">今日汇率：<span>0.553</span></a>
+			<div class="seller yuyan">
+				<h4><a href="#" target="_blank">中文</a></h4>
+				<ul style="display:none">
+					<li><a href="#" target="_blank">中文</a></li>
+					<li><a href="#" target="_blank">西班牙语</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="logo">
+		<div class="fl">
+			<img src="images/logo.png" alt="" />
+			<!--新加 搜索框value值-->
+			<input type="text" placeholder="商品名称、ID  卖家" class="kuangkuang" value="3249059033"/>
+			<input type="button" value="搜索" class="niuniu"/>
+		</div>
+		<div class="fr">
+			<!--新加 如果个人中心有新消息 则加b标签-->
+			<h4>个人中心<b class="hasInfo"></b></h4>
+			<ul style="display:none">
+				<li class="shanghuo"><a href="list.html" target="_blank">我要上货</a></li>
+				<li class="huopin"><a href="huopinguanli.html" target="_blank">货品管理</a></li>
+				<!--新加 如果交易管理有新消息 则加b标签-->
+				<li class="jiaoyi"><a href="huopinguanli.html" target="_blank">交易管理</a><b class="hasInfo"></b></li>
+				<li class="wuliu"><a href="wuliuservice.html" target="_blank">物流管理</a></li>
+				<li class="zhanghu"><a href="zijinjilu.html" target="_blank">账户管理</a><b class="hasInfo"></b></li>
+			</ul>
+		</div>
+	</div>
+	<div class="banner banner2">
+		<ul class="nav">
+			<li class="no1"><a href="index.html" target="_blank">首页</a></li>
+			<li class="no2"><a href="list.html" target="_blank">卖场</a></li>
+			<li class="no3"><a href="#">需求论坛</a></li>
+			<li class="no4"><a href="zhifuservice.html" target="_blank">支付服务</a></li>
+			<li class="no5"><a href="wuliuservice.html" target="_blank">物流服务</a></li>
+			<li class="no6"><a href="jiaoyiguize.html" target="_blank">交易规则与公告</a></li>
+		</ul>
+	</div>
+	<div class="gray">
+		<div class="inner">
+			<div class="step">
+				<div class="step1 current">
+					<p>验证邮箱</p>
+					<span class="shuzi">1</span>
+					<div class="xian"></div>
+				</div>
+				<div class="step2">
+					<p>填写账户信息</p>
+					<div class="xian"></div>
+					<span class="shuzi">2</span>
+				</div>
+			</div>
+			<div class="loginbox">
+				<div class="lanxian" style="left: -1px;"></div>
+		        <div class="top">
+				    <div class="fl cur">
+						买家注册
+					</div>
+					<a href="zhuce5.html" style="color:#666"><div class="fr">卖家注册</div></a>
+				</div>
+				<div class="email">
+					<h5>注册邮箱</h5>
+					<input type="text" placeholder="example@example.com">
+				</div>
+				<div class="code">
+					<h5>验证码</h5>
+					<input type="text">
+					<img src="images/code.jpg">
+				</div>
+				<div class="tishi">
+					<div class="errormsg">验证码错误</div>
+				</div>
+				<a href="zhuce2.html">
+				<div class="loginbtn">
+					<input type="button" value="下一步">
+				</div></a>
+			</div>
+		</div>
+	</div>
+	<div class="footer">Copyright ©2015 冰激淋 All Rights Reserved.       [京ICP证030621号] 京公网安备[110401400184]</div>
+</body>
+</html>

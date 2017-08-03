@@ -1,0 +1,290 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>专家详情</title>
+	<link href="css/pc.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+<script type="text/javascript">
+$(function(){
+    var Bool=false;
+    var Scro=$("#scroll");
+    var Scrp=$("#p");
+    var Scrobd=$("#bd");
+    var Scroul=$("#ul");
+    var Scrp_Height =Scrp.outerHeight()/2;
+    var Num2=Scro.outerHeight()-Scrp.outerHeight();
+    var offsetX=0;
+    var offsetY=0;
+    Scrp.mousedown(function(e){  
+        Bool=true;
+    });
+    $(document).mouseup(function(){
+        Bool=false;
+    });
+    $(document).mousemove(function(e){
+        if(Bool){
+            var Num1= e.clientY - Scro.position().top;
+            var y=Num1 - Scrp_Height;
+            if(y<=1){
+                Scrll(0);
+                Scrp.css("top",1);
+            }else if(y>=Num2){
+                Scrp.css("top",Num2);
+                Scrll(Num2);
+            }else{
+                Scrll(y);
+            }
+        }
+    });
+    function Scrll(y){
+        Scrp.css("top",y);
+        Scroul.css("margin-top",-(y/(Scro.outerHeight()-Scrp.outerHeight()))*(Scroul.outerHeight()-Scrobd.height()));
+    }
+    if(document.getElementById("scroll_bd").addEventListener) 
+    document.getElementById("scroll_bd").addEventListener('DOMMouseScroll',wheel,true);
+    document.getElementById("scroll_bd").onmousewheel=wheel;
+    var Distance=Num2*0.1;
+    function wheel(e){
+        var evt = e || window.event;
+        var wheelDelta = evt.wheelDelta || evt.detail;
+        if(wheelDelta == -120 || wheelDelta == 3){
+            var Distances=Scrp.position().top+Distance;
+            if(Distances>=Num2){
+                Scrp.css("top",Num2);
+                Scrll(Num2);
+            }else{
+                Scrll(Distances);
+            }
+            return false;
+        }else if (wheelDelta == 120 || wheelDelta == -3){
+            var Distances=Scrp.position().top-Distance;
+            if(Distances<=1){
+                Scrll(0);
+                Scrp.css("top",1);
+            }else{
+                Scrll(Distances);
+            }
+            return false;
+        }   
+    }
+});
+</script>
+</head>
+<body>
+<!--indextop-->
+<div class="indextop">
+    <div class="indextop_c center">
+        <ul class="indext_left">
+            <li><a href="#">首页</a></li>
+            <li class="spacer"></li>
+            <li><a href="#">网站服务</a><img src="images/xiala.png" alt="" class="xiala"/></li>
+            <li class="spacer"></li>
+            <li><a href="#">手机应用</a><img src="images/erweimaicon.png" alt="" class="erweimaicon"/></li>
+            <li class="spacer"></li>
+            <li><a style="cursor:pointer;">加为收藏</a></li>
+        </ul>
+        <ul class="indext_right" id="right">
+            <li><a  href="#" >登录</a></li>
+            <li class="spacer"></li>
+            <li><a  href="#" >注册</a></li>
+            <li id="right3" class="spacer"></li>
+            <li><a href="#">我的提问</a><img src="images/xiala.png" alt="" class="xiala" /></li>
+        </ul>
+    </div>
+</div>
+<!--logo seacrch-->
+<div class="index_ls">
+    <div class="index_ls_c center">
+        <div class="logo"><a href="#"><img src="images/logo.png" width="103" height="86" /></a></div>
+        <div class="ll"></div>
+        <div class="seach_hot">
+            <div class="seach">
+                <span>
+                    <input type="text" class="index_seach" value="请输入疾病、医生、医院..." />
+                </span>
+                 <button type="button" class="seach_button">搜 索</button>
+            </div>
+            <div class="hot_text clear">
+                <p>
+                    <span>热门搜索：</span>
+                    <a href="javascript:void(0)">前列腺炎</a>
+                    <a href="javascript:void(0)">月经失调</a>
+                    <a href="javascript:void(0)">痤疮</a>
+                    <a href="javascript:void(0)">鼻炎</a>
+                    <a href="javascript:void(0)">乙肝</a>
+                    <a href="javascript:void(0)">抑郁症</a>
+                    <a href="javascript:void(0)">心脑血管</a>
+                </p>
+            </div>
+        </div>
+        <!--二维码-->
+        <div class="ewm ">
+            <p><a href="#"><img src="images/appdown.jpg" width="62" height="62" /> <span>手机APP下载</span> </a></p>
+            <p><a href="#"><img src="images/weixin.jpg" width="62" height="62" /> <span>微信二维码</span> </a></p>
+        </div>
+    </div>
+</div>
+<!--nav-->
+<div class="index_nav clear">
+    <div class="nav_box center">
+        <div class="nav_c">
+            <div class="nav">
+                <ul>
+                        <li><a href="index.html">首页</a></li>
+                        <li><a href="wenzhenzhuanjia.html">问诊专家</a></li>
+                        <li><a href="zixunbangzhu.html" class="nav_hover">咨询帮助</a></li>
+                        <li><a href="mycenter.html">用户中心</a></li>
+                    </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="zhifu proDetail">
+    <div class="docHd"><span class="first"><a href="#">首页</a></span>&gt;<span><a href="#">内科</a></span>&gt;<span><a href="#">糖尿病</a></span>&gt;<span class="cur"><a href="#">预约专家</a></span></div>
+    <div class="docDetail">
+        <div class="left">
+            <div class="leftWrap">
+                <div class="xian"></div>
+                <div class="yuyueHd"><span class="hengxian"></span>您的预约专家详情</div>
+                <div class="yuyueBd">
+                    <p class="no1">阜外医院心脏外科  王守力</p>
+                    <p>门诊时间：2105-11-25 星期三 下午    门诊类型：专家门诊    挂号费：200元</p>
+                    <p>加号地点：7号楼2楼30号专家诊室</p>
+                </div>
+                <div class="yuyueHd"><span class="hengxian"></span>填写咨询内容</div>
+                <div class="yuyueForm">
+                    <p class="wz_title pd25 pdt25">姓名：
+                    <span class="wrap_select">  
+                       <input type="text"  class="makeupCoSe"/>
+                    </span> </p>  
+                    <p class="wz_title pd25">性别：<span class="sex"><input type="radio">男<span class="shuxian">|</span><input type="radio">女<span class="shuxian">|</span><input type="radio">孕妇<input type="text" class="weeks"></span></p>
+                    <p class="wz_title pd25">年龄：
+                        <span class="wrap_select">  
+                            <select id="makeupCoSe" class="makeupCoSe" onchange="changeF();">  
+                                <option value="20">20岁</option>  
+                                <option value="21">21岁</option>  
+                                <option value="22">22岁</option>  
+                                <option value="23">23岁</option>  
+                                <option id="99999" value="24" selected="selected">24岁 </option>
+                            </select>  
+                        </span>  
+                        <span class="wrap_input">  
+                            <input type="text" id="makeupCo" value="" class="makeupCo">  
+                        </span>  
+                    </p>
+                    <p class="wz_title pd25">类型：<span class="sex"><input type="radio">初诊<span class="shuxian">|</span><input type="radio">随诊</span></p>
+                </div>
+                <div class="wz_conts pd25">
+                    <p class="wz_title">请详细描述您的病情</p>
+                    <textarea placeholder="如：发病部位及发病次数，引起哪些不适发病部位及发病次数，引起哪些不适发病部位及发病次数，引起哪些不适发病部位及发病次数，引起哪些不适发病部位及发病次数，引起哪些不适发病部位及发病次数，引起哪些不适发病部位及发病次数，引起哪些不适发病部位及发病次数，引起哪些不适发病部位及发病次数，引起哪些不适发病部位及发病次数，引起哪些不适"></textarea>
+                </div>
+                <div class="yuyueHd"><span class="hengxian"></span>上传附件信息</div>
+                <div class="wz_conts pdt25">
+                    <p class="wz_title">请您上传5个附件，每个不超过2M。</p>
+                    <p class="note">附件支持的格式有:'jpg', 'bmp', 'png'</p>
+                    <input type="button" class="loadbtn" value="上传附件">
+                </div>
+                <div class="tac pdb92"><input type="button" value="提交给医生" class="sendbtn"></div>
+            </div>
+        </div>
+        <div class="right">
+            <div class="up">
+                <div class="docPhoto"><img src="images/doctor.jpg" alt="" /></div>
+                <div class="doctimehd">王守力专家的门诊时间</div>
+                <div class="bd" id="scroll_bd">
+                    <div class="top" id="bd">
+                        <ul id="ul">
+                            <li>
+                                <div class="doctimeBox">
+                                <div class="doctime"><img src="images/clock_icon.png" alt="" />&nbsp;2015-11-25&nbsp;周三上午</div>
+                                <div class="timeDesc"><div class="fl">专家门诊丨余2丨￥200.00</div><div class="fr"><a href="#" class="find_button">加号预约</a></div></div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="doctimeBox">
+                                <div class="doctime"><img src="images/clock_icon.png" alt="" />&nbsp;2015-11-25&nbsp;周三上午</div>
+                                <div class="timeDesc"><div class="fl">专家门诊丨余2丨￥200.00</div><div class="fr"><a href="#" class="find_button">加号预约</a></div></div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="doctimeBox">
+                                <div class="doctime"><img src="images/clock_icon.png" alt="" />&nbsp;2015-11-25&nbsp;周三上午</div>
+                                <div class="timeDesc"><div class="fl">专家门诊丨余2丨￥200.00</div><div class="fr"><a href="#" class="find_button">加号预约</a></div></div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="doctimeBox">
+                                <div class="doctime"><img src="images/clock_icon.png" alt="" />&nbsp;2015-11-25&nbsp;周三上午</div>
+                                <div class="timeDesc"><div class="fl">专家门诊丨余2丨￥200.00</div><div class="fr"><a href="#" class="find_button">加号预约</a></div></div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="doctimeBox">
+                                <div class="doctime"><img src="images/clock_icon.png" alt="" />&nbsp;2015-11-25&nbsp;周三上午</div>
+                                <div class="timeDesc"><div class="fl">专家门诊丨余2丨￥200.00</div><div class="fr"><a href="#" class="find_button">加号预约</a></div></div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="doctimeBox">
+                                <div class="doctime"><img src="images/clock_icon.png" alt="" />&nbsp;2015-11-25&nbsp;周三上午</div>
+                                <div class="timeDesc"><div class="fl">专家门诊丨余2丨￥200.00</div><div class="fr"><a href="#" class="find_button">加号预约</a></div></div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="doctimeBox">
+                                <div class="doctime"><img src="images/clock_icon.png" alt="" />&nbsp;2015-11-25&nbsp;周三上午</div>
+                                <div class="timeDesc"><div class="fl">专家门诊丨余2丨￥200.00</div><div class="fr"><a href="#" class="find_button">加号预约</a></div></div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="doctimeBox">
+                                <div class="doctime"><img src="images/clock_icon.png" alt="" />&nbsp;2015-11-25&nbsp;周三上午</div>
+                                <div class="timeDesc"><div class="fl">专家门诊丨余2丨￥200.00</div><div class="fr"><a href="#" class="find_button">加号预约</a></div></div>
+                                </div>
+                            </li>
+                            <li class="last">
+                                <div class="doctimeBox">
+                                <div class="doctime"><img src="images/clock_icon.png" alt="" />&nbsp;2015-11-25&nbsp;周三上午</div>
+                                <div class="timeDesc"><div class="fl">专家门诊丨余2丨￥200.00</div><div class="fr"><a href="#" class="find_button">加号预约</a></div></div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="scroll">
+                        <p id="p"></p>
+                    </div>
+                </div>  
+            </div>
+            <div class="docList">
+                <div class="ur_title"><span>妇科专家医师</span><a href="#" class="more">更多&gt;</a></div>
+                <div>
+                    <dl class="ur_doctor">
+                        <dt><a href="#" target="_blank"><img src="images/doctor.png" style="width:118px;height:112px"></a></dt>
+                        <dd> <span>牛松涛<em>副主任医师</em></span><p>北京妇产医院  妇产科</p><p>当代杰出白癜风病诊疗专家 </p><h5><a href="#" class="find_button">点击咨询</a></h5></dd>
+                    </dl>
+                    <dl class="ur_doctor last">
+                        <dt><a href="#" target="_blank"><img src="images/doctor.png" style="width:118px;height:112px"></a></dt>
+                        <dd> <span>牛松涛<em>副主任医师</em></span><p>北京妇产医院  妇产科</p><p>当代杰出白癜风病诊疗专家 </p><h5><a href="#" class="find_button">点击咨询</a></h5></dd>
+                    </dl>
+                </div>
+            </div>  
+        </div>
+    </div>
+</div>
+<!--footer-->
+<div class="index_footer center">
+    <div class="footer_link center"> 
+        <a href="#" target="_blank">关于我们</a><span></span>
+        <a href="#">营销服务</a><span></span> <a href="#">合作联盟</a><span></span> 
+        <a href="#">媒体报道</a><span></span> <a href="#">网站地图</a><span></span> 
+        <a href="#" target="_blank">服务声明</a><span></span> <a href="#" target="_blank">招聘信息</a><span></span> 
+        <a href="#">意见反馈</a><span></span> <a href="#" target="_blank">联系方式</a></div>
+    <div class="footer_copy">
+        <p>经营许可证编号：京ICP备15015320号 京公网安备11010802017313号</p>
+        <p>北京康信医疗信息技术有限公司  版权所有  专家号  中国最高端的医疗咨询服务平台</p>
+        <p>服务声明：专家咨询建议仅供参考_不能作为诊断及医疗的依据</p>
+    </div>
+</div>
+</body>
+</html>

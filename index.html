@@ -1,0 +1,118 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>首页</title>
+	<meta name="keywords"content="前端工程师个人主页"/>
+	<meta name="description"content="网页制作，前端开发"/>
+	<link href="css/reset.css"  type="text/css" rel="stylesheet" />
+	<link href="css/add.css"  type="text/css" rel="stylesheet" />
+    <link href="css/buttons.css"  type="text/css" rel="stylesheet" />
+    <link href="css/fangkuai.css"  type="text/css" rel="stylesheet" />
+    <script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+</head>
+	
+<body>
+	<div class="bg">
+		<div class="bd">
+			<div class="main">
+				<div class="xiaoshou"><img src="img/xiaoshou.png" alt="" /></div>
+				<div class="xiaoxiang">
+					<div class="xiaoxiang1"><a href="about.html" target="_blank"><img src="img/xiaoxiang1.jpg" alt="" /></a></div>
+					<div class="xiaoxiang2"><a href="about.html" target="_blank"><img src="img/xiaoxiang2.jpg" alt="" /></a></div>
+				</div>
+				<div class="contact">
+					<div class="contact2"><a href="contact.html" target="_blank"><img src="img/contact2.png" alt="" /></a></div>
+					<div class="contact1"><a href="contact.html" target="_blank"><img src="img/contact.jpg" alt="" /></a></div>
+					
+				</div>
+				<a href="wangye.html" target="_blank">
+				<div class="comp">
+					<img src="img/computer2.jpg" alt="" />
+					<div class="baiye">
+						<ul>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+						</ul>
+					</div>
+				</div>
+				</a>
+				<div class="mobile">
+					<div class="mobile1"><a href="app.html" target="_blank"><img src="img/mobile.jpg" alt="" /></a></div>
+					<div class="mobile2"><a href="app.html" target="_blank"><img src="img/mobile2.jpg" alt="" /></a></div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
+<script type="text/javascript">
+	$(".xiaoxiang1").mouseenter(function(){
+		$(this).addClass("cur");
+	});
+	$(".xiaoxiang1").mouseleave(function(){
+		$(this).removeClass("cur");
+	});
+	$(".contact").mouseenter(function(){
+		$(this).addClass("cur");
+	});
+	$(".contact").mouseleave(function(){
+		$(this).removeClass("cur");
+	});
+	var mybiye = 0;
+	
+	$(".baiye").mouseenter(function(){
+		window.clearInterval(mybiye);
+		var i = -1;
+		mybiye = window.setInterval(
+			function(){
+				if(i<14){
+					i++;
+					$(".baiye li").eq(i).addClass("cur");
+					if(i==12){
+						$(".comp img").addClass("cur");
+					}
+				}
+			}
+			,20
+		);
+		
+	})
+	$(".baiye").mouseleave(function(){
+		window.clearInterval(mybiye);
+		$(".comp img").removeClass("cur");
+		var i = 14;
+		mybiye = window.setInterval(
+			function(){
+				if(i>-1){
+					i--;
+					$(".baiye li").eq(i).removeClass("cur");
+				}
+				if(i==1){
+					
+				}
+			}
+			,20
+		);
+		
+	})
+	$(".mobile").mouseenter(function(){
+		$(this).addClass("cur");
+		$(".xiaoshou").fadeOut();
+	});
+	$(".mobile").mouseleave(function(){
+		$(this).removeClass("cur");
+	});
+</script>

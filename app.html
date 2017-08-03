@@ -1,0 +1,286 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+		<title>手机App设计作品</title>
+		<meta name="keywords"content="前端工程师个人主页"/>
+		<meta name="description"content="网页制作，前端开发"/>
+		<link href="css/dd.css" type="text/css" rel="stylesheet" />
+        <script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+		<script type="text/javascript">
+			$(document).ready(
+			  function(){
+			  	haha();
+			  	xixi();
+			  	hehe();
+			
+
+					function haha(){
+		  				$(".logo").animate({"left":1800},30000,function(){
+		  					$(".logo").css("left",-200);
+		  					haha();
+		  				});			        		
+			        	};
+			          function xixi(){
+	  				$(".fanhui").animate({"top":5},1000,function(){
+	  					
+	  					$(".fanhui").animate({"top":-5},1000,function(){
+	  						
+	  					})
+	  					xixi();
+	  				})		        		
+		        	};
+
+		        	function hehe(){
+	  				$(".shou").animate({"top":-33},500,function(){
+	  					
+	  					$(".shou").animate({"top":-29},500,function(){
+	  						
+	  					})
+	  					hehe();
+	  				})		        		
+		        	};
+		
+			        var s0={"width":151,"height":313,"top":70,"left":-281};
+			        var s1={"width":151,"height":313,"top":70,"left":81};
+			        var s2={"width":215,"height":449,"top":0,"left":439};
+			        var s3={"width":151,"height":313,"top":70,"left":860};
+			        var s4={"width":151,"height":313,"top":70,"left":1214};
+
+			        $(".youanniu").click(
+					function(){
+						if(!$(".no1").is(":animated")){
+							$(".no1").animate(s0,1000);
+							$(".no2").animate(s1,1000);
+							$(".no3").animate(s2,1000);
+							$(".no4").animate(s3,1000);
+							$(".no0").css(s4);
+							
+							$(".no0").attr("class","denghou");
+							$(".no1").attr("class","no0");
+							$(".no2").attr("class","no1");
+							$(".no3").attr("class","no2");
+							$(".no4").attr("class","no3");
+
+							if($(".no3").next().length != 0){
+								$(".no3").next().attr("class","no4");
+								$(".no4").css(s4);
+							}else{
+								$("li").eq(0).attr("class","no4");
+							}
+				}})
+
+
+				$(".zuoanniu").click(
+					function(){
+						if(!$(".no1").is(":animated") || shangdi == 1){ 	
+
+							$(".no0").animate(s1,1000);
+							$(".no1").animate(s2,1000);
+							$(".no2").animate(s3,1000);
+							$(".no3").animate(s4,1000);
+							$(".no4").css(s0);
+
+
+							$(".no4").attr("class","denghou");
+							$(".no3").attr("class","no4");
+							$(".no2").attr("class","no3");
+							$(".no1").attr("class","no2");
+							$(".no0").attr("class","no1");
+							
+							if($(".no1").prev().length != 0){
+								$(".no1").prev().attr("class","no0");
+								$(".no0").css(s0);
+							}else{
+								$("li:last").attr("class","no0");
+							}
+ 						}
+					}
+				);
+			    //     $(".cc").click(
+			    //     	function(){
+			    //     		$(".heikuang").css("display","block");
+			    //     		$(".zhankai1 img").css("display","block");
+			    //     		$(".guanbi1").css("display","block");
+			    //     		$(".d2").animate({"top":-156,"left":-178},800,function(){
+			    //     			$(".d2").animate({"top":-216,"left":-377},800)
+			    //     		});
+			    //     		$(".d3").animate({"top":165,"left":-178},800,function(){
+			    //     			$(".d3").animate({"top":225,"left":-377},800)
+			    //     		});
+			    //     		$(".d4").animate({"top":-156,"left":178},800,function(){
+			    //     			$(".d4").animate({"top":-216,"left":375},800)
+			    //     		});
+			    //     		$(".d5").animate({"top":165,"left":178},800,function(){
+			    //     			$(".d5").animate({"top":225,"left":375},800)
+			    //     		});
+			    //     	}
+			    //     )
+			    //     $(".guanbi1").click(
+			    //     	function(){
+			        		
+			    //     		$(".d2").animate({"top":0,"left":-178},500,function(){
+			    //     			$(".d2").animate({"top":0,"left":0},500)
+			    //     		});
+			    //     		$(".d3").animate({"top":0,"left":-178},500,function(){
+			    //     			$(".d3").animate({"top":0,"left":0},500)
+			    //     		});
+			    //     		$(".d4").animate({"top":0,"left":178},500,function(){
+			    //     			$(".d4").animate({"top":0,"left":0},500)
+			    //     		});
+			    //     		$(".d5").animate({"top":0,"left":178},500,function(){
+			    //     			$(".d5").animate({"top":0,"left":0},500,function(){
+			    //     				$(".heikuang").css("display","none");
+			    //     		       $(".zhankai1 img").css("display","none");
+			    //     		       $(".guanbi1").css("display","none");
+			    //     			});
+
+			    //     		});
+
+			    //     	}
+			    //     )
+    	  //      		 $(".dd").click(
+			    //     	function(){
+			    //     		$(".heikuang").css("display","block");
+			    //     		$(".zhankai2 img").css("display","block");
+			    //     		$(".guanbi2").css("display","block");
+			    //     	    $(".e1").animate({"left":-89},800,function(){
+			    //     	    	$(".e1").addClass('zhuan1');
+			    //     	    })
+			    //     	    $(".e2").animate({"left":-178},800,function(){
+			    //     	    	$(".e2").addClass('zhuan2');
+			    //     	    })
+			    //     	    $(".e3").animate({"left":89},800,function(){
+			    //     	    	$(".e3").addClass('zhuan3');
+			    //     	    })
+			    //     	     $(".e4").animate({"left":178},800,function(){
+			    //     	    	$(".e4").addClass('zhuan4');
+			    //     	    })
+			    //     	}
+			    //     )
+    	  //      		$(".guanbi2").click(
+    	  //      			function(){
+    	  //      				$(".e1").removeClass('zhuan1');
+    	  //      				$(".e2").removeClass('zhuan2');
+    	  //      				$(".e3").removeClass('zhuan3');
+    	  //      				$(".e4").removeClass('zhuan4');
+    	  //      				$(".e1").animate({"left":0},800)
+    	  //      				$(".e2").animate({"left":0},800)
+    	  //      				$(".e3").animate({"left":0},800)
+    	  //      				$(".e4").animate({"left":0},800,function(){
+    	  //      					$(".heikuang").css("display","none");
+			    //     		       $(".zhankai2 img").css("display","none");
+			    //     		       $(".guanbi2").css("display","none");
+    	  //      				})
+    	  //      			}
+    	  //      		)
+
+	   		 //  	$(".ee").click(
+	      //   		function(){
+	      //   		$(".heikuang").css("display","block");
+	      //   		$(".zhankai3 img").css("display","block");
+	      //   		$(".guanbi3").css("display","block");
+	      //   	    $(".f2").animate({"left":-132},800,function(){
+	      //   	    	$(".f2").addClass('zhuan5');
+	      //   	    })
+	      //   	    $(".f3").animate({"left":132},800,function(){
+	      //   	    	$(".f3").addClass('zhuan6');
+	      //   	    })
+	        	
+	      //   	}
+			    // )
+	      //  		$(".guanbi3").click(
+       // 			function(){
+       // 				$(".f2").removeClass('zhuan5');
+       // 				$(".f3").removeClass('zhuan6');
+       				
+       // 				$(".f2").animate({"left":0},800)
+       // 				$(".f3").animate({"left":0},800,function(){
+       // 					$(".heikuang").css("display","none");
+	      //   		       $(".zhankai3 img").css("display","none");
+	      //   		       $(".guanbi3").css("display","none");
+       // 				})
+       // 			}
+       // 		)
+	      //  		$(".main ul li img").click(
+	      //  			function(){
+	      //  				$(".tishi").css("display","none");
+	      //  			}
+	      //  		)
+			}
+		);
+
+			
+		</script>
+	</head>
+	<style type="text/css">
+	  .tishi{
+	  	text-align: center;
+	  	color: #666;
+	  	font-size: 25px;
+		font-family: "Yahei","微软雅黑";
+		padding-top: 50px;
+	  }
+	  .zhongbu {
+		    width: 1092px;
+		    height: 700px;
+		    position: relative;
+		    margin: 0 auto;
+		    top: 105px;
+		}
+	</style>
+	<body>
+		<div id="bd">
+			<div class="tishi">AppStore或微信搜索“专家号”均可观看线上作品</div>
+			<div class="heikuang"></div>
+			<div class="zhongbu">
+				<div class="zhankai1">
+					<img class="d1" src="img/dd/d1.jpg" alt="" />
+					<img class="d2" src="img/dd/d2.jpg" alt="" />
+					<img class="d3" src="img/dd/d3.jpg" alt="" />
+					<img class="d4" src="img/dd/d4.jpg" alt="" />
+					<img class="d5" src="img/dd/d5.jpg" alt="" />
+				</div>
+				<div class="zhankai2">
+					<img class="e1" src="img/dd/e1.png" alt="" />
+					<img class="e2" src="img/dd/e2.png" alt="" />
+					<img class="e3" src="img/dd/e3.png" alt="" />
+					<img class="e4" src="img/dd/e4.png" alt="" />
+					<img class="e5" src="img/dd/e5.jpg" alt="" />
+				</div>
+				<div class="zhankai3">
+					<img class="f1" src="img/dd/f1.jpg" alt="" />
+					<img class="f2" src="img/dd/f2.jpg" alt="" />
+					<img class="f3" src="img/dd/f3.jpg" alt="" />
+					
+				</div>
+				<div class="guanbi1"></div>
+				<div class="guanbi2"></div>
+				<div class="guanbi3"></div>
+				<!-- <div class="tishi">
+					<img class="shou" src="img/dd/xiaoshou.png" alt="" />
+					<img class="zi" src="img/dd/dianji.png" alt="" />
+				</div> -->
+				<div class="fanhui"><a href="index.html"><img src="img/fanhui.png" alt="" /></a></div>
+			</div>
+			<!-- <div class="logo"><img src="img/logo.png" alt="" /></div> -->
+			<div class="main">
+				<div class="fanhui"><a href="index.html"><img src="img/fanhui.png" alt="" /></a></div>
+				<ul>
+					<li class="no0"><img class="aa" src="img/dd/a3.png" alt="" /></li>
+					<li class="no1"><img class="bb" src="img/dd/a2.png" alt="" /></li>
+					<li class="no2"><img class="cc" src="img/dd/a1.png" alt="" /></li>
+					<li class="no3"><img class="dd" src="img/dd/a4.png" alt="" /></li>
+					<li class="no4"><img class="ee" src="img/dd/a5.png" alt="" /></li>
+				</ul>
+				<div class="zuoanniu"></div>
+				<div class="youanniu"></div>
+				<div class="wutai1"><img src="img/dd/dd.png" alt="" /></div>
+				<div class="wutai2"><img src="img/dd/dd.png" alt="" /></div>
+				
+
+			</div>
+			
+		</div>
+	</body>

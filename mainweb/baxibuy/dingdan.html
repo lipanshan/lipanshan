@@ -1,0 +1,562 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>卖家中心_我的订单</title>
+	<!--index.css,jquery-1.2.6.js,comm.js是公共文件-->
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<script type="text/javascript" src="js/jquery-1.2.6.min.js"></script>
+	<script type="text/javascript" src="js/comm.js"></script>
+	<!--日期控件-->
+	<script type="text/javascript" src="js/jQuery-jcDate.js"></script>
+</head>
+<script type="text/javascript">
+    $(document).ready(function(){
+    	/*日期控件*/
+    	$("input.jcDate").jcDate({					       
+			IcoClass : "jcDateIco",
+			Event : "click",
+			Speed : 100,
+			Left : 0,
+			Top : 28,
+			format : "-",
+			Timeout : 100
+		});
+		/*已完成的订单，鼠标滑过边框变粉色。未完成的订单，鼠标滑过边框变蓝色1*/
+		$(".mylist .main").hover(
+			  function () {
+			    $(this).addClass("cur").siblings("main").removeClass("cur");
+			  },
+			  function () {
+			    $(this).removeClass("cur");
+			  }
+		);
+		$(".mylist ul.tab li").click(function(){
+			$(this).addClass("cur").siblings().removeClass("cur");
+		});
+	});
+</script>
+<body>
+	<div class="topbar">
+		<div class="inner">
+			<div class="loginAndzhuce">
+				<a href="denglu.html" target="_blank" class="login">登录</a>|<a href="zhuce1.html" target="_blank" class="zhuce">注册</a>
+			</div>
+			
+			<div class="seller">
+				<h4><a href="sellerindex.html" target="_blank">卖家中心</a></h4>
+				<ul style="display:none">
+					<li><a href="list.html" target="_blank">我要上货</a></li>
+					<li><a href="huopinguanli.html" target="_blank">货品管理</a></li>
+					<li><a href="huopinguanli.html" target="_blank">交易管理</a></li>
+					<li><a href="zaixianwuliu.html" target="_blank">物流管理</a></li>
+					<li><a href="zijinjilu.html" target="_blank">账户管理</a></li>
+				</ul>
+			</div>
+			<div class="seller">
+				<h4><a href="buyerindex.html" target="_blank">买家中心</a></h4>
+				<ul style="display:none">
+					<li><a href="list.html" target="_blank">我要进货</a></li>
+					<li><a href="dingdan.html" target="_blank">我的订单</a></li>
+					<li><a href="list.html" target="_blank">我的收藏</a></li>
+					<li><a href="zijinjilu.html" target="_blank">账户管理</a></li>
+				</ul>
+			</div>
+			<a href="#" target="_blank" class="huilv">今日汇率：<span>0.553</span></a>
+			<div class="seller yuyan">
+				<h4><a href="#" target="_blank">中文</a></h4>
+				<ul style="display:none">
+					<li><a href="#" target="_blank">中文</a></li>
+					<li><a href="#" target="_blank">西班牙语</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="logo">
+		<div class="fl">
+			<img src="images/logo.png" alt="" />
+			<!--新加 搜索框value值-->
+			<input type="text" placeholder="商品名称、ID  卖家" class="kuangkuang" value="3249059033"/>
+			<input type="button" value="搜索" class="niuniu"/>
+		</div>
+		<div class="fr">
+			<!--新加 如果个人中心有新消息 则加b标签-->
+			<h4>个人中心<b class="hasInfo"></b></h4>
+			<ul style="display:none">
+				<li class="shanghuo"><a href="list.html" target="_blank">我要上货</a></li>
+				<li class="huopin"><a href="huopinguanli.html" target="_blank">货品管理</a></li>
+				<!--新加 如果交易管理有新消息 则加b标签-->
+				<li class="jiaoyi"><a href="huopinguanli.html" target="_blank">交易管理</a><b class="hasInfo"></b></li>
+				<li class="wuliu"><a href="wuliuservice.html" target="_blank">物流管理</a></li>
+				<li class="zhanghu"><a href="zijinjilu.html" target="_blank">账户管理</a><b class="hasInfo"></b></li>
+			</ul>
+		</div>
+	</div>
+	<div class="banner banner2">
+		<ul class="nav">
+			<li class="no1"><a href="index.html" target="_blank">首页</a></li>
+			<li class="no2 cur"><a href="list.html" target="_blank">卖场</a></li>
+			<li class="no3"><a href="#">需求论坛</a></li>
+			<li class="no4"><a href="zhifuservice.html" target="_blank">支付服务</a></li>
+			<li class="no5"><a href="wuliuservice.html" target="_blank">物流服务</a></li>
+			<li class="no6"><a href="jiaoyiguize.html" target="_blank">交易规则与公告</a></li>
+		</ul>
+	</div>
+	<div class="gray">
+		<div class="sellerCenter">
+			<div class="inner">
+				<div class="fl">
+					<div class="top">
+						<h5>北京天猫器材有限公司</h5>
+						<p class="phone">138 1234 5678</p>
+						<p class="email">4308443895@gmail.com</p>
+					</div>
+					<div class="bottom">
+						<ul>
+							<li class="first">交易管理</li>
+							<li class="cur"><a href="dingdan.html">我的订单</a></li>
+							<li><a href="wodemaijia.html">我的买家</a></li>
+							<li><a href="zaixianwuliu.html">在线物流</a></li>
+						</ul>
+						<ul class="teshu">
+							<li class="first">产品管理</li>
+							<li><a href="huopinguanli.html">产品管理</a></li>
+							<li><a href="shanghuo.html">上货</a></li>
+							<li><a href="xiadangeimaijia.html">下单给买家</a></li>
+						</ul>
+						<ul>
+							<li class="first">资金账户</li>
+							<li><a href="zijinjilu.html">资金记录</a></li>
+							<li><a href="bankcard.html">绑定银行卡</a></li>
+						</ul>
+						<ul>
+							<li class="first">资金账户</li>
+							<li><a href="anquan.html">安全设置</a></li>
+							<li><a href="address.html">我的地址</a></li>
+							<li><a href="ziliao.html">资料设置</a></li>
+						</ul>
+					</div>
+			    </div>
+				<div class="fr">
+					<div class="hd">
+						<h5>我的订单</h5>
+						<a href="#">帮买家下单</a>
+					</div>
+					<div class="tiaojian cl">
+						<div>
+							<label>商品名称</label>
+							<input type="text" />
+						</div>
+						<div>
+							<label>产品编号</label>
+							<input type="text" />
+						</div>
+						<div class="nopadding">
+							<label>买家昵称</label>
+							<input type="text" />
+						</div>
+						<div class="teshu">
+							<label>订单状态</label>
+							<select name="" id="">
+								<option>待下单</option>
+								<option>已下单</option>
+								<option>待买家确认</option>
+								<option>待买家付款</option>
+								<option>买家已付款</option>
+								<option>待发货</option>
+								<option>已发货</option>
+								<option selected="selected">待买家确认收货</option>
+								<option>买家已收获</option>
+								<option>已入账</option>
+								<option>交易中的订单</option>
+								<option>交易已完成的订单</option>
+								<option>交易关闭</option>
+								<option>异常订单</option>
+							</select>
+						</div>
+						<div class="dingdanhao">
+							<label>订单号</label>
+							<input type="text" />
+						</div>
+						<div class="riqi nopadding">
+							<label>下单日期</label>
+							<input class="jcDate" />
+							<span>至</span>
+                            <input class="jcDate right" />
+						</div>
+						<div class="sendbtn">
+							<input type="button"  value="搜索"/>
+						</div>
+					</div>
+					<div class="mylist cl">
+						<ul class="tab">
+							<li class="cur">
+								<span class="xian"></span>
+								<a>所有订单&nbsp;<span>36</span></a>
+							</li>
+							<li>
+								<span class="xian"></span>
+								<a>交易中订单&nbsp;<span>36</span></a>
+							</li>
+							<li>
+								<span class="xian"></span>
+								<a>待下单&nbsp;<span>10</span></a>
+							</li>
+							<li>
+								<span class="xian"></span>
+								<a>待买家确认&nbsp;<span>9</span></a>
+							</li>
+							<li>
+								<span class="xian"></span>
+								<a>待买家付款&nbsp;<span>29</span></a>
+							</li>
+							<li>
+								<span class="xian"></span>
+								<a>代发货&nbsp;<span>36</span></a>
+							</li>
+							<li>
+								<span class="xian"></span>
+								<a>交易已完成订单&nbsp;<span>20</span></a>
+							</li>
+							<li>
+								<span class="xian"></span>
+								<a>交易关闭订单&nbsp;<span>36</span></a>
+							</li>
+						</ul>
+						<ul class="top">
+							<li class="no1">产品名称</li>
+							<li class="no2">单价</li>
+							<li class="no3">数量</li>
+							<li class="no4">总价</li>
+							<li class="no5">交易状态</li>
+							<li class="no6">当前操作</li>
+						</ul>
+						<!--单个订单 start-->
+						<div class="main">
+							<div class="hd">
+								<div class="no1">2015-05-10</div>
+								<div class="no2">订单号：1234567890</div>
+								<div class="no3">买家：<a href="#">简兮饰品专营店</a></div>
+								<a href="" class="shanchu"></a>
+							</div>
+							<div class="bd">
+								<div class="maincont">
+									<img src="images/1.jpg" alt="" />
+									<div class="pro">
+										<p class="no1"><a href="#">顺丰包邮 罗技G402 可编程笔记本电脑 有线竞技游戏鼠标 赠好礼</a></p>
+										<p class="no2">颜色：黑 白 灰</p>
+										<p class="no3">尺寸：M</p>
+									</div>
+									<div class="price">¥ 99.9</div>
+									<div class="cnt">1000</div>			
+								</div>
+                                <div class="sumprice">
+									<p class="shuzi bold">¥&nbsp;9990.00</p>
+									<p>(含运费：<span class="shuzi">¥300.00</span>)</p>
+								</div>
+								<div class="state">
+									<p>待下单</p>
+									<p><a href="#">查看订单</a></p>
+								</div>
+								<div class="caozuo">
+                                   	<div class="xiadan">
+										<a href="#">下单</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!--单个订单 end-->
+						<!--单个订单 start-->
+						<div class="main">
+							<div class="hd">
+								<div class="no1">2015-05-10</div>
+								<div class="no2">订单号：1234567890</div>
+								<div class="no3">买家：<a href="#">简兮饰品专营店</a></div>
+								<a href="" class="shanchu"></a>
+							</div>
+							<div class="bd">
+								<div class="maincont">
+									<img src="images/1.jpg" alt="" />
+									<div class="pro">
+										<p class="no1"><a href="#">顺丰包邮 罗技G402 可编程笔记本电脑 有线竞技游戏鼠标 赠好礼</a></p>
+										<p class="no2">颜色：黑 白 灰</p>
+										<p class="no3">尺寸：M</p>
+									</div>
+									<div class="price">¥ 99.9</div>
+									<div class="cnt">1000</div>			
+								</div>
+                                <div class="sumprice">
+									<p class="shuzi bold">¥&nbsp;9990.00</p>
+									<p>(含运费：<span class="shuzi">¥300.00</span>)</p>
+								</div>
+								<div class="state">
+									<p>待下单</p>
+									<p><a href="#">查看订单</a></p>
+								</div>
+								<div class="caozuo">
+								</div>
+							</div>
+						</div>
+						<!--单个订单 end-->
+						<!--合并订单 start-->						
+						<div class="main">
+							<div class="hd">
+								<div class="no1">2015-05-10</div>
+								<div class="no2">订单号：1234567890</div>
+								<div class="no3">买家：<a href="#">简兮饰品专营店</a></div>
+								<a href="" class="shanchu"></a>
+							</div>
+							<div class="bd">
+								<div class="maincont dixian">
+									<img src="images/1.jpg" alt="" />
+									<div class="pro">
+										<p class="no1"><a href="#">顺丰包邮 罗技G402 可编程笔记本电脑 有线竞技游戏鼠标 赠好礼</a></p>
+										<p class="no2">颜色：黑 白 灰</p>
+										<p class="no3">尺寸：M</p>
+									</div>
+									<div class="price">¥ 99.9</div>
+									<div class="cnt">1000</div>			
+								</div>
+                                <div class="sumprice">
+									<p class="shuzi bold">¥&nbsp;9990.00</p>
+									<p>(含运费：<span class="shuzi">¥300.00</span>)</p>
+								</div>
+								<div class="state">
+									<p>待下单</p>
+									<p><a href="#">查看订单</a></p>
+								</div>
+								<div class="caozuo">
+                                   	<div class="xiadan">
+										<a href="#">发货</a>
+									</div>
+								</div>
+							</div>
+							<div class="bd">
+								<div class="maincont">
+									<img src="images/1.jpg" alt="" />
+									<div class="pro">
+										<p class="no1"><a href="#">顺丰包邮 罗技G402 可编程笔记本电脑 有线竞技游戏鼠标 赠好礼</a></p>
+										<p class="no2">颜色：黑 白 灰</p>
+										<p class="no3">尺寸：M</p>
+									</div>
+									<div class="price">¥ 99.9</div>
+									<div class="cnt">1000</div>			
+								</div>
+                                <div class="sumprice">
+									<!-- <p class="shuzi bold">¥&nbsp;9990.00</p>
+									<p>(含运费：<span class="shuzi">¥300.00</span>)</p> -->
+								</div>
+								<div class="state">
+									<!-- <p><a href="#">待下单</a></p>
+									<p><a href="#">查看订单</a></p> -->
+								</div>
+								<div class="caozuo">
+
+								</div>
+							</div>
+						</div>
+						<!--合并订单 end-->								
+						<!--合并订单 start-->						
+						<div class="main">
+							<div class="hd">
+								<div class="no1">2015-05-10</div>
+								<div class="no2">订单号：1234567890</div>
+								<div class="no3">买家：<a href="#">简兮饰品专营店</a></div>
+								<a href="" class="shanchu"></a>
+							</div>
+							<div class="bd">
+								<div class="maincont dixian">
+									<img src="images/1.jpg" alt="" />
+									<div class="pro">
+										<p class="no1"><a href="#">顺丰包邮 罗技G402 可编程笔记本电脑 有线竞技游戏鼠标 赠好礼</a></p>
+										<p class="no2">颜色：黑 白 灰</p>
+										<p class="no3">尺寸：M</p>
+									</div>
+									<div class="price">¥ 99.9</div>
+									<div class="cnt">1000</div>			
+								</div>
+                                <div class="sumprice">
+									<p class="shuzi bold">¥&nbsp;9990.00</p>
+									<p>(含运费：<span class="shuzi">¥300.00</span>)</p>
+								</div>
+								<div class="state">
+									<p>待买家确认收货</p>
+									<p><a href="#">查看订单</a></p>
+									<p><a href="#">查看物流</a></p>
+								</div>
+								<div class="caozuo">
+								</div>
+							</div>
+							<div class="bd">
+								<div class="maincont">
+									<img src="images/1.jpg" alt="" />
+									<div class="pro">
+										<p class="no1"><a href="#">顺丰包邮 罗技G402 可编程笔记本电脑 有线竞技游戏鼠标 赠好礼</a></p>
+										<p class="no2">颜色：黑 白 灰</p>
+										<p class="no3">尺寸：M</p>
+									</div>
+									<div class="price">¥ 99.9</div>
+									<div class="cnt">1000</div>			
+								</div>
+                                <div class="sumprice">
+								</div>
+								<div class="state">
+								</div>
+								<div class="caozuo">
+
+								</div>
+							</div>
+						</div>
+						<!--合并订单 end-->		
+						<!--单个订单 start-->						
+						<div class="main">
+							<div class="hd">
+								<div class="no1">2015-05-10</div>
+								<div class="no2">订单号：1234567890</div>
+								<div class="no3">买家：<a href="#">简兮饰品专营店</a></div>
+								<a href="" class="shanchu"></a>
+							</div>
+							<div class="bd">
+								<div class="maincont">
+									<img src="images/1.jpg" alt="" />
+									<div class="pro">
+										<p class="no1"><a href="#">顺丰包邮 罗技G402 可编程笔记本电脑 有线竞技游戏鼠标 赠好礼</a></p>
+										<p class="no2">颜色：黑 白 灰</p>
+										<p class="no3">尺寸：M</p>
+									</div>
+									<div class="price">¥ 99.9</div>
+									<div class="cnt">1000</div>			
+								</div>
+                                <div class="sumprice">
+									<p class="shuzi bold">¥&nbsp;9990.00</p>
+									<p>(含运费：<span class="shuzi">¥300.00</span>)</p>
+								</div>
+								<div class="state">
+									<p>买家已收货</p>
+									<p><a href="#">查看订单</a></p>
+									<p><a href="#">查看物流</a></p>
+								</div>
+								<div class="caozuo">
+								</div>
+							</div>
+						</div>
+						<!--单个订单 end-->
+						<!--单个订单 start-->						
+						<div class="main done"><!--已完成的订单 done，鼠标滑过边框变粉色。未完成的订单，鼠标滑过边框变蓝色1*/-->
+							<div class="hd">
+								<div class="no1">2015-05-10</div>
+								<div class="no2">订单号：1234567890</div>
+								<div class="no3">买家：<a href="#">简兮饰品专营店</a></div>
+								<a href="" class="shanchu"></a>
+							</div>
+							<div class="bd">
+								<div class="maincont">
+									<img src="images/1.jpg" alt="" />
+									<div class="pro">
+										<p class="no1"><a href="#">顺丰包邮 罗技G402 可编程笔记本电脑 有线竞技游戏鼠标 赠好礼</a></p>
+										<p class="no2">颜色：黑 白 灰</p>
+										<p class="no3">尺寸：M</p>
+									</div>
+									<div class="price">¥ 99.9</div>
+									<div class="cnt">1000</div>			
+								</div>
+                                <div class="sumprice">
+									<p class="shuzi bold">¥&nbsp;9990.00</p>
+									<p>(含运费：<span class="shuzi">¥300.00</span>)</p>
+								</div>
+								<div class="state">
+									<p>订单异常</p>
+									<p><a href="#">查看订单</a></p>
+									<p><a href="#">查看物流</a></p>
+								</div>
+								<div class="caozuo">
+								</div>
+							</div>
+						</div>
+						<!--单个订单 end-->	
+						<!--单个订单 start-->						
+						<div class="main">
+							<div class="hd">
+								<div class="no1">2015-05-10</div>
+								<div class="no2">订单号：1234567890</div>
+								<div class="no3">买家：<a href="#">简兮饰品专营店</a></div>
+								<a href="" class="shanchu"></a>
+							</div>
+							<div class="bd">
+								<div class="maincont">
+									<img src="images/1.jpg" alt="" />
+									<div class="pro">
+										<p class="no1"><a href="#">顺丰包邮 罗技G402 可编程笔记本电脑 有线竞技游戏鼠标 赠好礼</a></p>
+										<p class="no2">颜色：黑 白 灰</p>
+										<p class="no3">尺寸：M</p>
+									</div>
+									<div class="price">¥ 99.9</div>
+									<div class="cnt">1000</div>			
+								</div>
+                                <div class="sumprice">
+									<p class="shuzi bold">¥&nbsp;9990.00</p>
+									<p>(含运费：<span class="shuzi">¥300.00</span>)</p>
+								</div>
+								<div class="state">
+									<p>已入账</p>
+									<p><a href="#">查看订单</a></p>
+									<p><a href="#">查看物流</a></p>
+								</div>
+								<div class="caozuo">
+								</div>
+							</div>
+						</div>
+						<!--单个订单 end-->								<!--单个订单 start-->						
+						<div class="main">
+							<div class="hd">
+								<div class="no1">2015-05-10</div>
+								<div class="no2">订单号：1234567890</div>
+								<div class="no3">买家：<a href="#">简兮饰品专营店</a></div>
+								<a href="" class="shanchu"></a>
+							</div>
+							<div class="bd">
+								<div class="maincont">
+									<img src="images/1.jpg" alt="" />
+									<div class="pro">
+										<p class="no1"><a href="#">顺丰包邮 罗技G402 可编程笔记本电脑 有线竞技游戏鼠标 赠好礼</a></p>
+										<p class="no2">颜色：黑 白 灰</p>
+										<p class="no3">尺寸：M</p>
+									</div>
+									<div class="price">¥ 99.9</div>
+									<div class="cnt">1000</div>			
+								</div>
+                                <div class="sumprice">
+									<p class="shuzi bold">¥&nbsp;9990.00</p>
+									<p>(含运费：<span class="shuzi">¥300.00</span>)</p>
+								</div>
+								<div class="state">
+									<p>已入账</p>
+									<p><a href="#">查看订单</a></p>
+									<p><a href="#">查看物流</a></p>
+								</div>
+								<div class="caozuo">
+								</div>
+							</div>
+						</div>
+						<!--单个订单 end-->				
+					</div>
+					<ul class="pages">
+						<li class="page_count">共21条</li>
+						<a class="disabled jxbtn" href="javascript:void(0);"><li class="shou ">首页</li></a>
+						<a class="disabled jxbtn" href="javascript:void(0);"><li class="prev ">上一页</li></a>
+						<a class="disabled active curren" href="javascript:void(0);"><strong><li class="selected">1</li></strong></a>
+						<a class="jxbtn" href="http://www.baxibuy.com/buy/index/index.html?page=2"><li class="">2</li></a>
+						<a class="jxbtn" href="http://www.baxibuy.com/buy/index/index.html?page=3"><li class="">3</li></a>
+						<a class="jxbtn" href="http://www.baxibuy.com/buy/index/index.html?page=2"><li class="next">下一页</li></a> 
+						<a class="jxbtn" href="http://www.baxibuy.com/buy/index/index.html?page=3"><li class="wei">尾页</li></a> 
+						<input type="text" id="pagenum">
+						<input type="button" value="go" id="gopage" onclick="gourl()">
+					</ul>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+	<div class="footer">Copyright ©2015 冰激淋 All Rights Reserved.       [京ICP证030621号] 京公网安备[110401400184]</div>
+</body>
+</html>

@@ -1,0 +1,87 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+.cl{
+	clear: both;
+}
+#bd{
+	width: 100%;
+	height: 1000px;
+	background: url("../img/indexbg.gif") no-repeat center top;
+	background-attachment:fixed; 
+      background-size:cover; 
+
+}
+.logo{
+	width: 105px;
+	height: 133px;
+	position: absolute;
+	top: 30px;
+	left: -200px;
+}
+.fanhui{
+	position: absolute;
+	top:200px;
+	left: 1050px;
+	width: 108px;
+	height: 78px;
+
+}
+.main{
+	width: 1000px;
+	height: 100%;
+	margin: 0 auto;
+	position: relative;
+}
+.box1{
+	width: 242px;
+	height: 242px;
+	position: absolute;
+	top: 270px;
+	left: 100px;
+    cursor: pointer; 
+
+}
+.box1 img{
+	position: absolute;
+	top:0;
+	left:0;
+	-webkit-backface-visibility:hidden;
+ 	transition:all 1s ease 0;
+}
+.box1 img.boxa3{
+ 	-webkit-transform:rotateY(540deg);
+}
+.box1:hover img.boxa1{
+ 	-webkit-transform:rotateY(540deg);
+}
+.box1:hover img.boxa3{
+ 	-webkit-transform:rotateY(0deg);
+ }
+.box2{
+	width: 242px;
+	height: 242px;
+	position: absolute;
+	top: 270px;
+	left: 550px;
+    cursor: pointer; 
+
+}
+.box2 img{
+	position: absolute;
+	top:0;
+	left:0;
+	-webkit-backface-visibility:hidden;
+    transition:all 1s ease 0;
+}
+.box2 img.boxa4{
+ 	-webkit-transform:rotateX(540deg);
+}
+.box2:hover img.boxa2{
+ 	-webkit-transform:rotateX(540deg);
+}
+.box2:hover img.boxa4{
+ 	-webkit-transform:rotateX(0deg);
+ }

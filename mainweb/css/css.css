@@ -1,0 +1,119 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+img{
+	border:0;
+}
+.a2{
+	display: none;
+}
+#baiyechuang{
+	position: absolute;
+	left: 28px;
+	top: 91px;
+	display: none;
+	width: 217px;
+	height: 122px;
+	cursor: pointer;  
+}
+
+#baiyechuang ul{
+	list-style: none;
+}
+#baiyechuang ul li{
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+#baiyechuang ul li.cur{
+	display: block;
+}
+#baiyechuang .anniu .right_but{
+	display: block;
+	width: 1px;
+	height: 1px;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+}
+#baiyechuang .maoni{
+	width: 217px;
+	height: 122px;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+#baiyechuang .maoni div{
+	width: 0px;
+	height: 122px;
+	top: 0;
+	position: absolute;
+	background-image: none;
+}
+#baiyechuang .maoni .no0{
+	right: 186px;
+	background-position: 0 0;
+}
+#baiyechuang .maoni .no1{
+	right: 155px;
+	background-position: -31px 0;
+}
+#baiyechuang .maoni .no2{
+	right: 124px;
+	background-position: -62px 0;
+}
+#baiyechuang .maoni .no3{
+	right: 93px;
+	background-position: -93px 0;
+}
+#baiyechuang .maoni .no4{
+	right: 62px;
+	background-position: -124px 0;
+}
+#baiyechuang .maoni .no5{
+	right: 31px;
+	background-position: -155px 0;
+}
+#baiyechuang .maoni .no6{
+	right: 0px;
+	background-position: -186px 0;
+}
+#xialalunbo{
+	position: absolute;
+	top: 114px;
+	left: 52px;
+	width: 92px;
+	height: 153px;
+	display: none;
+
+}
+#xialalunbo .tuul2{
+	list-style: none;
+}
+#xialalunbo .tuul2 li{
+	display: none;
+	position: absolute;
+	top: 0;
+	left:0;
+}
+#xialalunbo .tuul2 li.cur{
+	display: block;
+}
+#xialalunbo .youanniu{
+	width: 1px;
+	height: 1px;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+}
+#xialalunbo .maoni2{
+	width: 92px;
+	height: 0;
+	position: absolute;
+	top:0;
+	left: 0;
+
+}
+

@@ -1,0 +1,205 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+.cl{
+	clear: both;
+}
+#bd{
+
+	height: 1000px;
+	background: url("../img/indexbg.gif") no-repeat center top;
+	background-size:cover; 
+    background-attachment:fixed; 
+}
+.logo{
+	width: 105px;
+	height: 133px;
+	position: absolute;
+	top:30px;
+	left: -200px;
+}
+.main{
+	width: 778px;
+	height: 341px;
+	margin: 0 auto;
+	position: relative;
+	top: 260px;
+}
+.about{
+	position: absolute;
+	left: 0;
+	top:172px;
+	overflow: hidden;
+	width: 194px;
+	height: 170px;
+	z-index: 100;
+}
+.about2{
+	position: absolute;
+	left: 0;
+	top:172px;
+    width: 194px;
+    height: 170px;
+    opacity: 0;
+    z-index: 10;
+}
+.about .fangda{
+	width: 194px;
+	height: 170px;
+	position: absolute;
+	top: 0px;
+	left:0px;
+
+}
+.about3{
+	position: absolute;
+	left: 0;
+	top:172px;
+    width: 194px;
+    height: 170px;
+}
+.about3 .bianda2{
+	position: absolute;
+	left:95px;
+	top:118px;
+	width: 0;
+	height: 0;
+	 z-index: 1001;
+}
+.biaozhi{
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+.biaozhi2{
+	display: none;
+	position: absolute;
+	left: 0;
+	top: 0;
+
+}
+.computer{
+	left: 194px;
+	top:0;
+	position: absolute;
+}
+
+
+.pingmian{
+	position: absolute;
+	left: 390px;
+	top: 0;
+
+}
+.lianxiaa{
+	position: absolute;
+	left: 390px;
+	top:171px;
+    z-index: 2;
+    width: 194px;
+   	height: 171px;
+}
+.lianxi{
+	position: absolute;
+	left: 0px;
+	top:0px;
+    z-index: 2;
+    width: 194px;
+   	height: 171px;
+}
+.lianxi img{
+	width: 194px;
+   	height: 171px;
+   	position: absolute;
+   	left: 0;
+   	top: 0;
+}
+.lianxi2{
+	position: absolute;
+	left: 0px;
+	top:0px;
+	display: none;
+   	z-index: 2;
+
+}
+.lianxi3{
+	position: absolute;
+	left: 0px;
+	top:0px;
+   	z-index: 2;
+
+}
+.lianxi4{
+	position: absolute;
+	left: 0px;
+	top:0px;
+   	z-index: 1;
+   	background: #9CBD66;
+   	width: 194px;
+   	height: 171px;
+
+}
+.bianda{
+
+	position: absolute;
+	left:95px;
+	top:118px;
+	width: 0;
+	height: 0;
+	 z-index: 3;
+
+
+}
+
+.shouji{
+	position: absolute;
+	left: 583px;
+	top: 0;
+	z-index: 10;
+	width: 194px;
+	height: 342px;
+}
+.shouji .youshou{
+	position: absolute;
+	top: 0;
+	left:0;
+}
+.shouji .meishou{
+	position: absolute;
+	top: 0;
+	left:0;
+	display: none;
+}
+
+.chuantong{
+    width: 93px;
+	height: 105px;
+	position: absolute;
+	top:35px;
+	left:54px;
+	list-style: none;
+	display: none;
+
+}
+.chuantong li{
+	position: absolute;
+	top:0;
+	left: 0;
+	display: none;
+	
+}
+.chuantong li.tou{
+	display: block;
+}
+.tutu{
+	position: absolute;
+	left: 0;
+	top: 0;
+	display: none;
+}
+
+
+
+

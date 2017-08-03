@@ -1,0 +1,381 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>首页改版</title>
+	<link href="css/pc.css" rel="stylesheet" type="text/css" />
+	<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+	<script type="text/javascript">
+$(function(){
+    var Bool=false;
+    var Scro=$("#scroll");
+    var Scrp=$("#p");
+    var Scrobd=$("#bd");
+    var Scroul=$("#ul");
+    var Scrp_Height =Scrp.outerHeight()/2;
+    var Num2=Scro.outerHeight()-Scrp.outerHeight();
+    var offsetX=0;
+    var offsetY=0;
+    Scrp.mousedown(function(e){  
+        Bool=true;
+    });
+    $(document).mouseup(function(){
+        Bool=false;
+    });
+    $(document).mousemove(function(e){
+        if(Bool){
+            var Num1= e.clientY - Scro.position().top;
+            var y=Num1 - Scrp_Height;
+            if(y<=1){
+                Scrll(0);
+                Scrp.css("top",1);
+            }else if(y>=Num2){
+                Scrp.css("top",Num2);
+                Scrll(Num2);
+            }else{
+                Scrll(y);
+            }
+        }
+    });
+    function Scrll(y){
+        Scrp.css("top",y);
+        Scroul.css("margin-top",(y/(Scro.outerHeight()-Scrp.outerHeight()))*(Scroul.outerHeight()-Scrobd.height()));
+    }
+    if(document.getElementById("scroll_bd").addEventListener) 
+    document.getElementById("scroll_bd").addEventListener('DOMMouseScroll',wheel,true);
+    document.getElementById("scroll_bd").onmousewheel=wheel;
+    var Distance=Num2*0.1;
+    function wheel(e){
+        var evt = e || window.event;
+        var wheelDelta = evt.wheelDelta || evt.detail;
+        if(wheelDelta == -120 || wheelDelta == 3){
+            var Distances=Scrp.position().top+Distance;
+            if(Distances>=Num2){
+                Scrp.css("top",Num2);
+                Scrll(Num2);
+            }else{
+                Scrll(Distances);
+            }
+            return false;
+        }else if (wheelDelta == 120 || wheelDelta == -3){
+            var Distances=Scrp.position().top-Distance;
+            if(Distances<=1){
+                Scrll(0);
+                Scrp.css("top",1);
+            }else{
+                Scrll(Distances);
+            }
+            return false;
+        }   
+    }
+});
+</script>
+</head>
+<body>
+	<!--indextop-->
+	<div class="indextop">
+	    <div class="indextop_c center">
+	        <ul class="indext_left">
+	            <li><a href="#">首页</a></li>
+	            <li class="spacer"></li>
+	            <li><a href="#">网站服务</a><img src="images/xiala.png" alt="" class="xiala"/></li>
+	            <li class="spacer"></li>
+	            <li><a href="#">手机应用</a><img src="images/erweimaicon.png" alt="" class="erweimaicon"/></li>
+	            <li class="spacer"></li>
+	            <li><a style="cursor:pointer;">加为收藏</a></li>
+	        </ul>
+	        <ul class="indext_right" id="right">
+	            <li><a  href="#" >登录</a></li>
+	            <li class="spacer"></li>
+	            <li><a  href="#" >注册</a></li>
+	            <li id="right3" class="spacer"></li>
+	            <li><a href="#">我的提问</a><img src="images/xiala.png" alt="" class="xiala" /></li>
+	        </ul>
+	    </div>
+	</div>
+	<!--logo seacrch-->
+	<div class="index_ls">
+	    <div class="index_ls_c center">
+	        <div class="logo"><a href="#"><img src="images/logo.png" width="103" height="86" /></a></div>
+	        <div class="ll"></div>
+	        <div class="seach_hot">
+	            <div class="seach">
+	                <span>
+	                    <input type="text" class="index_seach" value="请输入疾病、医生、医院..." />
+	                </span>
+	                 <button type="button" class="seach_button">搜 索</button>
+	            </div>
+	            <div class="hot_text clear">
+	                <p>
+	                    <span>热门搜索：</span>
+	                    <a href="javascript:void(0)">前列腺炎</a>
+	                    <a href="javascript:void(0)">月经失调</a>
+	                    <a href="javascript:void(0)">痤疮</a>
+	                    <a href="javascript:void(0)">鼻炎</a>
+	                    <a href="javascript:void(0)">乙肝</a>
+	                    <a href="javascript:void(0)">抑郁症</a>
+	                    <a href="javascript:void(0)">心脑血管</a>
+	                </p>
+	            </div>
+	        </div>
+	        <!--二维码-->
+	        <div class="ewm">
+	            <p><a href="#"><img src="images/appdown.jpg" width="62" height="62" /> <span>手机APP下载</span> </a></p>
+	            <p><a href="#"><img src="images/weixin.jpg" width="62" height="62" /> <span>微信二维码</span> </a></p>
+	        </div>
+	    </div>
+	</div>
+	<!--nav-->
+	<div class="index_nav clear">
+	    <div class="nav_box center w780">
+	        <div class="nav_c">
+	            <div class="nav">
+	                <ul>
+	                    <li><a href="index.html" class="nav_hover">首页</a></li>
+	                    <li><a href="wenzhenzhuanjia.html">问诊专家</a></li>
+	                    <li><a href="zixunbangzhu.html">咨询帮助</a></li>
+	                    <li><a href="mycenter.html">用户中心</a></li>
+	                </ul>
+				</div>
+	        </div>
+	        <div class="category">
+	        	<div class="cateHd">科室分类</div>
+	        	<div class="cateBd"><div class="cateSingle"><a href="#">儿科</a></div><div class="devide"></div><div class="cateSingle"><a href="#">妇科</a></div><div class="cateSingle"><a href="#">肿瘤科</a></div><div class="devide"></div><div class="cateSingle"><a href="#">骨科</a></div><div class="cateSingle"><a href="#">胸科</a></div><div class="devide"></div><div class="cateSingle"><a href="#">心内科</a></div><div class="cateSingle"><a href="#">神外科</a></div><div class="devide"></div><div class="cateSingle"><a href="#">神内科</a></div><div class="cateSingle"><a href="#">外科</a></div><div class="devide"></div><div class="cateSingle"><a href="#">皮科</a></div><div class="cateSingle"><a href="#">性科</a></div><div class="devide"></div><div class="cateSingle"><a href="#">生殖科</a></div><div class="cateSingle"><a href="#">影像科</a></div><div class="devide"></div><div class="cateSingle"><a href="#">过敏科</a></div><div class="cateSingle"><a href="#">五官科</a></div><div class="devide"></div><div class="cateSingle"><a href="#">风湿科</a></div><div class="cateSingle"><a href="#">烧伤科</a></div><div class="devide"></div><div class="cateSingle"><a href="#">呼吸科</a></div><div class="cateSingle"><a href="#">消化科</a></div><div class="devide"></div><div class="cateSingle"><a href="#">妇科</a></div><div class="cateSingle"><a href="#">儿科</a></div><div class="devide"></div><div class="cateSingle"><a href="#">妇科</a></div><div class="cateSingle"><a href="#">儿科</a></div><div class="devide"></div><div class="cateSingle"><a href="#">妇科</a></div><div class="cateSingle"><a href="#">儿科</a></div><div class="devide"></div><div class="cateSingle"><a href="#">妇科</a></div></div>
+	        </div>
+	        <div class="subNav">
+	        	<ul><li><a href="#"><img src="images/jiaji_icon.png" alt="" />加急电话</a></li><li><a href="#"><img src="images/wenzhen_icon.png" alt="" />图文问诊</a></li><li><a href="#"><img src="images/yuyue_icon.png" alt="" />电话问诊</a></li><li><a href="#"><img src="images/mashang_icon.png" alt="" />加号面诊</a></li><li><a href="#"><img src="images/shipin_icon.png" alt="" />视频问诊</a></li><li class="last"><a href="#"><img src="images/huizhen_icon.png" alt="" />专家会诊</a></li></ul>
+	        </div>
+	    </div>
+	</div>
+	<div class="banner">
+		<div class="inner">
+			<div style="width:776px;height:409px">
+				<script id="autoJs537df50023" type="text/javascript">var pNode=document.getElementById("autoJs537df50023").parentNode,pt,pb,dWidth = pNode.clientWidth,pHeight = pNode.clientHeight,dHeight = ReCallHeight(pHeight, dWidth,pNode);function ReCallHeight(h, w,a) {try{pt = window.getComputedStyle(a,null).paddingTop;pb = window.getComputedStyle(a,null).paddingBottom;}catch(e){pt = a.currentStyle.paddingTop;pb = a.currentStyle.paddingBottom;}h = h- parseInt(pt)- parseInt(pb);if(h && (typeof h == "number") && h==h && h>0){return h;}else{var ua = navigator.userAgent.toLowerCase();var ipad = ua.match(/(iPad).*OS\s([\d_]+)/),isIphone = !ipad && ua.match(/(iPhone\sOS)\s([\d_]+)/),isAndroid = ua.match(/(Android)\s+([\d.]+)/),isMobile = isIphone || isAndroid;if(isMobile){return w*9/16;}else{return (w*9/16)+36;}}} var letvcloud_player_conf =  {"uu":"ef89acb35e","vu":"537df50023","auto_play":0,"gpcflag":1,"width": dWidth,"height": dHeight};</script><script type="text/javascript" src="http://yuntv.letv.com/bcloud.js"></script>
+			</div>
+		</div>
+	</div>
+	<div class="hotnews">
+		<div class="bd" id="scroll_bd">
+            <div class="top" id="bd">
+                <ul id="ul" style="margin-top: 0px;">
+                    <li>
+                        <div class="hotnewSingle"><a href="#"><img src="images/listicon.png" alt="" />“专家号”CEO谢德勇：移动医疗仍处早期，只有保持高品质才能最...</a></div>
+                    </li>
+                    <li>
+                        <div class="hotnewSingle"><a href="#"><img src="images/listicon.png" alt="" />“专家号”：走“高端精选”路线，进入移动医疗新蓝海</a></div>
+                    </li>
+                    <li>
+                        <div class="hotnewSingle"><a href="#"><img src="images/listicon.png" alt="" />“专家号”：走“高端精选”路线，进入移动医疗新蓝海</a></div>
+                    </li>
+                    <li>
+                        <div class="hotnewSingle"><a href="#"><img src="images/listicon.png" alt="" />“专家号：打造移动医疗“精品店”</a></div>
+                    </li>
+                    <li>
+                        <div class="hotnewSingle"><a href="#"><img src="images/listicon.png" alt="" />“专家号：打造移动医疗“精品店”</a></div>
+                    </li>
+                    <li>
+                        <div class="hotnewSingle"><a href="#"><img src="images/listicon.png" alt="" />“专家号：打造移动医疗“精品店”</a></div>
+                    </li>
+                </ul>
+            </div>
+            <div id="scroll">
+                <p id="p" style="top: 1px;"></p>
+            </div>
+        </div>
+	</div>
+	<div class="h30"></div>
+	<div class="pro">
+		<div class="ur_title full"><span style="left:20px;">咨询挂号流程</span></div>
+		<div class="inner">
+			<div class="proImg">
+				<div class="proimg"><img src="images/pro1.png" alt="" /></div>
+				<div class="proArrow"><img src="images/arrow.png" alt="" /></div>
+				<div class="proimg"><img src="images/pro2.png" alt="" /></div>
+				<div class="proArrow"><img src="images/arrow.png" alt="" /></div>
+				<div class="proimg"><img src="images/pro3.png" alt="" /></div>
+				<div class="proArrow"><img src="images/arrow.png" alt="" /></div>
+				<div class="proimg"><img src="images/pro4.png" alt="" /></div>
+			</div>
+			<div class="proImg">
+				<div class="proimg">马上问诊或咨询帮助</div>
+				<div class="proArrow"></div>
+				<div class="proimg">上传病例和检查资料</div>
+				<div class="proArrow"></div>
+				<div class="proimg">查收专家反馈结果</div>
+				<div class="proArrow"></div>
+				<div class="proimg">完成/评价</div>
+			</div>
+		</div>
+	</div>
+	<div class="h21"></div>
+	<div class="pro">
+		<div class="ur_title full"><span style="left:20px;">明星医生</span></div>
+		<div class="urList">
+			<dl class="ur_doctor">
+	            <dt><a href="#" target="_blank"><img src="images/doctor.png" width="118" height="112"></a></dt>
+	            <dd><span>牛松涛<em>副主任医师</em></span><p>北京妇产医院  妇产科</p><p>当代杰出白癜风病诊疗专家 </p><h5><a href="#" class="find_button">点击咨询</a></h5></dd>
+	        </dl>
+	        <dl class="ur_doctor">
+	            <dt><a href="#" target="_blank"><img src="images/doctor.png" width="118" height="112"></a></dt>
+	            <dd><span>牛松涛<em>副主任医师</em></span><p>北京妇产医院  妇产科</p><p>当代杰出白癜风病诊疗专家 </p><h5><a href="#" class="find_button">点击咨询</a></h5></dd>
+	        </dl>
+	        <dl class="ur_doctor">
+	            <dt><a href="#" target="_blank"><img src="images/doctor.png" width="118" height="112"></a></dt>
+	            <dd><span>牛松涛<em>副主任医师</em></span><p>北京妇产医院  妇产科</p><p>当代杰出白癜风病诊疗专家 </p><h5><a href="#" class="find_button">点击咨询</a></h5></dd>
+	        </dl>
+	        <dl class="ur_doctor last">
+	            <dt><a href="#" target="_blank"><img src="images/doctor.png" width="118" height="112"></a></dt>
+	            <dd><span>牛松涛<em>副主任医师</em></span><p>北京妇产医院  妇产科</p><p>北医三院</p><h5><a href="#" class="find_button">点击咨询</a></h5></dd>
+	        </dl>
+	        <dl class="ur_doctor">
+	            <dt><a href="#" target="_blank"><img src="images/doctor.png" width="118" height="112"></a></dt>
+	            <dd><span>牛松涛<em>副主任医师</em></span><p>北京妇产医院  妇产科</p><p>当代杰出白癜风病诊疗专家 </p><h5><a href="#" class="find_button">点击咨询</a></h5></dd>
+	        </dl>
+	        <dl class="ur_doctor">
+	            <dt><a href="#" target="_blank"><img src="images/doctor.png" width="118" height="112"></a></dt>
+	            <dd><span>牛松涛<em>副主任医师</em></span><p>北京妇产医院  妇产科</p><p>北医三院</p><h5><a href="#" class="find_button">点击咨询</a></h5></dd>
+	        </dl>
+	    </div>
+	</div>
+	<div class="h6"></div>
+    <div class="ur_title full"><span>医生团队</span></div>
+    <div class="docTeam">
+    	<div class="office">
+    		<ul><li class="cur">儿科<span></span></li><li>内科<span></span></li><li>妇科<span></span></li><li>脑科<span></span></li><li>外科<span></span></li><li>心内<span></span></li><li>心外<span></span></li><li>影科<span></span></li><li>全部<span></span></li></ul>
+    	</div>
+    	<div class="docWrap">
+	    	<div class="docSingle">
+	    		<div class="docPic"><img src="images/doctor1.jpg" alt="" /></div>
+	    		<div class="docDesc">
+	    			<div class="inner">
+	    				<div class="up"><span>洪晓明</span>&nbsp;儿科&nbsp;主治医师&nbsp;北京北医三院</div>
+	    				<div class="down">王淑敏，天津圣安医院资深专家。王淑敏出生于中医世家，毕业于天津中医药大学，多次赴国内外医学苹果账号苹果账号苹果账号苹果账号苹果账号</div>
+	    			</div>
+	    		</div>
+	    		<div class="docOperation">
+	    			<div class="docNav">
+	                    <a href="#"><div  class="op"><img src="images/wenzhen_icon.png" alt=""><p class="darkgray">马上问诊</p></div></a><div class="devide"></div>
+	                    <a href="#"><div  class="op"><img src="images/jiahao_icon.png" alt=""><p class="darkgray">急诊加号</p></div></a><div class="devide"></div>
+	                    <a href="#"><div  class="op"><img src="images/yuyue_icon.png" alt=""><p class="darkgray">电话预约</p></div></a><div class="devide"></div>
+	                    <a href="#"><div  class="op"><img src="images/mashang_icon.png" alt=""><p class="darkgray">马上加号</p></div></a>
+	                </div>
+	    		</div>
+	    	</div>
+		</div>
+		<div class="docWrap">
+	    	<div class="docSingle">
+	    		<div class="docPic"><img src="images/doctor2.jpg" alt="" /></div>
+	    		<div class="docDesc">
+	    			<div class="inner">
+	    				<div class="up"><span>洪晓明</span>&nbsp;儿科&nbsp;主治医师&nbsp;北京北医三院</div>
+	    				<div class="down">王淑敏，天津圣安医院资深专家。王淑敏出生于中医世家，毕业于天津中医药大学，多次赴国内外医学苹果账号苹果账号苹果账号苹果账号苹果账号</div>
+	    			</div>
+	    		</div>
+	    		<div class="docOperation">
+	    			<div class="docNav">
+	                    <a href="#"><div  class="op"><img src="images/wenzhen_icon.png" alt=""><p class="darkgray">马上问诊</p></div></a><div class="devide"></div>
+	                    <a href="#"><div  class="op"><img src="images/jiahao_icon.png" alt=""><p class="darkgray">急诊加号</p></div></a><div class="devide"></div>
+	                    <a href="#"><div  class="op"><img src="images/yuyue_icon.png" alt=""><p class="darkgray">电话预约</p></div></a><div class="devide"></div>
+	                    <a href="#"><div  class="op"><img src="images/mashang_icon.png" alt=""><p class="darkgray">马上加号</p></div></a>
+	                </div>
+	    		</div>
+	    	</div>
+		</div>
+		<div class="docWrap">
+	    	<div class="docSingle">
+	    		<div class="docPic"><img src="images/doctor3.jpg" alt="" /></div>
+	    		<div class="docDesc">
+	    			<div class="inner">
+	    				<div class="up"><span>洪晓明</span>&nbsp;儿科&nbsp;主治医师&nbsp;北京北医三院</div>
+	    				<div class="down">王淑敏，天津圣安医院资深专家。王淑敏出生于中医世家，毕业于天津中医药大学，多次赴国内外医学苹果账号苹果账号苹果账号苹果账号苹果账号</div>
+	    			</div>
+	    		</div>
+	    		<div class="docOperation">
+	    			<div class="docNav">
+	                    <a href="#"><div  class="op"><img src="images/wenzhen_icon.png" alt=""><p class="darkgray">马上问诊</p></div></a><div class="devide"></div>
+	                    <a href="#"><div  class="op"><img src="images/jiahao_icon.png" alt=""><p class="darkgray">急诊加号</p></div></a><div class="devide"></div>
+	                    <a href="#"><div  class="op"><img src="images/yuyue_icon.png" alt=""><p class="darkgray">电话预约</p></div></a><div class="devide"></div>
+	                    <a href="#"><div  class="op"><img src="images/mashang_icon.png" alt=""><p class="darkgray">马上加号</p></div></a>
+	                </div>
+	    		</div>
+	    	</div>
+		</div>
+		<div class="docWrap">
+	    	<div class="docSingle">
+	    		<div class="docPic"><img src="images/doctor1.jpg" alt="" /></div>
+	    		<div class="docDesc">
+	    			<div class="inner">
+	    				<div class="up"><span>洪晓明</span>&nbsp;儿科&nbsp;主治医师&nbsp;北京北医三院</div>
+	    				<div class="down">王淑敏，天津圣安医院资深专家。王淑敏出生于中医世家，毕业于天津中医药大学，多次赴国内外医学苹果账号苹果账号苹果账号苹果账号苹果账号</div>
+	    			</div>
+	    		</div>
+	    		<div class="docOperation">
+	    			<div class="docNav">
+	                    <a href="#"><div  class="op"><img src="images/wenzhen_icon.png" alt=""><p class="darkgray">马上问诊</p></div></a><div class="devide"></div>
+	                    <a href="#"><div  class="op"><img src="images/jiahao_icon.png" alt=""><p class="darkgray">急诊加号</p></div></a><div class="devide"></div>
+	                    <a href="#"><div  class="op"><img src="images/yuyue_icon.png" alt=""><p class="darkgray">电话预约</p></div></a><div class="devide"></div>
+	                    <a href="#"><div  class="op"><img src="images/mashang_icon.png" alt=""><p class="darkgray">马上加号</p></div></a>
+	                </div>
+	    		</div>
+	    	</div>
+		</div>
+		<div class="docWrap">
+	    	<div class="docSingle">
+	    		<div class="docPic"><img src="images/doctor2.jpg" alt="" /></div>
+	    		<div class="docDesc">
+	    			<div class="inner">
+	    				<div class="up"><span>洪晓明</span>&nbsp;儿科&nbsp;主治医师&nbsp;北京北医三院</div>
+	    				<div class="down">王淑敏，天津圣安医院资深专家。王淑敏出生于中医世家，毕业于天津中医药大学，多次赴国内外医学苹果账号苹果账号苹果账号苹果账号苹果账号</div>
+	    			</div>
+	    		</div>
+	    		<div class="docOperation">
+	    			<div class="docNav">
+	                    <a href="#"><div  class="op"><img src="images/wenzhen_icon.png" alt=""><p class="darkgray">马上问诊</p></div></a><div class="devide"></div>
+	                    <a href="#"><div  class="op"><img src="images/jiahao_icon.png" alt=""><p class="darkgray">急诊加号</p></div></a><div class="devide"></div>
+	                    <a href="#"><div  class="op"><img src="images/yuyue_icon.png" alt=""><p class="darkgray">电话预约</p></div></a><div class="devide"></div>
+	                    <a href="#"><div  class="op"><img src="images/mashang_icon.png" alt=""><p class="darkgray">马上加号</p></div></a>
+	                </div>
+	    		</div>
+	    	</div>
+		</div>
+		<div class="docWrap">
+	    	<div class="docSingle">
+	    		<div class="docPic"><img src="images/doctor3.jpg" alt="" /></div>
+	    		<div class="docDesc">
+	    			<div class="inner">
+	    				<div class="up"><span>洪晓明</span>&nbsp;儿科&nbsp;主治医师&nbsp;北京北医三院</div>
+	    				<div class="down">王淑敏，天津圣安医院资深专家。王淑敏出生于中医世家，毕业于天津中医药大学，多次赴国内外医学苹果账号苹果账号苹果账号苹果账号苹果账号</div>
+	    			</div>
+	    		</div>
+	    		<div class="docOperation">
+	    			<div class="docNav">
+	                    <a href="#"><div  class="op"><img src="images/wenzhen_icon.png" alt=""><p class="darkgray">马上问诊</p></div></a><div class="devide"></div>
+	                    <a href="#"><div  class="op"><img src="images/jiahao_icon.png" alt=""><p class="darkgray">急诊加号</p></div></a><div class="devide"></div>
+	                    <a href="#"><div  class="op"><img src="images/yuyue_icon.png" alt=""><p class="darkgray">电话预约</p></div></a><div class="devide"></div>
+	                    <a href="#"><div  class="op"><img src="images/mashang_icon.png" alt=""><p class="darkgray">马上加号</p></div></a>
+	                </div>
+	    		</div>
+	    	</div>
+		</div>
+    </div>
+    <!--footer-->
+	<div class="index_footer center">
+	    <div class="footer_link center"> 
+	        <a href="#" target="_blank">关于我们</a><span></span>
+	        <a href="#">营销服务</a><span></span> <a href="#">合作联盟</a><span></span> 
+	        <a href="#">媒体报道</a><span></span> <a href="#">网站地图</a><span></span> 
+	        <a href="#" target="_blank">服务声明</a><span></span> <a href="#" target="_blank">招聘信息</a><span></span> 
+	        <a href="#">意见反馈</a><span></span> <a href="#" target="_blank">联系方式</a></div>
+	    <div class="footer_copy">
+	        <p>经营许可证编号：京ICP备15015320号 京公网安备11010802017313号</p>
+	        <p>北京康信医疗信息技术有限公司  版权所有  专家号  中国最高端的医疗咨询服务平台</p>
+	        <p>服务声明：专家咨询建议仅供参考_不能作为诊断及医疗的依据</p>
+	    </div>
+	</div>
+</body>
+</html>
+<script type="text/javascript">
+	$(".office ul li").click(function(){
+		$(this).addClass("cur").siblings("li").removeClass("cur");
+	});
+</script>

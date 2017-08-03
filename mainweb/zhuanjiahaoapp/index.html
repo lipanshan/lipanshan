@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>首页</title>
+	<meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no" name="viewport" id="viewport" />
+	<meta name="format-detection" content="telephone=no"><!--禁用iPhone手机浏览器上给电话号码自动加上的link样式-->
+	<link rel="stylesheet" href="css/index.css">
+	<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+	<script type="text/javascript" src="js/jquery.touchSwipe.min.js"></script>
+</head>
+<style type="text/css">
+	body{
+		background: #f0efed;
+	}
+</style>
+<script type="text/javascript">
+	$(document).ready(
+		function(){
+			$(".page").css("width",$(window).width());
+			var nowpage = 0;
+			$("#container").swipe( 
+				{
+					swipe:function(event, direction, distance, duration, fingerCount) {
+						// console.log(distance + "  " + duration);
+						if(distance > 100 && duration > 40){
+							//滑动的时候做的事情
+							if(direction == "left"){
+								nowpage = nowpage + 1;
+							}else if(direction == "right"){
+								nowpage = nowpage - 1;
+							}
+							if(nowpage > 3){
+								nowpage = 3;
+							}else if(nowpage < 0){
+								nowpage = 0;
+							}
+							$(".dianul li").eq(nowpage).addClass("cur").siblings().removeClass("cur");
+							}
+							var w = $(window).width();
+							var l = -w*nowpage;
+							console.log(l);
+							$("#container").animate({ left: l+"px" }, "800");
+						}
+					}
+				);
+			}
+		);
+	</script>
+<body>
+	<!--header start-->
+	<div class="headWrap">
+		<div class="header">
+			<a href="#"><div class="fl">六安<img src="images/xiala.png" alt="" class="xiala"></div></a>
+			<div class="middle">
+				<div class="search" style="float:none;text-align:center;margin:0.3em auto">
+					<input type="text" placeholder="请输入疾病.医生.医院">
+					<div class="searchBtn"><img src="images/searchBtn.jpg" alt=""></div>
+				</div>
+			</div>
+			<a href="#"><div class="fr"><img src="images/sao.png" alt="" class="saoewm"></div></a>
+		</div>
+	</div>
+	<div class="marginDevide">&nbsp;</div>
+	<!--header end-->
+	<div class="devideNav">
+		<div class="left">
+			<div class="up">
+				<a href="guahao.html">
+					<div class="navpic"><img src="images/yygh.png" alt=""></div>
+					<div class="no1">预约挂号</div>
+					<div class="no2">免费</div>
+				</a>
+			</div>
+			<div class="down">
+				<a href="baogaolist.html">
+					<div class="navpic"><img src="images/cbgd.png" alt=""></div>
+					<div class="no1">查报告单</div>
+				</a>
+			</div>
+			<div class="ldevide"></div>
+		</div>
+		<div class="middle">
+			<a href="#">
+				<div class="navpic"><img src="images/luan.jpg" alt=""></div>
+				<div class="no1">六安世立医院</div>
+				<div class="no2 lightgray">就诊指南</div>
+			</a>
+		</div>
+		<div class="right">
+			<div class="xdevide"></div>
+			<div class="ydevide"></div>
+			<div class="fl">
+				<div class="up">
+					<a href="#">
+						<div class="navpic"><img src="images/kswz.png" alt=""></div>
+						<div class="no1">快速问诊</div>
+					</a>
+				</div>
+				<div class="down">
+					<a href="#">
+						<div class="navpic"><img src="images/hzfz.png" alt=""></div>
+						<div class="no1">患者复诊</div>
+					</a>
+				</div>
+			</div>
+			<div class="fr">
+				<div class="up">
+					<a href="#">
+						<div class="navpic"><img src="images/smzl.png" alt=""></div>
+						<div class="no1">上门诊疗</div>
+					</a>
+				</div>
+				<div class="down">
+					<a href="#">
+						<div class="navpic"><img src="images/dhwz.png" alt=""></div>
+						<div class="no1">电话问诊</div>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="bann"><img src="images/banner2.jpg" alt=""></div>
+	<div class="indexhd"><div class="w96"><span></span>全国前十医院科室名医鼎力支持</div></div>
+	<div class="indexbd">
+		<div class="w96">
+			<div class="fl"><img src="images/doctoricon.png" alt=""></div>
+			<div class="fr">千名全国排名前十医院科室副主任医师以上专家，全部来自北京协和医院、301医院、同仁医院等顶级医院。</div>
+		</div>
+	</div>
+	<div class="lunbo">
+		<div class="w96">
+			<div class="lunbohd">
+				<div class="fl">专家服务  六安世立医院患者专属</div>
+				<div class="fr"><a href="#">全部<span class="arial">&gt;</span></a></div>
+			</div>
+		</div>
+		<div class="chuantonglunbo">
+			<div id="container">
+				<div class="page no0">
+					<div class="left">
+						<div class="wra">
+							<div class="up">
+								<div class="fl"><img src="images/doctor.png" alt=""></div>
+								<div class="fr">
+									<div class="no1">韩冰<span>主任医师</span></div>
+									<div class="no2">北京协和医院</div>
+								</div>
+							</div>
+							<div class="down">擅长：<span class="green">血液系统疾病</span></div>
+						</div>
+					</div>
+                    <div class="right">
+                    	<div class="wra">
+							<div class="up">
+								<div class="fl"><img src="images/doctor.png" alt=""></div>
+								<div class="fr">
+									<div class="no1">郭军<span>主任医师</span></div>
+									<div class="no2">301医院</div>
+								</div>
+							</div>
+							<div class="down">擅长：<span class="green">血液系统疾病</span></div>
+						</div>
+                    </div>
+				</div>
+				<div class="page no1">
+					<div class="left">
+						<div class="wra">
+							<div class="up">
+								<div class="fl"><img src="images/doctor.png" alt=""></div>
+								<div class="fr">
+									<div class="no1">郭军<span>主任医师</span></div>
+									<div class="no2">北京协和医院</div>
+								</div>
+							</div>
+							<div class="down">擅长：<span class="green">血液系统疾病</span></div>
+						</div>
+					</div>
+                    <div class="right">
+                    	<div class="wra">
+							<div class="up">
+								<div class="fl"><img src="images/doctor.png" alt=""></div>
+								<div class="fr">
+									<div class="no1">韩冰<span>主任医师</span></div>
+									<div class="no2">北京协和医院</div>
+								</div>
+							</div>
+							<div class="down">擅长：<span class="green">血液系统疾病</span></div>
+						</div>
+                    </div>
+				</div>		
+				<div class="page no3">
+					<div class="left">
+						<div class="wra">
+							<div class="up">
+								<div class="fl"><img src="images/doctor.png" alt=""></div>
+								<div class="fr">
+									<div class="no1">韩冰<span>主任医师</span></div>
+									<div class="no2">北京协和医院</div>
+								</div>
+							</div>
+							<div class="down">擅长：<span class="green">血液系统疾病</span></div>
+						</div>
+					</div>
+                    <div class="right">
+                    	<div class="wra">
+							<div class="up">
+								<div class="fl"><img src="images/doctor.png" alt=""></div>
+								<div class="fr">
+									<div class="no1">郭军<span>主任医师</span></div>
+									<div class="no2">301医院</div>
+								</div>
+							</div>
+							<div class="down">擅长：<span class="green">血液系统疾病</span></div>
+						</div>
+                    </div>
+				</div>
+				<div class="page no0">
+					<div class="left">
+						<div class="wra">
+							<div class="up">
+								<div class="fl"><img src="images/doctor.png" alt=""></div>
+								<div class="fr">
+									<div class="no1">郭军<span>主任医师</span></div>
+									<div class="no2">北京协和医院</div>
+								</div>
+							</div>
+							<div class="down">擅长：<span class="green">血液系统疾病</span></div>
+						</div>
+					</div>
+                    <div class="right">
+                    	<div class="wra">
+							<div class="up">
+								<div class="fl"><img src="images/doctor.png" alt=""></div>
+								<div class="fr">
+									<div class="no1">韩冰<span>主任医师</span></div>
+									<div class="no2">301医院</div>
+								</div>
+							</div>
+							<div class="down">擅长：<span class="green">血液系统疾病</span></div>
+						</div>
+                    </div>
+				</div>
+	    	</div>
+	    	<ul class="dianul">
+	    		<li class="cur"></li>
+	    		<li></li>
+	    		<li></li>
+	    		<li></li>
+	    	</ul>
+		</div>
+	</div>
+	<div class="twoxian">
+		<div class="no1"><div class="inner"></div></div>
+		<div class="no2"><div class="inner"></div></div>
+	</div>	
+	<div class="subnavi">
+		<a href="#"><div class="fl"><img src="images/subnav_icon1.png" alt="">专家会诊</div></a>
+		<a href="#"><div class="fl"><img src="images/subnav_icon2.png" alt="">邀请手术</div></a>
+		<a href="#"><div class="fl last"><img src="images/subnav_icon3.png" alt="">视频问诊</div></a>
+	</div>
+	<div class="onexian"><div class="inner"></div></div>
+	<div class="indexbd">
+		<div class="w96">
+			<div class="fl large"><img src="images/doctor.png" alt=""></div>
+			<div class="fr short">
+				<p class="no1">北京天坛医院.主任医师.教授.季楠远程接诊了***</p>
+				<p class="no2">患者的病情比较复杂，希望还是尽快手术的好。</p>
+			</div>
+		</div>
+	</div>
+	<div class="bottomBanner five">
+		<div class="inner">
+			<a href="#">
+				<div class="bbsingle">
+					<div class="up"><img src="images/home_icon.png" alt=""></div>
+					<div class="down">首页</div>
+				</div>
+			</a>
+			<a href="#">
+				<div class="bbsingle">
+					<div class="up"><img src="images/zhuanjia_icon.png" alt=""></div>
+					<div class="down">专家</div>
+				</div>
+			</a>
+			<a href="#">
+				<div class="bbsingle">
+					<div class="up"><img src="images/kefu_icon.png" alt=""></div>
+					<div class="down">客服</div>
+				</div>
+			</a>
+			<a href="#">
+				<div class="bbsingle">
+					<div class="up"><img src="images/wenzhen_icon_curr.png" alt=""></div>
+					<div class="down">病历</div>
+				</div>
+			</a>
+			<a href="#">
+				<div class="bbsingle">
+					<div class="up"><img src="images/my_icon.png" alt=""></div>
+					<div class="down">我的</div>
+				</div>
+			</a>
+		</div>
+	</div>
+</body>
+</html>

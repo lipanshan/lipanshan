@@ -1,0 +1,294 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+.cl{
+	clear: both;
+}
+body{
+    overflow-x:hidden;
+}
+
+
+.kuang{
+	width: 2200px;
+	height: 1200px;
+	background: url(../img/ff/bg.gif) ;
+    margin: 0 auto;
+    position: relative;
+
+}
+.fanhui{
+    position: absolute;
+    top:150px;
+    left: 1240px;
+    width: 108px;
+    height: 78px;
+
+}
+.stage ul,.dd ul{
+    -webkit-transition:all 0.5s ease-out !important;
+    -moz-transition:all 0.5s ease-out !important;
+    -ms-transition:all 0.5s ease-out !important;
+    -o-transition:all 0.5s ease-out !important;
+    transition:all 0.5s ease-out !important;
+}
+.stage ul li img{
+    width: 157px;
+    height: 120px;
+}
+.aa{
+
+	width: 2000px;
+	height: 1000px;
+	background: url("../img/ff/aboutbg.gif") no-repeat ;
+    position: absolute;
+    top: 0px;
+    left:0px;
+    background-attachment:fixed; 	
+     background-size:cover;
+
+}
+
+.bb{
+    width: 2000px;
+	height: 1000px;
+    /*background:url("../img/ff/b2.png") repeat-x top #FFCCCC;*/
+	background:url("../img/ff/b2.png") repeat-x top #f47db2;
+    background-size:auto;
+    position: absolute;
+    top: -1200px;
+    left: -2200px;
+    display: none;
+}
+.cc{
+    width: 2000px;
+	height: 1000px;
+    background:url("../img/ff/b2.png") repeat-x top #F7CFF3;
+    position: absolute;
+    top: 1200px;
+    left: -2200px;
+
+    display: none;
+}
+.dd{
+    width: 2000px;
+    height: 1000px;
+    background:url("../img/ff/b2.png") repeat-x top #99CC66;
+    position: absolute;
+    top: 0px;
+    left: 2200px;
+
+    display: none;
+}
+
+.butten1,.butten2{
+     
+     position: absolute;
+     top: 450px;
+     left:743px;
+    cursor: pointer;  
+}
+.butten3{
+    position: absolute;
+     top: 352px;
+     left:964px;
+    cursor: pointer;
+}
+.butten4{
+    position: absolute;
+     top: 422px;
+     left:827px;
+    cursor: pointer;
+}
+
+.aa .a1{
+    position: absolute;
+    top: 160px;
+    left: 149px;
+}
+.aa .a2{
+    position: absolute;
+    top: 300px;
+    left: 155px;
+}
+.b1{
+    position: absolute;
+    top: 67px;
+    left:0;
+
+}
+.b5{
+    position: absolute;
+    top: 7px;
+    left:80px;
+}
+.bb4{
+    position: absolute;
+    top:101px;
+    left:74px;
+}
+.bb5{
+    position: absolute;
+    top:178px;
+    left:78px;
+    width: 423px;
+    height: 303px;
+}
+
+.bb8{
+    position: absolute;
+    bottom:0px;
+    right:0px;
+}
+.bb ul li{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 129px;
+    height: 106px;
+    padding-left: 14px;
+    padding-top: 10px;
+    cursor: pointer;
+}
+@-webkit-keyframes no1{
+    from{left:0px;}
+    to{left:120px;}
+}
+@-webkit-keyframes no2{
+    from{left:0px;}
+    to{left:240px;}
+}
+@-webkit-keyframes no3{
+    from{left:0px;}
+    to{left:360px;}
+}
+@-webkit-keyframes no4{
+    from{left:0px;}
+    to{left:480px;}
+}
+.ba1{
+    position: absolute;
+    bottom: 430px;
+    left:100px;
+    height: 500px;
+    display: none;
+    z-index: 1;
+
+}
+.ba2{
+    position: absolute;
+    bottom: 430px;
+    left:353px;
+    height: 500px;
+     display: none;
+     z-index: 1;
+}
+.ba3{
+    position: absolute;
+    bottom: 430px;
+    left:318px;
+    height: 500px;
+     display: none;
+     z-index: 1;
+}
+.ba4{
+    position: absolute;
+    bottom: 430px;
+    left:465px;
+    height: 500px;
+     display: none;
+     z-index: 1;
+}
+.ba5{
+    position: absolute;
+    bottom: 430px;
+    left:735px;
+    height: 500px;
+     display: none;
+     z-index: 1;
+}
+.flash1{
+    position: absolute;
+    top: 498px;
+    left:100px;
+}
+.flash2{
+    position: absolute;
+    top: 498px;
+    left:300px;
+}
+.flash3{
+    position: absolute;
+    top: 498px;
+    left:500px;
+}
+.flash4{
+    position: absolute;
+    top: 498px;
+    left:700px;
+}
+.c1{
+    position: absolute;
+    left:64px;
+    top:88px;
+}
+.c2{
+    position: absolute;
+    left:67px;
+    top:142px;
+}
+.c3{
+    position: absolute;
+    bottom: 0px;
+    right:0px;
+}
+.lianxi img{
+    position: absolute;
+    top:557px;
+    left:333px;    
+    display: none;
+    transition:all 1s ease 0;
+}
+.lianxi div{
+    position: absolute;
+    top:537px;
+    left:340px;    
+    display: none;
+    transition:all 1s ease 0;
+    color: #666;
+    font-size: 30px;
+}
+html{
+    font-family: "Yahei","微软雅黑";
+    overflow: hidden;
+}
+.lianxi .shouji{
+    display: block;
+}
+.lianxi .qq{
+    left:368px;
+}
+.lianxi .youxiang{
+    left:299px;
+}
+.d6{
+    position: absolute;
+    bottom: 0px;
+    right:0px;
+}
+.d5{
+    position: absolute;
+    top: 100px;
+    left:68px;
+}
+.butten3 {
+    top: 444px !important;
+    left: 783px !important;
+    z-index: 999;
+}
+.butten4 {
+    top: 452px;
+    left: 787px;
+}

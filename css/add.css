@@ -1,0 +1,219 @@
+.main div{
+	-webkit-transition:all 0.5s ease-out !important;
+	-moz-transition:all 0.5s ease-out !important;
+	-ms-transition:all 0.5s ease-out !important;
+	-o-transition:all 0.5s ease-out !important;
+	transition:all 0.5s ease-out !important;
+}
+.xiaoxiang1{
+	position: absolute;
+	top:0px;
+	left:0px;
+	z-index: 9;
+	opacity: 1;
+}
+.xiaoxiang1.cur{
+	opacity: 0;
+}
+.xiaoxiang2{
+	position: absolute;
+	top:0px;
+	left:0px;
+}
+.contact{
+	position: absolute;
+	top:172px;
+	left:0px;
+}
+.contact1{
+	position: absolute;
+	top:0px;
+	left:0px;
+	transform:scale(0);
+	opacity: 0; 
+}
+.contact2{
+	position: absolute;
+	top:0px;
+	left:0px;
+	transform:scale(1);
+	opacity: 1; 
+}
+.cur .contact1{
+	transform:scale(1);
+	opacity: 1; 
+}
+.cur .contact2{
+	transform:scale(0.5);
+	opacity: 0; 
+}
+.comp{
+	position: absolute;
+	left:192px;
+	top:0px;
+	z-index: 99;
+	width: 272px;
+	height: 343px;
+	overflow: hidden;
+}
+.comp img{
+	width: 272px;
+	height: 343px;
+	opacity: 0; 
+	position: relative;
+	left:-300px;
+	-webkit-transition:all 0.6s ease-out !important;
+}
+.comp img.cur{
+	left:0px;
+	opacity: 1; 
+}
+body{
+	overflow: hidden;
+	
+}
+.bg{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left:0px;
+	top:0px;
+	background: url(../img/indexbg.gif) no-repeat center center;
+}
+.baiye{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top:0px;
+	left:0px;
+}
+.baiye li{
+	background-repeat: no-repeat;
+	background-image:url(../img/computer.jpg);
+	background-position: 0px 0px;
+	height: 24px;
+	-webkit-transition:all 0.2s ease-out !important;
+}
+.baiye li.cur{
+	-webkit-transform:rotateX(90deg);
+}
+.baiye li:nth-child(2){
+	background-position:0px -24px;
+}
+.baiye li:nth-child(3){
+	background-position:0px -48px;
+}
+.baiye li:nth-child(4){
+	background-position:0px -72px;
+}
+.baiye li:nth-child(5){
+	background-position:0px -96px;
+}
+.baiye li:nth-child(6){
+	background-position:0px -120px;
+}
+.baiye li:nth-child(7){
+	background-position:0px -144px;
+}
+.baiye li:nth-child(8){
+	background-position:0px -168px;
+}
+.baiye li:nth-child(9){
+	background-position:0px -192px;
+}
+.baiye li:nth-child(10){
+	background-position:0px -216px;
+}
+.baiye li:nth-child(11){
+	background-position:0px -240px;
+}
+.baiye li:nth-child(12){
+	background-position:0px -264px;
+}
+.baiye li:nth-child(13){
+	background-position:0px -288px;
+}
+.baiye li:nth-child(14){
+	height: 31px;
+	background-position:0px -312px;
+}
+.mobile{
+	width: 193px;
+	height: 342px;
+	position: absolute;
+	left:464px;
+	top:0px;
+	overflow: hidden;
+}
+.mobile img{
+	width: 194px;
+	height: 342px;
+}
+.mobile1{
+	opacity: 0;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top:0px;
+	left:0px;
+}
+.mobile2{
+	opacity: 1;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top:0px;
+	left:0px;
+}
+.cur .mobile1{
+	opacity: 1;
+}
+.cur .mobile2{
+	opacity: 0;
+}
+.contact{
+	width: 194px;
+	height: 170px;
+	overflow: hidden;
+}
+.main{
+	width: 658px;
+	height: 342px;
+	position: absolute;
+	top:50%;
+	left:50%;
+	margin-left: -329px;
+	margin-top: -171px;
+}
+.xiaoshou{
+	position: absolute;
+	z-index: 9999;
+	width: 30px;
+	height: 30px;
+	 -webkit-animation-name:'wobble';/*动画属性名，也就是我们前面keyframes定义的动画名*/
+     -webkit-animation-duration: 1s;/*动画持续时间*/
+     -webkit-animation-timing-function: ease-in-out; /*动画频率，和transition-timing-function是一样的*/
+     -webkit-animation-delay: 1s;/*动画延迟时间*/
+     -webkit-animation-iteration-count: infinite;/*定义循环资料，infinite为无限次*/
+     -webkit-animation-direction: alternate;/*定义动画方式*/
+}
+.xiaoshou img{
+	width: 100%;
+}
+@-webkit-keyframes wobble {
+     0% {
+        right:-10px;
+        bottom:-10px;
+        transform:scale(1);
+     }
+     50% {
+        right:10px;
+        bottom:10px;
+        transform:scale(0.8);
+     }
+     100% {
+        right:-10px;
+        bottom:-10px;
+        transform:scale(1);
+     }
+  }
