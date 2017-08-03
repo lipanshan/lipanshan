@@ -1,0 +1,255 @@
+#content{
+	width: 980px;
+	margin: 18px auto 0 auto;
+}
+#content .product{
+	padding-left: 9px;
+}
+#content .product ul li{
+	float: left;
+	width: 240px;
+	height: 86px;
+	background: url(../images/icons.png) no-repeat -54px -1px;
+	margin-right: 2px;
+	position: relative;
+}
+#content .product ul li b{
+	position: absolute;
+	top: 9px;
+	left: 10px;
+	display: block;
+	width: 35px;
+	height: 27px;
+	background: url(../images/icons.png) no-repeat;
+	text-indent: -11111px;
+}
+#content .product ul li.no1 b{
+	background-position: -0px -122px;
+}
+#content .product ul li.no2 b{
+	background-position: -50px -122px;
+}
+#content .product ul li.no3 b{
+	background-position: -100px -122px;
+}
+#content .product ul li.no4 b{
+	background-position: -150px -122px;
+}
+#content .product ul li dl{
+	padding-left: 53px;
+	padding-top: 12px;
+}
+#content .product ul li dl dt{
+	width: 56px;
+	height: 13px;
+	background: url(../images/icons.png) no-repeat;
+	text-indent: -19999px;
+}
+#content .product ul li.no1 dl dt{
+	background-position: -4px -98px;
+}
+#content .product ul li.no2 dl dt{
+	background-position: -68px -98px;
+}
+#content .product ul li.no3 dl dt{
+	background-position: -129px -98px;
+}
+#content .product ul li.no4 dl dt{
+	background-position: -189px -98px;
+}
+#content .product ul li dl dd{
+	font: 12px/19px "宋体";
+	margin-top: 8px;
+	color:#9D9D9D;
+}
+#content .info{
+	height: 208px;
+	background: url(../images/info_bg.png) repeat-x;
+}
+#content .info .info1{
+	float: left;
+	height: 208px;
+	width: 323px;
+	background: url(../images/info_line.png) right 1px no-repeat;
+	position: relative;
+}
+#content .info .info2{
+	float: left;
+	height: 208px;
+	width: 388px;
+	background: url(../images/info_line.png) right 1px no-repeat;
+	position: relative;
+	padding: 0 10px;
+}
+#content .info .info3{
+	float: left;
+	height: 208px;
+	width: 249px;
+}
+
+
+#content .info .info1 h3{
+	width: 218px;
+	height: 57px;
+	background: url(../images/icons.png) no-repeat 3px -165px;
+	_background: url(../images/icons.png) no-repeat 3px -163px;
+	text-indent: -9999px;
+}
+#content .info .info1 .tu{
+	float: left;
+	width: 117px;
+	padding-top: 16px;
+	padding-left: 13px;
+}
+#content .info .info1 .tu img{
+	padding: 3px;
+	border:1px solid #ccc;
+}
+#content .info .info1 .wen{
+	float: left;
+	width: 180px;
+	padding-top: 16px;
+	font: 12px/170% "宋体";
+}
+#content .info .info1 .wen a:link , #content .info .info1 .wen a:visited{
+	color:#398C00;
+	text-decoration: none;
+}
+#content .info .xiaojiahao{
+	display: block;
+	width: 35px;
+	height: 24px;
+	background: url(../images/icons.png) no-repeat -306px -4px;
+	text-indent: -343434px;
+	position: absolute;
+	right: 13px;
+	top:12px;
+}
+
+
+#content .info .info2 h3{
+	width: 218px;
+	height: 57px;
+	background: url(../images/icons.png) no-repeat -219px -165px;
+	text-indent: -9999px;
+}
+#content .info .info2 ul{
+	padding-left: 10px;
+	padding-top: 19px;
+}
+#content .info .info2 li{
+	float: left;
+	margin-right: 12px;
+}
+#content .info .info2 li .chanpintu{
+	width: 117px;
+	height: 91px;
+	padding: 1px;
+	border:1px solid #ccc;
+	background: white;
+	text-align: center;
+}
+#content .info .info2 li .chanpinming{
+	text-align: center;
+	font: 12px/27px "宋体";
+	
+}
+#content .info .info2 .chanpinming a:link , #content .info .info2 .chanpinming a:visited{
+	color: #626262;
+	text-decoration: none;
+}
+
+
+#content .info .info3 h3{
+	width: 218px;
+	height: 57px;
+	background: url(../images/icons.png) no-repeat 4px -224px;
+	text-indent: -9999px;
+	margin-bottom: 16px;
+}
+#content .info .info3 p{
+	font: 12px/170% "宋体";
+	padding-left: 13px;
+}
+
+
+
+/*轮播样式*/
+#lunbo{
+	width: 980px;
+	height: 382px;
+	position: relative;
+	overflow: hidden;
+}
+#lunbo .tupian ul{
+	list-style: none;
+	width: 10100px;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+#lunbo .tupian ul li{
+	float: left;
+}
+#lunbo .anniu #zuoanniu{
+	position: absolute;
+	top: 299px;
+	right: 351px;
+	background: url(../images/anniu.png) -97px -3px no-repeat;
+	width: 63px;
+	height: 63px;
+	cursor: pointer;
+	z-index: 2;
+}
+#lunbo .anniu #youanniu{
+	position: absolute;
+	top: 299px;
+	right: 281px;
+	background: url(../images/anniu.png) -4px -3px no-repeat;
+	width: 63px;
+	height: 63px;
+	cursor: pointer;
+	z-index: 2;
+}
+#lunbo .heikuang{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 73px;
+}
+#lunbo .heikuang ul{
+	float: right;
+	width: 252px;
+	list-style: none;
+	padding-top: 14px;
+}
+#lunbo .heikuang ul li{
+	float: left;
+	width: 24px;
+	height: 24px;
+	margin-right: 10px;
+	background: green;
+	cursor: pointer;
+}
+#lunbo .heikuang ul li.cur{
+	background:red;
+}
+/*无缝滚动的css*/
+.wufeng .inner{
+	width: 100%;
+	height: 135px;
+	position: relative;
+	overflow: hidden;
+}
+.wufeng ul{
+	list-style: none;
+	width: 10000px;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.wufeng ul li{
+	float: left;
+	margin-right: 20px;
+}

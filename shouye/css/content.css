@@ -1,0 +1,20 @@
+.neirong{
+	padding: 0 10px 60px;
+}
+.neirong h3{
+	text-align: center;
+	font-weight: bold;
+	line-height: 40px;
+}
+.neirong p{
+	font: 14px/170% "宋体";
+	text-indent: 2em;
+	margin-top:1em;
+}
+.bdsharebuttonbox{
+	width: 380px;
+	margin: 0 auto;
+}
+.bdsharebuttonbox a:link , .bdsharebuttonbox a:visited{
+	color: black;
+}

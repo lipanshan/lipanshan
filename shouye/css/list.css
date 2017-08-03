@@ -1,0 +1,120 @@
+#content{
+	padding-top: 22px;
+	padding-left:12px;
+	width: 968px;
+	margin: 0 auto;
+}
+#content .slider{
+	float: left;
+	width: 224px;
+}
+#content .main{
+	float: left;
+	width: 734px;
+}
+
+#content .slider h3{
+	width: 214px;
+	height: 57px;
+	background: url(../images/icons2.png) no-repeat -5px -4px;
+	text-indent: -111111px;
+}
+#content .slider .bd{
+	width: 214px;
+	background: url(../images/sliderbd.png) repeat-y;
+}
+#content .slider .bd a:link, #content .slider .bd a:visited{
+	color:#5f5f5f;
+	text-decoration: none;
+}
+#content .slider .bd li{
+	line-height: 32px;
+	font-size: 12px;
+	background: url(../images/sliderline.png) no-repeat left bottom;
+	padding-left: 20px;
+}
+#content .slider .ft{
+	width: 214px;
+	height: 35px;
+	background: url(../images/icons2.png) no-repeat -5px -61px;
+}
+#content .slider .bd li b{
+	float: left;
+	width: 0;
+	height: 0;
+	font-size: 0;
+	border:4px solid transparent;
+	_border:4px solid tomato;
+	_filter: chroma(color=tomato);
+	border-left-color:black;
+	position: relative;
+	top: 10px;
+	margin-right: 10px;
+}
+#content .slider .lxwm{
+	margin-top: 6px;
+}
+#content .slider .lxwm h3{
+	background-position: -5px -96px;
+}
+#content .slider .lxwm p{
+	padding:0 19px;
+	font:12px/170% "宋体";
+	color:#5F5F5F;
+}
+
+#content .main .hd{
+	background: url(../images/mainhd.png) no-repeat;
+	width: 734px;
+	height: 50px;
+}
+#content .main .hd h2{
+	font: 14px/25px "宋体";
+	font-weight: bold;
+	padding-top: 13px;
+	padding-left: 46px;
+	float: left;
+}
+#content .main .hd .breadnav{
+	float: right;
+	font: 12px/17px "宋体";
+	padding-top: 15px;
+	padding-right: 24px;
+	padding-left: 20px;
+	background: url(../images/icons2.png) no-repeat -481px 10px;
+}
+#content .main .hd .breadnav a:link , #content .main .hd .breadnav a:visited{
+	color:black;
+}
+#content .main .newslist{
+	padding-left: 16px;
+	padding-right: 13px;
+	line-height: 44px;
+}
+#content .main .newslist li{
+	clear: both;
+ 	height: 44px;
+	background: url(../images/newslistline.png) bottom left repeat-x;
+}
+#content .main .newslist li a{
+	padding-left: 14px;
+	float: left;
+	background: url(../images/icons2.png) -492px -29px  no-repeat;
+}
+#content .main .newslist li a:link , #content .main .newslist li a:visited{
+	font-size: 12px;
+	color:black;
+	text-decoration: none;
+}
+#content .main .newslist li span{
+	float: right;
+	font-size: 12px;
+}
+#content .main .tac {
+	font-size:12px;
+}
+#content .main .tac a:link,#content .main .tac a:visited{
+	font-size:12px;
+	color:black;
+	text-decoration: none;
+}
