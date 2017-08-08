@@ -1,0 +1,1027 @@
+	 <!-- 发布管理-->
+	 <!-- content 开始 -->
+<div class="marginlr20 locationMap clearfix">
+	<div class="locationMapIoo bgimage fl"></div>
+	<p class="locationMapInfo fl">当前位置：发布管理</p>
+</div>
+<div class="marginlr20 clearfix queryRow">
+	<div class="searchWrap fl">
+		<input type="text" class="fl search" placeholder="搜索名称、发布状态、题数">
+		<a href="javascript:;" class="searchLogo bgimage fr"></a>
+	</div>
+	<div class="updateWrap fl">
+		<p class="fl updateText">更新时间：</p>
+		<div class="timeFrom fl">2016-05-02 <span class="timeIco fr bgimage"></span></div>
+		<span class="fl line">-</span>
+		<div class="timeTo fl">2016-05-02 <span class="timeIco fr bgimage"></span></div>
+		<div class="screenBtn fl">
+			<a href="javascript:;" class="screenTXT fl">高级筛选</a>
+			<span class="fl bgimage advancedIco"></span>
+		</div>
+	</div>
+	<div class="fr operationWrap">
+		<a href="createRelease.html" class="fl create creatNewRelease">
+			<span class="createIco bgimage fl"></span>
+			<span class="createText fl">创建发布</span>
+		</a>
+		<a href="javascript:;" class="fl delete batchDelete">
+			<span class="deleteIco bgimage fl"></span>
+			<span class="deleteText fl">删除</span>
+		</a>
+		<a href="javascript:;" class="fl releaseBtn">
+			<span class="releaseBtnIco bgimage fl"></span>
+			<span class="releaseText fl">发布</span>
+		</a>
+	</div>
+</div>
+<div class="advancedFilterWrap margint19">
+	<div class="table">
+		<div class="td td48"><p>名称：</p></div>
+		<div class="td">
+			<select name="" id="">
+				<option value="all">全部</option>
+			</select>
+		</div>
+		<div class="td"><p>级别：</p></div>
+		<div class="td">
+			<select name="" id="">
+				<option value="all">全部</option>
+			</select>
+		</div>
+		<div class="td"><p>题型：</p></div>
+		<div class="td">
+			<select name="" id="">
+				<option value="all">全部</option>
+			</select>
+		</div>
+		<div class="td"><p>操作人员：</p></div>
+		<div class="td th160">
+			<select name="" id="">
+				<option value="all">全部</option>
+			</select>
+		</div>
+	</div>
+</div>
+<div id="list" class="list showSrollHeight">
+	<ul id="listContent" class="releaseList clearfix">
+		 <!-- 未发布 unreleased-->
+		<li class="fl unreleased">
+			<h3>
+				<a class="ellipse seeBtn" href="releaseView.html">
+					柬埔寨语初级
+				</a>
+				<p class="updateDate">更新于2017-05-15</p>
+			</h3>
+			<div class="titleWrap clearfix">
+				<span class="titleNum ellipse fl">777777</span>
+				<span class="titleText fl">道题</span>
+			</div>
+			<span class="state">未发布</span>
+			<a href="javarcript:;" class="more">
+				<span class="point"></span>
+				<span class="point"></span>
+				<span class="point"></span>
+			</a>
+			<ul class="modifyReleaseState">
+				<li class="clearfix">
+					<span class="modifyStateIco msIco1 bgimage fl"></span>
+					<p class="modifyStateText fl ellipse">编辑发布</p>
+				</li>
+				<li class="clearfix">
+					<span class="modifyStateIco msIco2 bgimage fl"></span>
+					<p class="modifyStateText fl ellipse">复制发布</p>
+				</li>
+				<li class="clearfix">
+					<span class="modifyStateIco msIco3 bgimage fl"></span>
+					<p class="modifyStateText fl ellipse">删除发布</p>
+				</li>
+			</ul>
+      <input type="checkbox" class="checkbox releaseManagerCheckbox"/>
+		</li>
+		<!-- 已撤回 withdraw-->
+		<li class="fl withdraw">
+			<h3>
+				<a class="ellipse seeBtn" href="releaseView.html">
+					柬埔寨语初级
+				</a>
+				<p class="updateDate">更新于2017-05-15</p>
+			</h3>
+			<div class="titleWrap clearfix">
+				<span class="titleNum ellipse fl">777777</span>
+				<span class="titleText fl">道题</span>
+			</div>
+			<span class="state">已撤回</span>
+			<a href="javarcript:;" class="more">
+				<span class="point"></span>
+				<span class="point"></span>
+				<span class="point"></span>
+			</a>
+			<ul class="modifyReleaseState">
+				<li class="clearfix">
+					<span class="modifyStateIco msIco1 bgimage fl"></span>
+					<p class="modifyStateText fl ellipse">编辑发布</p>
+				</li>
+				<li class="clearfix">
+					<span class="modifyStateIco msIco2 bgimage fl"></span>
+					<p class="modifyStateText fl ellipse">复制发布</p>
+				</li>
+				<li class="clearfix">
+					<span class="modifyStateIco msIco3 bgimage fl"></span>
+					<p class="modifyStateText fl ellipse">删除发布</p>
+				</li>
+			</ul>
+      <input type="checkbox" class="checkbox releaseManagerCheckbox"/>
+		</li>
+		<!-- 已发布 alreadyReleased-->
+		<li class="fl alreadyReleased">
+			<h3>
+				<a class="ellipse seeBtn" href="releaseView.html">
+					柬埔寨语初级
+				</a>
+				<p class="updateDate">更新于2017-05-15</p>
+			</h3>
+			<div class="titleWrap clearfix">
+				<span class="titleNum ellipse fl">777777777777777777777777777777</span>
+				<span class="titleText fl">道题</span>
+			</div>
+			<span class="state">已发布</span>
+			<a href="javarcript:;" class="more">
+				<span class="point"></span>
+				<span class="point"></span>
+				<span class="point"></span>
+			</a>
+			<ul class="modifyReleaseState">
+				<li class="clearfix">
+					<span class="modifyStateIco msIco1 bgimage fl"></span>
+					<p class="modifyStateText fl ellipse">编辑发布</p>
+				</li>
+				<li class="clearfix">
+					<span class="modifyStateIco msIco2 bgimage fl"></span>
+					<p class="modifyStateText fl ellipse">复制发布</p>
+				</li>
+				<li class="clearfix">
+					<span class="modifyStateIco msIco3 bgimage fl"></span>
+					<p class="modifyStateText fl ellipse">删除发布</p>
+				</li>
+			</ul>
+      <input type="checkbox" class="checkbox releaseManagerCheckbox"/>
+		</li>
+    <li class="fl unreleased">
+      <h3>
+        <a class="ellipse seeBtn" href="releaseView.html">
+          柬埔寨语初级
+        </a>
+        <p class="updateDate">更新于2017-05-15</p>
+      </h3>
+      <div class="titleWrap clearfix">
+        <span class="titleNum ellipse fl">777777</span>
+        <span class="titleText fl">道题</span>
+      </div>
+      <span class="state">未发布</span>
+      <a href="javarcript:;" class="more">
+        <span class="point"></span>
+        <span class="point"></span>
+        <span class="point"></span>
+      </a>
+      <ul class="modifyReleaseState">
+        <li class="clearfix">
+          <span class="modifyStateIco msIco1 bgimage fl"></span>
+          <p class="modifyStateText fl ellipse">编辑发布</p>
+        </li>
+        <li class="clearfix">
+          <span class="modifyStateIco msIco2 bgimage fl"></span>
+          <p class="modifyStateText fl ellipse">复制发布</p>
+        </li>
+        <li class="clearfix">
+          <span class="modifyStateIco msIco3 bgimage fl"></span>
+          <p class="modifyStateText fl ellipse">删除发布</p>
+        </li>
+      </ul>
+      <input type="checkbox" class="checkbox releaseManagerCheckbox"/>
+    </li>
+    <li class="fl withdraw">
+      <h3>
+        <a class="ellipse seeBtn" href="releaseView.html">
+          柬埔寨语初级
+        </a>
+        <p class="updateDate">更新于2017-05-15</p>
+      </h3>
+      <div class="titleWrap clearfix">
+        <span class="titleNum ellipse fl">777777</span>
+        <span class="titleText fl">道题</span>
+      </div>
+      <span class="state">已撤回</span>
+      <a href="javarcript:;" class="more">
+        <span class="point"></span>
+        <span class="point"></span>
+        <span class="point"></span>
+      </a>
+      <ul class="modifyReleaseState">
+        <li class="clearfix">
+          <span class="modifyStateIco msIco1 bgimage fl"></span>
+          <p class="modifyStateText fl ellipse">编辑发布</p>
+        </li>
+        <li class="clearfix">
+          <span class="modifyStateIco msIco2 bgimage fl"></span>
+          <p class="modifyStateText fl ellipse">复制发布</p>
+        </li>
+        <li class="clearfix">
+          <span class="modifyStateIco msIco3 bgimage fl"></span>
+          <p class="modifyStateText fl ellipse">删除发布</p>
+        </li>
+      </ul>
+      <input type="checkbox" class="checkbox releaseManagerCheckbox"/>
+    </li>
+    <li class="fl alreadyReleased">
+      <h3>
+        <a class="ellipse seeBtn" href="releaseView.html">
+          柬埔寨语初级
+        </a>
+        <p class="updateDate">更新于2017-05-15</p>
+      </h3>
+      <div class="titleWrap clearfix">
+        <span class="titleNum ellipse fl">777777777777777777777777777777</span>
+        <span class="titleText fl">道题</span>
+      </div>
+      <span class="state">已发布</span>
+      <a href="javarcript:;" class="more">
+        <span class="point"></span>
+        <span class="point"></span>
+        <span class="point"></span>
+      </a>
+      <ul class="modifyReleaseState">
+        <li class="clearfix">
+          <span class="modifyStateIco msIco1 bgimage fl"></span>
+          <p class="modifyStateText fl ellipse">编辑发布</p>
+        </li>
+        <li class="clearfix">
+          <span class="modifyStateIco msIco2 bgimage fl"></span>
+          <p class="modifyStateText fl ellipse">复制发布</p>
+        </li>
+        <li class="clearfix">
+          <span class="modifyStateIco msIco3 bgimage fl"></span>
+          <p class="modifyStateText fl ellipse">删除发布</p>
+        </li>
+      </ul>
+      <input type="checkbox" class="checkbox releaseManagerCheckbox"/>
+    </li>
+    <li class="fl alreadyReleased">
+      <h3>
+        <a class="ellipse seeBtn" href="releaseView.html">
+          柬埔寨语初级
+        </a>
+        <p class="updateDate">更新于2017-05-15</p>
+      </h3>
+      <div class="titleWrap clearfix">
+        <span class="titleNum ellipse fl">777777777777777777777777777777</span>
+        <span class="titleText fl">道题</span>
+      </div>
+      <span class="state">已发布</span>
+      <a href="javarcript:;" class="more">
+        <span class="point"></span>
+        <span class="point"></span>
+        <span class="point"></span>
+      </a>
+      <ul class="modifyReleaseState">
+        <li class="clearfix">
+          <span class="modifyStateIco msIco1 bgimage fl"></span>
+          <p class="modifyStateText fl ellipse">编辑发布</p>
+        </li>
+        <li class="clearfix">
+          <span class="modifyStateIco msIco2 bgimage fl"></span>
+          <p class="modifyStateText fl ellipse">复制发布</p>
+        </li>
+        <li class="clearfix">
+          <span class="modifyStateIco msIco3 bgimage fl"></span>
+          <p class="modifyStateText fl ellipse">删除发布</p>
+        </li>
+      </ul>
+      <input type="checkbox" class="checkbox releaseManagerCheckbox"/>
+    </li>
+    <li class="fl unreleased">
+      <h3>
+        <a class="ellipse seeBtn" href="releaseView.html">
+          柬埔寨语初级
+        </a>
+        <p class="updateDate">更新于2017-05-15</p>
+      </h3>
+      <div class="titleWrap clearfix">
+        <span class="titleNum ellipse fl">777777</span>
+        <span class="titleText fl">道题</span>
+      </div>
+      <span class="state">未发布</span>
+      <a href="javarcript:;" class="more">
+        <span class="point"></span>
+        <span class="point"></span>
+        <span class="point"></span>
+      </a>
+      <ul class="modifyReleaseState">
+        <li class="clearfix">
+          <span class="modifyStateIco msIco1 bgimage fl"></span>
+          <p class="modifyStateText fl ellipse">编辑发布</p>
+        </li>
+        <li class="clearfix">
+          <span class="modifyStateIco msIco2 bgimage fl"></span>
+          <p class="modifyStateText fl ellipse">复制发布</p>
+        </li>
+        <li class="clearfix">
+          <span class="modifyStateIco msIco3 bgimage fl"></span>
+          <p class="modifyStateText fl ellipse">删除发布</p>
+        </li>
+      </ul>
+      <input type="checkbox" class="checkbox releaseManagerCheckbox"/>
+    </li>
+    <li class="fl withdraw">
+      <h3>
+        <a class="ellipse seeBtn" href="releaseView.html">
+          柬埔寨语初级
+        </a>
+        <p class="updateDate">更新于2017-05-15</p>
+      </h3>
+      <div class="titleWrap clearfix">
+        <span class="titleNum ellipse fl">777777</span>
+        <span class="titleText fl">道题</span>
+      </div>
+      <span class="state">已撤回</span>
+      <a href="javarcript:;" class="more">
+        <span class="point"></span>
+        <span class="point"></span>
+        <span class="point"></span>
+      </a>
+      <ul class="modifyReleaseState">
+        <li class="clearfix">
+          <span class="modifyStateIco msIco1 bgimage fl"></span>
+          <p class="modifyStateText fl ellipse">编辑发布</p>
+        </li>
+        <li class="clearfix">
+          <span class="modifyStateIco msIco2 bgimage fl"></span>
+          <p class="modifyStateText fl ellipse">复制发布</p>
+        </li>
+        <li class="clearfix">
+          <span class="modifyStateIco msIco3 bgimage fl"></span>
+          <p class="modifyStateText fl ellipse">删除发布</p>
+        </li>
+      </ul>
+      <input type="checkbox" class="checkbox releaseManagerCheckbox"/>
+    </li>
+    <li class="fl alreadyReleased">
+      <h3>
+        <a class="ellipse seeBtn" href="releaseView.html">
+          柬埔寨语初级
+        </a>
+        <p class="updateDate">更新于2017-05-15</p>
+      </h3>
+      <div class="titleWrap clearfix">
+        <span class="titleNum ellipse fl">777777777777777777777777777777</span>
+        <span class="titleText fl">道题</span>
+      </div>
+      <span class="state">已发布</span>
+      <a href="javarcript:;" class="more">
+        <span class="point"></span>
+        <span class="point"></span>
+        <span class="point"></span>
+      </a>
+      <ul class="modifyReleaseState">
+        <li class="clearfix">
+          <span class="modifyStateIco msIco1 bgimage fl"></span>
+          <p class="modifyStateText fl ellipse">编辑发布</p>
+        </li>
+        <li class="clearfix">
+          <span class="modifyStateIco msIco2 bgimage fl"></span>
+          <p class="modifyStateText fl ellipse">复制发布</p>
+        </li>
+        <li class="clearfix">
+          <span class="modifyStateIco msIco3 bgimage fl"></span>
+          <p class="modifyStateText fl ellipse">删除发布</p>
+        </li>
+      </ul>
+      <input type="checkbox" class="checkbox releaseManagerCheckbox"/>
+    </li>
+    <li class="fl alreadyReleased">
+      <h3>
+        <a class="ellipse seeBtn" href="releaseView.html">
+          柬埔寨语初级
+        </a>
+        <p class="updateDate">更新于2017-05-15</p>
+      </h3>
+      <div class="titleWrap clearfix">
+        <span class="titleNum ellipse fl">777777777777777777777777777777</span>
+        <span class="titleText fl">道题</span>
+      </div>
+      <span class="state">已发布</span>
+      <a href="javarcript:;" class="more">
+        <span class="point"></span>
+        <span class="point"></span>
+        <span class="point"></span>
+      </a>
+      <ul class="modifyReleaseState">
+        <li class="clearfix">
+          <span class="modifyStateIco msIco1 bgimage fl"></span>
+          <p class="modifyStateText fl ellipse">编辑发布</p>
+        </li>
+        <li class="clearfix">
+          <span class="modifyStateIco msIco2 bgimage fl"></span>
+          <p class="modifyStateText fl ellipse">复制发布</p>
+        </li>
+        <li class="clearfix">
+          <span class="modifyStateIco msIco3 bgimage fl"></span>
+          <p class="modifyStateText fl ellipse">删除发布</p>
+        </li>
+      </ul>
+      <input type="checkbox" class="checkbox releaseManagerCheckbox"/>
+    </li>
+    <li class="fl unreleased">
+      <h3>
+        <a class="ellipse seeBtn" href="releaseView.html">
+          柬埔寨语初级
+        </a>
+        <p class="updateDate">更新于2017-05-15</p>
+      </h3>
+      <div class="titleWrap clearfix">
+        <span class="titleNum ellipse fl">777777</span>
+        <span class="titleText fl">道题</span>
+      </div>
+      <span class="state">未发布</span>
+      <a href="javarcript:;" class="more">
+        <span class="point"></span>
+        <span class="point"></span>
+        <span class="point"></span>
+      </a>
+      <ul class="modifyReleaseState">
+        <li class="clearfix">
+          <span class="modifyStateIco msIco1 bgimage fl"></span>
+          <p class="modifyStateText fl ellipse">编辑发布</p>
+        </li>
+        <li class="clearfix">
+          <span class="modifyStateIco msIco2 bgimage fl"></span>
+          <p class="modifyStateText fl ellipse">复制发布</p>
+        </li>
+        <li class="clearfix">
+          <span class="modifyStateIco msIco3 bgimage fl"></span>
+          <p class="modifyStateText fl ellipse">删除发布</p>
+        </li>
+      </ul>
+      <input type="checkbox" class="checkbox releaseManagerCheckbox"/>
+    </li>
+    <li class="fl withdraw">
+      <h3>
+        <a class="ellipse seeBtn" href="releaseView.html">
+          柬埔寨语初级
+        </a>
+        <p class="updateDate">更新于2017-05-15</p>
+      </h3>
+      <div class="titleWrap clearfix">
+        <span class="titleNum ellipse fl">777777</span>
+        <span class="titleText fl">道题</span>
+      </div>
+      <span class="state">已撤回</span>
+      <a href="javarcript:;" class="more">
+        <span class="point"></span>
+        <span class="point"></span>
+        <span class="point"></span>
+      </a>
+      <ul class="modifyReleaseState">
+        <li class="clearfix">
+          <span class="modifyStateIco msIco1 bgimage fl"></span>
+          <p class="modifyStateText fl ellipse">编辑发布</p>
+        </li>
+        <li class="clearfix">
+          <span class="modifyStateIco msIco2 bgimage fl"></span>
+          <p class="modifyStateText fl ellipse">复制发布</p>
+        </li>
+        <li class="clearfix">
+          <span class="modifyStateIco msIco3 bgimage fl"></span>
+          <p class="modifyStateText fl ellipse">删除发布</p>
+        </li>
+      </ul>
+      <input type="checkbox" class="checkbox releaseManagerCheckbox"/>
+    </li>
+    <li class="fl alreadyReleased">
+      <h3>
+        <a class="ellipse seeBtn" href="releaseView.html">
+          柬埔寨语初级
+        </a>
+        <p class="updateDate">更新于2017-05-15</p>
+      </h3>
+      <div class="titleWrap clearfix">
+        <span class="titleNum ellipse fl">777777777777777777777777777777</span>
+        <span class="titleText fl">道题</span>
+      </div>
+      <span class="state">已发布</span>
+      <a href="javarcript:;" class="more">
+        <span class="point"></span>
+        <span class="point"></span>
+        <span class="point"></span>
+      </a>
+      <ul class="modifyReleaseState">
+        <li class="clearfix">
+          <span class="modifyStateIco msIco1 bgimage fl"></span>
+          <p class="modifyStateText fl ellipse">编辑发布</p>
+        </li>
+        <li class="clearfix">
+          <span class="modifyStateIco msIco2 bgimage fl"></span>
+          <p class="modifyStateText fl ellipse">复制发布</p>
+        </li>
+        <li class="clearfix">
+          <span class="modifyStateIco msIco3 bgimage fl"></span>
+          <p class="modifyStateText fl ellipse">删除发布</p>
+        </li>
+      </ul>
+      <input type="checkbox" class="checkbox releaseManagerCheckbox"/>
+    </li>
+    <li class="fl alreadyReleased">
+      <h3>
+        <a class="ellipse seeBtn" href="releaseView.html">
+          柬埔寨语初级
+        </a>
+        <p class="updateDate">更新于2017-05-15</p>
+      </h3>
+      <div class="titleWrap clearfix">
+        <span class="titleNum ellipse fl">777777777777777777777777777777</span>
+        <span class="titleText fl">道题</span>
+      </div>
+      <span class="state">已发布</span>
+      <a href="javarcript:;" class="more">
+        <span class="point"></span>
+        <span class="point"></span>
+        <span class="point"></span>
+      </a>
+      <ul class="modifyReleaseState">
+        <li class="clearfix">
+          <span class="modifyStateIco msIco1 bgimage fl"></span>
+          <p class="modifyStateText fl ellipse">编辑发布</p>
+        </li>
+        <li class="clearfix">
+          <span class="modifyStateIco msIco2 bgimage fl"></span>
+          <p class="modifyStateText fl ellipse">复制发布</p>
+        </li>
+        <li class="clearfix">
+          <span class="modifyStateIco msIco3 bgimage fl"></span>
+          <p class="modifyStateText fl ellipse">删除发布</p>
+        </li>
+      </ul>
+      <input type="checkbox" class="checkbox releaseManagerCheckbox"/>
+    </li>
+    <li class="fl unreleased">
+      <h3>
+        <a class="ellipse seeBtn" href="releaseView.html">
+          柬埔寨语初级
+        </a>
+        <p class="updateDate">更新于2017-05-15</p>
+      </h3>
+      <div class="titleWrap clearfix">
+        <span class="titleNum ellipse fl">777777</span>
+        <span class="titleText fl">道题</span>
+      </div>
+      <span class="state">未发布</span>
+      <a href="javarcript:;" class="more">
+        <span class="point"></span>
+        <span class="point"></span>
+        <span class="point"></span>
+      </a>
+      <ul class="modifyReleaseState">
+        <li class="clearfix">
+          <span class="modifyStateIco msIco1 bgimage fl"></span>
+          <p class="modifyStateText fl ellipse">编辑发布</p>
+        </li>
+        <li class="clearfix">
+          <span class="modifyStateIco msIco2 bgimage fl"></span>
+          <p class="modifyStateText fl ellipse">复制发布</p>
+        </li>
+        <li class="clearfix">
+          <span class="modifyStateIco msIco3 bgimage fl"></span>
+          <p class="modifyStateText fl ellipse">删除发布</p>
+        </li>
+      </ul>
+      <input type="checkbox" class="checkbox releaseManagerCheckbox"/>
+    </li>
+    <li class="fl withdraw">
+      <h3>
+        <a class="ellipse seeBtn" href="releaseView.html">
+          柬埔寨语初级
+        </a>
+        <p class="updateDate">更新于2017-05-15</p>
+      </h3>
+      <div class="titleWrap clearfix">
+        <span class="titleNum ellipse fl">777777</span>
+        <span class="titleText fl">道题</span>
+      </div>
+      <span class="state">已撤回</span>
+      <a href="javarcript:;" class="more">
+        <span class="point"></span>
+        <span class="point"></span>
+        <span class="point"></span>
+      </a>
+      <ul class="modifyReleaseState">
+        <li class="clearfix">
+          <span class="modifyStateIco msIco1 bgimage fl"></span>
+          <p class="modifyStateText fl ellipse">编辑发布</p>
+        </li>
+        <li class="clearfix">
+          <span class="modifyStateIco msIco2 bgimage fl"></span>
+          <p class="modifyStateText fl ellipse">复制发布</p>
+        </li>
+        <li class="clearfix">
+          <span class="modifyStateIco msIco3 bgimage fl"></span>
+          <p class="modifyStateText fl ellipse">删除发布</p>
+        </li>
+      </ul>
+      <input type="checkbox" class="checkbox releaseManagerCheckbox"/>
+    </li>
+    <li class="fl alreadyReleased">
+      <h3>
+        <a class="ellipse seeBtn" href="releaseView.html">
+          柬埔寨语初级
+        </a>
+        <p class="updateDate">更新于2017-05-15</p>
+      </h3>
+      <div class="titleWrap clearfix">
+        <span class="titleNum ellipse fl">777777777777777777777777777777</span>
+        <span class="titleText fl">道题</span>
+      </div>
+      <span class="state">已发布</span>
+      <a href="javarcript:;" class="more">
+        <span class="point"></span>
+        <span class="point"></span>
+        <span class="point"></span>
+      </a>
+      <ul class="modifyReleaseState">
+        <li class="clearfix">
+          <span class="modifyStateIco msIco1 bgimage fl"></span>
+          <p class="modifyStateText fl ellipse">编辑发布</p>
+        </li>
+        <li class="clearfix">
+          <span class="modifyStateIco msIco2 bgimage fl"></span>
+          <p class="modifyStateText fl ellipse">复制发布</p>
+        </li>
+        <li class="clearfix">
+          <span class="modifyStateIco msIco3 bgimage fl"></span>
+          <p class="modifyStateText fl ellipse">删除发布</p>
+        </li>
+      </ul>
+      <input type="checkbox" class="checkbox releaseManagerCheckbox"/>
+    </li>
+    <li class="fl alreadyReleased">
+      <h3>
+        <a class="ellipse seeBtn" href="releaseView.html">
+          柬埔寨语初级
+        </a>
+        <p class="updateDate">更新于2017-05-15</p>
+      </h3>
+      <div class="titleWrap clearfix">
+        <span class="titleNum ellipse fl">777777777777777777777777777777</span>
+        <span class="titleText fl">道题</span>
+      </div>
+      <span class="state">已发布</span>
+      <a href="javarcript:;" class="more">
+        <span class="point"></span>
+        <span class="point"></span>
+        <span class="point"></span>
+      </a>
+      <ul class="modifyReleaseState">
+        <li class="clearfix">
+          <span class="modifyStateIco msIco1 bgimage fl"></span>
+          <p class="modifyStateText fl ellipse">编辑发布</p>
+        </li>
+        <li class="clearfix">
+          <span class="modifyStateIco msIco2 bgimage fl"></span>
+          <p class="modifyStateText fl ellipse">复制发布</p>
+        </li>
+        <li class="clearfix">
+          <span class="modifyStateIco msIco3 bgimage fl"></span>
+          <p class="modifyStateText fl ellipse">删除发布</p>
+        </li>
+      </ul>
+      <input type="checkbox" class="checkbox releaseManagerCheckbox"/>
+    </li>
+    <li class="fl unreleased">
+      <h3>
+        <a class="ellipse seeBtn" href="releaseView.html">
+          柬埔寨语初级
+        </a>
+        <p class="updateDate">更新于2017-05-15</p>
+      </h3>
+      <div class="titleWrap clearfix">
+        <span class="titleNum ellipse fl">777777</span>
+        <span class="titleText fl">道题</span>
+      </div>
+      <span class="state">未发布</span>
+      <a href="javarcript:;" class="more">
+        <span class="point"></span>
+        <span class="point"></span>
+        <span class="point"></span>
+      </a>
+      <ul class="modifyReleaseState">
+        <li class="clearfix">
+          <span class="modifyStateIco msIco1 bgimage fl"></span>
+          <p class="modifyStateText fl ellipse">编辑发布</p>
+        </li>
+        <li class="clearfix">
+          <span class="modifyStateIco msIco2 bgimage fl"></span>
+          <p class="modifyStateText fl ellipse">复制发布</p>
+        </li>
+        <li class="clearfix">
+          <span class="modifyStateIco msIco3 bgimage fl"></span>
+          <p class="modifyStateText fl ellipse">删除发布</p>
+        </li>
+      </ul>
+      <input type="checkbox" class="checkbox releaseManagerCheckbox"/>
+    </li>
+    <li class="fl withdraw">
+      <h3>
+        <a class="ellipse seeBtn" href="releaseView.html">
+          柬埔寨语初级
+        </a>
+        <p class="updateDate">更新于2017-05-15</p>
+      </h3>
+      <div class="titleWrap clearfix">
+        <span class="titleNum ellipse fl">777777</span>
+        <span class="titleText fl">道题</span>
+      </div>
+      <span class="state">已撤回</span>
+      <a href="javarcript:;" class="more">
+        <span class="point"></span>
+        <span class="point"></span>
+        <span class="point"></span>
+      </a>
+      <ul class="modifyReleaseState">
+        <li class="clearfix">
+          <span class="modifyStateIco msIco1 bgimage fl"></span>
+          <p class="modifyStateText fl ellipse">编辑发布</p>
+        </li>
+        <li class="clearfix">
+          <span class="modifyStateIco msIco2 bgimage fl"></span>
+          <p class="modifyStateText fl ellipse">复制发布</p>
+        </li>
+        <li class="clearfix">
+          <span class="modifyStateIco msIco3 bgimage fl"></span>
+          <p class="modifyStateText fl ellipse">删除发布</p>
+        </li>
+      </ul>
+      <input type="checkbox" class="checkbox releaseManagerCheckbox"/>
+    </li>
+    <li class="fl alreadyReleased">
+      <h3>
+        <a class="ellipse seeBtn" href="releaseView.html">
+          柬埔寨语初级
+        </a>
+        <p class="updateDate">更新于2017-05-15</p>
+      </h3>
+      <div class="titleWrap clearfix">
+        <span class="titleNum ellipse fl">777777777777777777777777777777</span>
+        <span class="titleText fl">道题</span>
+      </div>
+      <span class="state">已发布</span>
+      <a href="javarcript:;" class="more">
+        <span class="point"></span>
+        <span class="point"></span>
+        <span class="point"></span>
+      </a>
+      <ul class="modifyReleaseState">
+        <li class="clearfix">
+          <span class="modifyStateIco msIco1 bgimage fl"></span>
+          <p class="modifyStateText fl ellipse">编辑发布</p>
+        </li>
+        <li class="clearfix">
+          <span class="modifyStateIco msIco2 bgimage fl"></span>
+          <p class="modifyStateText fl ellipse">复制发布</p>
+        </li>
+        <li class="clearfix">
+          <span class="modifyStateIco msIco3 bgimage fl"></span>
+          <p class="modifyStateText fl ellipse">删除发布</p>
+        </li>
+      </ul>
+      <input type="checkbox" class="checkbox releaseManagerCheckbox"/>
+    </li>
+    <li class="fl alreadyReleased">
+      <h3>
+        <a class="ellipse seeBtn" href="releaseView.html">
+          柬埔寨语初级
+        </a>
+        <p class="updateDate">更新于2017-05-15</p>
+      </h3>
+      <div class="titleWrap clearfix">
+        <span class="titleNum ellipse fl">777777777777777777777777777777</span>
+        <span class="titleText fl">道题</span>
+      </div>
+      <span class="state">已发布</span>
+      <a href="javarcript:;" class="more">
+        <span class="point"></span>
+        <span class="point"></span>
+        <span class="point"></span>
+      </a>
+      <ul class="modifyReleaseState">
+        <li class="clearfix">
+          <span class="modifyStateIco msIco1 bgimage fl"></span>
+          <p class="modifyStateText fl ellipse">编辑发布</p>
+        </li>
+        <li class="clearfix">
+          <span class="modifyStateIco msIco2 bgimage fl"></span>
+          <p class="modifyStateText fl ellipse">复制发布</p>
+        </li>
+        <li class="clearfix">
+          <span class="modifyStateIco msIco3 bgimage fl"></span>
+          <p class="modifyStateText fl ellipse">删除发布</p>
+        </li>
+      </ul>
+      <input type="checkbox" class="checkbox releaseManagerCheckbox"/>
+    </li>
+    <li class="fl unreleased">
+      <h3>
+        <a class="ellipse seeBtn" href="releaseView.html">
+          柬埔寨语初级
+        </a>
+        <p class="updateDate">更新于2017-05-15</p>
+      </h3>
+      <div class="titleWrap clearfix">
+        <span class="titleNum ellipse fl">777777</span>
+        <span class="titleText fl">道题</span>
+      </div>
+      <span class="state">未发布</span>
+      <a href="javarcript:;" class="more">
+        <span class="point"></span>
+        <span class="point"></span>
+        <span class="point"></span>
+      </a>
+      <ul class="modifyReleaseState">
+        <li class="clearfix">
+          <span class="modifyStateIco msIco1 bgimage fl"></span>
+          <p class="modifyStateText fl ellipse">编辑发布</p>
+        </li>
+        <li class="clearfix">
+          <span class="modifyStateIco msIco2 bgimage fl"></span>
+          <p class="modifyStateText fl ellipse">复制发布</p>
+        </li>
+        <li class="clearfix">
+          <span class="modifyStateIco msIco3 bgimage fl"></span>
+          <p class="modifyStateText fl ellipse">删除发布</p>
+        </li>
+      </ul>
+      <input type="checkbox" class="checkbox releaseManagerCheckbox"/>
+    </li>
+    <li class="fl withdraw">
+      <h3>
+        <a class="ellipse seeBtn" href="releaseView.html">
+          柬埔寨语初级
+        </a>
+        <p class="updateDate">更新于2017-05-15</p>
+      </h3>
+      <div class="titleWrap clearfix">
+        <span class="titleNum ellipse fl">777777</span>
+        <span class="titleText fl">道题</span>
+      </div>
+      <span class="state">已撤回</span>
+      <a href="javarcript:;" class="more">
+        <span class="point"></span>
+        <span class="point"></span>
+        <span class="point"></span>
+      </a>
+      <ul class="modifyReleaseState">
+        <li class="clearfix">
+          <span class="modifyStateIco msIco1 bgimage fl"></span>
+          <p class="modifyStateText fl ellipse">编辑发布</p>
+        </li>
+        <li class="clearfix">
+          <span class="modifyStateIco msIco2 bgimage fl"></span>
+          <p class="modifyStateText fl ellipse">复制发布</p>
+        </li>
+        <li class="clearfix">
+          <span class="modifyStateIco msIco3 bgimage fl"></span>
+          <p class="modifyStateText fl ellipse">删除发布</p>
+        </li>
+      </ul>
+      <input type="checkbox" class="checkbox releaseManagerCheckbox"/>
+    </li>
+    <li class="fl alreadyReleased">
+      <h3>
+        <a class="ellipse seeBtn" href="releaseView.html">
+          柬埔寨语初级
+        </a>
+        <p class="updateDate">更新于2017-05-15</p>
+      </h3>
+      <div class="titleWrap clearfix">
+        <span class="titleNum ellipse fl">777777777777777777777777777777</span>
+        <span class="titleText fl">道题</span>
+      </div>
+      <span class="state">已发布</span>
+      <a href="javarcript:;" class="more">
+        <span class="point"></span>
+        <span class="point"></span>
+        <span class="point"></span>
+      </a>
+      <ul class="modifyReleaseState">
+        <li class="clearfix">
+          <span class="modifyStateIco msIco1 bgimage fl"></span>
+          <p class="modifyStateText fl ellipse">编辑发布</p>
+        </li>
+        <li class="clearfix">
+          <span class="modifyStateIco msIco2 bgimage fl"></span>
+          <p class="modifyStateText fl ellipse">复制发布</p>
+        </li>
+        <li class="clearfix">
+          <span class="modifyStateIco msIco3 bgimage fl"></span>
+          <p class="modifyStateText fl ellipse">删除发布</p>
+        </li>
+      </ul>
+      <input type="checkbox" class="checkbox releaseManagerCheckbox"/>
+    </li>
+	</ul>
+</div>
+<div class="paginationWrap clearfix">
+	<div class="paginationLeft fl">
+		<p class="fl pageText">共<span class="pageNum">2938</span>条记录</p>
+		<span class="pageText fl paddingl16">每页显示</span>
+		<div class="selectwrap fl">
+			<select name="" id="">
+				<option value="">20</option>
+			</select>
+		</div>
+		<span class="pageText fl">条</span>
+	</div>
+	<div class="paginationRight fr">
+		<a href="javascript:;" class="pageBtn fl">&lt;</a>
+		<a href="javascript:;" class="pageBtn fl">1</a>
+		<a href="javascript:;" class="pageBtn pageBtnActive fl">2</a>
+		<a href="javascript:;" class="pageBtn fl">3</a>
+		<a href="javascript:;" class="pageBtn fl">4</a>
+		<a href="javascript:;" class="pageBtn fl">5</a>
+		<a href="javascript:;" class="pageBtn fl">&hellip;</a>
+		<span class="pageText marginl9 fl">跳至</span>
+		<input type="text" placeholder="20" class="fl pageInput">
+		<span class="pageText fl">页</span>
+		<span class="jumpBtn fl">跳转</span>
+	</div>
+</div>
+	 <!-- content 结束 -->
+ <div class="shadow" id="shadow"></div>
+	 <!-- 发布设置 -->
+ <div class="releaseSetting">
+		 <div class="selectTitleHead clearfix">
+			 <h3 class="fl">发布设置</h3>
+			 <a href="javascript:;" class="bgimage fr closeBtn"></a>
+		 </div>
+		 <form action="#" class="cntWrap">
+			 <div class="formGroup clearfix">
+				 <p class="groupLabel fl">发布名称：</p>
+				 <div class="groupWrap fl">
+					 <p class="groupText">柬埔寨语初级1 </p>
+				 </div>
+			 </div>
+			 <div class="formGroup clearfix">
+				 <p class="groupLabel fl">发布至：</p>
+				 <div class="groupWrap fl">
+					 <input type="radio" class="fl radio">
+					 <label class="groupText fl">安卓</label>
+					 <input type="radio" class="fl radio">
+					 <label class="groupText fl">IOS</label>
+				 </div>
+			 </div>
+			 <div class="formGroup clearfix">
+				 <p class="groupLabel fl">语言：</p>
+				 <div class="groupWrap fl">
+					 <input type="radio" class="fl radio">
+					 <label class="groupText fl">泰语</label>
+					 <input type="radio" class="fl radio">
+					 <label class="groupText fl">马来语</label>
+					 <input type="radio" class="fl radio">
+					 <label class="groupText fl">柬埔寨语</label>
+					 <input type="radio" class="fl radio">
+					 <label class="groupText fl">老挝语</label>
+					 <input type="radio" class="fl radio">
+					 <label class="groupText fl">越南语</label>
+				 </div>
+			 </div>
+			 <div class="formGroup clearfix">
+				 <p class="groupLabel fl">级别：</p>
+				 <div class="groupWrap fl">
+					 <input type="radio" class="fl radio">
+					 <label class="groupText fl">初级</label>
+					 <input type="radio" class="fl radio">
+					 <label class="groupText fl">高级</label>
+				 </div>
+			 </div>
+			 <div class="formGroup clearfix">
+				 <p class="groupLabel fl">类型：</p>
+				 <div class="groupWrap fl">
+					 <input type="radio" class="fl radio">
+					 <label class="groupText fl">选择题</label>
+					 <input type="radio" class="fl radio">
+					 <label class="groupText fl">简答题（中翻外）</label>
+					 <input type="radio" class="fl radio">
+					 <label class="groupText fl">简答题（外翻中）</label>
+				 </div>
+			 </div>
+			 <div class="formGroup clearfix">
+				 <p class="groupLabel fl">测试时间：</p>
+				 <div class="groupWrap testTime fl">
+					 <input type="checkbox" class="checkbox fl">
+					 <p class="groupText fl">限制为</p>
+					 <input type="text" placehoder="10" class="fl inputTime">
+					 <p class="groupText fl">分钟</p>
+				 </div>
+			 </div>
+			 <div class="action margint28 clearfix">
+				 <input type="button" class="fl saveBtn" value="保存">
+			 </div>
+		 </form>
+	 </div>

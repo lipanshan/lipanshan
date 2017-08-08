@@ -1,0 +1,262 @@
+<!doctype html>
+<html class="no-js" lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="一铭翻译云">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>web</title>
+
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <!-- Place favicon.ico in the root directory -->
+
+    <!-- build:css styles/vendor.css -->
+    <!-- bower:css -->
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:css styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- endbuild -->
+
+    <!-- build:js scripts/vendor/modernizr.js -->
+    <script src="/bower_components/modernizr/modernizr.js"></script>
+    <!-- endbuild -->
+  </head>
+  <body>
+    <!--[if lt IE 10]>
+      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+         <!-- header 开始 -->
+  <header class="bgcolor clearfix wrapper">
+    <h1 class="fl">
+      <a href="index.html" class="logoLink fl">
+        <img class="logo" src="images/logo.png" alt="一铭翻译云测试管理后台">
+      </a>
+      <a id="sidebarMenuBtn" class="fl sidebarBtn" href="javascript:;">
+        <span class="retractIcoC fl"></span>
+        <span class="retract fl bgimage"></span>
+        <span class="retractIcoP fl"></span>
+      </a>
+    </h1>
+    <div class="headerRight fr">
+      <div class="accountInfo ellipse fl">您好，liudehua</div>
+      <a href="javascript:;" class="exitBtn bgimage fl"></a>
+    </div>
+  </header>
+   <!-- header 结束 -->
+   <!-- content 开始 -->
+  <div class="wrapper wrapperCnt clearfix">
+    <div class="contentwrap fl">
+        <!-- 右侧内容 开始 -->
+      <div id="content" class="content">
+
+      </div>
+        <!-- 右侧内容 结束 -->
+    </div>
+     <!-- 左侧导航 开始 -->
+    <div id="sideBar" class="sidebar fl">
+       <!-- 导航展开时 开始 -->
+      <ul class="openMenu">
+        <li  >
+          <a href="home.html" class="menuItem menuItemActive clearfix">
+            <span class="bgimage fl menuItemIco"></span>
+            <span  class="ellipse fl menuItemCnt">首页</span>
+          </a>
+        </li>
+        <li  >
+          <a href="releaseManagement.html" class="menuItem  clearfix">
+            <span class="bgimage release menuItemIco fl"></span>
+            <span  class="ellipse fl menuItemCnt">发布管理</span>
+            <span class="arrow bgimage fr"></span>
+          </a>
+          <ul class="level2menu">
+            <li class="level2Item">
+              <a href="createRelease.html" class="clearfix">
+                <span class="point fl"></span>
+                <span class="ellipse fl menuItemCnt">创建发布</span>
+              </a>
+            </li>
+            <li class="level2Item">
+              <a href="releaseLog.html" class="clearfix">
+                <span class="point fl"></span>
+                <span class="ellipse fl menuItemCnt">发布日志</span>
+              </a>
+            </li>
+            <li class="level2Item">
+              <a href="answerResult.html" class="clearfix">
+                <span class="point fl"></span>
+                <span class="ellipse fl menuItemCnt">答题结果</span>
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li  >
+          <a href="itemBankManagement.html" class="menuItem clearfix">
+            <span class="bgimage questions menuItemIco fl"></span>
+            <span  class="ellipse fl menuItemCnt">题库管理</span>
+            <span class="arrow bgimage fr"></span>
+          </a>
+          <ul class="level2menu">
+            <li class="level2Item">
+              <a href="itemBankManagement.html" class="clearfix">
+                <span class="point fl"></span>
+                <span class="ellipse fl menuItemCnt">创建题库</span>
+              </a>
+            </li>
+
+          </ul>
+        </li>
+        <li >
+          <a id="systemManagement" href="javascript:;" class="menuItem clearfix">
+            <span class="bgimage system menuItemIco fl"></span>
+            <span  class="ellipse fl menuItemCnt">系统管理</span>
+            <span class="arrow bgimage fr"></span>
+          </a>
+          <ul id="systemManagementList" class="level2menu">
+            <li class="level2Item">
+              <a href="userManagement.html" class="clearfix">
+                <span class="point fl"></span>
+                <span class="ellipse fl menuItemCnt">用户管理</span>
+              </a>
+            </li>
+            <li class="level2Item">
+              <a href="roleManagement.html" class="clearfix">
+                <span class="point fl"></span>
+                <span class="ellipse fl menuItemCnt">角色管理</span>
+              </a>
+            </li>
+            <li class="level2Item">
+              <a href="authorityManagement.html" class="clearfix">
+                <span class="point fl"></span>
+                <span class="ellipse fl menuItemCnt">权限管理</span>
+              </a>
+            </li>
+            <li class="level2Item">
+              <a href="groupingManagement.html" class="clearfix">
+                <span class="point fl"></span>
+                <span class="ellipse fl menuItemCnt">分组管理</span>
+              </a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+       <!-- 导航展开时 结束 -->
+
+       <!-- 导航关闭时 开始 -->
+      <div class="closeMenu clearfix">
+        <ul class="iconMenu">
+          <li>
+            <a href="home.html" class="menuItem clearfix">
+              <span class="bgimage fl menuItemIco"></span>
+            </a>
+          </li>
+          <li>
+            <a href="releaseManagement.html" class="menuItem clearfix">
+              <span class="bgimage release menuItemIco fl"></span>
+            </a>
+          </li>
+          <li>
+            <a href="itemBankManagement.html" class="menuItem clearfix">
+              <span class="bgimage questions menuItemIco fl"></span>
+            </a>
+          </li>
+          <li>
+            <a href="javascript:;" class="menuItem clearfix">
+              <span class="bgimage system menuItemIco fl"></span>
+            </a>
+          </li>
+        </ul>
+        <ul class="iconMenuCont">
+          <li>
+            <ul class="level2menu">
+              <li >
+                <a href="createRelease.html" class="clearfix">
+                  <span class="point fl"></span>
+                  <span class="ellipse fl menuItemCnt">创建发布</span>
+                </a>
+              </li>
+              <li >
+                <a href="releaseLog.html" class="clearfix">
+                  <span class="point fl"></span>
+                  <span class="ellipse fl menuItemCnt">发布日志</span>
+                </a>
+              </li>
+              <li >
+                <a href="answerResult.html" class="clearfix">
+                  <span class="point fl"></span>
+                  <span class="ellipse fl menuItemCnt">答题结果</span>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <ul class="level2menu">
+              <li >
+                <a href="itemBankManagement.html" class="clearfix">
+                  <span class="point fl"></span>
+                  <span class="ellipse fl menuItemCnt">创建题库</span>
+                </a>
+              </li>
+
+            </ul>
+          </li>
+          <li >
+            <ul class="level2menu">
+              <li >
+                <a href="userManagement.html" class="clearfix">
+                  <span class="point fl"></span>
+                  <span class="ellipse fl menuItemCnt">用户管理</span>
+                </a>
+              </li>
+              <li >
+                <a href="roleManagement.html" class="clearfix">
+                  <span class="point fl"></span>
+                  <span class="ellipse fl menuItemCnt">角色管理</span>
+                </a>
+              </li>
+              <li >
+                <a href="authorityManagement.html" class="clearfix">
+                  <span class="point fl"></span>
+                  <span class="ellipse fl menuItemCnt">权限管理</span>
+                </a>
+              </li>
+              <li >
+                <a href="groupingManagement.html" class="clearfix">
+                  <span class="point fl"></span>
+                  <span class="ellipse fl menuItemCnt">分组管理</span>
+                </a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+       <!-- 导航关闭时 结束 -->
+    </div>
+     <!-- 左侧导航 结束 -->
+  </div>
+   <!-- content 结束 -->
+
+
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+    <script>
+      (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+      e.src='https://www.google-analytics.com/analytics.js';
+      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+      ga('create','UA-XXXXX-X');ga('send','pageview');
+    </script>
+
+    <!-- build:js scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="/bower_components/jquery/dist/jquery.js"></script>
+    <script src="/bower_components/modernizr/modernizr.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:js scripts/main.js -->
+    <script src="scripts/sideNavigation.js"></script>
+    <!-- endbuild -->
+  </body>
+</html>

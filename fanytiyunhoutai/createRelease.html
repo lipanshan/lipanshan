@@ -1,0 +1,122 @@
+	 <!--创建发布-->
+	 <!-- content 开始 -->
+	<form action="#">
+		<div class="marginlr20 locationMap clearfix">
+			<div class="locationMapIoo bgimage fl"></div>
+			<p class="locationMapInfo fl">当前位置：发布管理&nbsp;&gt;&nbsp;创建发布</p>
+		</div>
+		<div class="releaseName clearfix">
+			<label for="#" class="fl">发布名称：</label>
+			<input type="text" class="fl" autofocus>
+		</div>
+		<div class="setting clearfix">
+			<p class="fl">部分设置：</p>
+			<div class="disorder fl">
+				<input type="radio" id="disorder" name="order" class="fl">
+				<label for="disorder" class="fl">题目乱序</label>
+			</div>
+			<div class="randow fl">
+				<input type="radio" id="randow" name="order" class="fl">
+				<label for="randow" class="fl">随机换题</label>
+			</div>
+		</div>
+		<h3 class="titleHeader">题目详情：</h3>
+		<div class="questionsDetails">
+			<div class="detailsHeader clearfix">
+				<p class="totalQuestions fl">总题数：<span class="count">0</span>道题</p>
+				<a href="javascript:;" class="fr selectQuestionBtn">选择题目</a>
+				<p class="tip">该部分下还没有试题，请从这里添加</p>
+			</div>
+			<div class="listwrap showSrollHeight">
+				<div id="ulListContent" class="questionslist">
+					 <!-- 一行 开始-->
+					<div class="questionli">
+						<div class="td tdw55">
+							<input type="checkbox" class="checkbox">
+						</div>
+						<div class="td">
+							<p class="questionName ellipse">美丽善良的白雪公主战胜了邪恶的皇后美丽善良的白雪公主战胜了邪恶的皇后</p>
+						</div>
+						<div class="td">
+							<p class="time">2017-03-27 19:30:23</p>
+						</div>
+						<div class="td">
+							<a href="javascript:;" class="delete">删除</a>
+						</div>
+					</div>
+					  <!-- 一行 结束-->
+				</div>
+			</div>
+			<div class="detailsfooter clearfix">
+				<div class="fl">
+					<input type="checkbox" class="allChecked fl">
+					<label for="#" class="fl allCheckedL">全选</label>
+					<a href="javascript:;" class="fl deletebtn">删除</a>
+				</div>
+				<div class="fr marginr9">
+					<div class="paginationRight fr">
+						<p class="fl pageText">共<span class="pageNum">0</span>条记录</p>
+						<span class="pageText fl paddingl16">每页显示</span>
+						<div class="selectwrap fl">
+							<select name="" id="">
+								<option value="">20</option>
+							</select>
+						</div>
+						<span class="pageText fl marginl9">条</span>
+						<a href="javascript:;" class="pageBtn fl marginl9">&lt;</a>
+						<a href="javascript:;" class="pageBtn fl">&gt;</a>
+						<span class="pageText marginl9 fl">跳至</span>
+						<input type="text" placeholder="20" class="fl pageInput">
+						<span class="pageText fl">页</span>
+						<span class="jumpBtn fl">跳转</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="submitWrap clearfix">
+			<input type="submit" class="submit fl" value="保存">
+		</div>
+	</form>
+	 <!-- content 结束 -->
+	<div class="shadow" id="shadow"></div>
+	 <!-- 选择题库 -->
+	<div id="selectTitles" class="selectTitle">
+		<div class="selectTitleHead clearfix">
+			<h3 class="fl">选择题目</h3>
+			<a href="javascript:;" class="bgimage fr closeBtn"></a>
+		</div>
+		<div class="titleList clearfix">
+			<div class="leftList fl">
+				<div class="head clearfix">
+					<input type="checkbox" class="fl allChecked">
+					<p class="fl myTitles">我的题库（<span class="titlesNum">0</span>）</p>
+				</div>
+				<ul class="mytitleList">
+					<li class="clearfix">
+						<input type="checkbox" class="fl checkbox">
+						<p class="fl titleName ellipse">马来西亚语高级题目</p>
+						<p class="titleCount fl ellipse">7道题</p>
+						<p class="updataTime fl ellipse">更新与2017-05-02 19:08:09</p>
+					</li>
+				</ul>
+			</div>
+			<div class="rightList fl">
+				<div class="head clearfix">
+					<input type="checkbox" class="fl allChecked">
+					<p class="fl myTitles">我的题库（<span class="titlesNum">0</span>）</p>
+				</div>
+				<ul class="mytitleList">
+					<li class="clearfix">
+						<input type="checkbox" class="fl checkbox">
+						<p class="fl titleName ellipse">马来西亚语高级题目</p>
+						<p class="titleCount fl ellipse">7道题</p>
+						<p class="updataTime fl ellipse">更新与2017-05-02 19:08:09</p>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="action clearfix">
+			<input type="button" class="fl saveBtn" value="确认">
+			<input type="button" class="fl cancelBtn" value="取消">
+		</div>
+	</div>

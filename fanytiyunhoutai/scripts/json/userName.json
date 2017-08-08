@@ -1,0 +1,26 @@
+[
+    {
+        "userEmail":'936613141@qq.com',
+        "userGroup":"马来西亚语组",
+        "realName":"上官飞虎",
+        "userPassword":"123456@123",
+    },
+    {
+        "userEmail":'936613142@163.com',
+        "userGroup":"马来西亚语组",
+        "realName":"黄埔飞虎",
+        "userPassword":"123456@123"
+    },
+    {
+        "userEmail":'936613142@gmail.com',
+        "userGroup":"马来西亚语组",
+        "realName":"麻子张",
+        "userPassword":"123456@123"
+    },
+    {
+        "userEmail":'12345789@qq.com',
+        "userGroup":"马来西亚语组",
+        "realName":"昆仑奴",
+        "userPassword":"123456@123"
+    }
+]
